@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booty Catalog</title>
+  <link rel="stylesheet" href="styles/app.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app" id="app">
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-brand">
+        <div class="logo">⚓</div>
+        <div class="brand-text">
+          <span class="brand-name">Booty</span>
+          <span class="brand-sub">Catalog</span>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="nav-section">
+          <span class="nav-label">LIBRARY</span>
+          <a class="nav-item active" data-filter="all" href="#">
+            <span class="nav-icon">🗄️</span> All Games
+            <span class="nav-count" id="count-all">0</span>
+          </a>
+          <a class="nav-item" data-filter="cracked" href="#">
+            <span class="nav-icon">🔓</span> Just Cracked
+            <span class="nav-count" id="count-cracked">0</span>
+          </a>
+          <a class="nav-item" data-filter="upcoming" href="#">
+            <span class="nav-icon">👀</span> Upcoming
+            <span class="nav-count" id="count-upcoming">0</span>
+          </a>
+        </div>
+
+        <div class="nav-section">
+          <span class="nav-label">CATEGORIES</span>
+          <a class="nav-item" data-category="action" href="#">
+            <span class="nav-icon">⚔️</span> Action
+            <span class="nav-count" id="count-action">0</span>
+          </a>
+          <a class="nav-item" data-category="rpg" href="#">
+            <span class="nav-icon">🧙</span> RPG
+            <span class="nav-count" id="count-rpg">0</span>
+          </a>
+          <a class="nav-item" data-category="strategy" href="#">
+            <span class="nav-icon">♟️</span> Strategy
+            <span class="nav-count" id="count-strategy">0</span>
+          </a>
+          <a class="nav-item" data-category="simulation" href="#">
+            <span class="nav-icon">🎮</span> Simulation
+            <span class="nav-count" id="count-simulation">0</span>
+          </a>
+          <a class="nav-item" data-category="indie" href="#">
+            <span class="nav-icon">🎨</span> Indie
+            <span class="nav-count" id="count-indie">0</span>
+          </a>
+          <a class="nav-item" data-category="racing" href="#">
+            <span class="nav-icon">🏎️</span> Racing
+            <span class="nav-count" id="count-racing">0</span>
+          </a>
+        </div>
+
+        <div class="nav-section">
+          <span class="nav-label">SETTINGS</span>
+          <a class="nav-item" data-action="install-dir" href="#">
+            <span class="nav-icon">📂</span> Install Folder
+          </a>
+          <a class="nav-item" data-action="clear" href="#">
+            <span class="nav-icon">🧹</span> Clear Cache
+          </a>
+        </div>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="storage-badge" id="storage-badge">
+          <span class="storage-dot"></span>
+          <span class="storage-text">Ready</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main" id="main">
+
+      <!-- Header -->
+      <header class="header" id="header">
+        <div class="header-left">
+          <button class="menu-toggle" id="menu-toggle" title="Toggle sidebar">☰</button>
+          <h1 class="header-title" id="header-title">All Games</h1>
+        </div>
+
+        <div class="header-center">
+          <div class="search-box" id="search-box">
+            <span class="search-icon">🔍</span>
+            <input type="text" class="search-input" id="search-input" placeholder="Search games, genres, or cracked tools...">
+            <button class="search-clear" id="search-clear" title="Clear search">✕</button>
+          </div>
+        </div>
+
+        <div class="header-right">
+          <button class="sort-btn" id="sort-btn" title="Sort games">
+            <span class="sort-icon">⇅</span>
+            <span class="sort-label">Newest</span>
+          </button>
+          <button class="view-toggle" id="view-toggle" title="Toggle view">
+            <span class="view-icon">▦</span>
+          </button>
+        </div>
+      </header>
+
+      <!-- Latest Cracked Banner -->
+      <section class="latest-banner" id="latest-banner">
+        <div class="latest-banner-content">
+          <div class="latest-badge">⚡ Just Dropped</div>
+          <h2 class="latest-title">Latest Crack Activity</h2>
+          <p class="latest-subtitle">Games cracked within the last 30 days</p>
+        </div>
+        <div class="latest-scroll" id="latest-scroll">
+          <!-- Dynamic -->
+        </div>
+      </section>
+
+      <!-- Game Grid -->
+      <section class="game-grid" id="game-grid">
+        <!-- Dynamic cards rendered here -->
+      </section>
+
+      <!-- Empty State -->
+      <section class="empty-state" id="empty-state" hidden>
+        <div class="empty-icon">🏴‍☠️</div>
+        <h2 class="empty-title">No Booty Found</h2>
+        <p class="empty-text">Try a different filter or search term, matey.</p>
+        <button class="empty-reset" id="empty-reset">Reset All Filters</button>
+      </section>
+
+    </main>
+
+    <!-- Download Panel -->
+    <div class="overlay" id="overlay"></div>
+    <aside class="download-panel" id="download-panel">
+      <div class="panel-header">
+        <h3 class="panel-title">⬇️ Download & Install</h3>
+        <button class="panel-close" id="panel-close">✕</button>
+      </div>
+
+      <div class="panel-body">
+        <div class="panel-game-preview" id="panel-preview">
+          <!-- Dynamic game preview -->
+        </div>
+
+        <div class="panel-info" id="panel-info">
+          <div class="info-row">
+            <span class="info-label">Size</span>
+            <span class="info-value" id="info-size">—</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Version</span>
+            <span class="info-value" id="info-version">—</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Crack</span>
+            <span class="info-value" id="info-crack">—</span>
+          </div>
+          <div class="info-row">
+            <span class="info-label">Uploaded</span>
+            <span class="info-value" id="info-uploaded">—</span>
+          </div>
+        </div>
+
+        <div class="panel-install-dir" id="panel-install-dir">
+          <label class="panel-label">Install To</label>
+          <div class="install-dir-row">
+            <input type="text" class="install-dir-input" id="install-dir-input" placeholder="Select a folder...">
+            <button class="install-dir-btn" id="install-dir-btn">Browse</button>
+          </div>
+        </div>
+
+        <button class="panel-download-btn" id="panel-download-btn">
+          <span class="btn-icon">⚡</span>
+          <span class="btn-text">One-Click Download & Install</span>
+          <span class="btn-progress" id="btn-progress"></span>
+        </button>
+
+        <div class="panel-status" id="panel-status" hidden>
+          <div class="status-bar">
+            <div class="status-fill" id="status-fill"></div>
+          </div>
+          <span class="status-text" id="status-text">Preparing...</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Sort Modal -->
+    <div class="overlay" id="sort-overlay"></div>
+    <div class="sort-modal" id="sort-modal" hidden>
+      <div class="sort-modal-content">
+        <h3 class="sort-modal-title">Sort By</h3>
+        <div class="sort-modal-options" id="sort-options">
+          <button class="sort-option active" data-sort="newest">🕐 Newest</button>
+          <button class="sort-option" data-sort="oldest">📅 Oldest</button>
+          <button class="sort-option" data-sort="name">🔤 Name</button>
+          <button class="sort-option" data-sort="size">📦 Size</button>
+          <button class="sort-option" data-sort="cracked">🔓 Recently Cracked</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Toast -->
+    <div class="toast-container" id="toast-container">
+      <!-- Dynamic -->
+    </div>
+
+  </div>
+
+  <script src="scripts/app.js"></script>
+  <script src="scripts/download.js"></script>
+</body>
+</html>

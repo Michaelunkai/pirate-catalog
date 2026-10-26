@@ -1,0 +1,26 @@
+{
+  "name": "booty-catalog",
+  "version": "1.0.0",
+  "description": "The ultimate pirate game catalog — browse, filter, and one-click download the latest cracked games.",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8080",
+    "scraper": "python scripts/scraper.py",
+    "gui": "python main.py"
+  },
+  "keywords": [
+    "pirate",
+    "catalog",
+    "games",
+    "repakkers",
+    "dodi",
+    "fitgirl",
+    "codex",
+    "reloaded"
+  ],
+  "license": "SEEK-YOUR-OWN-COUNSEL",
+  "repository": {
+    "type": "git",
+    "url": "hidden.beside.the.sea"
+  }
+}
