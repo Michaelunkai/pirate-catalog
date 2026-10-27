@@ -83,12 +83,12 @@ a { text-decoration: none; color: inherit; }
 }
 .sidebar-brand {
   display: flex; align-items: center; gap: 12px; padding: 0 20px 24px;
-  border-bottom: 1px solid var(--border; margin-bottom: 20px;
+  border-bottom: 1px solid var(--border); margin-bottom: 20px;
 }
 .logo {
   font-size: 28px; width: 40px; height: 40px;
   display: flex; align-items: center; justify-content: center;
-  background: var(--accent-glow; border-radius: var(--radius-md; border: 1px solid var(--border-glow;
+  background: var(--accent-glow); border-radius: var(--radius-md); border: 1px solid var(--border-glow);
 }
 .brand-text { display: flex; flex-direction: column; }
 .brand-name { font-size: 18px; font-weight: 700; color: var(--text-primary; }
