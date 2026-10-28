@@ -20,6 +20,10 @@
 #include <windows.h>
 #include <wingdi.h>
 #include <commctrl.h>
+/* Per-column paint stage; not always defined by MinGW's commctrl.h. */
+#ifndef CDDS_SUBITEMPAINT
+#define CDDS_SUBITEMPAINT (CDDS_SUBITEM | CDDS_ITEMPREPAINT)
+#endif
 #include <shellapi.h>
 #include <shlwapi.h>
 #include <wininet.h>
@@ -106,29 +110,39 @@ static HBRUSH get_surf_brush(void) { return CreateSolidBrush(get_surf_color()); 
 /* ━━━ JSON PARSER ━━━ */
 int parse_games_json(void* buf, int len) {
     char* p = (char*)buf;
-    while (*p && *p != '[') p++;
-    if (*p) { p++; g_gameCount = 0; } else return 0;
+    long dbg_steps = 0;
+    /* Skip any leading bytes (BCAT container header) up to the array open. */
+    while (len-- > 0 && *p != '[') p++;
+    if (*p != '[') return 0;
+    p++; g_gameCount = 0;
     while (*p && g_gameCount < MAX_GAMES) {
-        while (*p && (*p == ' ' || *p == '\n' || *p == '\t')) p++;
+        dbg_steps++;
+        if (dbg_steps > 100000) { fprintf(stderr, "PARSE LOOP at offset %ld\n", p - (char*)buf); return g_gameCount; }
+        while (*p && (*p == ' ' || *p == '\n' || *p == '\r' || *p == '\t')) p++;
         if (*p == ']') break;
         if (*p == ',') { p++; continue; }
         if (*p != '{') break;
         p++;
         Game* g = &g_games[g_gameCount];
         memset(g, 0, sizeof(Game));
+        long dbg_inner = 0;
         while (*p && *p != '}') {
-            while (*p && (*p == ' ' || *p == '\n' || *p == '\t')) p++;
+            dbg_inner++;
+            if (dbg_inner > 500) { fprintf(stderr, "INNER LOOP game=%d at offset %ld:\n%.200s\n", g_gameCount, (long)(p - (char*)buf), p - 80 >= (char*)buf ? p - 80 : (char*)buf); return g_gameCount; }
+            while (*p && (*p == ' ' || *p == '\n' || *p == '\r' || *p == '\t')) p++;
+            if (*p == '}') break;   /* last field consumed its comma/brace */
             char key[64]; int ki = 0;
             if (*p == '"') p++;
             while (*p && *p != '"') { if (ki < 63) key[ki++] = *p; p++; }
             key[ki] = '\0'; if (*p == '"') p++;
-            while (*p == ' ') p++; if (*p == ':') p++; while (*p == ' ') p++;
+            while (*p==' '||*p=='\n'||*p=='\r'||*p=='\t') p++; if (*p == ':') p++; while (*p==' '||*p=='\n'||*p=='\r'||*p=='\t') p++;
             if (*p == '"') {
                 p++; char val[256]; int vi = 0;
                 while (*p && *p != '"') {
-                    if (*p == '\\' && *(p+1) == '"') { val[vi++] = '"'; p++; }
-                    else { val[vi++] = *p; }
-                    if (vi < 255) p++;
+                    char c = *p;
+                    if (c == '\\' && p[1]) { p++; c = *p; }
+                    if (vi < 255) val[vi++] = c;
+                    p++;
                 }
                 val[vi] = '\0'; if (*p == '"') p++;
                 if (strcmp(key, "id") == 0) strncpy(g->id, val, 127);
@@ -158,7 +172,7 @@ int parse_games_json(void* buf, int len) {
             } else if (*p == '-' || (*p >= '0' && *p <= '9')) {
                 char numval[32]; int ni = 0;
                 if (*p == '-') { numval[ni++] = *p++; }
-                while (*p && *p != ',' && *p != '}' && *p != ']') { if (ni < 31) numval[ni++] = *p; }
+                while (*p && *p != ',' && *p != '}' && *p != ']') { if (ni < 31) numval[ni++] = *p; p++; }
                 numval[ni] = '\0';
                 if (strcmp(key, "sizeBytes") == 0) g->sizeBytes = atoll(numval);
                 else if (strcmp(key, "rating") == 0) g->rating = (float)atof(numval);
@@ -166,7 +180,7 @@ int parse_games_json(void* buf, int len) {
             } else if (*p == '[' && (strcmp(key, "tags") == 0 || strcmp(key, "sources") == 0)) {
                 p++;
                 while (*p && *p != ']') {
-                    while (*p == ' ') p++;
+                    while (*p==' '||*p=='\n'||*p=='\r'||*p=='\t') p++;
                     if (*p == '"') { p++; char arrval[32]; int ai = 0;
                         while (*p && *p != '"') { if (ai < 31) arrval[ai++] = *p; p++; }
                         arrval[ai] = '\0'; if (*p == '"') p++;
@@ -180,16 +194,17 @@ int parse_games_json(void* buf, int len) {
             } else if (*p == '{' && strcmp(key, "repack") == 0) {
                 p++; memset(&g->repack, 0, sizeof(g->repack));
                 while (*p && *p != '}') {
-                    while (*p == ' ') p++;
+                    while (*p==' '||*p=='\n'||*p=='\r'||*p=='\t') p++;
                     if (*p == '"') { p++; char rk[32]; int ri = 0;
                         while (*p && *p != '"') { if (ri < 31) rk[ri++] = *p; p++; }
                         rk[ri] = '\0'; if (*p == '"') p++;
-                        while (*p == ' ') p++; if (*p == ':') p++; while (*p == ' ') p++;
+                        while (*p==' '||*p=='\n'||*p=='\r'||*p=='\t') p++; if (*p == ':') p++; while (*p==' '||*p=='\n'||*p=='\r'||*p=='\t') p++;
                         if (*p == '"') { p++; char rv[256]; int vvi = 0;
                             while (*p && *p != '"') {
-                                if (*p == '\\' && *(p+1) == '"') { rv[vvi++] = '"'; p++; }
-                                else { rv[vvi++] = *p; }
-                                if (vvi < 255) p++;
+                                char rc = *p;
+                                if (rc == '\\' && p[1]) { p++; rc = *p; }
+                                if (vvi < 255) rv[vvi++] = rc;
+                                p++;
                             }
                             rv[vvi] = '\0'; if (*p == '"') p++;
                             if (strcmp(rk, "title") == 0) strncpy(g->repack.title, rv, 63);
@@ -200,7 +215,7 @@ int parse_games_json(void* buf, int len) {
                 }
                 if (*p == '}') p++;
             } else { while (*p && *p != ',' && *p != '}') p++; }
-            while (*p == ' ') p++;
+            while (*p==' '||*p=='\n'||*p=='\r'||*p=='\t') p++;
             if (*p == ',') p++;
         }
         if (*p == '}') p++;
@@ -222,7 +237,7 @@ static int hex_decode(const unsigned char* hex, unsigned char* out, int maxlen) 
 }
 
 /* ━━━ RESOURCE BUNDLES ━━━ */
-static unsigned char g_games_resource_blob[MAX_PATH * 1024];
+static unsigned char g_games_resource_blob[1024 * 1024];
 static unsigned char g_html_resource_blob[1024 * 1024];
 static unsigned char g_css_resource_blob[512 * 1024];
 static unsigned char g_js_resource_blob[512 * 1024];
@@ -268,6 +283,61 @@ static void paint_gradient(HDC hdc, RECT* rc, const char* gradHex, int hgt) {
         DeleteObject(br);
         y0 = t0;
     }
+}
+
+/* Parse a CSS gradient string like "linear-gradient(135deg, #1a1a2e 0%, ...)"
+   into the internal hex form expected by paint_gradient. Returns number of
+   color stops found. */
+static int parse_css_gradient(const char* css, GradientColor* out, int maxCount) {
+    int n = 0;
+    const char* p = css;
+    while ((p = strchr(p, '#')) != NULL && n < maxCount) {
+        unsigned r, g, b;
+        if (sscanf(p + 1, "%2x%2x%2x", &r, &g, &b) == 3) {
+            out[n].r = (unsigned char)r;
+            out[n].g = (unsigned char)g;
+            out[n].b = (unsigned char)b;
+            n++;
+        }
+        p += 6;
+    }
+    return n;
+}
+
+/* Paint a game's title cell (sub-item 0) with its real cover gradient and
+   white text, using the exact NMLVCUSTOMDRAW layout from commctrl.h:
+   cd->nmcd.{dwDrawStage,hdc,rc,dwItemSpec,uItemState}, then cd->iSubItem. */
+static void draw_game_cover(NMLVCUSTOMDRAW* cd) {
+    int idx = (int)cd->nmcd.dwItemSpec;
+    LVITEMA lvip = {0};
+    lvip.iItem = idx;
+    lvip.mask = LVIF_PARAM;
+    ListView_GetItem(g_hGrid, &lvip);
+    Game* g = (Game*)lvip.lParam;
+    if (!g) return;
+    HDC hdc = cd->nmcd.hdc;
+    RECT rc = cd->nmcd.rc;
+    /* Paint only column 0 so other columns keep their default background. */
+    ListView_GetSubItemRect(g_hGrid, idx, 0, LVIR_BOUNDS, &rc);
+    GradientColor colors[8];
+    int n = parse_css_gradient(g->imageGradient, colors, 8);
+    if (n >= 2) {
+        /* Diagonal-ish: paint horizontal bands top-to-bottom across the row. */
+        int bandH = (rc.bottom - rc.top) / n;
+        for (int i = 0; i < n; i++) {
+            RECT tmp = rc;
+            tmp.top = rc.top + i * bandH;
+            tmp.bottom = tmp.top + bandH;
+            HBRUSH br = CreateSolidBrush(RGB(colors[i].r, colors[i].g, colors[i].b));
+            FillRect(hdc, &tmp, br);
+            DeleteObject(br);
+        }
+    } else {
+        FillRect(hdc, &rc, CreateSolidBrush(RGB(20, 20, 30)));
+    }
+    SetBkMode(hdc, TRANSPARENT);
+    SetTextColor(hdc, RGB(255, 255, 255));
+    DrawTextA(hdc, g->title, -1, &rc, DT_CENTER | DT_VCENTER | DT_SINGLELINE | DT_NOPREFIX);
 }
 
 /* ━━━ RESOURCE DECODER ━━━ */
@@ -326,7 +396,7 @@ static void http_accept_loop(void) {
             send(clientSock, (char*)css_bin, css_bin_len, 0);
         } else if (ext && strcmp(ext, ".js") == 0) {
             send(clientSock, hdrHtml, strlen(hdrHtml), 0);
-            send(clientSock, (char*)js_bin, jsdl_bin_len, 0);
+            send(clientSock, (char*)js_bin, js_bin_len, 0);
         } else if (ext && strcmp(ext, ".json") == 0) {
             send(clientSock, hdrHtml, strlen(hdrHtml), 0);
             send(clientSock, (char*)g_games_resource_blob, games_bin_len, 0);
@@ -340,13 +410,16 @@ static void http_accept_loop(void) {
 
 static DWORD WINAPI http_server_thread(LPVOID param) {
     (void)param;
+    fprintf(stderr, "[thread] starting\n"); fflush(stderr);
     http_accept_loop();
+    fprintf(stderr, "[thread] loop exited, err=%d\n", WSAGetLastError()); fflush(stderr);
     return 0;
 }
 
 void http_server_add_listener(void) {
     g_httpServer.running = 1;
-    CreateThread(NULL, 0, http_server_thread, NULL, 0, NULL);
+    HANDLE h = CreateThread(NULL, 0, http_server_thread, NULL, 0, NULL);
+    fprintf(stderr, "[main] CreateThread -> %p err=%d sock=%d bind/listen ok\n", h, GetLastError(), (int)g_httpServer.sock); fflush(stderr);
 }
 
 /* ━━━ FILTER / SORT ━━━ */
@@ -400,10 +473,13 @@ void build_grid_from_filtered(void) {
         ListView_SetItemText(g_hGrid, idx, 2, g_filtered[i].size);
         ListView_SetItemText(g_hGrid, idx, 3, g_filtered[i].crackedBy);
         ListView_SetItemText(g_hGrid, idx, 4, g_filtered[i].crackedDate);
-        LVITEMA lvi2; memset(&lvi, 0, sizeof(LVITEMA));
-        lvi.mask = LVIF_PARAM; lvi.iItem = idx;
-        lvi.lParam = (LPARAM)&g_filtered[i];
-        SendMessageA(g_hGrid, LVM_SETITEM, 0, (LPARAM)&lvi);
+        /* Store pointer to full Game so the custom-draw handler can paint its cover.
+           Needs LVIF_PARAM in the mask — lvi above only carries LVIF_TEXT. */
+        LVITEMA lvip = {0};
+        lvip.iItem = idx;
+        lvip.mask = LVIF_PARAM;
+        lvip.lParam = (LPARAM)&g_filtered[i];
+        ListView_SetItem(g_hGrid, &lvip);
     }
     char buf[256];
     sprintf(buf, "Showing %d of %d games", g_filteredCount, g_gameCount);
@@ -479,14 +555,27 @@ static int PHASE_DELAY[] = { 1200, 2400, 1800, 400, 800, 500, 300 };
 
 static unsigned __stdcall dl_thread_proc(void* arg) {
     DownloadTask* dl = (DownloadTask*)arg;
-    const char* repacker = find_repacker(dl->game);
-    const char* url = "http://localhost:8080/download/";
-    (void)url;
+    (void)find_repacker(dl->game);
+    /* One click => auto-create E:\Games\<id> and drop a payload file inside it */
+    CreateDirectoryA(dl->installDir, NULL);
+    char gameDir[MAX_PATH2 * 2];
+    snprintf(gameDir, sizeof(gameDir), "%s\\%s", dl->installDir, dl->game->id);
+    CreateDirectoryA(gameDir, NULL);
     for (int i = 0; i < 7; i++) {
         if (!dl->running) break;
         dl->progress = PHASE_PROGRESS[i];
         SendMessageA(dl->hwnd, DL_MSG_CONNECT, PHASE_PROGRESS[i], 0);
         SendMessageA(dl->hwnd, DL_MSG_STATUS, 0, (LPARAM)PHASE_NAMES[i]);
+        /* During the "Downloading" phase write payload bytes to disk */
+        if (i == 1) {
+            char path[MAX_PATH2 * 4];
+            snprintf(path, sizeof(path), "%s\\game.dat", gameDir);
+            FILE* f = fopen(path, "wb");
+            if (f) {
+                fwrite(g_games_resource_blob, 1, 65536, f);
+                fclose(f);
+            }
+        }
         Sleep(PHASE_DELAY[i]);
     }
     dl->running = 0;
@@ -501,7 +590,7 @@ void dl_start(Game* game, HWND hwndParent) {
     g_download.hwnd = hwndParent;
     g_download.progress = 0;
     g_download.running = 1;
-    if (!g_download.installDir[0]) strcpy(g_download.installDir, "C:\\Games");
+    if (!g_download.installDir[0]) strcpy(g_download.installDir, "E:\\Games");
     unsigned tid;
     _beginthreadex(NULL, 0, dl_thread_proc, &g_download, 0, &tid);
 }
@@ -858,8 +947,27 @@ LRESULT CALLBACK MainWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) 
             break;
         }
 
-        case WM_NOTIFY:
+        case WM_NOTIFY: {
+            LPNMITEMACTIVATE nmia = (LPNMITEMACTIVATE)lParam;
+            if (nmia->hdr.code == NM_CUSTOMDRAW && nmia->hdr.hwndFrom == g_hGrid) {
+                NMLVCUSTOMDRAW* cd = (NMLVCUSTOMDRAW*)lParam;
+                switch (cd->nmcd.dwDrawStage) {
+                    case CDDS_PREPAINT: return CDRF_NOTIFYITEMDRAW;
+                    case CDDS_ITEMPREPAINT:
+                        /* Take over per-column painting so only column 0 gets
+                           the cover art while the rest renders normally. */
+                        return CDRF_NOTIFYSUBITEMDRAW;
+                    case CDDS_SUBITEMPAINT:
+                        if (cd->iSubItem == 0) {
+                            draw_game_cover(cd);
+                            return CDRF_SKIPDEFAULT;
+                        }
+                        return CDRF_DODEFAULT;
+                    default: return CDRF_DODEFAULT;
+                }
+            }
             break;
+        }
 
         case WM_TIMER:
             if (wParam == TRAY_MSG_CB) {
@@ -905,22 +1013,23 @@ int WINAPI WinMain(HINSTANCE hInst, HINSTANCE hPrev, LPSTR szCmdLine, int nCmd) 
     icc.dwICC = ICC_LISTVIEW_CLASSES | ICC_PROGRESS_CLASS | ICC_BAR_CLASSES | ICC_TAB_CLASSES;
     InitCommonControlsEx(&icc);
 
-    /* Decode embedded resources from hex */
-    hex_decode(games_bin, g_games_resource_blob, MAX_PATH * 1024);
-    hex_decode(html_bin, g_html_resource_blob, 1024 * 1024);
-    hex_decode(css_bin, g_css_resource_blob, 512 * 1024);
-    hex_decode(js_bin, g_js_resource_blob, 512 * 1024);
-    hex_decode(jsdl_bin, g_jsdl_resource_blob, 256 * 1024);
+    /* Copy embedded resources (raw byte arrays, no decoding needed) */
+    memcpy(g_games_resource_blob, games_bin, games_bin_len);
+    memcpy(g_html_resource_blob, html_bin, html_bin_len);
+    memcpy(g_css_resource_blob, css_bin, css_bin_len);
+    memcpy(g_js_resource_blob, js_bin, js_bin_len);
+    memcpy(g_jsdl_resource_blob, jsdl_bin, jsdl_bin_len);
 
-    /* Parse games */
+    /* Parse embedded games JSON */
     parse_games_json(g_games_resource_blob, games_bin_len);
+    fprintf(stderr, "[count] %d games\n", g_gameCount); fflush(stderr);
 
     /* Seed GTA VI if nothing loaded */
     if (g_gameCount == 0) seed_games();
 
     /* Start HTTP server */
-    http_server_add_listener();
     http_server_init(PORT);
+    http_server_add_listener();
 
     /* Register window class */
     WNDCLASSEXA wcx = {0};
