@@ -56,6 +56,7 @@
 #define BTN_FILTER_ALL 2014
 #define HERO_BANNER    2020
 #define BTN_THEME      2004
+#define BTN_TORRENT    2025
 #define OUT_DEFAULT    3
 #define CLIP_DEFAULT   4
 
@@ -78,6 +79,7 @@ HWND g_hThemeBtn = NULL;
 HWND g_hDownloadDl = NULL;
 HWND g_hInstallBtn = NULL;   /* "Install" -- starts the one-click flow */
 HWND g_hFolderBtn  = NULL;   /* browse for the install destination folder */
+HWND g_hTorrentBtn = NULL;   /* "Open Torrent" -- launches magnet link */
 static char g_installDir[MAX_PATH] = "E:\\Games";
 HWND g_hDlProgress = NULL;
 const char* EXE_DIR = NULL;
@@ -907,6 +909,16 @@ static long http_get_to_file(const char* url, const char* outPath) {
     return total;
 }
 
+/* Launch magnet link in default torrent client (qBittorrent, uTorrent, etc.) */
+static void launch_magnet_link(const char* magnet_url) {
+    // Use ShellExecute to open magnet: URI with default handler
+    HINSTANCE result = ShellExecuteA(NULL, "open", magnet_url, NULL, NULL, SW_SHOWNORMAL);
+    if ((INT_PTR)result <= 32) {
+        // Failed - maybe no handler registered
+        tray_bubble(APP_NAME, "No torrent client associated with magnet links", 3000);
+    }
+}
+
 static unsigned __stdcall dl_thread_proc(void* arg) {
     DownloadTask* dl = (DownloadTask*)arg;
     (void)find_repacker(dl->game);
@@ -1146,6 +1158,11 @@ LRESULT CALLBACK MainWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) 
                 "Install Folder...",
                 WS_CHILD | WS_VISIBLE | BS_PUSHBUTTON,
                 790, 10, 100, 25, hwnd, (HMENU)BTN_BROWSE, g_hInst, NULL);
+            /* Open Torrent/Magnet button */
+            g_hTorrentBtn = CreateWindowA("BUTTON",
+                "\xf0\x9f\x93\x84  Open Torrent",
+                WS_CHILD | WS_VISIBLE | BS_PUSHBUTTON,
+                1070, 10, 120, 25, hwnd, (HMENU)BTN_TORRENT, g_hInst, NULL);
 
             /* Create hero banner for latest crack */
             Game* latest = NULL;
@@ -1294,6 +1311,7 @@ LRESULT CALLBACK MainWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) 
             if (g_hFilterBar) MoveWindow(g_hFilterBar, 672, 10, 110, 25, TRUE);
             if (g_hHero) MoveWindow(g_hHero, 10, 40, w-20, 80, TRUE);
             if (g_hThemeBtn) MoveWindow(g_hThemeBtn, w-100, 10, 80, 25, TRUE);
+            if (g_hTorrentBtn) MoveWindow(g_hTorrentBtn, w-230, 10, 120, 25, TRUE);
             if (g_hStatus) MoveWindow(g_hStatus, 10, h-30, w-20, 20, TRUE);
             break;
         }
@@ -1321,6 +1339,15 @@ LRESULT CALLBACK MainWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) 
                     break;
                 case BTN_THEME:
                     toggle_theme();
+                    break;
+                case BTN_TORRENT:
+                    if (selectedGame && selectedGame->feedUrl[0]) {
+                        if (strncmp(selectedGame->feedUrl, "magnet:", 7) == 0) {
+                            launch_magnet_link(selectedGame->feedUrl);
+                        } else {
+                            ShellExecuteA(NULL, "open", selectedGame->feedUrl, NULL, NULL, SW_SHOWNORMAL);
+                        }
+                    }
                     break;
                 case BTN_FILTER_ALL:
                 case BTN_FILTER_FG: /* "All Games" -- clear every filter */
@@ -1417,6 +1444,9 @@ LRESULT CALLBACK MainWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) 
                     AppendMenuA(hMenu, MF_STRING, 4001, "Rate Game");
                     AppendMenuA(hMenu, MF_SEPARATOR, 0, NULL);
                     AppendMenuA(hMenu, MF_STRING, 4002, "Open Source Page");
+                    if (game->feedUrl[0] && strncmp(game->feedUrl, "magnet:", 7) == 0) {
+                        AppendMenuA(hMenu, MF_STRING, 4003, "Open Magnet Link");
+                    }
                     POINT pt;
                     GetCursorPos(&pt);
                     int sel = TrackPopupMenu(hMenu, TPM_BOTTOMALIGN | TPM_LEFTBUTTON | TPM_RETURNCMD,
@@ -1425,7 +1455,13 @@ LRESULT CALLBACK MainWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) 
                     if (sel == 4001) {
                         DialogBoxA(GetModuleHandleA(NULL), MAKEINTRESOURCEA(6000), hwnd, RatingDlgProc);
                     } else if (sel == 4002 && game->feedUrl[0]) {
-                        ShellExecuteA(NULL, "open", game->feedUrl, NULL, NULL, SW_SHOWNORMAL);
+                        if (strncmp(game->feedUrl, "magnet:", 7) == 0) {
+                            launch_magnet_link(game->feedUrl);
+                        } else {
+                            ShellExecuteA(NULL, "open", game->feedUrl, NULL, NULL, SW_SHOWNORMAL);
+                        }
+                    } else if (sel == 4003 && game->feedUrl[0]) {
+                        launch_magnet_link(game->feedUrl);
                     }
                 }
             }

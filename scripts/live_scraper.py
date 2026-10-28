@@ -30,9 +30,13 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CATALOG = os.path.join(ROOT, "data", "games.json")
 
 # name -> list of candidate URLs tried in order; first success wins.
-# Only working sources as of 2026-10-28 (others have dead DNS or heavy Cloudflare)
+# Working sources as of 2026-10-29 (includes mirrors for blocked sites)
 SOURCES = {
-    "DODI": ["https://dodi-repacks.site/feed/", "https://www.dodi-repacks.site/feed/"],
+    "DODI": [
+        "https://dodi-repacks.site/feed/",
+        "https://www.dodi-repacks.site/feed/",
+        "https://dodi-repacks.site/rss.xml",
+    ],
     "FitGirl": [
         "https://www.fitgirl-repacks.site/feed/",
         "https://fitgirl-repacks.site/feed/",
@@ -40,8 +44,34 @@ SOURCES = {
     "SKIDROW": ["http://feeds.feedburner.com/SkidrowReloadedGames", "https://www.skidrowrepacks.com/"],
     "ElAmigos": ["https://www.elenemigos.com/sitemap-recent.xml", "https://www.elenemigos.com/sitemap-games-1.xml"],
     "Ocean of Games": ["https://oceanofgames.com/feed/"],
+    # CODEX mirrors - working domains found via web search
+    "CODEX": [
+        "https://codexgames.com/feed/",
+        "https://codexgames.net/feed/",
+        "https://codex-reloaded.com/feed/",
+        "https://codexscene.org/feed/",
+    ],
+    # RELOADED mirrors
+    "RELOADED": [
+        "https://reloaded-games.com/feed/",
+        "https://reloadedgames.net/feed/",
+        "https://rlsbb.com/feed/",
+        "https://reloadedscene.org/feed/",
+    ],
+    # TOKYO mirrors
+    "TOKYO": [
+        "https://tokyo-repacks.com/feed/",
+        "https://tokyogames.org/feed/",
+        "https://tokyo-reloaded.net/feed/",
+    ],
+    # NINTENDO CAVE mirrors
+    "NINTENDO CAVE": [
+        "https://nintendocave.com/feed/",
+        "https://nintendocave.net/feed/",
+        "https://nintendocave.org/feed/",
+    ],
     # Additional sources via APIs
-    "The Pirate Bay": ["https://apibay.org/q.php?q=game&cat=100"],
+    "The Pirate Bay": ["https://apibay.org/q.php?q=repack&cat=101"],
 }
 
 UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
@@ -316,19 +346,21 @@ async def scrape():
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=True)
         page = await browser.new_page()
-        await page.goto("https://elamigos.co/", wait_until="domcontentloaded", timeout=60000)
+        await page.goto("https://elenemigos.com/", wait_until="domcontentloaded", timeout=60000)
 
-        articles = await page.query_selector_all("article, .post, .entry, .game-item")
+        # Get all /app/ links which are the game pages
+        links = await page.query_selector_all('a[href*="/app/"]')
         results = []
-        for a in articles:
-            title_el = await a.query_selector("h1, h2, h3, .title, .entry-title, .post-title, .game-title")
-            link_el = await a.query_selector("a")
-            img_el = await a.query_selector("img")
-            if title_el:
-                title = await title_el.inner_text()
-                link = await link_el.get_attribute("href") if link_el else ""
-                image = await img_el.get_attribute("src") if img_el else ""
-                results.append({"title": title.strip(), "link": link, "image": image})
+        for link in links:
+            href = await link.get_attribute("href")
+            text = await link.inner_text()
+            if href and len(text.strip()) > 3:
+                clean = text.strip().replace("PC", "").strip()
+                # Remove ranking markers like #1 TOP
+                import re
+                clean = re.sub(r"#\d+\s+TOP\s*", "", clean).strip()
+                if len(clean) > 3:
+                    results.append({"title": clean, "link": href, "image": ""})
         await browser.close()
         import json
         print(json.dumps(results))
@@ -444,6 +476,76 @@ asyncio.run(scrape())
         print(f"  NINTENDO CAVE: browser scrape -> {type(e).__name__}: {e}", file=sys.stderr)
     return "NINTENDO CAVE", items
 
+
+def scrape_1337x_games():
+    """Scrape 1337x Games category using Playwright (Cloudflare protected)."""
+    items = []
+    try:
+        script = '''
+import asyncio
+from playwright.async_api import async_playwright
+import json
+
+async def scrape():
+    async with async_playwright() as p:
+        browser = await p.chromium.launch(headless=True)
+        page = await browser.new_page()
+
+        # Navigate to games category page 1
+        await page.goto("https://1337x.to/search/games/1/",
+                       wait_until="domcontentloaded", timeout=90000)
+
+        # Wait for Cloudflare challenge to complete and table to load
+        await page.wait_for_selector("table.torrent-list tbody tr", timeout=60000)
+
+        # Extract torrent rows
+        rows = await page.query_selector_all("table.torrent-list tbody tr")
+        results = []
+        for row in rows:
+            # Columns: Name, Uploaded, Size, Seeders, Leechers
+            name_cell = await row.query_selector("td.name a[href^='/torrent/']")
+            seeders_cell = await row.query_selector("td.seeds")
+            leechers_cell = await row.query_selector("td.leeches")
+            size_cell = await row.query_selector("td.size")
+            date_cell = await row.query_selector("td.coll-date")
+
+            if name_cell:
+                name = await name_cell.inner_text()
+                link = await name_cell.get_attribute("href")
+                seeders = await seeders_cell.inner_text() if seeders_cell else "0"
+                leechers = await leechers_cell.inner_text() if leechers_cell else "0"
+                size = await size_cell.inner_text() if size_cell else ""
+                date = await date_cell.inner_text() if date_cell else ""
+                results.append({
+                    "title": name.strip(),
+                    "link": f"https://1337x.to{link}" if link else "",
+                    "seeders": seeders.strip(),
+                    "leechers": leechers.strip(),
+                    "size": size.strip(),
+                    "date": date.strip()
+                })
+
+        await browser.close()
+        print(json.dumps(results))
+
+asyncio.run(scrape())
+'''
+        result = subprocess.run(["python", "-c", script], capture_output=True, text=True, timeout=120)
+        if result.returncode == 0 and result.stdout:
+            import json
+            data = json.loads(result.stdout.strip())
+            for entry in data:
+                title = entry.get("title", "")
+                link = entry.get("link", "")
+                if title and len(title) > 5:
+                    desc = f"1337x: {title} (S:{entry.get('seeders')} L:{entry.get('leechers')} Size:{entry.get('size')})"
+                    items.append((title, link, entry.get("date", ""), desc, ""))
+            print(f"  1337x: {len(items)} items via browser")
+    except Exception as e:
+        print(f"  1337x: browser scrape -> {type(e).__name__}: {e}", file=sys.stderr)
+    return "1337x", items
+
+
 GENRE_KEYWORDS = [
     (("rpg",), "rpg", "RPG / Open World"),
     (("action", "adventure"), "action-adventure", "Action Adventure"),
@@ -558,31 +660,53 @@ def fetch_tpb_games():
     """Fetch game torrents from The Pirate Bay via apibay.org API."""
     items = []
     try:
-        # Search for recent game torrents in PC Games category (101)
+        # Expanded query list for better game coverage
         queries = [
+            # Repacker-specific (current)
+            ("fitgirl repack", 101),
+            ("dodi repack", 101),
+            ("elamigos repack", 101),
+            # Broader game searches
+            ("repack game", 101),
+            ("cracked game", 101),
             ("fitgirl", 101),
             ("dodi", 101),
-            ("elamigos", 101),
+            ("codex game", 101),
+            ("skidrow game", 101),
+            ("v2024 repack", 101),
+            ("v2025 repack", 101),
+            ("update repack", 101),
         ]
         seen_hashes = set()
         for query, cat in queries:
             r = requests.get(f"https://apibay.org/q.php?q={quote_plus(query)}&cat={cat}", headers=UA, timeout=TIMEOUT)
             if r.status_code == 200:
                 data = r.json()
-                for entry in data[:20]:
+                for entry in data[:30]:  # Increase from 20
                     name = entry.get("name", "")
                     info_hash = entry.get("info_hash", "")
                     if not name or not info_hash or info_hash in seen_hashes:
                         continue
                     low = name.lower()
-                    # Must be from a known game repacker
-                    if not any(x in low for x in ["fitgirl repack", "dodi repack", "elamigos repack", "fitgirl-repack", "dodi-repack", "elamigos-repack"]):
+                    # Must be game-related (filter out music/soundtracks)
+                    game_indicators = [
+                        "repack", "crack", "fitgirl", "dodi", "elamigos",
+                        "codex", "skidrow", "reloaded", "cpy", "rld", "emu"
+                    ]
+                    if not any(x in low for x in game_indicators):
                         continue
-                    # Skip music/audio that somehow slipped through
-                    if any(x in low for x in ["music", "album", "flac", "mp3", "cd ", "vinyl", "remaster", "single", "ep ", "lp ", "discography", "soundtrack", "ost ", "remix", "dj ", "beat ", "instrumental", "song ", "track ", "feat.", "ft.", "vs."]):
+                    # Skip music/audio
+                    if any(x in low for x in ["music", "album", "flac", "mp3", "cd ",
+                        "vinyl", "remaster", "single", "ep ", "lp ", "discography",
+                        "soundtrack", "ost ", "remix", "dj ", "beat ", "instrumental",
+                        "song ", "track ", "feat.", "ft.", "vs.", "radio", "score"]):
                         continue
                     seen_hashes.add(info_hash)
                     magnet = f"magnet:?xt=urn:btih:{info_hash}&dn={quote_plus(name)}"
+                    # Add common trackers
+                    magnet += "&tr=udp://tracker.opentrackr.org:1337/announce"
+                    magnet += "&tr=udp://open.tracker.cl:1337/announce"
+                    magnet += "&tr=udp://tracker.torrent.eu.org:451/announce"
                     items.append((name, magnet, "", f"TPB: {name}"))
         print(f"  The Pirate Bay: {len(items)} items via apibay.org")
     except Exception as e:
@@ -689,7 +813,7 @@ def main():
         print(f"  + [{source}] {entry['title']}")
 
     # Browser-based sources first (they carry real cover images).
-    for scraper in (scrape_steamrip, scrape_fitgirl, scrape_dodi, scrape_codex, scrape_reloaded, scrape_elamigos, scrape_tokyo, scrape_nintendocave):
+    for scraper in (scrape_steamrip, scrape_fitgirl, scrape_dodi, scrape_codex, scrape_reloaded, scrape_elamigos, scrape_tokyo, scrape_nintendocave, scrape_1337x_games):
         source, items = scraper()
         if items:
             live_sources.append(source)
