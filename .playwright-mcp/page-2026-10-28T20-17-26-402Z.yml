@@ -1,0 +1,8 @@
+- generic [ref=f5e4]:
+  - heading "Page Not Found" [level=1] [ref=f5e8]
+  - generic [ref=f5e9]:
+    - paragraph [ref=f5e10]: Oops! We couldn't find the page that you're looking for.
+    - paragraph [ref=f5e11]: Please check the address and try again.
+    - generic [ref=f5e12]:
+      - strong [ref=f5e13]: "Error Code:"
+      - text: "404"

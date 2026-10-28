@@ -1,0 +1,86 @@
+- generic [active] [ref=f13e1]:
+  - generic [ref=f13e4]:
+    - banner [ref=f13e5]:
+      - navigation "Primary Navigation" [ref=f13e7]:
+        - generic [ref=f13e9]:
+          - link [ref=f13e12] [cursor=pointer]:
+            - /url: /
+            - img "SteamRIP" [ref=f13e14]
+          - generic [ref=f13e15]:
+            - list [ref=f13e18]:
+              - listitem [ref=f13e19]:
+                - link "Home" [ref=f13e20] [cursor=pointer]:
+                  - /url: /
+              - listitem [ref=f13e21]:
+                - link " Categories" [ref=f13e22] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=f13e23]:
+                - link "Top Games" [ref=f13e24] [cursor=pointer]:
+                  - /url: /top-games/
+              - listitem [ref=f13e25]:
+                - link "Recent Updates" [ref=f13e26] [cursor=pointer]:
+                  - /url: /updated-games/
+              - listitem [ref=f13e27]:
+                - link " Games List" [ref=f13e28] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=f13e29]:
+                - link " FAQ" [ref=f13e30] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=f13e31]:
+                - link "Discord" [ref=f13e32] [cursor=pointer]:
+                  - /url: //discord.gg/NBVFJsmy9y
+            - list [ref=f13e33]:
+              - listitem [ref=f13e34]:
+                - link "Random Article" [ref=f13e35] [cursor=pointer]:
+                  - /url: "?random-post=1"
+              - listitem [ref=f13e37]:
+                - link "Switch skin" [ref=f13e38] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=f13e40]:
+                - link "Search for" [ref=f13e41] [cursor=pointer]:
+                  - /url: "#"
+    - main [ref=f13e45]:
+      - generic [ref=f13e46]:
+        - heading "404 :(" [level=2] [ref=f13e47]
+        - heading "Oops! That page can’t be found." [level=3] [ref=f13e48]
+        - heading "It seems we can’t find what you’re looking for. Perhaps searching can help." [level=4] [ref=f13e49]
+        - search [ref=f13e51]:
+          - generic:
+            - generic [ref=f13e52]: "Search for:"
+            - searchbox "Search for:" [ref=f13e53]
+          - button "Search" [ref=f13e54] [cursor=pointer]
+    - contentinfo [ref=f13e55]:
+      - generic [ref=f13e59]:
+        - generic [ref=f13e61]:
+          - generic [ref=f13e62]: "Our Goal:"
+          - paragraph [ref=f13e65]: No Doubt everyone loves free games of any platform. SteamRIP is the arena for free games, it allows you to download all your favorite games completely free. All Games are Pre-Installed, which means you don’t need to install the games. Our games are compressed and no content has been removed, which decreases the game size. We reorganized the download method and we will strive for being the legit platform for free Pre-Installed games without any cost. Our site name does not represent the RIP released games.
+        - generic [ref=f13e67]:
+          - generic [ref=f13e68]: Official Site
+          - paragraph [ref=f13e71]: "Only trust the official site: steamrip.com and avoid the fake copycats. Always check URL for verification."
+      - generic [ref=f13e76]:
+        - generic [ref=f13e77]: © Copyright 2026 All Rights Reserved
+        - generic [ref=f13e78]:
+          - link "About" [ref=f13e79] [cursor=pointer]:
+            - /url: /about/
+          - text: "|"
+          - link "Request Games" [ref=f13e80] [cursor=pointer]:
+            - /url: /request-games/
+          - text: "|"
+          - link "Privacy Policy" [ref=f13e81] [cursor=pointer]:
+            - /url: /privacy-policy/
+          - text: "|"
+          - link "Terms & Conditions" [ref=f13e82] [cursor=pointer]:
+            - /url: /terms-and-conditions/
+          - text: "|"
+          - link "Contact Us" [ref=f13e83] [cursor=pointer]:
+            - /url: /contact-us/
+        - list [ref=f13e84]:
+          - listitem [ref=f13e85]:
+            - link "Reddit" [ref=f13e86] [cursor=pointer]:
+              - /url: //www.reddit.com/r/SteamRip/
+          - listitem [ref=f13e88]:
+            - link "Discord" [ref=f13e89] [cursor=pointer]:
+              - /url: //discord.gg/WkyjpA3Ua9
+    - link "Back to top button" [ref=f13e91] [cursor=pointer]:
+      - /url: "#go-to-tie-body"
+  - text:  

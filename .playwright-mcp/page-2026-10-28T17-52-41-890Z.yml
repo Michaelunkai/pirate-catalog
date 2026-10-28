@@ -1,0 +1,1991 @@
+- generic [active] [ref=f18e1]:
+  - main [ref=f18e2]:
+    - 'heading "Results for: games" [level=1] [ref=f18e3]'
+    - link [ref=f18e6] [cursor=pointer]:
+      - /url: http://ikeanangelsaidthe.com/redirect?tid=855295
+    - generic [ref=f18e8]:
+      - link [ref=f18e10] [cursor=pointer]:
+        - /url: http://ikeanangelsaidthe.com/redirect?tid=855295
+      - generic [ref=f18e12]:
+        - textbox "Filter names.." [ref=f18e13]
+        - text: "Quick Filters:"
+        - generic "720p" [ref=f18e14]:
+          - checkbox "720p" [ref=f18e15]
+          - text: 720p
+        - generic "1080p" [ref=f18e16]:
+          - checkbox "1080p" [ref=f18e17]
+          - text: 1080p
+        - generic "2160p" [ref=f18e18]:
+          - checkbox "2160p" [ref=f18e19]
+          - text: 2160p
+        - generic "x264" [ref=f18e20]:
+          - checkbox "x264" [ref=f18e21]
+          - text: x264
+        - generic "h264" [ref=f18e22]:
+          - checkbox "h264" [ref=f18e23]
+          - text: h264
+        - generic "x265" [ref=f18e24]:
+          - checkbox "x265" [ref=f18e25]
+          - text: x265
+        - generic "h265" [ref=f18e26]:
+          - checkbox "h265" [ref=f18e27]
+          - text: h265
+        - generic "WEBRip" [ref=f18e28]:
+          - checkbox "WEBRip" [ref=f18e29]
+          - text: WEBRip
+        - generic "BluRay" [ref=f18e30]:
+          - checkbox "BluRay" [ref=f18e31]
+          - text: BluRay
+        - generic "HDR" [ref=f18e32]:
+          - checkbox "HDR" [ref=f18e33]
+          - text: HDR
+        - generic "HEVC" [ref=f18e34]:
+          - checkbox "HEVC" [ref=f18e35]
+          - text: HEVC
+        - list [ref=f18e36]:
+          - listitem [ref=f18e37]:
+            - generic [ref=f18e38]: Category
+            - generic [ref=f18e39]: Name
+            - generic [ref=f18e40]: Uploaded
+            - generic [ref=f18e42]: Size
+            - generic [ref=f18e43]: SE
+            - generic [ref=f18e44]: LE
+            - generic [ref=f18e45]: ULed by
+          - listitem [ref=f18e46]:
+            - generic [ref=f18e47]:
+              - link "Audio" [ref=f18e48] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e49] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "Foreigner - Head Games (1979) [MP3 320] 88" [ref=f18e51] [cursor=pointer]:
+              - /url: /description.php?id=75382688
+            - generic [ref=f18e52]: 2024-05-27
+            - generic [ref=f18e53]:
+              - link [ref=f18e54] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:38AE18F6C4B197B57B816553B867508C07007D8C&dn=Foreigner%20-%20Head%20Games%20(1979)%20%5BMP3%20320%5D%2088&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "VIP" [ref=f18e56]
+            - generic [ref=f18e57]: 93.62 MiB
+            - generic [ref=f18e58]: "8"
+            - generic [ref=f18e59]: "0"
+            - link "vtwin88cube" [ref=f18e61] [cursor=pointer]:
+              - /url: /search.php?q=user:vtwin88cube
+          - listitem [ref=f18e62]:
+            - generic [ref=f18e63]:
+              - link "Audio" [ref=f18e64] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e65] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "John Lennon - Mind Games (The Ultimate Collection) (2024) Mp3 320kbps [PMEDIA] ⭐" [ref=f18e67] [cursor=pointer]:
+              - /url: /description.php?id=75924103
+            - generic [ref=f18e68]: 2024-07-11
+            - generic [ref=f18e69]:
+              - link [ref=f18e70] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:52B205E60F3FD8FDDD5EC15F2F975324FB154C4E&dn=John%20Lennon%20-%20Mind%20Games%20(The%20Ultimate%20Collection)%20(2024)%20Mp3%20320kbps%20%5BPMEDIA%5D%20%E2%AD%90&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "VIP" [ref=f18e72]
+            - generic [ref=f18e73]: 734.65 MiB
+            - generic [ref=f18e74]: "8"
+            - generic [ref=f18e75]: "3"
+            - generic [ref=f18e76]: Anonymous
+          - listitem [ref=f18e77]:
+            - generic [ref=f18e78]:
+              - link "Audio" [ref=f18e79] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e80] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - 'link "The Weeknd - Wicked Games {2012-Single}" [ref=f18e82] [cursor=pointer]':
+              - /url: /description.php?id=7907451
+            - generic [ref=f18e83]: 2012-12-10
+            - generic [ref=f18e84]:
+              - link [ref=f18e85] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:040BEDD0E3841ACC11EDFA68E3E0F47A717D0972&dn=The%20Weeknd%20-%20Wicked%20Games%20%7B2012-Single%7D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "VIP" [ref=f18e87]
+            - generic [ref=f18e88]: 12.5 MiB
+            - generic [ref=f18e89]: "7"
+            - generic [ref=f18e90]: "0"
+            - link "Oz" [ref=f18e92] [cursor=pointer]:
+              - /url: /search.php?q=user:Oz
+          - listitem [ref=f18e93]:
+            - generic [ref=f18e94]:
+              - link "Audio" [ref=f18e95] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e96] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "John Lennon - Mind Games (The Ultimate Mixes) (2024) Mp3 320kbps [PMEDIA] ⭐️" [ref=f18e98] [cursor=pointer]:
+              - /url: /description.php?id=76135260
+            - generic [ref=f18e99]: 2024-08-01
+            - generic [ref=f18e100]:
+              - link [ref=f18e101] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:E0ECC7BEF1F95D1B9AD93FFF1A190470297F29AB&dn=John%20Lennon%20-%20Mind%20Games%20(The%20Ultimate%20Mixes)%20(2024)%20Mp3%20320kbps%20%5BPMEDIA%5D%20%E2%AD%90%EF%B8%8F&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "VIP" [ref=f18e103]
+            - generic [ref=f18e104]: 110.91 MiB
+            - generic [ref=f18e105]: "7"
+            - generic [ref=f18e106]: "1"
+            - generic [ref=f18e107]: Anonymous
+          - listitem [ref=f18e108]:
+            - generic [ref=f18e109]:
+              - link "Audio" [ref=f18e110] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e111] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "Rare 80s - Feat. Mi-Sex - Computer Games [1980]" [ref=f18e113] [cursor=pointer]:
+              - /url: /description.php?id=3831166
+            - generic [ref=f18e114]: 2007-10-05
+            - generic [ref=f18e115]:
+              - link [ref=f18e116] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:B5C542BED101496A83E03B8DB3F551D8A71978E3&dn=Rare%2080s%20-%20Feat.%20Mi-Sex%20-%20Computer%20Games%20%5B1980%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "VIP" [ref=f18e118]
+            - generic [ref=f18e119]: 56.69 MiB
+            - generic [ref=f18e120]: "2"
+            - generic [ref=f18e121]: "0"
+            - link "80zforever" [ref=f18e123] [cursor=pointer]:
+              - /url: /search.php?q=user:80zforever
+          - listitem [ref=f18e124]:
+            - generic [ref=f18e125]:
+              - link "Audio" [ref=f18e126] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e127] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "John Lennon - Mind Games (The Elemental Mixes) (2024) Mp3 320kbps [PMEDIA] ⭐️" [ref=f18e129] [cursor=pointer]:
+              - /url: /description.php?id=76135259
+            - generic [ref=f18e130]: 2024-08-01
+            - generic [ref=f18e131]:
+              - link [ref=f18e132] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:57E1831D218AD3EE681DE4B1B2060DBA89DFDB77&dn=John%20Lennon%20-%20Mind%20Games%20(The%20Elemental%20Mixes)%20(2024)%20Mp3%20320kbps%20%5BPMEDIA%5D%20%E2%AD%90%EF%B8%8F&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "VIP" [ref=f18e134]
+            - generic [ref=f18e135]: 119.34 MiB
+            - generic [ref=f18e136]: "2"
+            - generic [ref=f18e137]: "1"
+            - generic [ref=f18e138]: Anonymous
+          - listitem [ref=f18e139]:
+            - generic [ref=f18e140]:
+              - link "Audio" [ref=f18e141] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e142] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "30 Fun Songs And Games For Kids" [ref=f18e144] [cursor=pointer]:
+              - /url: /description.php?id=4918311
+            - generic [ref=f18e145]: 2009-05-28
+            - generic [ref=f18e146]:
+              - link [ref=f18e147] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:F36F2DFC66B308CB2DEB188DD612C16012754A36&dn=30%20Fun%20Songs%20And%20Games%20For%20Kids&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "VIP" [ref=f18e149]
+            - generic [ref=f18e150]: 97.16 MiB
+            - generic [ref=f18e151]: "1"
+            - generic [ref=f18e152]: "0"
+            - link "nightissuchproximity" [ref=f18e154] [cursor=pointer]:
+              - /url: /search.php?q=user:nightissuchproximity
+          - listitem [ref=f18e155]:
+            - generic [ref=f18e156]:
+              - link "Audio" [ref=f18e157] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e158] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "Avril Lavigne - My Happy Ending, Boyfriend (Live Olympic Games C" [ref=f18e160] [cursor=pointer]:
+              - /url: /description.php?id=5404489
+            - generic [ref=f18e161]: 2010-03-02
+            - generic [ref=f18e162]:
+              - link [ref=f18e163] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:04088AE6580D565F3D53FAFBCC05AF10834C60C3&dn=Avril%20Lavigne%20-%20My%20Happy%20Ending%2C%20Boyfriend%20(Live%20Olympic%20Games%20C&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "VIP" [ref=f18e165]
+            - generic [ref=f18e166]: 12.09 MiB
+            - generic [ref=f18e167]: "1"
+            - generic [ref=f18e168]: "3"
+            - link "CD-Uploader" [ref=f18e170] [cursor=pointer]:
+              - /url: /search.php?q=user:CD-Uploader
+          - listitem [ref=f18e171]:
+            - generic [ref=f18e172]:
+              - link "Audio" [ref=f18e173] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e174] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "Neil Young - Long May You Run (Live Olympic Games Closing Cermon" [ref=f18e176] [cursor=pointer]:
+              - /url: /description.php?id=5404493
+            - generic [ref=f18e177]: 2010-03-02
+            - generic [ref=f18e178]:
+              - link [ref=f18e179] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:3DFB46D9C21C980B3356CBFC5BF2E90628A0E462&dn=Neil%20Young%20-%20Long%20May%20You%20Run%20(Live%20Olympic%20Games%20Closing%20Cermon&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "VIP" [ref=f18e181]
+            - generic [ref=f18e182]: 10.07 MiB
+            - generic [ref=f18e183]: "1"
+            - generic [ref=f18e184]: "1"
+            - link "CD-Uploader" [ref=f18e186] [cursor=pointer]:
+              - /url: /search.php?q=user:CD-Uploader
+          - listitem [ref=f18e187]:
+            - generic [ref=f18e188]:
+              - link "Audio" [ref=f18e189] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e190] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "John Lennon - Mind Games [320k MP3]" [ref=f18e192] [cursor=pointer]:
+              - /url: /description.php?id=8268537
+            - generic [ref=f18e193]: 2013-03-17
+            - generic [ref=f18e194]:
+              - link [ref=f18e195] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:138FAC954897B7CDCD5CC94C3B8513DB1C6DCFC7&dn=John%20Lennon%20-%20Mind%20Games%20%5B320k%20MP3%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "VIP" [ref=f18e197]
+            - generic [ref=f18e198]: 95.13 MiB
+            - generic [ref=f18e199]: "1"
+            - generic [ref=f18e200]: "0"
+            - link "smbdownload" [ref=f18e202] [cursor=pointer]:
+              - /url: /search.php?q=user:smbdownload
+          - listitem [ref=f18e203]:
+            - generic [ref=f18e204]:
+              - link "Audio" [ref=f18e205] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e206] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "Animal.Trainer--Dragon.Games.EP-.KATER047.-WEB-2013-SiBERiA" [ref=f18e208] [cursor=pointer]:
+              - /url: /description.php?id=8918745
+            - generic [ref=f18e209]: 2013-09-14
+            - generic [ref=f18e210]:
+              - link [ref=f18e211] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:EDC1BCAB16F4F39BD54B4505770A168643E23758&dn=Animal.Trainer--Dragon.Games.EP-.KATER047.-WEB-2013-SiBERiA&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "VIP" [ref=f18e213]
+            - generic [ref=f18e214]: 18.54 MiB
+            - generic [ref=f18e215]: "1"
+            - generic [ref=f18e216]: "0"
+            - link "Drarbg" [ref=f18e218] [cursor=pointer]:
+              - /url: /search.php?q=user:Drarbg
+          - listitem [ref=f18e219]:
+            - generic [ref=f18e220]:
+              - link "Audio" [ref=f18e221] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e222] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - 'link "The Hunger Games: Catching Fire Soundtrack (Album - 2013) - [HP]" [ref=f18e224] [cursor=pointer]':
+              - /url: /description.php?id=9187913
+            - generic [ref=f18e225]: 2013-11-13
+            - generic [ref=f18e226]:
+              - link [ref=f18e227] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:DE374863E15CA36DF12858BE549AC99A920FBE02&dn=The%20Hunger%20Games%3A%20Catching%20Fire%20Soundtrack%20(Album%20-%202013)%20-%20%5BHP%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "VIP" [ref=f18e229]
+            - generic [ref=f18e230]: 137.35 MiB
+            - generic [ref=f18e231]: "1"
+            - generic [ref=f18e232]: "0"
+            - link "[HP]" [ref=f18e234] [cursor=pointer]:
+              - /url: /search.php?q=user:%5BHP%5D
+          - listitem [ref=f18e235]:
+            - generic [ref=f18e236]:
+              - link "Audio" [ref=f18e237] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e238] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - 'link "The VARUKERS - Deadly Games {The History} 1994,320" [ref=f18e240] [cursor=pointer]':
+              - /url: /description.php?id=10238122
+            - generic [ref=f18e241]: 2014-05-27
+            - generic [ref=f18e242]:
+              - link [ref=f18e243] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:CD3A6AF5FA8EE20D15BB92A9ED5AC8129B3A193F&dn=The%20VARUKERS%20-%20Deadly%20Games%20%7BThe%20History%7D%201994%2C320&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "VIP" [ref=f18e245]
+            - generic [ref=f18e246]: 130.04 MiB
+            - generic [ref=f18e247]: "1"
+            - generic [ref=f18e248]: "1"
+            - link "malwina4" [ref=f18e250] [cursor=pointer]:
+              - /url: /search.php?q=user:malwina4
+          - listitem [ref=f18e251]:
+            - generic [ref=f18e252]:
+              - link "Audio" [ref=f18e253] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e254] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "Dream Theater - Mind Games 2004 320ak" [ref=f18e256] [cursor=pointer]:
+              - /url: /description.php?id=13444919
+            - generic [ref=f18e257]: 2016-02-06
+            - generic [ref=f18e258]:
+              - link [ref=f18e259] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:670879FA1C6139D4646F9B7959BA8AB668FC0332&dn=Dream%20Theater%20-%20Mind%20Games%202004%20320ak&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "VIP" [ref=f18e261]
+            - generic [ref=f18e262]: 181.63 MiB
+            - generic [ref=f18e263]: "1"
+            - generic [ref=f18e264]: "0"
+            - link "analogkid6103" [ref=f18e266] [cursor=pointer]:
+              - /url: /search.php?q=user:analogkid6103
+          - listitem [ref=f18e267]:
+            - generic [ref=f18e268]:
+              - link "Audio" [ref=f18e269] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e270] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "Ty Dolla $ign - Wicked Games (2020) Mp3 320kbps" [ref=f18e272] [cursor=pointer]:
+              - /url: /description.php?id=36229430
+            - generic [ref=f18e273]: 2020-07-02
+            - generic [ref=f18e274]:
+              - link [ref=f18e275] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:466044A8AD7636B1C6B8980B2B4694E9809BF74C&dn=Ty%20Dolla%20%24ign%20-%20Wicked%20Games%20(2020)%20Mp3%20320kbps%20&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "VIP" [ref=f18e277]
+            - generic [ref=f18e278]: 121.05 MiB
+            - generic [ref=f18e279]: "1"
+            - generic [ref=f18e280]: "0"
+            - link "pmnetwork" [ref=f18e282] [cursor=pointer]:
+              - /url: /search.php?q=user:pmnetwork
+          - listitem [ref=f18e283]:
+            - generic [ref=f18e284]:
+              - link "Audio" [ref=f18e285] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e286] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "VA - Classical Music in Video Games (2021) Mp3 320kbps [PMEDIA]" [ref=f18e288] [cursor=pointer]:
+              - /url: /description.php?id=50458924
+            - generic [ref=f18e289]: 2021-08-03
+            - generic [ref=f18e290]:
+              - link [ref=f18e291] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:830637F3BE374963B0142C18349BBFBDDD95688E&dn=VA%20-%20Classical%20Music%20in%20Video%20Games%20(2021)%20Mp3%20320kbps%20%5BPMEDIA%5D%20&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "VIP" [ref=f18e293]
+            - generic [ref=f18e294]: 271.69 MiB
+            - generic [ref=f18e295]: "1"
+            - generic [ref=f18e296]: "1"
+            - link "pmnetwork" [ref=f18e298] [cursor=pointer]:
+              - /url: /search.php?q=user:pmnetwork
+          - listitem [ref=f18e299]:
+            - generic [ref=f18e300]:
+              - link "Audio" [ref=f18e301] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e302] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "Hocculta - 1984 - Warning Games - 80s Geophagus series" [ref=f18e304] [cursor=pointer]:
+              - /url: /description.php?id=4132421
+            - generic [ref=f18e305]: 2008-04-13
+            - generic [ref=f18e306]:
+              - link [ref=f18e307] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:E1F7D0CAD6A4AA9FCA6C4E26A7D790DEB3CF56E5&dn=Hocculta%20-%201984%20-%20Warning%20Games%20-%2080s%20Geophagus%20series&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "VIP" [ref=f18e309]
+            - generic [ref=f18e310]: 33.82 MiB
+            - generic [ref=f18e311]: "0"
+            - generic [ref=f18e312]: "0"
+            - link "thumbsplus" [ref=f18e314] [cursor=pointer]:
+              - /url: /search.php?q=user:thumbsplus
+          - listitem [ref=f18e315]:
+            - generic [ref=f18e316]:
+              - link "Audio" [ref=f18e317] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e318] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "Wizz (swe) - 1984 - Crazy Games - 80s Geophagus series" [ref=f18e320] [cursor=pointer]:
+              - /url: /description.php?id=4190242
+            - generic [ref=f18e321]: 2008-05-16
+            - generic [ref=f18e322]:
+              - link [ref=f18e323] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:86AFAC68BBD3419C59527EF9F3DCEE6EDA3D3B0E&dn=Wizz%20(swe)%20-%201984%20-%20Crazy%20Games%20-%20%2080s%20Geophagus%20series&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "VIP" [ref=f18e325]
+            - generic [ref=f18e326]: 31.65 MiB
+            - generic [ref=f18e327]: "0"
+            - generic [ref=f18e328]: "0"
+            - link "thumbsplus" [ref=f18e330] [cursor=pointer]:
+              - /url: /search.php?q=user:thumbsplus
+          - listitem [ref=f18e331]:
+            - generic [ref=f18e332]:
+              - link "Audio" [ref=f18e333] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e334] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "VA-Sam_Smoove_Presents-The_Official_No_Games_Its_So_Special_Vale" [ref=f18e336] [cursor=pointer]:
+              - /url: /description.php?id=5003234
+            - generic [ref=f18e337]: 2009-07-14
+            - generic [ref=f18e338]:
+              - link [ref=f18e339] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:D511D0E8FEB3AD176DC1E1824BD484DA257E6EED&dn=VA-Sam_Smoove_Presents-The_Official_No_Games_Its_So_Special_Vale&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "VIP" [ref=f18e341]
+            - generic [ref=f18e342]: 87.26 MiB
+            - generic [ref=f18e343]: "0"
+            - generic [ref=f18e344]: "0"
+            - link "focused1804" [ref=f18e346] [cursor=pointer]:
+              - /url: /search.php?q=user:focused1804
+          - listitem [ref=f18e347]:
+            - generic [ref=f18e348]:
+              - link "Audio" [ref=f18e349] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e350] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "soul calibur games soundtrack promo" [ref=f18e352] [cursor=pointer]:
+              - /url: /description.php?id=5127186
+            - generic [ref=f18e353]: 2009-10-16
+            - generic [ref=f18e354]:
+              - link [ref=f18e355] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:ECB105F749D65A9A59C985673105F53A68085A89&dn=soul%20calibur%20games%20soundtrack%20promo&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "VIP" [ref=f18e357]
+            - generic [ref=f18e358]: 96.12 MiB
+            - generic [ref=f18e359]: "0"
+            - generic [ref=f18e360]: "0"
+            - generic [ref=f18e361]: Anonymous
+          - listitem [ref=f18e362]:
+            - generic [ref=f18e363]:
+              - link "Audio" [ref=f18e364] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e365] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "soul calibur games soundtrack promo 2009" [ref=f18e367] [cursor=pointer]:
+              - /url: /description.php?id=5127213
+            - generic [ref=f18e368]: 2009-10-16
+            - generic [ref=f18e369]:
+              - link [ref=f18e370] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:6C84CB38B788CE5B09AC0EE6797EF6BA0D169A26&dn=soul%20calibur%20games%20soundtrack%20promo%202009&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "VIP" [ref=f18e372]
+            - generic [ref=f18e373]: 30.75 MiB
+            - generic [ref=f18e374]: "0"
+            - generic [ref=f18e375]: "0"
+            - generic [ref=f18e376]: Anonymous
+          - listitem [ref=f18e377]:
+            - generic [ref=f18e378]:
+              - link "Audio" [ref=f18e379] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e380] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "soul calibur legends games soundtrack promo 2009" [ref=f18e382] [cursor=pointer]:
+              - /url: /description.php?id=5127217
+            - generic [ref=f18e383]: 2009-10-16
+            - generic [ref=f18e384]:
+              - link [ref=f18e385] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:8A8461E89A170EE049F60D36981EFEE6AD210FF6&dn=soul%20calibur%20legends%20games%20soundtrack%20promo%202009&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "VIP" [ref=f18e387]
+            - generic [ref=f18e388]: 32.89 MiB
+            - generic [ref=f18e389]: "0"
+            - generic [ref=f18e390]: "0"
+            - generic [ref=f18e391]: Anonymous
+          - listitem [ref=f18e392]:
+            - generic [ref=f18e393]:
+              - link "Audio" [ref=f18e394] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e395] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "soul calibur games soundtracks promo alla cd" [ref=f18e397] [cursor=pointer]:
+              - /url: /description.php?id=5281808
+            - generic [ref=f18e398]: 2010-01-15
+            - generic [ref=f18e399]:
+              - link [ref=f18e400] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:C5DC8B93189E441F554EFCCCACBE838ED36DB694&dn=soul%20calibur%20games%20soundtracks%20promo%20alla%20cd&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "VIP" [ref=f18e402]
+            - generic [ref=f18e403]: 226.47 MiB
+            - generic [ref=f18e404]: "0"
+            - generic [ref=f18e405]: "0"
+            - generic [ref=f18e406]: Anonymous
+          - listitem [ref=f18e407]:
+            - generic [ref=f18e408]:
+              - link "Audio" [ref=f18e409] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e410] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "VA-Sounds_Of_The_Vancouver_2010_Olympic_Winter_Games-Canadas_Hoc" [ref=f18e412] [cursor=pointer]:
+              - /url: /description.php?id=5389452
+            - generic [ref=f18e413]: 2010-02-24
+            - generic [ref=f18e414]:
+              - link [ref=f18e415] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:B4BD39B2F609D12720E2651AD00572CFDB3CE521&dn=VA-Sounds_Of_The_Vancouver_2010_Olympic_Winter_Games-Canadas_Hoc&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "VIP" [ref=f18e417]
+            - generic [ref=f18e418]: 109.88 MiB
+            - generic [ref=f18e419]: "0"
+            - generic [ref=f18e420]: "1"
+            - generic [ref=f18e421]: Anonymous
+          - listitem [ref=f18e422]:
+            - generic [ref=f18e423]:
+              - link "Audio" [ref=f18e424] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e425] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "V.A Winter Dance Games (2011)" [ref=f18e427] [cursor=pointer]:
+              - /url: /description.php?id=6129075
+            - generic [ref=f18e428]: 2011-01-26
+            - generic [ref=f18e429]:
+              - link [ref=f18e430] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:B866B7F3580A23A7FEBA4C2F52ECA1BD988F31B6&dn=V.A%20Winter%20Dance%20Games%20(2011)&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "VIP" [ref=f18e432]
+            - generic [ref=f18e433]: 242.65 MiB
+            - generic [ref=f18e434]: "0"
+            - generic [ref=f18e435]: "0"
+            - link "webchella" [ref=f18e437] [cursor=pointer]:
+              - /url: /search.php?q=user:webchella
+          - listitem [ref=f18e438]:
+            - generic [ref=f18e439]:
+              - link "Audio" [ref=f18e440] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e441] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "best new soundtracks from the games" [ref=f18e443] [cursor=pointer]:
+              - /url: /description.php?id=6449464
+            - generic [ref=f18e444]: 2011-06-06
+            - generic [ref=f18e445]:
+              - link [ref=f18e446] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:B4D23A0FADE208ECD5B443EA42AA75AE3F3E288B&dn=best%20new%20soundtracks%20from%20the%20games&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "VIP" [ref=f18e448]
+            - generic [ref=f18e449]: 814.6 MiB
+            - generic [ref=f18e450]: "0"
+            - generic [ref=f18e451]: "0"
+            - link "torggatan" [ref=f18e453] [cursor=pointer]:
+              - /url: /search.php?q=user:torggatan
+          - listitem [ref=f18e454]:
+            - generic [ref=f18e455]:
+              - link "Audio" [ref=f18e456] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e457] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "Silent Descent - Mind Games (2012) mp3@320" [ref=f18e459] [cursor=pointer]:
+              - /url: /description.php?id=7250141
+            - generic [ref=f18e460]: 2012-05-07
+            - generic [ref=f18e461]:
+              - link [ref=f18e462] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:2B395AC385D9B5A296BF3261144FB5D0508FB32E&dn=Silent%20Descent%20-%20Mind%20Games%20(2012)%20mp3%40320&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "VIP" [ref=f18e464]
+            - generic [ref=f18e465]: 105.33 MiB
+            - generic [ref=f18e466]: "0"
+            - generic [ref=f18e467]: "1"
+            - link "Knazi" [ref=f18e469] [cursor=pointer]:
+              - /url: /search.php?q=user:Knazi
+          - listitem [ref=f18e470]:
+            - generic [ref=f18e471]:
+              - link "Audio" [ref=f18e472] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e473] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "David Banner -Sex Drugs and Video Games-2012-DjLeak" [ref=f18e475] [cursor=pointer]:
+              - /url: /description.php?id=7292534
+            - generic [ref=f18e476]: 2012-05-23
+            - generic [ref=f18e477]:
+              - link [ref=f18e478] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:9FC13CE2640BEA73A12F4D638F922DB1964C888A&dn=David%20Banner%20-Sex%20Drugs%20and%20Video%20Games-2012-DjLeak&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "VIP" [ref=f18e480]
+            - generic [ref=f18e481]: 149.22 MiB
+            - generic [ref=f18e482]: "0"
+            - generic [ref=f18e483]: "0"
+            - link "focused1804" [ref=f18e485] [cursor=pointer]:
+              - /url: /search.php?q=user:focused1804
+          - listitem [ref=f18e486]:
+            - generic [ref=f18e487]:
+              - link "Audio" [ref=f18e488] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e489] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - 'link "The Weeknd - Wicked Games {2012-Single}" [ref=f18e491] [cursor=pointer]':
+              - /url: /description.php?id=7741829
+            - generic [ref=f18e492]: 2012-10-19
+            - generic [ref=f18e493]:
+              - link [ref=f18e494] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:80AD6758678721906B222C7009451467463E94D7&dn=The%20Weeknd%20-%20Wicked%20Games%20%7B2012-Single%7D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "VIP" [ref=f18e496]
+            - generic [ref=f18e497]: 12.44 MiB
+            - generic [ref=f18e498]: "0"
+            - generic [ref=f18e499]: "1"
+            - link "Oz" [ref=f18e501] [cursor=pointer]:
+              - /url: /search.php?q=user:Oz
+          - listitem [ref=f18e502]:
+            - generic [ref=f18e503]:
+              - link "Audio" [ref=f18e504] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e505] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "Claire-Games-WEB-2013-VOiCE" [ref=f18e507] [cursor=pointer]:
+              - /url: /description.php?id=8743048
+            - generic [ref=f18e508]: 2013-07-26
+            - generic [ref=f18e509]:
+              - link [ref=f18e510] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:000D95E388A3AE22D0D2424AC34C19F531BEFF4F&dn=Claire-Games-WEB-2013-VOiCE&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "VIP" [ref=f18e512]
+            - generic [ref=f18e513]: 52.81 MiB
+            - generic [ref=f18e514]: "0"
+            - generic [ref=f18e515]: "0"
+            - link "Drarbg" [ref=f18e517] [cursor=pointer]:
+              - /url: /search.php?q=user:Drarbg
+          - listitem [ref=f18e518]:
+            - generic [ref=f18e519]:
+              - link "Audio" [ref=f18e520] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e521] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "Howson.Bros.-.These.Games.EP-.FP008.-WEB-2013-ZzZz" [ref=f18e523] [cursor=pointer]:
+              - /url: /description.php?id=8777745
+            - generic [ref=f18e524]: 2013-08-04
+            - generic [ref=f18e525]:
+              - link [ref=f18e526] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:9C8F3A9214DC6D01BA66866352B3C1E53C930624&dn=Howson.Bros.-.These.Games.EP-.FP008.-WEB-2013-ZzZz&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "VIP" [ref=f18e528]
+            - generic [ref=f18e529]: 66.72 MiB
+            - generic [ref=f18e530]: "0"
+            - generic [ref=f18e531]: "0"
+            - link "Drarbg" [ref=f18e533] [cursor=pointer]:
+              - /url: /search.php?q=user:Drarbg
+          - listitem [ref=f18e534]:
+            - generic [ref=f18e535]:
+              - link "Audio" [ref=f18e536] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e537] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - 'link "Rick Ross - No Games (feat. Future) {Single} [320kbps]" [ref=f18e539] [cursor=pointer]':
+              - /url: /description.php?id=9036010
+            - generic [ref=f18e540]: 2013-10-11
+            - generic [ref=f18e541]:
+              - link [ref=f18e542] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:4351DFB97B23C4965591E6FE969CA7D5D0364A7B&dn=Rick%20Ross%20-%20No%20Games%20(feat.%20Future)%20%7BSingle%7D%20%5B320kbps%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "VIP" [ref=f18e544]
+            - generic [ref=f18e545]: 8.96 MiB
+            - generic [ref=f18e546]: "0"
+            - generic [ref=f18e547]: "1"
+            - link "Music_Blitz" [ref=f18e549] [cursor=pointer]:
+              - /url: /search.php?q=user:Music_Blitz
+          - listitem [ref=f18e550]:
+            - generic [ref=f18e551]:
+              - link "Audio" [ref=f18e552] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e553] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "Rick Ross - No Games (feat. Future, Wale And Meek Mill) [Remix]" [ref=f18e555] [cursor=pointer]:
+              - /url: /description.php?id=9371300
+            - generic [ref=f18e556]: 2013-12-20
+            - generic [ref=f18e557]:
+              - link [ref=f18e558] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:5B0011AEAFA44EBFEA445F114F6941ED99EDAF6E&dn=Rick%20Ross%20-%20No%20Games%20(feat.%20Future%2C%20Wale%20And%20Meek%20Mill)%20%5BRemix%5D%20&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "VIP" [ref=f18e560]
+            - generic [ref=f18e561]: 12.77 MiB
+            - generic [ref=f18e562]: "0"
+            - generic [ref=f18e563]: "0"
+            - link "Oz" [ref=f18e565] [cursor=pointer]:
+              - /url: /search.php?q=user:Oz
+          - listitem [ref=f18e566]:
+            - generic [ref=f18e567]:
+              - link "Audio" [ref=f18e568] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e569] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "Foreigner - Head Games (Big Papi Vinyl) 1979" [ref=f18e571] [cursor=pointer]:
+              - /url: /description.php?id=9770833
+            - generic [ref=f18e572]: 2014-03-16
+            - generic [ref=f18e573]:
+              - link [ref=f18e574] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:F2C7235A0EB5572D63842ADB46C5F793B0E66251&dn=Foreigner%20-%20Head%20Games%20(Big%20Papi%20Vinyl)%201979&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "VIP" [ref=f18e576]
+            - generic [ref=f18e577]: 73.82 MiB
+            - generic [ref=f18e578]: "0"
+            - generic [ref=f18e579]: "0"
+            - link "Big-Papi" [ref=f18e581] [cursor=pointer]:
+              - /url: /search.php?q=user:Big-Papi
+          - listitem [ref=f18e582]:
+            - generic [ref=f18e583]:
+              - link "Audio" [ref=f18e584] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e585] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "VA - The Hunger Games - Mockingjay Pt.1 OST - 320 CD [Bubanee]" [ref=f18e587] [cursor=pointer]:
+              - /url: /description.php?id=11486319
+            - generic [ref=f18e588]: 2014-11-17
+            - generic [ref=f18e589]:
+              - link [ref=f18e590] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:7DD7E0F7E10FEF8038FA87D43250623659E74248&dn=VA%20-%20The%20Hunger%20Games%20-%20Mockingjay%20Pt.1%20OST%20-%20320%20CD%20%5BBubanee%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "VIP" [ref=f18e592]
+            - generic [ref=f18e593]: 115.17 MiB
+            - generic [ref=f18e594]: "0"
+            - generic [ref=f18e595]: "1"
+            - link "bubanee" [ref=f18e597] [cursor=pointer]:
+              - /url: /search.php?q=user:bubanee
+          - listitem [ref=f18e598]:
+            - generic [ref=f18e599]:
+              - link "Audio" [ref=f18e600] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e601] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "Purposeful Porpoise - The Water Games (2015)" [ref=f18e603] [cursor=pointer]:
+              - /url: /description.php?id=12099086
+            - generic [ref=f18e604]: 2015-07-07
+            - generic [ref=f18e605]:
+              - link [ref=f18e606] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:8F14686359BC5D2EF403D66628E45D172FD740E5&dn=Purposeful%20Porpoise%20-%20The%20Water%20Games%20(2015)&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "VIP" [ref=f18e608]
+            - generic [ref=f18e609]: 207.57 MiB
+            - generic [ref=f18e610]: "0"
+            - generic [ref=f18e611]: "1"
+            - link "RoffeTheCoolMan" [ref=f18e613] [cursor=pointer]:
+              - /url: /search.php?q=user:RoffeTheCoolMan
+          - listitem [ref=f18e614]:
+            - generic [ref=f18e615]:
+              - link "Audio" [ref=f18e616] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e617] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "Kari Lynch - Little Games (2016)" [ref=f18e619] [cursor=pointer]:
+              - /url: /description.php?id=14697072
+            - generic [ref=f18e620]: 2016-05-26
+            - generic [ref=f18e621]:
+              - link [ref=f18e622] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:29CB48219359B079B66AA7DCCDED5B9CF87A60FC&dn=Kari%20Lynch%20-%20Little%20Games%20(2016)&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "VIP" [ref=f18e624]
+            - generic [ref=f18e625]: 95.17 MiB
+            - generic [ref=f18e626]: "0"
+            - generic [ref=f18e627]: "0"
+            - link "RoffeTheCoolMan" [ref=f18e629] [cursor=pointer]:
+              - /url: /search.php?q=user:RoffeTheCoolMan
+          - listitem [ref=f18e630]:
+            - generic [ref=f18e631]:
+              - link "Audio" [ref=f18e632] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e633] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "Echofinity - Player Of Games 2019" [ref=f18e635] [cursor=pointer]:
+              - /url: /description.php?id=32815185
+            - generic [ref=f18e636]: 2019-05-17
+            - generic [ref=f18e637]:
+              - link [ref=f18e638] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:67D96E85F35959D26B13B9C13EEC529899D12986&dn=Echofinity%20-%20Player%20Of%20Games%20%202019&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "VIP" [ref=f18e640]
+            - generic [ref=f18e641]: 138.32 MiB
+            - generic [ref=f18e642]: "0"
+            - generic [ref=f18e643]: "1"
+            - link "RoffeTheCoolMan" [ref=f18e645] [cursor=pointer]:
+              - /url: /search.php?q=user:RoffeTheCoolMan
+          - listitem [ref=f18e646]:
+            - generic [ref=f18e647]:
+              - link "Audio" [ref=f18e648] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e649] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "Westside Webb - Player Games, Pt. 2 (2023) Mp3 320kbps [PMEDIA] ⭐️" [ref=f18e651] [cursor=pointer]:
+              - /url: /description.php?id=65123929
+            - generic [ref=f18e652]: 2023-01-07
+            - generic [ref=f18e653]:
+              - link [ref=f18e654] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:7F0F996C4938A5EC4D577B32D5846DD88D5738CE&dn=Westside%20Webb%20-%20Player%20Games%2C%20Pt.%202%20(2023)%20Mp3%20320kbps%20%5BPMEDIA%5D%20%E2%AD%90%EF%B8%8F&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "VIP" [ref=f18e656]
+            - generic [ref=f18e657]: 72.02 MiB
+            - generic [ref=f18e658]: "0"
+            - generic [ref=f18e659]: "0"
+            - generic [ref=f18e660]: Anonymous
+          - listitem [ref=f18e661]:
+            - generic [ref=f18e662]:
+              - link "Audio" [ref=f18e663] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e664] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "DJ KASINO - LET THE GAMES BEGIN.zip" [ref=f18e666] [cursor=pointer]:
+              - /url: /description.php?id=4218184
+            - generic [ref=f18e667]: 2008-06-02
+            - generic [ref=f18e668]:
+              - link [ref=f18e669] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:0DF594622073BB87244D21364D0267B503FE4536&dn=DJ%20KASINO%20-%20LET%20THE%20GAMES%20BEGIN.zip&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "Trusted" [ref=f18e671]
+            - generic [ref=f18e672]: 67.65 MiB
+            - generic [ref=f18e673]: "1"
+            - generic [ref=f18e674]: "0"
+            - link "wideworldthelabel" [ref=f18e676] [cursor=pointer]:
+              - /url: /search.php?q=user:wideworldthelabel
+          - listitem [ref=f18e677]:
+            - generic [ref=f18e678]:
+              - link "Audio" [ref=f18e679] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e680] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "CANADA - Inuit Games And Songs" [ref=f18e682] [cursor=pointer]:
+              - /url: /description.php?id=4415084
+            - generic [ref=f18e683]: 2008-09-26
+            - generic [ref=f18e684]:
+              - link [ref=f18e685] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:38D3450E350635C38C039BC502919A20B70D48AF&dn=CANADA%20-%20Inuit%20Games%20And%20Songs&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "Trusted" [ref=f18e687]
+            - generic [ref=f18e688]: 72.11 MiB
+            - generic [ref=f18e689]: "1"
+            - generic [ref=f18e690]: "0"
+            - link "starinar" [ref=f18e692] [cursor=pointer]:
+              - /url: /search.php?q=user:starinar
+          - listitem [ref=f18e693]:
+            - generic [ref=f18e694]:
+              - link "Audio" [ref=f18e695] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e696] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "VA - The Offical Album For Beijing 2008 Olympic Games One World" [ref=f18e698] [cursor=pointer]:
+              - /url: /description.php?id=4660478
+            - generic [ref=f18e699]: 2009-01-19
+            - generic [ref=f18e700]:
+              - link [ref=f18e701] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:A7B2690621296E76D315CC9B3BEB2E2202D36BF6&dn=VA%20-%20The%20Offical%20Album%20For%20Beijing%202008%20Olympic%20Games%20One%20World%20&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "Trusted" [ref=f18e703]
+            - generic [ref=f18e704]: 108.33 MiB
+            - generic [ref=f18e705]: "1"
+            - generic [ref=f18e706]: "2"
+            - link "biggod99" [ref=f18e708] [cursor=pointer]:
+              - /url: /search.php?q=user:biggod99
+          - listitem [ref=f18e709]:
+            - generic [ref=f18e710]:
+              - link "Audio" [ref=f18e711] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e712] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "Crossfire - Dirty Games (2007) [mp3@320]" [ref=f18e714] [cursor=pointer]:
+              - /url: /description.php?id=5474674
+            - generic [ref=f18e715]: 2010-03-31
+            - generic [ref=f18e716]:
+              - link [ref=f18e717] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:E43B2042E9384378EF3EDEC3DF32842E2F719A02&dn=Crossfire%20-%20Dirty%20Games%20(2007)%20%5Bmp3%40320%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "Trusted" [ref=f18e719]
+            - generic [ref=f18e720]: 95.41 MiB
+            - generic [ref=f18e721]: "1"
+            - generic [ref=f18e722]: "1"
+            - link "zibbik" [ref=f18e724] [cursor=pointer]:
+              - /url: /search.php?q=user:zibbik
+          - listitem [ref=f18e725]:
+            - generic [ref=f18e726]:
+              - link "Audio" [ref=f18e727] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e728] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "Castlevania I,II, III Games Soundtracks Remastered by vladtepes3" [ref=f18e730] [cursor=pointer]:
+              - /url: /description.php?id=5927816
+            - generic [ref=f18e731]: 2010-11-02
+            - generic [ref=f18e732]:
+              - link [ref=f18e733] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:5DE1A2AEDDD27D9AF9C4CB3274E2218F7A1451BD&dn=Castlevania%20I%2CII%2C%20III%20Games%20Soundtracks%20Remastered%20by%20vladtepes3&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "Trusted" [ref=f18e735]
+            - generic [ref=f18e736]: 105.45 MiB
+            - generic [ref=f18e737]: "1"
+            - generic [ref=f18e738]: "0"
+            - link "vladtepes3176" [ref=f18e740] [cursor=pointer]:
+              - /url: /search.php?q=user:vladtepes3176
+          - listitem [ref=f18e741]:
+            - generic [ref=f18e742]:
+              - link "Audio" [ref=f18e743] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e744] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "Lana Del Rey - Video Games 2011 Stumpie1971" [ref=f18e746] [cursor=pointer]:
+              - /url: /description.php?id=6783466
+            - generic [ref=f18e747]: 2011-10-30
+            - generic [ref=f18e748]:
+              - link [ref=f18e749] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:2C1970908D9DA69097F73D52CBD445BE43D2822B&dn=Lana%20Del%20Rey%20-%20Video%20Games%202011%20Stumpie1971&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "Trusted" [ref=f18e751]
+            - generic [ref=f18e752]: 4.01 MiB
+            - generic [ref=f18e753]: "1"
+            - generic [ref=f18e754]: "0"
+            - link "stumpie1971" [ref=f18e756] [cursor=pointer]:
+              - /url: /search.php?q=user:stumpie1971
+          - listitem [ref=f18e757]:
+            - generic [ref=f18e758]:
+              - link "Audio" [ref=f18e759] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e760] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "lana del ray - video games" [ref=f18e762] [cursor=pointer]:
+              - /url: /description.php?id=7064265
+            - generic [ref=f18e763]: 2012-02-28
+            - generic [ref=f18e764]:
+              - link [ref=f18e765] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:6ADB190C29254BC8A98A59E19A07D4A478815D22&dn=lana%20del%20ray%20-%20video%20games&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "Trusted" [ref=f18e767]
+            - generic [ref=f18e768]: 11 MiB
+            - generic [ref=f18e769]: "1"
+            - generic [ref=f18e770]: "0"
+            - link "GM_CSH" [ref=f18e772] [cursor=pointer]:
+              - /url: /search.php?q=user:GM_CSH
+          - listitem [ref=f18e773]:
+            - generic [ref=f18e774]:
+              - link "Audio" [ref=f18e775] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e776] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - 'link "The Hunger Games: Songs From District 12 And Beyond {256 kbps}" [ref=f18e778] [cursor=pointer]':
+              - /url: /description.php?id=7109682
+            - generic [ref=f18e779]: 2012-03-17
+            - generic [ref=f18e780]:
+              - link [ref=f18e781] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:2321033B953FC37D71F66F97501E803EC47DEDE0&dn=The%20Hunger%20Games%3A%20Songs%20From%20District%2012%20And%20Beyond%20%7B256%20kbps%7D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "Trusted" [ref=f18e783]
+            - generic [ref=f18e784]: 108.57 MiB
+            - generic [ref=f18e785]: "1"
+            - generic [ref=f18e786]: "1"
+            - link "FatFreddy473" [ref=f18e788] [cursor=pointer]:
+              - /url: /search.php?q=user:FatFreddy473
+          - listitem [ref=f18e789]:
+            - generic [ref=f18e790]:
+              - link "Audio" [ref=f18e791] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e792] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - 'link "The Hunger Games Songs From District 12 And Beyond 2012 {Album}" [ref=f18e794] [cursor=pointer]':
+              - /url: /description.php?id=7120435
+            - generic [ref=f18e795]: 2012-03-21
+            - generic [ref=f18e796]:
+              - link [ref=f18e797] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:94AD3BD1770D56D757F0D96FA35E1DDE127E6E7B&dn=The%20Hunger%20Games%20Songs%20From%20District%2012%20And%20Beyond%202012%20%7BAlbum%7D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "Trusted" [ref=f18e799]
+            - generic [ref=f18e800]: 133.7 MiB
+            - generic [ref=f18e801]: "1"
+            - generic [ref=f18e802]: "1"
+            - link "stumpie1971" [ref=f18e804] [cursor=pointer]:
+              - /url: /search.php?q=user:stumpie1971
+          - listitem [ref=f18e805]:
+            - generic [ref=f18e806]:
+              - link "Audio" [ref=f18e807] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e808] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "James Newton Howard - The Hunger Games OST (2012 MP3@320kbps)" [ref=f18e810] [cursor=pointer]:
+              - /url: /description.php?id=7260710
+            - generic [ref=f18e811]: 2012-05-11
+            - generic [ref=f18e812]:
+              - link [ref=f18e813] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:0EB87C4C01267E437F7424EA817C1C5CF5F976C8&dn=James%20Newton%20Howard%20-%20The%20Hunger%20Games%20OST%20(2012%20MP3%40320kbps)&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "Trusted" [ref=f18e815]
+            - generic [ref=f18e816]: 102.31 MiB
+            - generic [ref=f18e817]: "1"
+            - generic [ref=f18e818]: "0"
+            - link "HobbitTunez" [ref=f18e820] [cursor=pointer]:
+              - /url: /search.php?q=user:HobbitTunez
+          - listitem [ref=f18e821]:
+            - generic [ref=f18e822]:
+              - link "Audio" [ref=f18e823] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e824] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - 'link "VA - The Hunger Games Mockingjay Part 1 OST-2014-C4 ~{B@tman}" [ref=f18e826] [cursor=pointer]':
+              - /url: /description.php?id=11486055
+            - generic [ref=f18e827]: 2014-11-17
+            - generic [ref=f18e828]:
+              - link [ref=f18e829] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:BF521C7B3A07EE1A33C2ACC04965F82EAB13482D&dn=VA%20-%20The%20Hunger%20Games%20Mockingjay%20Part%201%20OST-2014-C4%20~%7BB%40tman%7D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "Trusted" [ref=f18e831]
+            - generic [ref=f18e832]: 95.45 MiB
+            - generic [ref=f18e833]: "1"
+            - generic [ref=f18e834]: "1"
+            - link "Ali-TPB" [ref=f18e836] [cursor=pointer]:
+              - /url: /search.php?q=user:Ali-TPB
+          - listitem [ref=f18e837]:
+            - generic [ref=f18e838]:
+              - link "Audio" [ref=f18e839] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e840] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "James Newton Howard - The Hunger Games Mockingjay Pt.1 (OTS) 320" [ref=f18e842] [cursor=pointer]:
+              - /url: /description.php?id=11581541
+            - generic [ref=f18e843]: 2014-11-27
+            - generic [ref=f18e844]:
+              - link [ref=f18e845] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:92526CAC5D575526E65BE51D0095B64EA5D2F4CF&dn=James%20Newton%20Howard%20-%20The%20Hunger%20Games%20Mockingjay%20Pt.1%20(OTS)%20320&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "Trusted" [ref=f18e847]
+            - generic [ref=f18e848]: 160.68 MiB
+            - generic [ref=f18e849]: "1"
+            - generic [ref=f18e850]: "0"
+            - link "l33t_aryan" [ref=f18e852] [cursor=pointer]:
+              - /url: /search.php?q=user:l33t_aryan
+          - listitem [ref=f18e853]:
+            - generic [ref=f18e854]:
+              - link "Audio" [ref=f18e855] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e856] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "Ty Dolla $ign - Wicked Games Rap Album (2020 [320] kbps Beats⭐" [ref=f18e858] [cursor=pointer]:
+              - /url: /description.php?id=36229404
+            - generic [ref=f18e859]: 2020-07-02
+            - generic [ref=f18e860]:
+              - link [ref=f18e861] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:D4D779A1C6851043B43C79A72508D988358E36FE&dn=Ty%20Dolla%20%24ign%20-%20Wicked%20Games%20%20Rap%20Album%20(2020%20%5B320%5D%20%20kbps%20Beats%E2%AD%90&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "Trusted" [ref=f18e863]
+            - generic [ref=f18e864]: 121.05 MiB
+            - generic [ref=f18e865]: "1"
+            - generic [ref=f18e866]: "0"
+            - link "21Beats" [ref=f18e868] [cursor=pointer]:
+              - /url: /search.php?q=user:21Beats
+          - listitem [ref=f18e869]:
+            - generic [ref=f18e870]:
+              - link "Audio" [ref=f18e871] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e872] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "Pink Floyd Psychedelic Games for May" [ref=f18e874] [cursor=pointer]:
+              - /url: /description.php?id=3698813
+            - generic [ref=f18e875]: 2007-05-27
+            - generic [ref=f18e876]:
+              - link [ref=f18e877] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:E2CB9DE8B8DC4A24296E7217F48CB8E9AE9DAC97&dn=Pink%20Floyd%20Psychedelic%20Games%20for%20May&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "Trusted" [ref=f18e879]
+            - generic [ref=f18e880]: 59.13 MiB
+            - generic [ref=f18e881]: "0"
+            - generic [ref=f18e882]: "1"
+            - link "looksee" [ref=f18e884] [cursor=pointer]:
+              - /url: /search.php?q=user:looksee
+          - listitem [ref=f18e885]:
+            - generic [ref=f18e886]:
+              - link "Audio" [ref=f18e887] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e888] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "VA-DJ Kasino and Rosco- Check Dig Series - LET THE GAMES BEGIN -" [ref=f18e890] [cursor=pointer]:
+              - /url: /description.php?id=4262437
+            - generic [ref=f18e891]: 2008-06-26
+            - generic [ref=f18e892]:
+              - link [ref=f18e893] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:5E40372B891D6B666068537685DE19A14091B08D&dn=VA-DJ%20Kasino%20and%20Rosco-%20Check%20Dig%20Series%20-%20LET%20THE%20GAMES%20BEGIN%20-&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "Trusted" [ref=f18e895]
+            - generic [ref=f18e896]: 68.19 MiB
+            - generic [ref=f18e897]: "0"
+            - generic [ref=f18e898]: "0"
+            - link "wideworldthelabel" [ref=f18e900] [cursor=pointer]:
+              - /url: /search.php?q=user:wideworldthelabel
+          - listitem [ref=f18e901]:
+            - generic [ref=f18e902]:
+              - link "Audio" [ref=f18e903] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e904] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "Canoply Games - The best of (2006-2009) [IDM, Electro, Downtempo" [ref=f18e906] [cursor=pointer]:
+              - /url: /description.php?id=4729608
+            - generic [ref=f18e907]: 2009-02-18
+            - generic [ref=f18e908]:
+              - link [ref=f18e909] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:70F2AFA93DA49F23A832B75EDCCBAFCE44F28AD5&dn=Canoply%20Games%20-%20The%20best%20of%20(2006-2009)%20%5BIDM%2C%20Electro%2C%20Downtempo&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "Trusted" [ref=f18e911]
+            - generic [ref=f18e912]: 41.24 MiB
+            - generic [ref=f18e913]: "0"
+            - generic [ref=f18e914]: "0"
+            - link "dramacore" [ref=f18e916] [cursor=pointer]:
+              - /url: /search.php?q=user:dramacore
+          - listitem [ref=f18e917]:
+            - generic [ref=f18e918]:
+              - link "Audio" [ref=f18e919] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e920] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "VA-Sounds_Of_The_Vancouver_2010_Olympic_Winter_Games-Canadas_Hoc" [ref=f18e922] [cursor=pointer]:
+              - /url: /description.php?id=5371168
+            - generic [ref=f18e923]: 2010-02-17
+            - generic [ref=f18e924]:
+              - link [ref=f18e925] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:A3ACA5E07BED0E04F1FEDBF0F4DFA2B36451B74E&dn=VA-Sounds_Of_The_Vancouver_2010_Olympic_Winter_Games-Canadas_Hoc&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "Trusted" [ref=f18e927]
+            - generic [ref=f18e928]: 109.88 MiB
+            - generic [ref=f18e929]: "0"
+            - generic [ref=f18e930]: "1"
+            - link "Jesper.sv" [ref=f18e932] [cursor=pointer]:
+              - /url: /search.php?q=user:Jesper.sv
+          - listitem [ref=f18e933]:
+            - generic [ref=f18e934]:
+              - link "Audio" [ref=f18e935] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e936] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "Lorien - Children\\'s Games (1994) [mp3@320]" [ref=f18e938] [cursor=pointer]:
+              - /url: /description.php?id=5526588
+            - generic [ref=f18e939]: 2010-05-02
+            - generic [ref=f18e940]:
+              - link [ref=f18e941] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:8FEAB85A52DCF80D0F216FC4124F4160F9608B72&dn=Lorien%20-%20Children%5C's%20Games%20(1994)%20%5Bmp3%40320%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "Trusted" [ref=f18e943]
+            - generic [ref=f18e944]: 111.02 MiB
+            - generic [ref=f18e945]: "0"
+            - generic [ref=f18e946]: "0"
+            - link "zibbik" [ref=f18e948] [cursor=pointer]:
+              - /url: /search.php?q=user:zibbik
+          - listitem [ref=f18e949]:
+            - generic [ref=f18e950]:
+              - link "Audio" [ref=f18e951] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e952] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "Endless Hallway- Autonomy Games (tdwp329)" [ref=f18e954] [cursor=pointer]:
+              - /url: /description.php?id=5930280
+            - generic [ref=f18e955]: 2010-11-03
+            - generic [ref=f18e956]:
+              - link [ref=f18e957] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:1A510D25464543B7843A875E83CBFF70FDB0E533&dn=Endless%20Hallway-%20Autonomy%20Games%20(tdwp329)&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "Trusted" [ref=f18e959]
+            - generic [ref=f18e960]: 68.84 MiB
+            - generic [ref=f18e961]: "0"
+            - generic [ref=f18e962]: "0"
+            - link "tdwp329" [ref=f18e964] [cursor=pointer]:
+              - /url: /search.php?q=user:tdwp329
+          - listitem [ref=f18e965]:
+            - generic [ref=f18e966]:
+              - link "Audio" [ref=f18e967] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e968] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "Hell In The Club - Let The Games Begin (2011) [mp3@320]" [ref=f18e970] [cursor=pointer]:
+              - /url: /description.php?id=6306664
+            - generic [ref=f18e971]: 2011-04-09
+            - generic [ref=f18e972]:
+              - link [ref=f18e973] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:57120CF7675E2BD9CA6F27F6B6B81CC4C88FB684&dn=Hell%20In%20The%20Club%20-%20Let%20The%20Games%20Begin%20(2011)%20%5Bmp3%40320%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "Trusted" [ref=f18e975]
+            - generic [ref=f18e976]: 103.08 MiB
+            - generic [ref=f18e977]: "0"
+            - generic [ref=f18e978]: "1"
+            - link "zibbik" [ref=f18e980] [cursor=pointer]:
+              - /url: /search.php?q=user:zibbik
+          - listitem [ref=f18e981]:
+            - generic [ref=f18e982]:
+              - link "Audio" [ref=f18e983] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e984] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "VA-The_Hunger_Games_Songs_From_District_12_And_Beyond-OST-(Retai" [ref=f18e986] [cursor=pointer]:
+              - /url: /description.php?id=7115542
+            - generic [ref=f18e987]: 2012-03-19
+            - generic [ref=f18e988]:
+              - link [ref=f18e989] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:34B06D101625209811700808FA22628564214B9F&dn=VA-The_Hunger_Games_Songs_From_District_12_And_Beyond-OST-(Retai&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "Trusted" [ref=f18e991]
+            - generic [ref=f18e992]: 94.60 MiB
+            - generic [ref=f18e993]: "0"
+            - generic [ref=f18e994]: "1"
+            - link "tta854" [ref=f18e996] [cursor=pointer]:
+              - /url: /search.php?q=user:tta854
+          - listitem [ref=f18e997]:
+            - generic [ref=f18e998]:
+              - link "Audio" [ref=f18e999] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e1000] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "5150 - Games People Play (1992)" [ref=f18e1002] [cursor=pointer]:
+              - /url: /description.php?id=7284258
+            - generic [ref=f18e1003]: 2012-05-20
+            - generic [ref=f18e1004]:
+              - link [ref=f18e1005] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:7E7B9573CBF75FF2023F25C27251B96DA10515DA&dn=5150%20-%20Games%20People%20Play%20(1992)&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "Trusted" [ref=f18e1007]
+            - generic [ref=f18e1008]: 110.99 MiB
+            - generic [ref=f18e1009]: "0"
+            - generic [ref=f18e1010]: "1"
+            - link "Sackilla666" [ref=f18e1012] [cursor=pointer]:
+              - /url: /search.php?q=user:Sackilla666
+          - listitem [ref=f18e1013]:
+            - generic [ref=f18e1014]:
+              - link "Audio" [ref=f18e1015] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e1016] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "David Banner - Sex, Drugs, & Video Games" [ref=f18e1018] [cursor=pointer]:
+              - /url: /description.php?id=7298582
+            - generic [ref=f18e1019]: 2012-05-25
+            - generic [ref=f18e1020]:
+              - link [ref=f18e1021] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:E928558C1BD393C7BB1A2263B3B121FFBF85F94B&dn=David%20Banner%20-%20Sex%2C%20Drugs%2C%20%26amp%3B%20Video%20Games&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "Trusted" [ref=f18e1023]
+            - generic [ref=f18e1024]: 145.67 MiB
+            - generic [ref=f18e1025]: "0"
+            - generic [ref=f18e1026]: "1"
+            - link "kingdomzz" [ref=f18e1028] [cursor=pointer]:
+              - /url: /search.php?q=user:kingdomzz
+          - listitem [ref=f18e1029]:
+            - generic [ref=f18e1030]:
+              - link "Audio" [ref=f18e1031] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e1032] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "MWCD2014438 Chantola - Lost In Funny Space Games (2014) EDM, Hou" [ref=f18e1034] [cursor=pointer]:
+              - /url: /description.php?id=11108251
+            - generic [ref=f18e1035]: 2014-09-26
+            - generic [ref=f18e1036]:
+              - link [ref=f18e1037] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:A48D482C55563093E4158539399DD268546E5F55&dn=MWCD2014438%20Chantola%20-%20Lost%20In%20Funny%20Space%20Games%20(2014)%20EDM%2C%20Hou&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "Trusted" [ref=f18e1039]
+            - generic [ref=f18e1040]: 124.86 MiB
+            - generic [ref=f18e1041]: "0"
+            - generic [ref=f18e1042]: "0"
+            - link "Gepression" [ref=f18e1044] [cursor=pointer]:
+              - /url: /search.php?q=user:Gepression
+          - listitem [ref=f18e1045]:
+            - generic [ref=f18e1046]:
+              - link "Audio" [ref=f18e1047] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e1048] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "Function & Vatican Shadow - Games Have Rules (2014)" [ref=f18e1050] [cursor=pointer]:
+              - /url: /description.php?id=11128256
+            - generic [ref=f18e1051]: 2014-09-29
+            - generic [ref=f18e1052]:
+              - link [ref=f18e1053] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:58C3E0506CDA78EBC09E05D250990E40BECA02F5&dn=Function%20%26amp%3B%20Vatican%20Shadow%20-%20Games%20Have%20Rules%20(2014)&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "Trusted" [ref=f18e1055]
+            - generic [ref=f18e1056]: 94.84 MiB
+            - generic [ref=f18e1057]: "0"
+            - generic [ref=f18e1058]: "1"
+            - link "geloso" [ref=f18e1060] [cursor=pointer]:
+              - /url: /search.php?q=user:geloso
+          - listitem [ref=f18e1061]:
+            - generic [ref=f18e1062]:
+              - link "Audio" [ref=f18e1063] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e1064] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "The Hunger Games Mockingjay, Pt. 1 (Original Motion Picture Soun" [ref=f18e1066] [cursor=pointer]:
+              - /url: /description.php?id=11262918
+            - generic [ref=f18e1067]: 2014-10-22
+            - generic [ref=f18e1068]:
+              - link [ref=f18e1069] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:8CEB3B397D2A4DE5E877487EDD56EE9BD18F71AF&dn=The%20Hunger%20Games%20Mockingjay%2C%20Pt.%201%20(Original%20Motion%20Picture%20Soun&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "Trusted" [ref=f18e1071]
+            - generic [ref=f18e1072]: 13.1 MiB
+            - generic [ref=f18e1073]: "0"
+            - generic [ref=f18e1074]: "1"
+            - link "Ali-TPB" [ref=f18e1076] [cursor=pointer]:
+              - /url: /search.php?q=user:Ali-TPB
+          - listitem [ref=f18e1077]:
+            - generic [ref=f18e1078]:
+              - link "Audio" [ref=f18e1079] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e1080] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "Banks – Mind Games MP3 , 2016" [ref=f18e1082] [cursor=pointer]:
+              - /url: /description.php?id=15598560
+            - generic [ref=f18e1083]: 2016-08-19
+            - generic [ref=f18e1084]:
+              - link [ref=f18e1085] [cursor=pointer]:
+                - /url: magnet:?xt=urn:btih:4FA2F2C6233E3733200E140DDB3497EE8CBE9103&dn=Banks%20%26ndash%3B%20Mind%20Games%20MP3%20%2C%202016&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+              - img "Trusted" [ref=f18e1087]
+            - generic [ref=f18e1088]: 11.33 MiB
+            - generic [ref=f18e1089]: "0"
+            - generic [ref=f18e1090]: "0"
+            - link "NikiPink" [ref=f18e1092] [cursor=pointer]:
+              - /url: /search.php?q=user:NikiPink
+          - listitem [ref=f18e1093]:
+            - generic [ref=f18e1094]:
+              - link "Audio" [ref=f18e1095] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e1096] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - 'link "Adventure Music Pack VI : Epic soundtracks from movies & games" [ref=f18e1098] [cursor=pointer]':
+              - /url: /description.php?id=4740908
+            - generic [ref=f18e1099]: 2009-02-25
+            - link [ref=f18e1101] [cursor=pointer]:
+              - /url: magnet:?xt=urn:btih:9B3B3C3D450685E7BBE8F65A1FC9679393F2A5DE&dn=Adventure%20Music%20Pack%20VI%20%3A%20Epic%20soundtracks%20from%20movies%20%26%20games&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+            - generic [ref=f18e1103]: 1.03 GiB
+            - generic [ref=f18e1104]: "3"
+            - generic [ref=f18e1105]: "0"
+            - link "Mister_reno" [ref=f18e1107] [cursor=pointer]:
+              - /url: /search.php?q=user:Mister_reno
+          - listitem [ref=f18e1108]:
+            - generic [ref=f18e1109]:
+              - link "Audio" [ref=f18e1110] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e1111] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "Juelz_Santana-What_The_Games_Been_Missing-2005-RNS" [ref=f18e1113] [cursor=pointer]:
+              - /url: /description.php?id=3429003
+            - generic [ref=f18e1114]: 2006-01-07
+            - link [ref=f18e1116] [cursor=pointer]:
+              - /url: magnet:?xt=urn:btih:A1F7C82D8C6D4AEE9CD5DD5CE2F61084DEB74488&dn=Juelz_Santana-What_The_Games_Been_Missing-2005-RNS&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+            - generic [ref=f18e1118]: 103.89 MiB
+            - generic [ref=f18e1119]: "2"
+            - generic [ref=f18e1120]: "0"
+            - link "pi3rr0t" [ref=f18e1122] [cursor=pointer]:
+              - /url: /search.php?q=user:pi3rr0t
+          - listitem [ref=f18e1123]:
+            - generic [ref=f18e1124]:
+              - link "Audio" [ref=f18e1125] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e1126] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "Video Games Live, Volume One" [ref=f18e1128] [cursor=pointer]:
+              - /url: /description.php?id=4442499
+            - generic [ref=f18e1129]: 2008-10-13
+            - link [ref=f18e1131] [cursor=pointer]:
+              - /url: magnet:?xt=urn:btih:E6A474D2DE1A37598CADD4B772E4EB4F32A5292B&dn=Video%20Games%20Live%2C%20Volume%20One&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+            - generic [ref=f18e1133]: 302.79 MiB
+            - generic [ref=f18e1134]: "2"
+            - generic [ref=f18e1135]: "1"
+            - link "nightosumomo" [ref=f18e1137] [cursor=pointer]:
+              - /url: /search.php?q=user:nightosumomo
+          - listitem [ref=f18e1138]:
+            - generic [ref=f18e1139]:
+              - link "Audio" [ref=f18e1140] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e1141] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - 'link "Adventure Music Pack II : Epic songs from movies & games" [ref=f18e1143] [cursor=pointer]':
+              - /url: /description.php?id=4556155
+            - generic [ref=f18e1144]: 2008-12-05
+            - link [ref=f18e1146] [cursor=pointer]:
+              - /url: magnet:?xt=urn:btih:E7DAE81449BA9A7C88CC1EF8D073F2A79A2A9B41&dn=Adventure%20Music%20Pack%20II%20%3A%20Epic%20songs%20from%20movies%20%26%20games&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+            - generic [ref=f18e1148]: 1.09 GiB
+            - generic [ref=f18e1149]: "2"
+            - generic [ref=f18e1150]: "0"
+            - link "Mister_reno" [ref=f18e1152] [cursor=pointer]:
+              - /url: /search.php?q=user:Mister_reno
+          - listitem [ref=f18e1153]:
+            - generic [ref=f18e1154]:
+              - link "Audio" [ref=f18e1155] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e1156] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "Vulture - Fatal Games (1990)" [ref=f18e1158] [cursor=pointer]:
+              - /url: /description.php?id=5078220
+            - generic [ref=f18e1159]: 2009-09-04
+            - link [ref=f18e1161] [cursor=pointer]:
+              - /url: magnet:?xt=urn:btih:FD491AA65CF8A475A9E5F2B6FA1266B8D07AE19A&dn=Vulture%20-%20Fatal%20Games%20(1990)&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+            - generic [ref=f18e1163]: 66.8 MiB
+            - generic [ref=f18e1164]: "2"
+            - generic [ref=f18e1165]: "0"
+            - generic [ref=f18e1166]: Anonymous
+          - listitem [ref=f18e1167]:
+            - generic [ref=f18e1168]:
+              - link "Audio" [ref=f18e1169] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e1170] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - 'link "Lorde - Yellow Flicker Beat (From \"The Hunger Games: Mockin" [ref=f18e1172] [cursor=pointer]':
+              - /url: /description.php?id=11128396
+            - generic [ref=f18e1173]: 2014-09-29
+            - link [ref=f18e1175] [cursor=pointer]:
+              - /url: magnet:?xt=urn:btih:6BC9BBBF41FFD37292EDF36F9489536DF69C378C&dn=Lorde%20-%20Yellow%20Flicker%20Beat%20(From%20%26quot%3BThe%20Hunger%20Games%3A%20Mockin&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+            - generic [ref=f18e1177]: 9.35 MiB
+            - generic [ref=f18e1178]: "2"
+            - generic [ref=f18e1179]: "0"
+            - link "simpsonrony" [ref=f18e1181] [cursor=pointer]:
+              - /url: /search.php?q=user:simpsonrony
+          - listitem [ref=f18e1182]:
+            - generic [ref=f18e1183]:
+              - link "Audio" [ref=f18e1184] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e1185] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - 'link "VA - The Hunger Games Mockingjay, Pt. 1 (OST) {MP3-2014}" [ref=f18e1187] [cursor=pointer]':
+              - /url: /description.php?id=11451005
+            - generic [ref=f18e1188]: 2014-11-13
+            - link [ref=f18e1190] [cursor=pointer]:
+              - /url: magnet:?xt=urn:btih:220EF01836613CDF4E5C52940C683CCE98C82F79&dn=VA%20-%20The%20Hunger%20Games%20Mockingjay%2C%20Pt.%201%20(OST)%20%7BMP3-2014%7D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+            - generic [ref=f18e1192]: 120.60 MiB
+            - generic [ref=f18e1193]: "2"
+            - generic [ref=f18e1194]: "0"
+            - link "simpsonrony" [ref=f18e1196] [cursor=pointer]:
+              - /url: /search.php?q=user:simpsonrony
+          - listitem [ref=f18e1197]:
+            - generic [ref=f18e1198]:
+              - link "Audio" [ref=f18e1199] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e1200] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "DJ\\'s Choice- Kids Fun, Games, Songs & Sing-A-Longs" [ref=f18e1202] [cursor=pointer]:
+              - /url: /description.php?id=3801691
+            - generic [ref=f18e1203]: 2007-09-09
+            - link [ref=f18e1205] [cursor=pointer]:
+              - /url: magnet:?xt=urn:btih:5F110F320C8410E3B6FFDAE8EB57912BDF2F9A7D&dn=DJ%5C's%20Choice-%20Kids%20Fun%2C%20Games%2C%20Songs%20%26%20Sing-A-Longs&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+            - generic [ref=f18e1207]: 34.86 MiB
+            - generic [ref=f18e1208]: "1"
+            - generic [ref=f18e1209]: "0"
+            - link "Dongolian" [ref=f18e1211] [cursor=pointer]:
+              - /url: /search.php?q=user:Dongolian
+          - listitem [ref=f18e1212]:
+            - generic [ref=f18e1213]:
+              - link "Audio" [ref=f18e1214] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e1215] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "Tomb Raider complete music from all 8 games" [ref=f18e1217] [cursor=pointer]:
+              - /url: /description.php?id=4093028
+            - generic [ref=f18e1218]: 2008-03-22
+            - link [ref=f18e1220] [cursor=pointer]:
+              - /url: magnet:?xt=urn:btih:6991EA6CF7BC88ADF7C3D1578868C25795F1BB96&dn=Tomb%20Raider%20complete%20music%20from%20all%208%20games&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+            - generic [ref=f18e1222]: 534.59 MiB
+            - generic [ref=f18e1223]: "1"
+            - generic [ref=f18e1224]: "0"
+            - link "Benisthehoff" [ref=f18e1226] [cursor=pointer]:
+              - /url: /search.php?q=user:Benisthehoff
+          - listitem [ref=f18e1227]:
+            - generic [ref=f18e1228]:
+              - link "Audio" [ref=f18e1229] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e1230] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "Video Games Live (Volume 1)" [ref=f18e1232] [cursor=pointer]:
+              - /url: /description.php?id=4322301
+            - generic [ref=f18e1233]: 2008-07-31
+            - link [ref=f18e1235] [cursor=pointer]:
+              - /url: magnet:?xt=urn:btih:BDDBE2F7DC223CF1D8F75A65EC3C2040D9AF52D1&dn=Video%20Games%20Live%20(Volume%201)&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+            - generic [ref=f18e1237]: 128.99 MiB
+            - generic [ref=f18e1238]: "1"
+            - generic [ref=f18e1239]: "1"
+            - link "Zageron" [ref=f18e1241] [cursor=pointer]:
+              - /url: /search.php?q=user:Zageron
+          - listitem [ref=f18e1242]:
+            - generic [ref=f18e1243]:
+              - link "Audio" [ref=f18e1244] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e1245] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "VA - The Offical Album For Beijing 2008 Olympic Games One World" [ref=f18e1247] [cursor=pointer]:
+              - /url: /description.php?id=4346399
+            - generic [ref=f18e1248]: 2008-08-16
+            - link [ref=f18e1250] [cursor=pointer]:
+              - /url: magnet:?xt=urn:btih:EF07406FD768319944730CC0A127941F66CF5E39&dn=VA%20-%20The%20Offical%20Album%20For%20Beijing%202008%20Olympic%20Games%20One%20World%20&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+            - generic [ref=f18e1252]: 108.16 MiB
+            - generic [ref=f18e1253]: "1"
+            - generic [ref=f18e1254]: "0"
+            - link "Torrentazos" [ref=f18e1256] [cursor=pointer]:
+              - /url: /search.php?q=user:Torrentazos
+          - listitem [ref=f18e1257]:
+            - generic [ref=f18e1258]:
+              - link "Audio" [ref=f18e1259] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e1260] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "Rhythm of the Games - 1996 Olympic Games Album (Usher, BoyzIIMen" [ref=f18e1262] [cursor=pointer]:
+              - /url: /description.php?id=4466437
+            - generic [ref=f18e1263]: 2008-10-25
+            - link [ref=f18e1265] [cursor=pointer]:
+              - /url: magnet:?xt=urn:btih:66BD6636DABE262D1C9E1CAA97CCB0823BD12CCB&dn=Rhythm%20of%20the%20Games%20-%201996%20Olympic%20Games%20Album%20(Usher%2C%20BoyzIIMen&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+            - generic [ref=f18e1267]: 121.47 MiB
+            - generic [ref=f18e1268]: "1"
+            - generic [ref=f18e1269]: "1"
+            - link "T4MC" [ref=f18e1271] [cursor=pointer]:
+              - /url: /search.php?q=user:T4MC
+          - listitem [ref=f18e1272]:
+            - generic [ref=f18e1273]:
+              - link "Audio" [ref=f18e1274] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e1275] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - 'link "Adventure Music Pack I : Epic songs from movies & games" [ref=f18e1277] [cursor=pointer]':
+              - /url: /description.php?id=4556147
+            - generic [ref=f18e1278]: 2008-12-05
+            - link [ref=f18e1280] [cursor=pointer]:
+              - /url: magnet:?xt=urn:btih:F9F8B4A5862DDF33BF1E8741D661691F6D8691EA&dn=Adventure%20Music%20Pack%20I%20%3A%20Epic%20songs%20from%20movies%20%26%20games&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+            - generic [ref=f18e1282]: 1002.48 MiB
+            - generic [ref=f18e1283]: "1"
+            - generic [ref=f18e1284]: "0"
+            - link "Mister_reno" [ref=f18e1286] [cursor=pointer]:
+              - /url: /search.php?q=user:Mister_reno
+          - listitem [ref=f18e1287]:
+            - generic [ref=f18e1288]:
+              - link "Audio" [ref=f18e1289] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e1290] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - 'link "Adventure Music Pack III : Epic songs from movies & games" [ref=f18e1292] [cursor=pointer]':
+              - /url: /description.php?id=4556156
+            - generic [ref=f18e1293]: 2008-12-05
+            - link [ref=f18e1295] [cursor=pointer]:
+              - /url: magnet:?xt=urn:btih:782E17ACB3A4522A5E694BCF0E47890209365E2E&dn=Adventure%20Music%20Pack%20III%20%3A%20Epic%20songs%20from%20movies%20%26%20games&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+            - generic [ref=f18e1297]: 1.09 GiB
+            - generic [ref=f18e1298]: "1"
+            - generic [ref=f18e1299]: "0"
+            - link "Mister_reno" [ref=f18e1301] [cursor=pointer]:
+              - /url: /search.php?q=user:Mister_reno
+          - listitem [ref=f18e1302]:
+            - generic [ref=f18e1303]:
+              - link "Audio" [ref=f18e1304] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e1305] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - 'link "Adventure Music Pack IV : Epic soundtracks from movies & games" [ref=f18e1307] [cursor=pointer]':
+              - /url: /description.php?id=4566768
+            - generic [ref=f18e1308]: 2008-12-10
+            - link [ref=f18e1310] [cursor=pointer]:
+              - /url: magnet:?xt=urn:btih:F7C0E45877EB7CDB91A8F117B3C4CAB0C56B8766&dn=Adventure%20Music%20Pack%20IV%20%3A%20Epic%20soundtracks%20from%20movies%20%26%20games&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+            - generic [ref=f18e1312]: 962.07 MiB
+            - generic [ref=f18e1313]: "1"
+            - generic [ref=f18e1314]: "1"
+            - link "Mister_reno" [ref=f18e1316] [cursor=pointer]:
+              - /url: /search.php?q=user:Mister_reno
+          - listitem [ref=f18e1317]:
+            - generic [ref=f18e1318]:
+              - link "Audio" [ref=f18e1319] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e1320] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - 'link "Adventure Music Pack V : Epic soundtracks from movies & games" [ref=f18e1322] [cursor=pointer]':
+              - /url: /description.php?id=4737764
+            - generic [ref=f18e1323]: 2009-02-23
+            - link [ref=f18e1325] [cursor=pointer]:
+              - /url: magnet:?xt=urn:btih:30AC5D73D9EF637282CAB03CE98DDE7C43F4A106&dn=Adventure%20Music%20Pack%20V%20%3A%20Epic%20soundtracks%20from%20movies%20%26%20games&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+            - generic [ref=f18e1327]: 1 GiB
+            - generic [ref=f18e1328]: "1"
+            - generic [ref=f18e1329]: "0"
+            - link "Mister_reno" [ref=f18e1331] [cursor=pointer]:
+              - /url: /search.php?q=user:Mister_reno
+          - listitem [ref=f18e1332]:
+            - generic [ref=f18e1333]:
+              - link "Audio" [ref=f18e1334] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e1335] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - 'link "Adventure Music Pack VII : Epic soundtracks from movies & games" [ref=f18e1337] [cursor=pointer]':
+              - /url: /description.php?id=4781360
+            - generic [ref=f18e1338]: 2009-03-18
+            - link [ref=f18e1340] [cursor=pointer]:
+              - /url: magnet:?xt=urn:btih:7AA01DE8D62ACA4FDC6F6C4C9E6E3092B8B39AD1&dn=Adventure%20Music%20Pack%20VII%20%3A%20Epic%20soundtracks%20from%20movies%20%26%20games&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+            - generic [ref=f18e1342]: 1015.41 MiB
+            - generic [ref=f18e1343]: "1"
+            - generic [ref=f18e1344]: "0"
+            - link "Mister_reno" [ref=f18e1346] [cursor=pointer]:
+              - /url: /search.php?q=user:Mister_reno
+          - listitem [ref=f18e1347]:
+            - generic [ref=f18e1348]:
+              - link "Audio" [ref=f18e1349] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e1350] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - 'link "Adventure Music Pack VIII : Epic soundtracks from movies & games" [ref=f18e1352] [cursor=pointer]':
+              - /url: /description.php?id=4851409
+            - generic [ref=f18e1353]: 2009-04-16
+            - link [ref=f18e1355] [cursor=pointer]:
+              - /url: magnet:?xt=urn:btih:31076EA515561D6EBAEC183B05A47E422344E2C4&dn=Adventure%20Music%20Pack%20VIII%20%3A%20Epic%20soundtracks%20from%20movies%20%26%20games&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+            - generic [ref=f18e1357]: 1.03 GiB
+            - generic [ref=f18e1358]: "1"
+            - generic [ref=f18e1359]: "0"
+            - link "Mister_reno" [ref=f18e1361] [cursor=pointer]:
+              - /url: /search.php?q=user:Mister_reno
+          - listitem [ref=f18e1362]:
+            - generic [ref=f18e1363]:
+              - link "Audio" [ref=f18e1364] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e1365] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - 'link "Adventure Music Pack IX : Epic soundtracks from movies & games" [ref=f18e1367] [cursor=pointer]':
+              - /url: /description.php?id=4851414
+            - generic [ref=f18e1368]: 2009-04-16
+            - link [ref=f18e1370] [cursor=pointer]:
+              - /url: magnet:?xt=urn:btih:075284444237D3598E654158F6375EB4CF19542D&dn=Adventure%20Music%20Pack%20IX%20%3A%20Epic%20soundtracks%20from%20movies%20%26%20games&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+            - generic [ref=f18e1372]: 1.01 GiB
+            - generic [ref=f18e1373]: "1"
+            - generic [ref=f18e1374]: "1"
+            - link "Mister_reno" [ref=f18e1376] [cursor=pointer]:
+              - /url: /search.php?q=user:Mister_reno
+          - listitem [ref=f18e1377]:
+            - generic [ref=f18e1378]:
+              - link "Audio" [ref=f18e1379] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e1380] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - 'link "Adventure Music Pack X : Epic soundtracks from movies & games" [ref=f18e1382] [cursor=pointer]':
+              - /url: /description.php?id=4851423
+            - generic [ref=f18e1383]: 2009-04-16
+            - link [ref=f18e1385] [cursor=pointer]:
+              - /url: magnet:?xt=urn:btih:EE2131A743E401D7E0CEE674DDEF4864520E3DBD&dn=Adventure%20Music%20Pack%20X%20%3A%20Epic%20soundtracks%20from%20movies%20%26%20games&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+            - generic [ref=f18e1387]: 1006.72 MiB
+            - generic [ref=f18e1388]: "1"
+            - generic [ref=f18e1389]: "0"
+            - link "Mister_reno" [ref=f18e1391] [cursor=pointer]:
+              - /url: /search.php?q=user:Mister_reno
+          - listitem [ref=f18e1392]:
+            - generic [ref=f18e1393]:
+              - link "Audio" [ref=f18e1394] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e1395] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "Lana Del Rey - Video Games - EP" [ref=f18e1397] [cursor=pointer]:
+              - /url: /description.php?id=6769676
+            - generic [ref=f18e1398]: 2011-10-25
+            - link [ref=f18e1400] [cursor=pointer]:
+              - /url: magnet:?xt=urn:btih:E8C6B93E7E852226D7B42E32220C7F9FA3163DEA&dn=Lana%20Del%20Rey%20-%20Video%20Games%20-%20EP&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+            - generic [ref=f18e1402]: 37.06 MiB
+            - generic [ref=f18e1403]: "1"
+            - generic [ref=f18e1404]: "0"
+            - generic [ref=f18e1405]: Anonymous
+          - listitem [ref=f18e1406]:
+            - generic [ref=f18e1407]:
+              - link "Audio" [ref=f18e1408] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e1409] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "Lana Del Rey-Video Games[Hannes Fischer RMX]" [ref=f18e1411] [cursor=pointer]:
+              - /url: /description.php?id=6859400
+            - generic [ref=f18e1412]: 2011-12-02
+            - link [ref=f18e1414] [cursor=pointer]:
+              - /url: magnet:?xt=urn:btih:D0CDD8EA8920F5511E17C11EC2F0281022167DF8&dn=Lana%20Del%20Rey-Video%20Games%5BHannes%20Fischer%20RMX%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+            - generic [ref=f18e1416]: 8.81 MiB
+            - generic [ref=f18e1417]: "1"
+            - generic [ref=f18e1418]: "0"
+            - link "Phntzm79" [ref=f18e1420] [cursor=pointer]:
+              - /url: /search.php?q=user:Phntzm79
+          - listitem [ref=f18e1421]:
+            - generic [ref=f18e1422]:
+              - link "Audio" [ref=f18e1423] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e1424] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "15 Lana Del Ray - Video Games.mp3" [ref=f18e1426] [cursor=pointer]:
+              - /url: /description.php?id=6932600
+            - generic [ref=f18e1427]: 2012-01-04
+            - link [ref=f18e1429] [cursor=pointer]:
+              - /url: magnet:?xt=urn:btih:38E80BB7C221EA3E377B1455B2212E75AA9276F0&dn=15%20Lana%20Del%20Ray%20-%20Video%20Games.mp3&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+            - generic [ref=f18e1431]: 11.03 MiB
+            - generic [ref=f18e1432]: "1"
+            - generic [ref=f18e1433]: "0"
+            - link "Adroit-some" [ref=f18e1435] [cursor=pointer]:
+              - /url: /search.php?q=user:Adroit-some
+          - listitem [ref=f18e1436]:
+            - generic [ref=f18e1437]:
+              - link "Audio" [ref=f18e1438] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e1439] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "Hunger Games - Beginning of a Rebellion Part 1 - Music of PANEM" [ref=f18e1441] [cursor=pointer]:
+              - /url: /description.php?id=7624278
+            - generic [ref=f18e1442]: 2012-09-11
+            - link [ref=f18e1444] [cursor=pointer]:
+              - /url: magnet:?xt=urn:btih:3F916F04B2051B26EBE5F51465778FA32481813D&dn=Hunger%20Games%20-%20Beginning%20of%20a%20Rebellion%20Part%201%20-%20Music%20of%20PANEM&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+            - generic [ref=f18e1446]: 538.37 MiB
+            - generic [ref=f18e1447]: "1"
+            - generic [ref=f18e1448]: "1"
+            - link "orgacyborg" [ref=f18e1450] [cursor=pointer]:
+              - /url: /search.php?q=user:orgacyborg
+          - listitem [ref=f18e1451]:
+            - generic [ref=f18e1452]:
+              - link "Audio" [ref=f18e1453] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e1454] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "Wicked games Parra for Cuva [feat. Anna Naklab]" [ref=f18e1456] [cursor=pointer]:
+              - /url: /description.php?id=8932883
+            - generic [ref=f18e1457]: 2013-09-18
+            - link [ref=f18e1459] [cursor=pointer]:
+              - /url: magnet:?xt=urn:btih:9C64FC1DF7CE9E941A8EA2A3546A04B483EF78B0&dn=Wicked%20games%20Parra%20for%20Cuva%20%5Bfeat.%20Anna%20Naklab%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+            - generic [ref=f18e1461]: 5.49 MiB
+            - generic [ref=f18e1462]: "1"
+            - generic [ref=f18e1463]: "0"
+            - link "iLoveiNNa" [ref=f18e1465] [cursor=pointer]:
+              - /url: /search.php?q=user:iLoveiNNa
+          - listitem [ref=f18e1466]:
+            - generic [ref=f18e1467]:
+              - link "Audio" [ref=f18e1468] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e1469] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "Parra for Cuva - Wicked Games (ft. Anna Naklab) [Original Mix]" [ref=f18e1471] [cursor=pointer]:
+              - /url: /description.php?id=9145974
+            - generic [ref=f18e1472]: 2013-11-04
+            - link [ref=f18e1474] [cursor=pointer]:
+              - /url: magnet:?xt=urn:btih:265D7AB2297F6408E93787AE5F0E074303549691&dn=Parra%20for%20Cuva%20-%20Wicked%20Games%20(ft.%20Anna%20Naklab)%20%5BOriginal%20Mix%5D&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+            - generic [ref=f18e1476]: 13.92 MiB
+            - generic [ref=f18e1477]: "1"
+            - generic [ref=f18e1478]: "0"
+            - link "Drone123" [ref=f18e1480] [cursor=pointer]:
+              - /url: /search.php?q=user:Drone123
+          - listitem [ref=f18e1481]:
+            - generic [ref=f18e1482]:
+              - link "Audio" [ref=f18e1483] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e1484] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "The Hunger Games - Catching Fire Soundtrack [Deluxe Edition] [32" [ref=f18e1486] [cursor=pointer]:
+              - /url: /description.php?id=9187709
+            - generic [ref=f18e1487]: 2013-11-13
+            - link [ref=f18e1489] [cursor=pointer]:
+              - /url: magnet:?xt=urn:btih:87A7D1633494F0B97DACF77CB9869004BC39637C&dn=The%20Hunger%20Games%20-%20Catching%20Fire%20Soundtrack%20%5BDeluxe%20Edition%5D%20%5B32&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+            - generic [ref=f18e1491]: 137.86 MiB
+            - generic [ref=f18e1492]: "1"
+            - generic [ref=f18e1493]: "0"
+            - link "Zertop" [ref=f18e1495] [cursor=pointer]:
+              - /url: /search.php?q=user:Zertop
+          - listitem [ref=f18e1496]:
+            - generic [ref=f18e1497]:
+              - link "Audio" [ref=f18e1498] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e1499] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "Jaguar - Power Games - 1983" [ref=f18e1501] [cursor=pointer]:
+              - /url: /description.php?id=9405272
+            - generic [ref=f18e1502]: 2013-12-27
+            - link [ref=f18e1504] [cursor=pointer]:
+              - /url: magnet:?xt=urn:btih:2E622E7A2EDEA0B6338C77902B13A518569177F2&dn=Jaguar%20-%20Power%20Games%20-%201983&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+            - generic [ref=f18e1506]: 118.71 MiB
+            - generic [ref=f18e1507]: "1"
+            - generic [ref=f18e1508]: "1"
+            - link "CoenV" [ref=f18e1510] [cursor=pointer]:
+              - /url: /search.php?q=user:CoenV
+          - listitem [ref=f18e1511]:
+            - generic [ref=f18e1512]:
+              - link "Audio" [ref=f18e1513] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e1514] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "VA - The Hunger Games - Mockingjay, Pt. 1 (Original Motion Pictu" [ref=f18e1516] [cursor=pointer]:
+              - /url: /description.php?id=11502910
+            - generic [ref=f18e1517]: 2014-11-18
+            - link [ref=f18e1519] [cursor=pointer]:
+              - /url: magnet:?xt=urn:btih:DFD836931A7948730D110F1E8BFF58BDCB7E7D50&dn=VA%20-%20The%20Hunger%20Games%20-%20Mockingjay%2C%20Pt.%201%20(Original%20Motion%20Pictu&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+            - generic [ref=f18e1521]: 124.76 MiB
+            - generic [ref=f18e1522]: "1"
+            - generic [ref=f18e1523]: "1"
+            - link "mehidk" [ref=f18e1525] [cursor=pointer]:
+              - /url: /search.php?q=user:mehidk
+          - listitem [ref=f18e1526]:
+            - generic [ref=f18e1527]:
+              - link "Audio" [ref=f18e1528] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e1529] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "The Hunger Games Mockingjay Pt. 1, Original Soundtrack" [ref=f18e1531] [cursor=pointer]:
+              - /url: /description.php?id=11580203
+            - generic [ref=f18e1532]: 2014-11-27
+            - link [ref=f18e1534] [cursor=pointer]:
+              - /url: magnet:?xt=urn:btih:EB9647C9E60705C6BBD64F7F79C696CF557BE925&dn=The%20Hunger%20Games%20Mockingjay%20Pt.%201%2C%20Original%20Soundtrack&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+            - generic [ref=f18e1536]: 115.53 MiB
+            - generic [ref=f18e1537]: "1"
+            - generic [ref=f18e1538]: "0"
+            - link "tango89" [ref=f18e1540] [cursor=pointer]:
+              - /url: /search.php?q=user:tango89
+          - listitem [ref=f18e1541]:
+            - generic [ref=f18e1542]:
+              - link "Audio" [ref=f18e1543] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e1544] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "Anthem for The Olympic Games Rio 2016 - by Jesus Copyright" [ref=f18e1546] [cursor=pointer]:
+              - /url: /description.php?id=13405014
+            - generic [ref=f18e1547]: 2016-02-02
+            - link [ref=f18e1549] [cursor=pointer]:
+              - /url: magnet:?xt=urn:btih:24058974ADD553FB4B3E2E8B0B8D58EA8FD153D6&dn=Anthem%20for%20The%20Olympic%20Games%20Rio%202016%20-%20by%20Jesus%20Copyright&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+            - generic [ref=f18e1551]: 27.47 MiB
+            - generic [ref=f18e1552]: "1"
+            - generic [ref=f18e1553]: "0"
+            - generic [ref=f18e1554]: Anonymous
+          - listitem [ref=f18e1555]:
+            - generic [ref=f18e1556]:
+              - link "Audio" [ref=f18e1557] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e1558] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "John Lennon - Mind Games OGG Vorbis encoding" [ref=f18e1560] [cursor=pointer]:
+              - /url: /description.php?id=3293331
+            - generic [ref=f18e1561]: 2005-02-21
+            - link [ref=f18e1563] [cursor=pointer]:
+              - /url: magnet:?xt=urn:btih:E7BEFB8010709315092660A0DA96B3F5D0A0D371&dn=John%20Lennon%20-%20Mind%20Games%20OGG%20Vorbis%20encoding&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+            - generic [ref=f18e1565]: 69.19 MiB
+            - generic [ref=f18e1566]: "0"
+            - generic [ref=f18e1567]: "0"
+            - link "linas_lietus" [ref=f18e1569] [cursor=pointer]:
+              - /url: /search.php?q=user:linas_lietus
+          - listitem [ref=f18e1570]:
+            - generic [ref=f18e1571]:
+              - link "Audio" [ref=f18e1572] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e1573] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "War Games of Vietnam - 30 låtar bra musiksmak" [ref=f18e1575] [cursor=pointer]:
+              - /url: /description.php?id=3358542
+            - generic [ref=f18e1576]: 2005-07-20
+            - link [ref=f18e1578] [cursor=pointer]:
+              - /url: magnet:?xt=urn:btih:06A0A33DE19BEF779C02D1C40BFB6497EF7AB4F0&dn=War%20Games%20of%20Vietnam%20-%2030%20l%C3%A5tar%20bra%20musiksmak&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+            - generic [ref=f18e1580]: 87.42 MiB
+            - generic [ref=f18e1581]: "0"
+            - generic [ref=f18e1582]: "0"
+            - link "PanzarPaw" [ref=f18e1584] [cursor=pointer]:
+              - /url: /search.php?q=user:PanzarPaw
+          - listitem [ref=f18e1585]:
+            - generic [ref=f18e1586]:
+              - link "Audio" [ref=f18e1587] [cursor=pointer]:
+                - /url: /search.php?q=category:100
+              - text: ">"
+              - link "Music" [ref=f18e1588] [cursor=pointer]:
+                - /url: /search.php?q=category:101
+            - link "Games Orchestral Compilation OST [By Tao] [160 Kb] [Include CD C" [ref=f18e1590] [cursor=pointer]:
+              - /url: /description.php?id=3363562
+            - generic [ref=f18e1591]: 2005-07-31
+            - link [ref=f18e1593] [cursor=pointer]:
+              - /url: magnet:?xt=urn:btih:A31DE03FBEB5ADFF626923C244B38A97EA7A959E&dn=Games%20Orchestral%20Compilation%20OST%20%5BBy%20Tao%5D%20%5B160%20Kb%5D%20%5BInclude%20CD%20C&tr=udp%3A%2F%2Ftracker.opentrackr.org%3A1337&tr=udp%3A%2F%2Fopen.stealth.si%3A80%2Fannounce&tr=udp%3A%2F%2Ftracker.torrent.eu.org%3A451%2Fannounce&tr=udp%3A%2F%2Ftracker.bittor.pw%3A1337%2Fannounce&tr=udp%3A%2F%2Fpublic.popcorn-tracker.org%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.dler.org%3A6969%2Fannounce&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce&tr=udp%3A%2F%2Fglotorrents.pw%3A6969%2Fannounce&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftorrent.gresille.org%3A80%2Fannounce&tr=udp%3A%2F%2Fp4p.arenabg.com%3A1337&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337
+            - generic [ref=f18e1595]: 90.03 MiB
+            - generic [ref=f18e1596]: "0"
+            - generic [ref=f18e1597]: "0"
+            - link "apreslespluies" [ref=f18e1599] [cursor=pointer]:
+              - /url: /search.php?q=user:apreslespluies
+      - link [ref=f18e1601] [cursor=pointer]:
+        - /url: http://ikeanangelsaidthe.com/redirect?tid=855295
+    - link [ref=f18e1605] [cursor=pointer]:
+      - /url: http://ikeanangelsaidthe.com/redirect?tid=855295
+  - banner [ref=f18e1607]:
+    - link [ref=f18e1609] [cursor=pointer]:
+      - /url: /index.html
+      - img "The Pirate Bay" [ref=f18e1610]
+    - generic [ref=f18e1611]:
+      - navigation [ref=f18e1612]:
+        - link [ref=f18e1613] [cursor=pointer]:
+          - /url: /index.html
+          - strong [ref=f18e1614]: Search Torrents
+        - text: "|"
+        - link "Browse Torrents" [ref=f18e1615] [cursor=pointer]:
+          - /url: /browse.php
+        - text: "|"
+        - link "Recent Torrents" [ref=f18e1616] [cursor=pointer]:
+          - /url: /search.php?q=top100:recent
+        - text: "|"
+        - link "Top 100" [ref=f18e1617] [cursor=pointer]:
+          - /url: /top.php
+      - generic [ref=f18e1618]:
+        - searchbox "Pirate Search" [ref=f18e1619]: games
+        - button "Pirate Search" [ref=f18e1620]
+        - combobox [ref=f18e1621]:
+          - option "All"
+          - option "Music" [selected]
+          - option "Audio books"
+          - option "Sound clips"
+          - option "FLAC"
+          - option "Other"
+          - option "Movies"
+          - option "Movies DVDR"
+          - option "Music videos"
+          - option "Movie clips"
+          - option "TV shows"
+          - option "Handheld"
+          - option "HD - Movies"
+          - option "HD - TV shows"
+          - option "3D"
+          - option "CAM/TS"
+          - option "UHD/4k - Movies"
+          - option "UHD/4k - TV shows"
+          - option "Other"
+          - option "Windows"
+          - option "Mac"
+          - option "UNIX"
+          - option "Handheld"
+          - option "IOS (iPad/iPhone)"
+          - option "Android"
+          - option "Other OS"
+          - option "PC"
+          - option "Mac"
+          - option "PSx"
+          - option "XBOX360"
+          - option "Wii"
+          - option "Handheld"
+          - option "IOS (iPad/iPhone)"
+          - option "Android"
+          - option "Other"
+          - option "Movies"
+          - option "Movies DVDR"
+          - option "Pictures"
+          - option "Games"
+          - option "HD - Movies"
+          - option "Movie clips"
+          - option "UHD/4k - Movies"
+          - option "Other"
+          - option "E-books"
+          - option "Comics"
+          - option "Pictures"
+          - option "Covers"
+          - option "Physibles"
+          - option "Other"
+    - link [ref=f18e1623] [cursor=pointer]:
+      - /url: http://ikeanangelsaidthe.com/redirect?tid=855295
+  - contentinfo [ref=f18e1625]:
+    - navigation [ref=f18e1626]:
+      - generic [ref=f18e1627]:
+        - link "Login/Upload" [ref=f18e1628] [cursor=pointer]:
+          - /url: /session/
+        - text: "|"
+        - link "Register" [ref=f18e1629] [cursor=pointer]:
+          - /url: /session/
+      - generic [ref=f18e1630]:
+        - link "TOR (New v3)" [ref=f18e1631] [cursor=pointer]:
+          - /url: http://piratebayo3klnzokct3wt5yyxb2vpebbuyjl7m623iaxmqhsd52coid.onion
+        - text: "|"
+        - link "Forum" [ref=f18e1632] [cursor=pointer]:
+          - /url: https://pirates-forum.org/
+        - text: "|"
+        - link "VPN" [ref=f18e1634] [cursor=pointer]:
+          - /url: http://ikeanangelsaidthe.com/redirect?tid=858335
+        - text: "|"
+        - link "TOKEN" [ref=f18e1635] [cursor=pointer]:
+          - /url: https://thepiratebay.org/token.html
+    - paragraph [ref=f18e1636]:
+      - link "BTC" [ref=f18e1637] [cursor=pointer]:
+        - /url: https://bitcoin.org
+      - text: ":"
+      - link "bc1qf8cedqguh2ucc3fgsphmgt789q9szh35vtl38m" [ref=f18e1639] [cursor=pointer]:
+        - /url: bitcoin:bc1qf8cedqguh2ucc3fgsphmgt789q9szh35vtl38m
+      - link "LTC" [ref=f18e1640] [cursor=pointer]:
+        - /url: https://litecoin.org
+      - text: ":"
+      - link "Les2qb8tp16kcxkm6cxzWdCV5174pMzcNK" [ref=f18e1642] [cursor=pointer]:
+        - /url: litecoin:Les2qb8tp16kcxkm6cxzWdCV5174pMzcNK
+      - link "ETH" [ref=f18e1643] [cursor=pointer]:
+        - /url: https://ethereum.org
+      - text: ":"
+      - link "0xc7F9f7Acc3941cC0Da9956410D0023FB936a6A09" [ref=f18e1645] [cursor=pointer]:
+        - /url: ethereum:0xc7F9f7Acc3941cC0Da9956410D0023FB936a6A09
+      - link "XMR" [ref=f18e1646] [cursor=pointer]:
+        - /url: https://getmonero.org
+      - text: ":"
+      - link "43pgpvwinkK4HCxJvEH7Fs2KMkH1VBCVqRjyCVLfCwTrGD1NzGSHkmuDUyFqCjBiCPLYePT1StfQn1uZhkPJczzzFXjYZ1U" [ref=f18e1648] [cursor=pointer]:
+        - /url: monero:43pgpvwinkK4HCxJvEH7Fs2KMkH1VBCVqRjyCVLfCwTrGD1NzGSHkmuDUyFqCjBiCPLYePT1StfQn1uZhkPJczzzFXjYZ1U

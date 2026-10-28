@@ -1,0 +1,88 @@
+- generic [active] [ref=f5e1]:
+  - banner:
+    - link "Skip to main content" [ref=f5e2] [cursor=pointer]:
+      - /url: "#main"
+  - main [ref=f5e4]:
+    - link "Excellent 4.5 out of 5 Trustpilot" [ref=f5e12] [cursor=pointer]:
+      - /url: https://www.trustpilot.com/review/godaddy.com
+      - generic [ref=f5e13]:
+        - generic [ref=f5e14]:
+          - generic [ref=f5e15]: Excellent
+          - generic [ref=f5e16]: 4.5 out of 5
+        - img "Trustpilot" [ref=f5e18]
+    - generic [ref=f5e22]:
+      - generic [ref=f5e25]:
+        - generic [ref=f5e26]:
+          - heading "The domain name" [level=6] [ref=f5e27]
+          - heading "Skidrow.co" [level=2] [ref=f5e28]
+          - heading "is for sale!" [level=6] [ref=f5e29]
+        - generic [ref=f5e30]:
+          - generic [ref=f5e32]:
+            - heading "Get this domain" [level=4] [ref=f5e33]
+            - generic [ref=f5e34]:
+              - generic [ref=f5e35]: Premium
+              - button "Verified Domain" [ref=f5e38]
+            - paragraph [ref=f5e41]: Own it today for $1,950, or select Lease to Own.
+            - separator [ref=f5e42]
+            - generic [ref=f5e43]:
+              - generic [ref=f5e44]:
+                - generic [ref=f5e45] [cursor=pointer]:
+                  - radio "Buy now" [checked] [ref=f5e46]
+                  - text: I
+                - paragraph [ref=f5e48] [cursor=pointer]: Buy now
+              - paragraph [ref=f5e49]: USD$1,950
+            - separator [ref=f5e50]
+            - generic [ref=f5e53]:
+              - generic [ref=f5e54]:
+                - generic [ref=f5e55]:
+                  - generic [ref=f5e56] [cursor=pointer]:
+                    - radio "Lease to own" [ref=f5e57]
+                    - text: I
+                  - paragraph [ref=f5e59] [cursor=pointer]: Lease to own
+                - button "Click here for more information" [ref=f5e60]
+              - generic [ref=f5e62]:
+                - paragraph [ref=f5e63]: USD$325
+                - generic [ref=f5e64]: / month
+            - separator [ref=f5e65]
+            - button "Next" [ref=f5e66] [cursor=pointer]
+            - separator [ref=f5e67]
+            - paragraph [ref=f5e70]: Free transaction support
+            - paragraph [ref=f5e73]: Secure payments
+            - paragraph [ref=f5e76]:
+              - text: Local currency available in cart at checkout
+              - button "Click here for more information" [ref=f5e77]
+            - generic [ref=f5e79]:
+              - img "Visa" [ref=f5e80]
+              - img "MasterCard" [ref=f5e81]
+              - img "American Express" [ref=f5e82]
+              - img "PayPal" [ref=f5e83]
+              - img "AliPay" [ref=f5e84]
+          - generic [ref=f5e85]:
+            - generic [ref=f5e86]: Need help? Give us a call.
+            - link "480-651-9741" [ref=f5e88] [cursor=pointer]:
+              - /url: "true"
+      - generic [ref=f5e89]:
+        - generic [ref=f5e92]:
+          - generic [ref=f5e93]:
+            - img "Safe & secure transactions" [ref=f5e94]
+            - paragraph [ref=f5e95]: Safe & secure transactions
+          - generic [ref=f5e96]:
+            - img "Fast & easy transfers" [ref=f5e97]
+            - paragraph [ref=f5e98]: Fast & easy transfers
+          - generic [ref=f5e99]:
+            - img "Hassle free payments" [ref=f5e100]
+            - paragraph [ref=f5e101]: Hassle free payments
+        - generic [ref=f5e104]:
+          - separator [ref=f5e105]
+          - heading "The simple, and safe way to buy domain names" [level=6] [ref=f5e106]
+          - paragraph [ref=f5e107]: No matter what kind of domain you want to buy or lease, we make the transfer simple and safe.
+          - button "Here's how it works" [ref=f5e108] [cursor=pointer]
+    - separator [ref=f5e109]
+    - generic [ref=f5e117]:
+      - generic [ref=f5e118]: Copyright © 2026 GoDaddy Operating Company, LLC. All Rights Reserved.
+      - generic [ref=f5e119]:
+        - button "Do not share my personal information" [ref=f5e120] [cursor=pointer]
+        - text: •
+        - button "Privacy Settings" [ref=f5e121] [cursor=pointer]
+  - contentinfo
+  - alert [ref=f5e122]

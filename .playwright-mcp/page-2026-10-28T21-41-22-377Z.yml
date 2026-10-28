@@ -1,0 +1,215 @@
+- generic [active] [ref=f23e1]:
+  - generic [ref=f23e3]:
+    - navigation [ref=f23e4]:
+      - generic [ref=f23e5]:
+        - generic [ref=f23e7]:
+          - link [ref=f23e8] [cursor=pointer]:
+            - /url: /
+            - img [ref=f23e10]:
+              - generic:
+                - generic:
+                  - generic: STATUS:MONITOR
+                  - generic: SYS.OVERRIDE
+                  - generic: CW
+          - generic: BETA
+        - generic [ref=f23e14]:
+          - navigation "Main navigation"
+          - button "Open search" [ref=f23e16]:
+            - generic [ref=f23e19]: Search…
+            - generic [ref=f23e20]: Ctrl K
+    - main [ref=f23e22]:
+      - main [ref=f23e24]:
+        - generic [ref=f23e25]:
+          - generic [ref=f23e26]:
+            - generic [ref=f23e27]: Knowledge Base
+            - heading "The Scene Index" [level=1] [ref=f23e29]
+            - paragraph [ref=f23e30]: Welcome to the vault. A comprehensive encyclopedia documenting the legends, the active forces, and the fallen heroes of the digital frontier. Explore the groups that shape the landscape of game preservation and DRM circumvention.
+          - generic [ref=f23e33]:
+            - generic [ref=f23e34]: "0x0"
+            - generic [ref=f23e35]: Database
+        - generic [ref=f23e36]:
+          - button "All" [ref=f23e37]
+          - button "The Scene" [ref=f23e38]
+          - button "P2P / Cracker" [ref=f23e39]
+          - button "Repacker" [ref=f23e40]
+        - generic [ref=f23e41]:
+          - generic [ref=f23e42] [cursor=pointer]:
+            - generic [ref=f23e43]:
+              - generic [ref=f23e44]:
+                - heading "voices38" [level=3] [ref=f23e45]
+                - paragraph [ref=f23e46]: P2P / Cracker
+              - generic [ref=f23e47]: Active
+            - generic [ref=f23e48]: "\"The Goat\""
+            - generic [ref=f23e50]:
+              - generic [ref=f23e51]:
+                - generic [ref=f23e52]: Era
+                - text: 2025-2026
+              - generic [ref=f23e53]:
+                - generic [ref=f23e54]: Releases
+                - text: 32+
+          - generic [ref=f23e55] [cursor=pointer]:
+            - generic [ref=f23e56]:
+              - generic [ref=f23e57]:
+                - heading "EMPRESS" [level=3] [ref=f23e58]
+                - paragraph [ref=f23e59]: P2P / Cracker
+              - generic [ref=f23e60]: Unknown
+            - generic [ref=f23e61]: "\"Death to Denuvo.\""
+            - generic [ref=f23e63]:
+              - generic [ref=f23e64]:
+                - generic [ref=f23e65]: Era
+                - text: 2020 - 2023
+              - generic [ref=f23e66]:
+                - generic [ref=f23e67]: Releases
+                - text: 112+
+          - generic [ref=f23e68] [cursor=pointer]:
+            - generic [ref=f23e69]:
+              - generic [ref=f23e70]:
+                - heading "FitGirl Repacks" [level=3] [ref=f23e71]
+                - paragraph [ref=f23e72]: Repacker
+              - generic [ref=f23e73]: Active
+            - generic [ref=f23e74]: "\"If you like the game, support the developers and buy it!\""
+            - generic [ref=f23e76]:
+              - generic [ref=f23e77]:
+                - generic [ref=f23e78]: Era
+                - text: 2012 - Present
+              - generic [ref=f23e79]:
+                - generic [ref=f23e80]: Releases
+                - text: 5,000+
+          - generic [ref=f23e81] [cursor=pointer]:
+            - generic [ref=f23e82]:
+              - generic [ref=f23e83]:
+                - heading "FAiRLiGHT (FLT)" [level=3] [ref=f23e84]
+                - paragraph [ref=f23e85]: The Scene
+              - generic [ref=f23e86]: Active
+            - generic [ref=f23e87]: Quality, Tradition, and Pride.
+            - generic [ref=f23e89]:
+              - generic [ref=f23e90]:
+                - generic [ref=f23e91]: Era
+                - text: 1987 - Present
+              - generic [ref=f23e92]:
+                - generic [ref=f23e93]: Releases
+                - text: 4,800+
+          - generic [ref=f23e94] [cursor=pointer]:
+            - generic [ref=f23e95]:
+              - generic [ref=f23e96]:
+                - heading "RUNE" [level=3] [ref=f23e97]
+                - paragraph [ref=f23e98]: The Scene
+              - generic [ref=f23e99]: Active
+            - generic [ref=f23e100]: Relentless Steam Emu domination.
+            - generic [ref=f23e102]:
+              - generic [ref=f23e103]:
+                - generic [ref=f23e104]: Era
+                - text: 2023 - Present
+              - generic [ref=f23e105]:
+                - generic [ref=f23e106]: Releases
+                - text: 430+
+          - generic [ref=f23e107] [cursor=pointer]:
+            - generic [ref=f23e108]:
+              - generic [ref=f23e109]:
+                - heading "DODI Repacks" [level=3] [ref=f23e110]
+                - paragraph [ref=f23e111]: Repacker
+              - generic [ref=f23e112]: Active
+            - generic [ref=f23e113]: Fast Installers.
+            - generic [ref=f23e115]:
+              - generic [ref=f23e116]:
+                - generic [ref=f23e117]: Era
+                - text: 2018 - Present
+              - generic [ref=f23e118]:
+                - generic [ref=f23e119]: Releases
+                - text: 3,000+
+          - generic [ref=f23e120] [cursor=pointer]:
+            - generic [ref=f23e121]:
+              - generic [ref=f23e122]:
+                - heading "SKIDROW" [level=3] [ref=f23e123]
+                - paragraph [ref=f23e124]: The Scene
+              - generic [ref=f23e125]: Retired / Inactive
+            - generic [ref=f23e126]: "\"The Leading Force\""
+            - generic [ref=f23e128]:
+              - generic [ref=f23e129]:
+                - generic [ref=f23e130]: Era
+                - text: 1990 - 2023
+              - generic [ref=f23e131]:
+                - generic [ref=f23e132]: Releases
+                - text: 3,200+
+          - generic [ref=f23e133] [cursor=pointer]:
+            - generic [ref=f23e134]:
+              - generic [ref=f23e135]:
+                - heading "CODEX" [level=3] [ref=f23e136]
+                - paragraph [ref=f23e137]: The Scene
+              - generic [ref=f23e138]: Retired
+            - generic [ref=f23e139]: The Kings of Steam Emu.
+            - generic [ref=f23e141]:
+              - generic [ref=f23e142]:
+                - generic [ref=f23e143]: Era
+                - text: 2014 - 2022
+              - generic [ref=f23e144]:
+                - generic [ref=f23e145]: Releases
+                - text: 7,300+
+    - contentinfo [ref=f23e146]:
+      - generic [ref=f23e147]:
+        - generic [ref=f23e148]:
+          - generic [ref=f23e150]:
+            - generic [ref=f23e151]:
+              - link "Crackwatch" [ref=f23e152] [cursor=pointer]:
+                - /url: /
+              - generic [ref=f23e156]: Network Operational
+            - paragraph [ref=f23e158]: Track the latest game cracks, releases, and DRM status. Your trusted source for gaming preservation news.
+          - generic [ref=f23e159]:
+            - generic [ref=f23e160]:
+              - heading "Browse" [level=4] [ref=f23e161]
+              - list [ref=f23e163]:
+                - listitem [ref=f23e164]:
+                  - link "All Games" [ref=f23e165] [cursor=pointer]:
+                    - /url: /games
+                - listitem [ref=f23e166]:
+                  - link "Cracked" [ref=f23e167] [cursor=pointer]:
+                    - /url: /games?status=CRACKED
+                - listitem [ref=f23e168]:
+                  - link "Uncracked" [ref=f23e169] [cursor=pointer]:
+                    - /url: /games?status=UNCRACKED
+                - listitem [ref=f23e170]:
+                  - link "Upcoming" [ref=f23e171] [cursor=pointer]:
+                    - /url: /games?status=UNRELEASED
+            - generic [ref=f23e172]:
+              - heading "Knowledge" [level=4] [ref=f23e173]
+              - list [ref=f23e175]:
+                - listitem [ref=f23e176]:
+                  - link "DRM Index" [ref=f23e177] [cursor=pointer]:
+                    - /url: /protections
+                - listitem [ref=f23e178]:
+                  - link "Cracking Groups" [ref=f23e179] [cursor=pointer]:
+                    - /url: /groups
+                - listitem [ref=f23e180]:
+                  - link "NFO Archive" [ref=f23e181] [cursor=pointer]:
+                    - /url: /nfos
+            - generic [ref=f23e182]:
+              - heading "Community" [level=4] [ref=f23e183]
+              - list [ref=f23e185]:
+                - listitem [ref=f23e186]:
+                  - link "Request a Game" [ref=f23e187] [cursor=pointer]:
+                    - /url: /request
+                - listitem [ref=f23e188]:
+                  - link "Disclaimer" [ref=f23e189] [cursor=pointer]:
+                    - /url: /disclaimer
+                - listitem [ref=f23e190]:
+                  - link "Terms of Service" [ref=f23e191] [cursor=pointer]:
+                    - /url: /terms
+                - listitem [ref=f23e192]:
+                  - link "Privacy Policy" [ref=f23e193] [cursor=pointer]:
+                    - /url: /privacy
+            - generic [ref=f23e194]:
+              - heading "Account" [level=4] [ref=f23e195]
+              - list [ref=f23e197]:
+                - listitem [ref=f23e198]:
+                  - link "Login" [ref=f23e199] [cursor=pointer]:
+                    - /url: /login
+                - listitem [ref=f23e200]:
+                  - link "Register" [ref=f23e201] [cursor=pointer]:
+                    - /url: /register
+        - generic [ref=f23e203]:
+          - paragraph [ref=f23e204]: © 2026 Crackwatch · All rights reserved
+          - link "No files · No torrents · News & community only →" [ref=f23e205] [cursor=pointer]:
+            - /url: /disclaimer
+            - text: No files · No torrents · News & community only
+            - generic [ref=f23e207]: →
+  - alert [ref=f23e208]

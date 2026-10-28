@@ -1,0 +1,1210 @@
+- generic [ref=f20e2]:
+  - link "Skip to content" [ref=f20e3] [cursor=pointer]:
+    - /url: "#content"
+  - banner [ref=f20e4]:
+    - heading [level=1] [ref=f20e9]:
+      - link "DODI Repacks" [ref=f20e10] [cursor=pointer]:
+        - /url: https://dodi-repacks.site/
+    - navigation "Top Menu" [ref=f20e13]:
+      - list [ref=f20e15]:
+        - listitem [ref=f20e16]:
+          - link "DODI Repacks" [ref=f20e17] [cursor=pointer]:
+            - /url: https://dodi-repacks.site/
+        - listitem [ref=f20e18]:
+          - link "TROUBLESHOOTING" [ref=f20e19] [cursor=pointer]:
+            - /url: https://dodi-repacks.site/troubleshooting/
+        - listitem [ref=f20e20]:
+          - link "Contacts" [ref=f20e21] [cursor=pointer]:
+            - /url: https://dodi-repacks.site/contacts/
+        - listitem [ref=f20e22]:
+          - link "Hypervisor Repacks" [ref=f20e23] [cursor=pointer]:
+            - /url: https://game-repack.site/dodi-hypervisor-repack/
+  - generic [ref=f20e24]:
+    - generic [ref=f20e26]:
+      - banner [ref=f20e27]:
+        - heading "Posts" [level=2] [ref=f20e28]
+      - main [ref=f20e30]:
+        - article [ref=f20e31]:
+          - generic [ref=f20e34]:
+            - generic [ref=f20e35]:
+              - generic [ref=f20e36]: Posted on
+              - link [ref=f20e37] [cursor=pointer]:
+                - /url: https://dodi-repacks.site/some-important-messages-to-my-fans/
+                - time [ref=f20e38]: October 26, 2026
+            - heading [level=3] [ref=f20e39]:
+              - link "Some important Messages To My Fans" [ref=f20e40] [cursor=pointer]:
+                - /url: https://dodi-repacks.site/some-important-messages-to-my-fans/
+          - generic [ref=f20e41]:
+            - paragraph [ref=f20e42]: My Dear Dodians,
+            - list [ref=f20e43]:
+              - listitem [ref=f20e44]: Misleading information about ” DODI Repack Team ‘‘ . Our repack team is NOT new to compressing games. They both are working in compressing games years ago even before me and post their work only in fileforums.com (https://fileforums.com/forumdisplay.php?f=6) , not in public.
+              - listitem [ref=f20e45]: Many dead links in last four weaks. On Sept. 23, We lost all SwiftUploads links (check google and you will know why). They are re-uploading daily. I ask your patience
+        - article [ref=f20e46]:
+          - generic [ref=f20e50]:
+            - generic [ref=f20e51]: Posted on
+            - link [ref=f20e52] [cursor=pointer]:
+              - /url: https://dodi-repacks.site/upcoming-repacks/
+              - time [ref=f20e53]: September 14, 2026
+          - generic [ref=f20e54]:
+            - heading [level=1] [ref=f20e55]:
+              - strong [ref=f20e56]: Free Offline Activation Releases
+            - list [ref=f20e57]:
+              - listitem [ref=f20e58]:
+                - link "Final Fantasy Resonance (Free Activation)" [ref=f20e59] [cursor=pointer]:
+                  - /url: https://game-repack.site/2026/10/25/final-fantasy-resonance-2/
+              - listitem [ref=f20e60]:
+                - 'link "Planet Zoo 2: Deluxe (Free Activation)" [ref=f20e62] [cursor=pointer]':
+                  - /url: https://game-repack.site/2026/10/14/planet-zoo-2/
+              - listitem [ref=f20e63]:
+                - 'link "Star Wars: Galactic Racer (Free Activation)" [ref=f20e65] [cursor=pointer]':
+                  - /url: https://game-repack.site/2026/10/07/star-wars-galactic-racer/
+              - listitem [ref=f20e66]:
+                - 'link "Ace Combat 8: Wings of Theve (Free Activation)" [ref=f20e68] [cursor=pointer]':
+                  - /url: https://game-repack.site/2026/09/29/ace-combat-8-wings-of-theve/
+              - listitem [ref=f20e69]:
+                - link "EA Sports FC 27 (Free Activation)" [ref=f20e71] [cursor=pointer]:
+                  - /url: https://game-repack.site/2026/09/24/ea-sports-fc-27/
+              - listitem [ref=f20e72]:
+                - 'link "Onimusha: Way of the Sword (Free Activation)" [ref=f20e74] [cursor=pointer]':
+                  - /url: https://game-repack.site/2026/09/04/onimusha-way-of-the-sword-2/
+              - listitem [ref=f20e75]:
+                - link "EA Sports FC 26 (Free Activation) – Available Now" [ref=f20e77] [cursor=pointer]:
+                  - /url: https://game-repack.site/2025/12/24/ea-sports-fc-26/
+              - listitem [ref=f20e78]:
+                - link "Crimson Desert Enhanced (Free Activation)" [ref=f20e80] [cursor=pointer]:
+                  - /url: https://game-repack.site/2026/08/28/crimson-desert-enhanced-deluxe-edition-v2-00-00-all-dlcs-multi14-free-offline-activation-dodi-repack/
+              - listitem [ref=f20e81]:
+                - 'link "Echoes of Aincrad: Ultimate Edition" [ref=f20e83] [cursor=pointer]':
+                  - /url: https://game-repack.site/2026/07/11/echoes-of-aincrad/
+              - listitem [ref=f20e84]:
+                - text: WWE 2K26 (Free Offline Activation) –
+                - link "Available Now" [ref=f20e86] [cursor=pointer]:
+                  - /url: https://game-repack.site/2026/03/15/wwe-2k26/
+              - listitem [ref=f20e87]:
+                - text: Football Manager 26 (Free Activation) –
+                - link "Available Now" [ref=f20e89] [cursor=pointer]:
+                  - /url: https://game-repack.site/2025/12/18/football-manager-26/
+              - listitem [ref=f20e90]:
+                - text: Jurassic World Evolution 3 (Free Activation) –
+                - link "Available Now" [ref=f20e92] [cursor=pointer]:
+                  - /url: https://game-repack.site/2025/10/25/jurassic-world-evolution-3/
+              - listitem [ref=f20e93]:
+                - text: Monster Hunter Wilds (Free Offline Activation) –
+                - link "Available Now" [ref=f20e95] [cursor=pointer]:
+                  - /url: https://game-repack.site/2025/03/30/monster-hunter-wilds/
+            - separator [ref=f20e96]
+            - heading [level=1] [ref=f20e97]:
+              - strong [ref=f20e99]: Exclusive Repacks
+            - list [ref=f20e100]:
+              - listitem [ref=f20e101]:
+                - link "Marvel’s Wolverine (v1.0.1)" [ref=f20e102] [cursor=pointer]:
+                  - /url: https://game-repack.site/2024/08/24/marvels-wolverine/
+              - listitem [ref=f20e103]:
+                - 'link "Uncharted: The Nathan Drake Collection" [ref=f20e105] [cursor=pointer]':
+                  - /url: https://game-repack.site/2026/10/19/uncharted-the-nathan-drake-collection/
+              - listitem [ref=f20e106]:
+                - link "Killzone Shadow Fall (v01.81 + MULTi16)" [ref=f20e108] [cursor=pointer]:
+                  - /url: https://game-repack.site/2026/10/22/killzone-shadow-fall/
+            - separator [ref=f20e109]
+            - heading [level=1] [ref=f20e110]:
+              - strong [ref=f20e112]: Trending Repacks
+            - list [ref=f20e113]:
+              - listitem [ref=f20e114]:
+                - link [ref=f20e116] [cursor=pointer]:
+                  - /url: https://game-repack.site/2026/10/22/killzone-shadow-fall/
+                  - strong [ref=f20e117]: Killzone Shadow Fall (v01.81 + MULTi16) (Lesca) [DODI Repack]
+              - listitem [ref=f20e118]:
+                - link [ref=f20e120] [cursor=pointer]:
+                  - /url: https://dodi-repacks.site/valor-mortis/
+                  - strong [ref=f20e121]: "Valor Mortis: Deluxe Edition (+ Update 1 + DLC)"
+              - listitem [ref=f20e122]:
+                - link [ref=f20e124] [cursor=pointer]:
+                  - /url: https://dodi-repacks.site/gears-of-war-e-day/
+                  - strong [ref=f20e125]: "Gears of War: E-Day (Update 2 + All DLCs)"
+              - listitem [ref=f20e126]:
+                - link [ref=f20e128] [cursor=pointer]:
+                  - /url: https://dodi-repacks.site/borderlands-4/
+                  - strong [ref=f20e129]: "Borderlands 4: Super Deluxe Edition (v1.11 + All DLCs + Bonus Content + MULTi14) (From 43.4 GB) [DODI Repack]"
+              - listitem [ref=f20e130]:
+                - link [ref=f20e132] [cursor=pointer]:
+                  - /url: https://dodi-repacks.site/cyberpunk-2077/
+                  - strong [ref=f20e133]: "Cyberpunk 2077: Ultimate Edition (v2.5 – Edgerunners 2 Update + All DLCs + Dev Tools + Bonus Content + MULTi19) (From 67.7 GB) (Ultra-Fast Install) [DODI Repack]"
+              - listitem [ref=f20e134]:
+                - link [ref=f20e136] [cursor=pointer]:
+                  - /url: https://dodi-repacks.site/metro-redux-bundle/
+                  - strong [ref=f20e137]: "Metro: Redux – Bundle (2033 + Last Light) (v1.0.0.4 – Next-Gen Update + MULTi10) [DODI Repack]"
+              - listitem [ref=f20e138]:
+                - link [ref=f20e140] [cursor=pointer]:
+                  - /url: https://dodi-repacks.site/elden-ring/
+                  - strong [ref=f20e141]: "ELDEN RING: Deluxe Edition (v1.17.2 + All DLCs)"
+              - listitem [ref=f20e142]:
+                - link [ref=f20e144] [cursor=pointer]:
+                  - /url: https://game-repack.site/2026/10/25/final-fantasy-resonance/
+                  - strong [ref=f20e145]: "Final Fantasy Resonance: Deluxe Edition (v1.0.1.0 + DLCs + MULTi8) (Hypervisor) [DODI / ARTIFACT Repack]"
+              - listitem [ref=f20e146]:
+                - link [ref=f20e148] [cursor=pointer]:
+                  - /url: https://game-repack.site/2026/10/25/final-fantasy-resonance-2/
+                  - strong [ref=f20e149]: "Final Fantasy Resonance: Deluxe Edition (v1.0.1.0 + DLCs + MULTi8) (Free Offline Activation) [DODI Repack]"
+              - listitem [ref=f20e150]:
+                - link [ref=f20e152] [cursor=pointer]:
+                  - /url: https://dodi-repacks.site/forza-horizon-6/
+                  - strong [ref=f20e153]: "Forza Horizon 6: Premium Edition (v461.691 + All DLCs)"
+              - listitem [ref=f20e154]:
+                - link [ref=f20e156] [cursor=pointer]:
+                  - /url: https://dodi-repacks.site/nba-2k27/
+                  - strong [ref=f20e157]: "NBA 2K27: Ultra Edition (v2.1 + All DLCs + 4K Pack)"
+              - listitem [ref=f20e158]:
+                - link [ref=f20e160] [cursor=pointer]:
+                  - /url: https://dodi-repacks.site/s-t-a-l-k-e-r-shadow-of-chernobyl/
+                  - strong [ref=f20e161]: "S.T.A.L.K.E.R.: Shadow Of Chernobyl (Old Good S.T.A.L.K.E.R. Evolution 0693 Final v2.0) (MULTi3) [DODI Repack]"
+              - listitem [ref=f20e162]:
+                - link [ref=f20e164] [cursor=pointer]:
+                  - /url: https://dodi-repacks.site/star-wars-knights-of-the-old-republic/
+                  - strong [ref=f20e165]: STAR WARS – Knights of the Old Republic – [DODI Repack]
+              - listitem [ref=f20e166]:
+                - link [ref=f20e168] [cursor=pointer]:
+                  - /url: https://dodi-repacks.site/mirrors-edge/
+                  - strong [ref=f20e169]: Mirror’s Edge (v1.0.1.0 + Goodies + MULTi13) – [DODI Repack]
+              - listitem [ref=f20e170]:
+                - link [ref=f20e172] [cursor=pointer]:
+                  - /url: https://dodi-repacks.site/persona-4-golden/
+                  - strong [ref=f20e173]: Persona 4 Golden (Rev.2023 + MULTi4) [DODI Repack]
+              - listitem [ref=f20e174]:
+                - strong [ref=f20e176]:
+                  - 'link "Final Fantasy XVI: Complete Edition (v1.03 + All DLCs + Bonus Content + MULTi14) (From 100 GB) [DODI Repack]" [ref=f20e177] [cursor=pointer]':
+                    - /url: https://dodi-repacks.site/final-fantasy-xvi/
+              - listitem [ref=f20e178]:
+                - link [ref=f20e180] [cursor=pointer]:
+                  - /url: https://dodi-repacks.site/beast-of-reincarnation/
+                  - strong [ref=f20e181]: "Beast of Reincarnation: Deluxe Edition (v1.1.2 + All DLCs + MULTi11) [DODI Repack]"
+              - listitem [ref=f20e182]:
+                - link [ref=f20e184] [cursor=pointer]:
+                  - /url: https://dodi-repacks.site/s-t-a-l-k-e-r-2-heart-of-chornobyl/
+                  - strong [ref=f20e185]: "S.T.A.L.K.E.R. 2: Heart of Chornobyl – Ultimate Edition (v2.1.0 + All DLCs + Bonus Content + MULTi18) (Fast Install) [DODI Repack]"
+              - listitem [ref=f20e186]:
+                - link [ref=f20e188] [cursor=pointer]:
+                  - /url: https://dodi-repacks.site/grand-theft-auto-san-andreas-retextured/
+                  - strong [ref=f20e189]: Grand Theft Auto San Andreas Retextured (GTA IV Graphics + GTA IV Retextured Mod) – [DODI Repack]
+              - listitem [ref=f20e190]:
+                - link [ref=f20e192] [cursor=pointer]:
+                  - /url: https://dodi-repacks.site/tomb-raider-underworld/
+                  - strong [ref=f20e193]: "Tomb Raider: Underworld (v1.1) [DODI Repack]"
+              - listitem [ref=f20e194]:
+                - link [ref=f20e196] [cursor=pointer]:
+                  - /url: https://dodi-repacks.site/star-wars-jedi-fallen-order/
+                  - strong [ref=f20e197]: "Star Wars Jedi: Fallen Order – Deluxe Edition (No Denuvo) (v1.0.10.0 + DLCs + MULTi13) (From 38.6 GB) (anadius) [DODI Repack]"
+              - listitem [ref=f20e198]:
+                - link [ref=f20e200] [cursor=pointer]:
+                  - /url: https://dodi-repacks.site/batman-arkham-asylum/
+                  - strong [ref=f20e201]: Batman Arkham Asylum – Game of the Year Edition [DODI Repack]
+              - listitem [ref=f20e202]:
+                - link [ref=f20e204] [cursor=pointer]:
+                  - /url: https://dodi-repacks.site/call-of-duty-modern-warfare-ii/
+                  - strong [ref=f20e205]: "Call of Duty: Modern Warfare II – Vault Edition (2022) (Campaign) (v9.7) [DODI Repack]"
+              - listitem [ref=f20e206]:
+                - link [ref=f20e208] [cursor=pointer]:
+                  - /url: https://dodi-repacks.site/x-men-origins-wolverine/
+                  - strong [ref=f20e209]: "X-Men Origins: Wolverine [DODI Repack]"
+              - listitem [ref=f20e210]:
+                - link [ref=f20e212] [cursor=pointer]:
+                  - /url: https://dodi-repacks.site/ereban-shadow-legacy/
+                  - strong [ref=f20e213]: "Ereban: Shadow Legacy (v1.1.14 + MULTi10) [DODI Repack]"
+              - listitem [ref=f20e214]:
+                - link [ref=f20e216] [cursor=pointer]:
+                  - /url: https://dodi-repacks.site/cronos-the-new-dawn/
+                  - strong [ref=f20e217]: "Cronos: The New Dawn – Deluxe Edition (v1.4.0.0 + All DLCs + Bonus Content + MULTi15) [DODI Repack]"
+              - listitem [ref=f20e218]:
+                - link [ref=f20e220] [cursor=pointer]:
+                  - /url: https://dodi-repacks.site/wild-hearts/
+                  - strong [ref=f20e221]: "Wild Hearts: Karakuri Edition (v1.0.1.1 + All DLCs + MULTi12) (From 23.5 GB) [DODI Repack]"
+        - article [ref=f20e222]:
+          - generic [ref=f20e223]:
+            - generic [ref=f20e224]:
+              - generic [ref=f20e225]: Posted on
+              - link [ref=f20e226] [cursor=pointer]:
+                - /url: https://dodi-repacks.site/wild-hearts/
+                - time [ref=f20e227]: October 28, 2026
+            - heading [level=3] [ref=f20e228]:
+              - 'link "1614- Wild Hearts: Karakuri Edition (v1.0.1.1 + All DLCs + MULTi12) (From 23.5 GB) [DODI Repack]" [ref=f20e229] [cursor=pointer]':
+                - /url: https://dodi-repacks.site/wild-hearts/
+          - generic [ref=f20e230]:
+            - paragraph [ref=f20e231]
+            - generic "Expand" [ref=f20e234] [cursor=pointer]: Information
+            - generic "Expand" [ref=f20e236] [cursor=pointer]: GAME DESCRIPTION
+            - generic "Expand" [ref=f20e238] [cursor=pointer]: How To Install
+            - paragraph [ref=f20e239]
+            - heading [level=1] [ref=f20e240]:
+              - link [ref=f20e241] [cursor=pointer]:
+                - /url: https://youtu.be/enXRIRFpVo4
+                - strong [ref=f20e243]: First Few Mins Repack Gameplay
+            - paragraph [ref=f20e244]
+            - paragraph [ref=f20e245]
+            - paragraph [ref=f20e246]:
+              - strong [ref=f20e248]: Repack Features
+            - paragraph [ref=f20e249]:
+              - strong [ref=f20e250]: Based on
+              - text: anadius Release
+              - strong [ref=f20e251]: Game Version
+              - text: ": v1.0.1.1"
+              - strong [ref=f20e252]: DLCs
+              - text: "All DLCs included – To activate all DLCs: Copy contents of ” _Karakuri Edition + preorder unlock ” folder and paste them in your Documents folder"
+              - strong [ref=f20e253]: "Language :"
+              - text: "– Text language: English, French, German, Italian, Spanish – Spain, Portuguese – Brazil, Polish, Spanish – Latin America, Japanese, Korean, Simplified Chinese, Traditional Chinese – Audio: English, French, German, Italian, Spanish – Spain, Japanese – Language can be changed in game settings"
+              - generic [ref=f20e254]: – English & Japanese Languages are included in main repack files by default, not optional
+              - strong [ref=f20e256]: Selective Download Feature
+              - text: ": you can skip downloading and installing Languages packs you don’t need (French, German, Italian, Spanish)"
+              - strong [ref=f20e258]: Repack Size
+              - text: ": from 23.5 GB"
+              - strong [ref=f20e260]: Final Size
+              - text: ": 70 GB"
+              - strong [ref=f20e261]: Lossless repack
+              - text: ", Nothing removed OR re-encoded"
+              - strong [ref=f20e262]: Install Time
+              - text: ": 4 – 20 mins { Based on Your PC and selected items }"
+              - strong [ref=f20e263]: Greetings
+              - text: ": Razor12911, KaOsKrew"
+              - strong [ref=f20e264]: Repack By
+              - text: DODI
+              - strong [ref=f20e266]: PLZ SEED , DONT HIT & RUN
+            - paragraph [ref=f20e267]:
+              - strong [ref=f20e268]: Download Links
+            - list [ref=f20e269]:
+              - listitem [ref=f20e270]:
+                - strong [ref=f20e272]: Don’t download Mega / Mediafire / OneShare / WeUpload / One Drive Links or password files
+              - listitem [ref=f20e273]:
+                - strong [ref=f20e275]: Don’t follow pop ad pages, Stay in download page
+            - paragraph [ref=f20e276]:
+              - strong [ref=f20e278]:
+                - text: Torrent –
+                - link "Click Here" [ref=f20e279] [cursor=pointer]:
+                  - /url: https://zovo.to/xZHkJcG
+                - text: – or –
+                - link "Click here" [ref=f20e280] [cursor=pointer]:
+                  - /url: https://zovo.to/gNdvB7q
+              - strong [ref=f20e282]:
+                - text: – or –
+                - link "Click Here" [ref=f20e283] [cursor=pointer]:
+                  - /url: https://zovo.to/c4NSXhQ
+                - text: –
+            - paragraph [ref=f20e284]:
+              - strong [ref=f20e286]:
+                - text: SwiftUploads –
+                - link "Click Here" [ref=f20e287] [cursor=pointer]:
+                  - /url: https://zovo.to/kJNRhv4
+                - text: –
+            - paragraph [ref=f20e288]:
+              - strong [ref=f20e290]:
+                - text: FileKeeper –
+                - link "Click Here" [ref=f20e291] [cursor=pointer]:
+                  - /url: https://zovo.to/qceEvqs
+                - text: –
+              - strong [ref=f20e293]
+            - list [ref=f20e294]:
+              - listitem [ref=f20e295]:
+                - strong [ref=f20e296]: All file hosting links are interchangeable
+        - article [ref=f20e297]:
+          - generic [ref=f20e298]:
+            - generic [ref=f20e299]:
+              - generic [ref=f20e300]: Posted on
+              - link [ref=f20e301] [cursor=pointer]:
+                - /url: https://dodi-repacks.site/cronos-the-new-dawn/
+                - time [ref=f20e302]: October 28, 2026
+            - heading [level=3] [ref=f20e303]:
+              - 'link "2182- Cronos: The New Dawn – Deluxe Edition (v1.4.0.0 + All DLCs + Bonus Content + MULTi15) [DODI Repack]" [ref=f20e304] [cursor=pointer]':
+                - /url: https://dodi-repacks.site/cronos-the-new-dawn/
+          - generic [ref=f20e305]:
+            - paragraph [ref=f20e306]
+            - generic "Expand" [ref=f20e309] [cursor=pointer]: Information
+            - generic "Expand" [ref=f20e311] [cursor=pointer]: Description
+            - generic "Expand" [ref=f20e313] [cursor=pointer]: How To Install
+            - heading [level=1] [ref=f20e314]:
+              - link [ref=f20e315] [cursor=pointer]:
+                - /url: https://youtu.be/l3yEJRHOm1k
+                - strong [ref=f20e317]: First Few Mins Repack Gameplay
+            - paragraph [ref=f20e318]
+            - paragraph [ref=f20e319]:
+              - strong [ref=f20e321]: Repack Features
+            - paragraph [ref=f20e322]:
+              - strong [ref=f20e324]: Based on
+              - text: ": Cronos.The.New.Dawn-RUNE ISO Release – Soundtrack, thanks to InsaneRamZes"
+              - strong [ref=f20e325]: "Game Version:"
+              - text: v20250831_2044-321866
+              - strong [ref=f20e326]: "DLCs & Bonus Content:"
+              - text: Pre Order Bonus, Deluxe Edition Upgrade, Soundtrack
+              - strong [ref=f20e327]: Language
+              - text: ": English, German, French, Italian, Spanish – Spain, Russian, Ukrainian, Polish, Turkish, Portuguese – Brazil, Spanish – Latin America, Japanese, Korean, Simplified Chinese, Traditional Chinese – Language can be changed in game settings"
+              - strong [ref=f20e328]: Repack Size
+              - text: ": 17.5 GB"
+              - strong [ref=f20e329]: Final Size
+              - text: ": 23 GB"
+              - strong [ref=f20e331]: Lossless repack
+              - text: ": Nothing removed OR re-encoded"
+              - strong [ref=f20e332]: Install Time
+              - text: ": 7 – 25 mins"
+              - strong [ref=f20e334]: Greetings
+              - text: ": Razor12911, KaOsKrew"
+              - strong [ref=f20e335]: Repack By
+              - text: DODI
+              - strong [ref=f20e337]: PLZ SEED , DONT HIT & RUN
+            - paragraph [ref=f20e338]:
+              - strong [ref=f20e339]: Download Links
+            - list [ref=f20e340]:
+              - listitem [ref=f20e341]:
+                - strong [ref=f20e343]: Don’t download Mega / Mediafire Links or password files
+            - paragraph [ref=f20e344]:
+              - strong [ref=f20e346]:
+                - text: Torrent –
+                - link "Click Here" [ref=f20e347] [cursor=pointer]:
+                  - /url: https://zovo.to/pEcfsCb
+                - text: – or –
+                - link "Click here" [ref=f20e348] [cursor=pointer]:
+                  - /url: https://zovo.to/PkQas9X
+              - strong [ref=f20e350]:
+                - text: – or –
+                - link "Click Here" [ref=f20e351] [cursor=pointer]:
+                  - /url: https://zovo.to/FxZtcZm
+                - text: –
+            - paragraph [ref=f20e352]:
+              - strong [ref=f20e354]:
+                - text: SwiftUploads –
+                - link "Click Here" [ref=f20e355] [cursor=pointer]:
+                  - /url: https://zovo.to/LtFb6Mg
+                - text: –
+            - paragraph [ref=f20e356]:
+              - strong [ref=f20e358]:
+                - text: FileKeeper –
+                - link "Click Here" [ref=f20e359] [cursor=pointer]:
+                  - /url: https://zovo.to/rfcmY86
+                - text: –
+            - separator [ref=f20e360]
+            - paragraph [ref=f20e361]:
+              - strong [ref=f20e363]: AiO RUNE Updates
+              - strong [ref=f20e365]:
+                - text: v1.4.0.0 –
+                - link "Click Here" [ref=f20e366] [cursor=pointer]:
+                  - /url: https://zovo.to/XTWAAp3
+                - text: –
+        - article [ref=f20e367]:
+          - generic [ref=f20e368]:
+            - generic [ref=f20e369]:
+              - generic [ref=f20e370]: Posted on
+              - link [ref=f20e371] [cursor=pointer]:
+                - /url: https://dodi-repacks.site/ereban-shadow-legacy/
+                - time [ref=f20e372]: October 28, 2026
+            - heading [level=3] [ref=f20e373]:
+              - 'link "1911- Ereban: Shadow Legacy (v1.1.14 + MULTi10) [DODI Repack]" [ref=f20e374] [cursor=pointer]':
+                - /url: https://dodi-repacks.site/ereban-shadow-legacy/
+          - generic [ref=f20e375]:
+            - paragraph [ref=f20e376]
+            - generic "Expand" [ref=f20e379] [cursor=pointer]: Information
+            - generic "Expand" [ref=f20e381] [cursor=pointer]: Description
+            - generic "Expand" [ref=f20e383] [cursor=pointer]: How To Install
+            - heading [level=1] [ref=f20e384]:
+              - link [ref=f20e385] [cursor=pointer]:
+                - /url: https://youtu.be/t1lvVjX0DTM
+                - strong [ref=f20e387]: First Few Mins Repack Gameplay
+            - paragraph [ref=f20e388]
+            - paragraph [ref=f20e389]:
+              - strong [ref=f20e391]: Repack Features
+            - paragraph [ref=f20e392]:
+              - strong [ref=f20e393]: Based on
+              - text: ": Ereban.Shadow.Legacy-RUNE ISO Release"
+              - strong [ref=f20e394]: "Game Version:"
+              - text: v1.1.14
+              - strong [ref=f20e396]: Language
+              - text: ": English, German, French, Spanish – Spain, Polish, Russian, Catalan, Korean, Japanese, Simplified Chinese – Language can be changed in game settings menu"
+              - strong [ref=f20e397]: Repack Size
+              - text: ": 2.3 GB"
+              - strong [ref=f20e398]: Final Size
+              - text: ": 7.4 GB"
+              - strong [ref=f20e399]: Lossless repack
+              - text: ": Nothing removed OR re-encoded"
+              - strong [ref=f20e400]: Install Time
+              - text: ": Few Seconds"
+              - strong [ref=f20e402]: Greetings
+              - text: ": Razor12911, KaOsKrew"
+              - strong [ref=f20e403]: Repack By
+              - text: DODI
+              - strong [ref=f20e405]: PLZ SEED , DONT HIT & RUN
+            - paragraph [ref=f20e406]:
+              - strong [ref=f20e407]: Download Links
+            - list [ref=f20e408]:
+              - listitem [ref=f20e409]:
+                - strong [ref=f20e411]: Don’t download Mega / Mediafire / OneShare / WeUpload / One Drive Links or password files
+              - listitem [ref=f20e412]:
+                - strong [ref=f20e414]: Don’t follow pop ad pages, Stay in download page
+            - paragraph [ref=f20e415]:
+              - strong [ref=f20e417]:
+                - text: Torrent –
+                - link "Click Here" [ref=f20e418] [cursor=pointer]:
+                  - /url: https://zovo.to/VETyGen
+                - text: – or –
+                - link "Click here" [ref=f20e419] [cursor=pointer]:
+                  - /url: https://zovo.to/Cxq5xWp
+              - strong [ref=f20e421]:
+                - text: – or –
+                - link "Click Here" [ref=f20e422] [cursor=pointer]:
+                  - /url: https://zovo.to/exdpKST
+                - text: –
+            - paragraph [ref=f20e423]:
+              - strong [ref=f20e425]:
+                - text: SwiftUploads –
+                - link "Click Here" [ref=f20e426] [cursor=pointer]:
+                  - /url: https://zovo.to/DgKV8M9
+                - text: –
+            - paragraph [ref=f20e427]:
+              - strong [ref=f20e429]:
+                - text: FileKeeper –
+                - link "Click Here" [ref=f20e430] [cursor=pointer]:
+                  - /url: https://zovo.to/CMWAmcS
+                - text: –
+            - list [ref=f20e431]:
+              - listitem [ref=f20e432]:
+                - strong [ref=f20e433]: All file hosting links are interchangeable
+        - article [ref=f20e434]:
+          - generic [ref=f20e435]:
+            - generic [ref=f20e436]:
+              - generic [ref=f20e437]: Posted on
+              - link [ref=f20e438] [cursor=pointer]:
+                - /url: https://dodi-repacks.site/x-men-origins-wolverine/
+                - time [ref=f20e439]: October 28, 2026
+            - heading [level=3] [ref=f20e440]:
+              - 'link "935- X-Men Origins: Wolverine [DODI Repack]" [ref=f20e441] [cursor=pointer]':
+                - /url: https://dodi-repacks.site/x-men-origins-wolverine/
+          - generic [ref=f20e442]:
+            - paragraph [ref=f20e443]
+            - generic "Expand" [ref=f20e446] [cursor=pointer]: Information
+            - generic "Expand" [ref=f20e448] [cursor=pointer]: GAME DESCRIPTION
+            - generic "Expand" [ref=f20e450] [cursor=pointer]: How To Install
+            - heading [level=1] [ref=f20e451]:
+              - link [ref=f20e452] [cursor=pointer]:
+                - /url: https://youtu.be/qz964pB8iRA
+                - strong [ref=f20e454]: First Few Mins Repack Gameplay
+            - paragraph [ref=f20e455]
+            - generic [ref=f20e457]:
+              - paragraph [ref=f20e458]:
+                - strong [ref=f20e460]: Repack Features
+              - paragraph [ref=f20e461]: "– Based on X-Men.Origins.Wolverine-RELOADED – Language : English – Repack Size : 3.5 GB – Final Size : 7 GB – NOTHING is cut, NOTHING is recoded – Installation time 2 minutes – Repack by DODI – PLZ SEED , DONT HIT & RUN – Note: After install, You may need to install PhysX in _Redist folder"
+              - paragraph [ref=f20e462]:
+                - strong [ref=f20e463]: Download Links
+              - list [ref=f20e464]:
+                - listitem [ref=f20e465]:
+                  - strong [ref=f20e467]: Don’t download Mega / Mediafire / OneShare / WeUpload / One Drive Links or password files
+                - listitem [ref=f20e468]:
+                  - strong [ref=f20e470]: Don’t follow pop ad pages, Stay in download page
+              - paragraph [ref=f20e471]:
+                - strong [ref=f20e473]:
+                  - text: Torrent –
+                  - link "Click Here" [ref=f20e474] [cursor=pointer]:
+                    - /url: https://zovo.to/ukMtUdx
+                  - text: – or –
+                  - link "Click here" [ref=f20e475] [cursor=pointer]:
+                    - /url: https://zovo.to/3zcCqTx
+                - strong [ref=f20e477]:
+                  - text: – or –
+                  - link "Click Here" [ref=f20e478] [cursor=pointer]:
+                    - /url: https://zovo.to/fBNbjVw
+                  - text: –
+              - paragraph [ref=f20e479]:
+                - strong [ref=f20e481]:
+                  - text: SwiftUploads –
+                  - link "Click Here" [ref=f20e482] [cursor=pointer]:
+                    - /url: https://zovo.to/CW99bwx
+                  - text: –
+              - paragraph [ref=f20e483]:
+                - strong [ref=f20e485]:
+                  - text: FileKeeper –
+                  - link "Click Here" [ref=f20e486] [cursor=pointer]:
+                    - /url: https://zovo.to/vSjzLUz
+                  - text: –
+              - list [ref=f20e487]:
+                - listitem [ref=f20e488]:
+                  - strong [ref=f20e489]: All file hosting links are interchangeable
+        - article [ref=f20e490]:
+          - generic [ref=f20e491]:
+            - generic [ref=f20e492]:
+              - generic [ref=f20e493]: Posted on
+              - link [ref=f20e494] [cursor=pointer]:
+                - /url: https://dodi-repacks.site/call-of-duty-modern-warfare-ii/
+                - time [ref=f20e495]: October 28, 2026
+            - heading [level=3] [ref=f20e496]:
+              - 'link "2160- Call of Duty: Modern Warfare II – Vault Edition (2022) (Campaign) (v9.7) [DODI Repack]" [ref=f20e497] [cursor=pointer]':
+                - /url: https://dodi-repacks.site/call-of-duty-modern-warfare-ii/
+          - generic [ref=f20e498]:
+            - paragraph [ref=f20e499]
+            - generic "Expand" [ref=f20e502] [cursor=pointer]: Information
+            - generic "Expand" [ref=f20e504] [cursor=pointer]: Description
+            - generic "Expand" [ref=f20e506] [cursor=pointer]: How To Install
+            - heading [level=1] [ref=f20e507]:
+              - link [ref=f20e508] [cursor=pointer]:
+                - /url: https://youtu.be/rHPzz0kZwPA
+                - strong [ref=f20e510]: First Few Mins Gameplay
+            - paragraph [ref=f20e511]
+            - paragraph [ref=f20e512]:
+              - strong [ref=f20e514]: Release Features
+            - paragraph [ref=f20e515]:
+              - strong [ref=f20e516]: Based on
+              - text: ": Steam Release v9.7 (Campaign) + .r4v3n Crack + MR_Goldberg Emu, , thanks to InsaneRamZes"
+              - strong [ref=f20e517]: Game Version
+              - text: ": v9.7"
+              - strong [ref=f20e519]: Language
+              - text: ": English, Russian – Language cam be configs.user.ini file (..\\sp22\\steam_settings)"
+              - strong [ref=f20e520]: Repack Size
+              - text: ": 21.8 GB"
+              - strong [ref=f20e521]: Final Size
+              - text: ": 26.2 GB"
+              - strong [ref=f20e522]: Lossless repack
+              - text: ": Nothing removed OR re-encoded"
+              - generic [ref=f20e523]:
+                - strong [ref=f20e524]: Install Time
+                - text: ":"
+              - text: 3 – 10 mins
+              - strong [ref=f20e526]: Greetings
+              - text: ": Razor12911, KaOsKrew"
+              - strong [ref=f20e528]: Repack By
+              - text: DODI
+              - strong [ref=f20e530]: PLZ SEED , DONT HIT & RUN
+            - paragraph [ref=f20e531]:
+              - strong [ref=f20e532]: Download New Repack v9.7 (Campaign) (21.8 GB)
+            - list [ref=f20e533]:
+              - listitem [ref=f20e534]:
+                - strong [ref=f20e536]: Don’t download Mega / Mediafire Links or password files
+            - paragraph [ref=f20e537]:
+              - strong [ref=f20e539]:
+                - text: Torrent –
+                - link "Click Here" [ref=f20e540] [cursor=pointer]:
+                  - /url: https://zovo.to/e5WSNQb
+                - text: – or –
+                - link "Click Here" [ref=f20e541] [cursor=pointer]:
+                  - /url: https://zovo.to/F7jYf3c
+                - text: – or –
+                - link "Click here" [ref=f20e542] [cursor=pointer]:
+                  - /url: https://zovo.to/Ltcb3ap
+              - strong [ref=f20e544]: –
+            - paragraph [ref=f20e545]:
+              - strong [ref=f20e547]:
+                - text: DataNodes –
+                - link "Click Here" [ref=f20e548] [cursor=pointer]:
+                  - /url: https://zovo.to/AyqURQE
+                - text: –
+        - article [ref=f20e549]:
+          - generic [ref=f20e550]:
+            - generic [ref=f20e551]:
+              - generic [ref=f20e552]: Posted on
+              - link [ref=f20e553] [cursor=pointer]:
+                - /url: https://dodi-repacks.site/batman-arkham-asylum/
+                - time [ref=f20e554]: October 27, 2026
+            - heading [level=3] [ref=f20e555]:
+              - link "336- Batman Arkham Asylum – Game of the Year Edition [DODI Repack]" [ref=f20e556] [cursor=pointer]:
+                - /url: https://dodi-repacks.site/batman-arkham-asylum/
+          - generic [ref=f20e557]:
+            - figure
+            - paragraph [ref=f20e558]
+            - paragraph [ref=f20e559]
+            - generic "Expand" [ref=f20e562] [cursor=pointer]: Information
+            - generic "Expand" [ref=f20e564] [cursor=pointer]: Description
+            - generic "Expand" [ref=f20e566] [cursor=pointer]: How To Install
+            - paragraph [ref=f20e567]
+            - paragraph [ref=f20e568]:
+              - strong [ref=f20e570]: Repack Features
+            - paragraph [ref=f20e571]:
+              - strong [ref=f20e572]: Based on
+              - text: Batman.Arkham.Asylum.Game.of.The.Year.Edition-PROPHET
+              - strong [ref=f20e573]: All released DLCs included
+              - text: Joker DLC and Prey in the Darkness DLC included
+              - strong [ref=f20e574]: Language
+              - text: ": English"
+              - strong [ref=f20e575]: Repack Size
+              - text: ": 4.6 GB"
+              - strong [ref=f20e577]: Final Size
+              - text: ": 8 GB"
+              - strong [ref=f20e578]: "Lossless repack:"
+              - text: Nothing removed OR re-encoded
+              - strong [ref=f20e579]: Install Time
+              - text: ": 1 – 2 mins"
+              - strong [ref=f20e580]: Greetings
+              - text: ": Razor12911, KaOsKrew"
+              - strong [ref=f20e581]: Repack By
+              - text: DODI
+              - strong [ref=f20e582]: PLZ SEED , DONT HIT & RUN
+            - paragraph [ref=f20e583]:
+              - strong [ref=f20e585]: Backwards Compatibility
+            - paragraph [ref=f20e586]:
+              - strong [ref=f20e587]: Download Links
+            - list [ref=f20e588]:
+              - listitem [ref=f20e589]:
+                - strong [ref=f20e591]: Don’t download Mega / Mediafire / OneShare / WeUpload / One Drive Links or password files
+              - listitem [ref=f20e592]:
+                - strong [ref=f20e594]: Don’t follow pop ad pages, Stay in download page
+            - paragraph [ref=f20e595]:
+              - strong [ref=f20e597]:
+                - text: Torrent –
+                - link "Click Here" [ref=f20e598] [cursor=pointer]:
+                  - /url: https://zovo.to/dh22jLH
+                - text: – or –
+                - link "Click here" [ref=f20e599] [cursor=pointer]:
+                  - /url: https://zovo.to/2BBtdaw
+              - strong [ref=f20e601]:
+                - text: – or –
+                - link "Click Here" [ref=f20e602] [cursor=pointer]:
+                  - /url: https://zovo.to/qgYYwjB
+                - text: –
+            - paragraph [ref=f20e603]:
+              - strong [ref=f20e605]:
+                - text: SwiftUploads –
+                - link "Click Here" [ref=f20e606] [cursor=pointer]:
+                  - /url: https://zovo.to/7DRjKkd
+                - text: –
+            - paragraph [ref=f20e607]:
+              - strong [ref=f20e609]:
+                - text: FileKeeper –
+                - link "Click Here" [ref=f20e610] [cursor=pointer]:
+                  - /url: https://zovo.to/RAfV8cc
+                - text: –
+            - list [ref=f20e611]:
+              - listitem [ref=f20e612]:
+                - strong [ref=f20e613]: All file hosting links are interchangeable
+        - article [ref=f20e614]:
+          - generic [ref=f20e615]:
+            - generic [ref=f20e616]:
+              - generic [ref=f20e617]: Posted on
+              - link [ref=f20e618] [cursor=pointer]:
+                - /url: https://dodi-repacks.site/star-wars-jedi-fallen-order/
+                - time [ref=f20e619]: October 27, 2026
+            - heading [level=3] [ref=f20e620]:
+              - 'link "479- Star Wars Jedi: Fallen Order – Deluxe Edition (No Denuvo) (v1.0.10.0 + DLCs + MULTi13) (From 38.6 GB) (anadius) [DODI Repack]" [ref=f20e621] [cursor=pointer]':
+                - /url: https://dodi-repacks.site/star-wars-jedi-fallen-order/
+          - generic [ref=f20e622]:
+            - paragraph [ref=f20e623]
+            - paragraph
+            - generic "Expand" [ref=f20e626] [cursor=pointer]: Information
+            - paragraph
+            - paragraph
+            - generic "Expand" [ref=f20e628] [cursor=pointer]: Description
+            - paragraph
+            - paragraph
+            - generic "Expand" [ref=f20e630] [cursor=pointer]: How To Install
+            - paragraph
+            - heading [level=1] [ref=f20e631]:
+              - link [ref=f20e632] [cursor=pointer]:
+                - /url: https://youtu.be/e93t-JPgUCw
+                - strong [ref=f20e634]: First Few Mins Repack Gameplay
+            - paragraph [ref=f20e635]
+            - paragraph [ref=f20e636]:
+              - strong [ref=f20e638]: Repack Features
+            - paragraph [ref=f20e639]:
+              - strong [ref=f20e641]: Based on
+              - text: – Origin Release v1.0.10.0 include all languages and Deluxe Content (November 8, 2021) – anadius Crack applied – DARKSiDERS crack is included, but not applied
+              - strong [ref=f20e642]: Game Version
+              - text: v1.0.10.0 – No Denuvo – 08.11.2021
+              - strong [ref=f20e643]: Deluxe Edition
+              - text: contents included and activated
+              - strong [ref=f20e644]: Language
+              - text: ": English, French, Italian, German, Spanish – Spain, Japanese, Korean, Polish, Portuguese – Brazil, Russian, Simplified Chinese, Spanish – Latin America, Traditional Chinese – Audio: English, French, Italian, German, Spanish – Spain, Japanese, Polish, Portuguese – Brazil, Russian, Spanish – Latin America – The Interface language changes in the game settings (Settings – Gameplay – Text Language (at the very bottom) – Voice language in SwGame \\ Binaries \\ Win64 in the file anadius.cfg"
+              - strong [ref=f20e645]: Selective Download Feature
+              - text: ": you can skip downloading and installing Language audios you don’t need and bonus documentaries videos"
+              - strong [ref=f20e646]: Repack Size
+              - text: ": from 38.6 GB Final Size : 63 GB Lossless repack , Nothing removed OR re-encoded"
+              - strong [ref=f20e647]: Install Time
+              - text: ": 40 – 90 mins (based on your PC and items selected)"
+              - strong [ref=f20e648]: Credits
+              - text: ": Razor12911 for oodle library"
+              - strong [ref=f20e649]: Greetings
+              - text: ": ElAmigos, KaOsKrew, FitGirl, Masquerade Repack By DODI"
+              - strong [ref=f20e651]: PLZ SEED , DONT HIT & RUN
+            - paragraph [ref=f20e652]:
+              - strong [ref=f20e653]: Download Links
+            - list [ref=f20e654]:
+              - listitem [ref=f20e655]:
+                - strong [ref=f20e657]: Don’t download Mega / Mediafire / OneShare / WeUpload / One Drive Links or password files
+              - listitem [ref=f20e658]:
+                - strong [ref=f20e660]: Don’t follow pop ad pages, Stay in download page
+            - paragraph [ref=f20e661]:
+              - strong [ref=f20e663]:
+                - text: Torrent –
+                - link "Click Here" [ref=f20e664] [cursor=pointer]:
+                  - /url: https://zovo.to/YLh8F2J
+                - text: – or –
+                - link "Click here" [ref=f20e665] [cursor=pointer]:
+                  - /url: https://zovo.to/HkcwRNv
+              - strong [ref=f20e667]:
+                - text: – or –
+                - link "Click Here" [ref=f20e668] [cursor=pointer]:
+                  - /url: https://zovo.to/grGyyex
+                - text: –
+            - paragraph [ref=f20e669]:
+              - strong [ref=f20e671]:
+                - text: SwiftUploads –
+                - link "Click Here" [ref=f20e672] [cursor=pointer]:
+                  - /url: https://zovo.to/pUZyzKU
+                - text: –
+            - paragraph [ref=f20e673]:
+              - strong [ref=f20e675]:
+                - text: FileKeeper –
+                - link "Click Here" [ref=f20e676] [cursor=pointer]:
+                  - /url: https://zovo.to/U9NPAHy
+                - text: –
+            - list [ref=f20e677]:
+              - listitem [ref=f20e678]:
+                - strong [ref=f20e679]: All file hosting links are interchangeable
+        - article [ref=f20e680]:
+          - generic [ref=f20e681]:
+            - generic [ref=f20e682]:
+              - generic [ref=f20e683]: Posted on
+              - link [ref=f20e684] [cursor=pointer]:
+                - /url: https://dodi-repacks.site/tomb-raider-underworld/
+                - time [ref=f20e685]: October 27, 2026
+            - heading [level=3] [ref=f20e686]:
+              - 'link "688- Tomb Raider: Underworld (v1.1) [DODI Repack]" [ref=f20e687] [cursor=pointer]':
+                - /url: https://dodi-repacks.site/tomb-raider-underworld/
+          - generic [ref=f20e688]:
+            - paragraph [ref=f20e689]
+            - paragraph
+            - generic "Expand" [ref=f20e691] [cursor=pointer]: Information
+            - paragraph
+            - paragraph
+            - generic "Expand" [ref=f20e693] [cursor=pointer]: Description
+            - paragraph
+            - paragraph
+            - generic "Expand" [ref=f20e695] [cursor=pointer]: How To Install
+            - paragraph
+            - heading [level=1] [ref=f20e696]:
+              - link [ref=f20e697] [cursor=pointer]:
+                - /url: https://youtu.be/BdnSCYN73ro
+                - strong [ref=f20e699]: First Few Mins Repack Gameplay
+            - paragraph [ref=f20e700]
+            - paragraph [ref=f20e701]:
+              - strong [ref=f20e703]: Repack Features
+            - paragraph [ref=f20e704]:
+              - text: "Based On Elamigos ISo. Game version: v1.1 Language : English Repack Size : 2.55 GB Final Size : 8 GB NOTHING is cut, NOTHING is recoded Installation time : 1 – 2 mins Repack by DODI"
+              - strong [ref=f20e705]: PLZ SEED , DONT HIT & RUN
+            - paragraph [ref=f20e706]:
+              - strong [ref=f20e707]: Download Links
+            - list [ref=f20e708]:
+              - listitem [ref=f20e709]:
+                - strong [ref=f20e711]: Don’t download Mega / Mediafire / OneShare / WeUpload / One Drive Links or password files
+              - listitem [ref=f20e712]:
+                - strong [ref=f20e714]: Don’t follow pop ad pages, Stay in download page
+            - paragraph [ref=f20e715]:
+              - strong [ref=f20e717]:
+                - text: Torrent –
+                - link "Click Here" [ref=f20e718] [cursor=pointer]:
+                  - /url: https://zovo.to/LPJU6z2
+                - text: – or –
+                - link "Click here" [ref=f20e719] [cursor=pointer]:
+                  - /url: https://zovo.to/b6VfgZt
+              - strong [ref=f20e721]:
+                - text: – or –
+                - link "Click Here" [ref=f20e722] [cursor=pointer]:
+                  - /url: https://zovo.to/VvaSvSA
+                - text: –
+            - paragraph [ref=f20e723]:
+              - strong [ref=f20e725]:
+                - text: SwiftUploads –
+                - link "Click Here" [ref=f20e726] [cursor=pointer]:
+                  - /url: https://zovo.to/WKVFkHV
+                - text: –
+            - paragraph [ref=f20e727]:
+              - strong [ref=f20e729]:
+                - text: FileKeeper –
+                - link "Click Here" [ref=f20e730] [cursor=pointer]:
+                  - /url: https://zovo.to/7PqJPWb
+                - text: –
+            - list [ref=f20e731]:
+              - listitem [ref=f20e732]:
+                - strong [ref=f20e733]: All file hosting links are interchangeable
+        - article [ref=f20e734]:
+          - generic [ref=f20e735]:
+            - generic [ref=f20e736]:
+              - generic [ref=f20e737]: Posted on
+              - link [ref=f20e738] [cursor=pointer]:
+                - /url: https://dodi-repacks.site/grand-theft-auto-san-andreas-retextured/
+                - time [ref=f20e739]: October 27, 2026
+            - heading [level=3] [ref=f20e740]:
+              - link "1000- Grand Theft Auto San Andreas Retextured (GTA IV Graphics + GTA IV Retextured Mod) – [DODI Repack]" [ref=f20e741] [cursor=pointer]:
+                - /url: https://dodi-repacks.site/grand-theft-auto-san-andreas-retextured/
+          - generic [ref=f20e742]:
+            - paragraph [ref=f20e743]
+            - paragraph
+            - generic "Expand" [ref=f20e746] [cursor=pointer]: INFORMATION & DESCRIPTION
+            - paragraph
+            - paragraph
+            - generic "Expand" [ref=f20e748] [cursor=pointer]: How To Install
+            - paragraph
+            - heading [level=1] [ref=f20e749]:
+              - link [ref=f20e750] [cursor=pointer]:
+                - /url: https://youtu.be/Qo_Ve8nOud8
+                - strong [ref=f20e752]: First Few Mi
+                - strong [ref=f20e754]: "n"
+                - strong [ref=f20e756]: s Repack Gameplay
+            - paragraph [ref=f20e757]
+            - paragraph [ref=f20e758]:
+              - strong [ref=f20e760]: Repack Features
+            - paragraph [ref=f20e761]:
+              - strong [ref=f20e762]: Based on
+              - text: a pre-modded release by
+              - strong [ref=f20e764]: GAMETEST
+              - strong [ref=f20e766]: Mods included
+              - text: – GTA San Andreas IV Graphics + IV Retextured Mod – Real HQ Roads (+new textures & fixes) – Jefferson – Retextured – HD_Loadscreens_4K – Insane Vehicles Pack by Eddie – SA_DIRECTX 2.0 – SINGLE PLAYER FOR GTA SAN ANDREAS – Improved Vehicule Features 2.1.1
+              - strong [ref=f20e767]: Credits
+              - text: ": DK22Pac, Hysen, SekiroSF, Urvanfromeecrew, Junior_Djjr, Firefly, Waqar Ahmed Khan MENU MOD by UNRATED69"
+              - strong [ref=f20e768]: Language
+              - text: ": English , Spanish language can be changed in the game settings"
+              - strong [ref=f20e769]: Repack Size
+              - text: ": 3.8 GB Final Size : 9 GB Lossless repack , Nothing removed OR re-encoded Install Time : 3 – 5 mins – To play the game Run as administrator"
+              - strong [ref=f20e770]: ‘RUN ADMIN FOR ENB 0.313.bat‘
+              - text: and wait to load the game Repack By DODI
+              - strong [ref=f20e772]: PLZ SEED , DONT HIT & RUN
+            - heading [level=1] [ref=f20e773]:
+              - strong [ref=f20e775]: Download Mirrors
+            - list [ref=f20e776]:
+              - listitem [ref=f20e777]:
+                - strong [ref=f20e779]: Don’t download Mega / Mediafire Links or password files
+            - paragraph [ref=f20e780]:
+              - strong [ref=f20e782]:
+                - text: Torrent –
+                - link "Click Here" [ref=f20e783] [cursor=pointer]:
+                  - /url: https://zovo.to/fnKQLrz
+              - strong [ref=f20e785]:
+                - text: – or –
+                - link "Click Here" [ref=f20e786] [cursor=pointer]:
+                  - /url: https://zovo.to/qtSGBFa
+                - text: – or –
+                - link "Click Here" [ref=f20e787] [cursor=pointer]:
+                  - /url: https://zovo.to/VcdRRdN
+            - paragraph [ref=f20e788]:
+              - strong [ref=f20e790]:
+                - text: SwiftUploads –
+                - link "Click Here" [ref=f20e791] [cursor=pointer]:
+                  - /url: https://zovo.to/3mFkpUM
+                - text: –
+            - paragraph [ref=f20e792]:
+              - strong [ref=f20e794]:
+                - text: FileKeeper –
+                - link "Click Here" [ref=f20e795] [cursor=pointer]:
+                  - /url: https://zovo.to/DCQeetN
+                - text: –
+            - paragraph [ref=f20e796]:
+              - strong [ref=f20e798]:
+                - text: DataNodes –
+                - link "Click Here" [ref=f20e799] [cursor=pointer]:
+                  - /url: https://zovo.to/W5e3GSt
+                - text: –
+        - article [ref=f20e800]:
+          - generic [ref=f20e801]:
+            - generic [ref=f20e802]:
+              - generic [ref=f20e803]: Posted on
+              - link [ref=f20e804] [cursor=pointer]:
+                - /url: https://dodi-repacks.site/s-t-a-l-k-e-r-2-heart-of-chornobyl/
+                - time [ref=f20e805]: October 27, 2026
+            - heading [level=3] [ref=f20e806]:
+              - 'link "2050- S.T.A.L.K.E.R. 2: Heart of Chornobyl – Ultimate Edition (v2.1.0 + All DLCs + Bonus Content + MULTi18) (Fast Install) [DODI Repack]" [ref=f20e807] [cursor=pointer]':
+                - /url: https://dodi-repacks.site/s-t-a-l-k-e-r-2-heart-of-chornobyl/
+          - generic [ref=f20e808]:
+            - paragraph [ref=f20e809]
+            - paragraph
+            - generic "Expand" [ref=f20e812] [cursor=pointer]: Information
+            - paragraph
+            - paragraph
+            - generic "Expand" [ref=f20e814] [cursor=pointer]: Description
+            - paragraph
+            - paragraph
+            - generic "Expand" [ref=f20e816] [cursor=pointer]: How To Install
+            - paragraph
+            - heading [level=1] [ref=f20e817]:
+              - link [ref=f20e818] [cursor=pointer]:
+                - /url: https://youtu.be/KIhu2Uf4fd0
+                - strong [ref=f20e820]: First Few Mins Repack Gameplay
+            - paragraph [ref=f20e821]
+            - paragraph [ref=f20e822]:
+              - strong [ref=f20e824]: Repack Features
+            - paragraph [ref=f20e825]:
+              - generic [ref=f20e826]:
+                - strong [ref=f20e827]: Based on
+                - text: ":"
+              - text: Steam Release Build 24811188 + All DLCs & Extras + All Languages + RUNE EMU., thanks to InsaneRamZes
+              - strong [ref=f20e828]: "Game Version: v2.0"
+              - strong [ref=f20e830]: "DLCs:"
+              - text: "1661620=S.T.A.L.K.E.R. 2: Heart of Chornobyl – Deluxe Content 1661621=S.T.A.L.K.E.R. 2: Heart of Chornobyl – Ultimate Content 1661622=S.T.A.L.K.E.R. 2: Heart of Chornobyl – Season Pass 1661623=S.T.A.L.K.E.R. 2: Heart of Chornobyl – Pre-order Bonus 3332950=S.T.A.L.K.E.R. 2: Heart of Chornobyl – OST and Artbook 3399310=S.T.A.L.K.E.R. 2: Heart of Chornobyl – Community Items 3765020=S.T.A.L.K.E.R. 2:"
+              - strong [ref=f20e832]: Cost of Hope
+              - strong [ref=f20e834]: "Bonus Content:"
+              - text: – Digital Artbook – Original Soundtrack (MP3)
+              - generic [ref=f20e835]:
+                - strong [ref=f20e836]: Language
+                - text: ":"
+              - text: "– Text: English. French, German, Italian, Spanish – Spain, Arabic, Polish, Czech, Russian, Ukrainian, Portuguese – Brazil, Turkish, Serbian, Spanish – Latin America, Japanese, Korean, Simplified Chinese, Traditional Chinese, – Audio: English, Ukrainian – Language can be changed in game settings"
+              - strong [ref=f20e837]: Selective Download Feature
+              - text: ": you can skip downloading and installing Optional Bonus Content – All In-game 4K videos are included by default"
+              - strong [ref=f20e839]: Repack Size
+              - text: ": from 153 GB"
+              - generic [ref=f20e840]:
+                - strong [ref=f20e841]: Final Size
+                - text: ":"
+              - text: 195 GB
+              - strong [ref=f20e843]: Lossless repack
+              - text: ": Nothing removed OR re-encoded (FLAC OST removed)"
+              - strong [ref=f20e845]: Install Time
+              - text: ": 3 – 10 Mins"
+              - strong [ref=f20e847]: Greetings
+              - text: ": Razor12911, KaOsKrew"
+              - strong [ref=f20e848]: Repack By
+              - text: DODI
+              - strong [ref=f20e850]: PLZ SEED , DONT HIT & RUN
+            - paragraph [ref=f20e851]:
+              - strong [ref=f20e853]: Backwards Compatibility
+            - paragraph [ref=f20e854]: This repack is backwards compatible with my previous repack. You can rehash Optional-Bonus-Content.doi file
+            - paragraph [ref=f20e855]:
+              - strong [ref=f20e856]: Download Links
+            - list [ref=f20e857]:
+              - listitem [ref=f20e858]:
+                - strong [ref=f20e860]: Don’t download Mega / Mediafire / OneShare / WeUpload / One Drive Links or password files
+              - listitem [ref=f20e861]:
+                - strong [ref=f20e863]: Don’t follow pop ad pages, Stay in download page
+            - paragraph [ref=f20e864]:
+              - strong [ref=f20e866]:
+                - text: Torrent –
+                - link "Click Here" [ref=f20e867] [cursor=pointer]:
+                  - /url: https://zovo.to/fV3QneV
+                - text: – or –
+                - link "Click here" [ref=f20e868] [cursor=pointer]:
+                  - /url: https://zovo.to/kxm9sSU
+              - strong [ref=f20e870]:
+                - text: – or –
+                - link "Click Here" [ref=f20e871] [cursor=pointer]:
+                  - /url: https://zovo.to/BM9hztV
+                - text: –
+            - paragraph [ref=f20e872]:
+              - strong [ref=f20e874]:
+                - text: FileKeeper –
+                - link "Click Here" [ref=f20e875] [cursor=pointer]:
+                  - /url: https://zovo.to/mXikKZc
+                - text: –
+            - paragraph [ref=f20e876]:
+              - strong [ref=f20e878]:
+                - text: DataNodes –
+                - link "Click Here" [ref=f20e879] [cursor=pointer]:
+                  - /url: https://zovo.to/r8yK9wc
+                - text: –
+            - separator [ref=f20e880]
+            - paragraph [ref=f20e881]:
+              - strong [ref=f20e883]:
+                - text: AiO elamigos Updates v2.1.0 –
+                - link "Click Here" [ref=f20e884] [cursor=pointer]:
+                  - /url: https://zovo.to/uQcQYXc
+                - text: –
+            - separator [ref=f20e885]
+            - paragraph [ref=f20e886]:
+              - strong [ref=f20e888]: RUNE Update v2.0.5
+              - strong [ref=f20e890]:
+                - text: –
+                - link "Click Here" [ref=f20e891] [cursor=pointer]:
+                  - /url: https://zovo.to/jkfumPW
+                - text: –
+        - navigation "Posts pagination" [ref=f20e892]:
+          - heading "Posts pagination" [level=2] [ref=f20e893]
+          - generic [ref=f20e894]:
+            - generic [ref=f20e895]:
+              - generic [ref=f20e896]: Page
+              - text: "1"
+            - link "Page 2" [ref=f20e897] [cursor=pointer]:
+              - /url: https://dodi-repacks.site/page/2/
+              - generic [ref=f20e898]: Page
+              - text: "2"
+            - generic [ref=f20e899]: …
+            - link "Page 226" [ref=f20e900] [cursor=pointer]:
+              - /url: https://dodi-repacks.site/page/226/
+              - generic [ref=f20e901]: Page
+              - text: "226"
+            - link "Next page" [ref=f20e902] [cursor=pointer]:
+              - /url: https://dodi-repacks.site/page/2/
+      - complementary "Blog Sidebar" [ref=f20e906]:
+        - search [ref=f20e908]:
+          - generic: "Search for:"
+          - searchbox "Search for:" [ref=f20e910]
+          - button "Search" [ref=f20e911] [cursor=pointer]
+        - figure [ref=f20e916]:
+          - link [ref=f20e917] [cursor=pointer]:
+            - /url: https://game-repack.site/
+        - generic [ref=f20e919]:
+          - generic [ref=f20e920]: Archives
+          - combobox "Archives" [ref=f20e921]:
+            - option "Select Month" [selected]
+            - option "October 2026 (72)"
+            - option "September 2026 (47)"
+            - option "August 2026 (36)"
+            - option "July 2026 (28)"
+            - option "June 2026 (40)"
+            - option "May 2026 (28)"
+            - option "April 2026 (24)"
+            - option "March 2026 (29)"
+            - option "February 2026 (22)"
+            - option "January 2026 (31)"
+            - option "December 2025 (21)"
+            - option "November 2025 (19)"
+            - option "October 2025 (14)"
+            - option "September 2025 (15)"
+            - option "August 2025 (20)"
+            - option "July 2025 (21)"
+            - option "June 2025 (20)"
+            - option "May 2025 (13)"
+            - option "April 2025 (14)"
+            - option "March 2025 (23)"
+            - option "February 2025 (22)"
+            - option "January 2025 (18)"
+            - option "December 2024 (13)"
+            - option "November 2024 (17)"
+            - option "October 2024 (27)"
+            - option "September 2024 (13)"
+            - option "August 2024 (29)"
+            - option "July 2024 (22)"
+            - option "June 2024 (5)"
+            - option "May 2024 (21)"
+            - option "April 2024 (32)"
+            - option "March 2024 (22)"
+            - option "February 2024 (13)"
+            - option "January 2024 (20)"
+            - option "December 2023 (37)"
+            - option "November 2023 (40)"
+            - option "October 2023 (27)"
+            - option "September 2023 (24)"
+            - option "August 2023 (29)"
+            - option "July 2023 (25)"
+            - option "June 2023 (23)"
+            - option "May 2023 (25)"
+            - option "April 2023 (37)"
+            - option "March 2023 (28)"
+            - option "February 2023 (36)"
+            - option "January 2023 (42)"
+            - option "December 2022 (33)"
+            - option "November 2022 (33)"
+            - option "October 2022 (30)"
+            - option "September 2022 (18)"
+            - option "August 2022 (24)"
+            - option "July 2022 (22)"
+            - option "June 2022 (27)"
+            - option "May 2022 (37)"
+            - option "April 2022 (26)"
+            - option "March 2022 (34)"
+            - option "February 2022 (24)"
+            - option "January 2022 (22)"
+            - option "December 2021 (30)"
+            - option "November 2021 (39)"
+            - option "October 2021 (53)"
+            - option "September 2021 (38)"
+            - option "August 2021 (42)"
+            - option "July 2021 (30)"
+            - option "June 2021 (12)"
+            - option "May 2021 (12)"
+            - option "April 2021 (16)"
+            - option "March 2021 (24)"
+            - option "February 2021 (24)"
+            - option "January 2021 (11)"
+            - option "December 2020 (17)"
+            - option "November 2020 (24)"
+            - option "October 2020 (24)"
+            - option "September 2020 (19)"
+            - option "August 2020 (29)"
+            - option "July 2020 (32)"
+            - option "June 2020 (23)"
+            - option "May 2020 (12)"
+            - option "April 2020 (23)"
+            - option "March 2020 (19)"
+            - option "February 2020 (20)"
+            - option "January 2020 (8)"
+            - option "December 2019 (12)"
+            - option "November 2019 (9)"
+            - option "October 2019 (5)"
+            - option "September 2019 (12)"
+            - option "August 2019 (9)"
+            - option "July 2019 (18)"
+            - option "June 2019 (10)"
+            - option "May 2019 (9)"
+            - option "April 2019 (11)"
+            - option "March 2019 (13)"
+            - option "February 2019 (4)"
+            - option "January 2019 (21)"
+            - option "December 2018 (10)"
+            - option "November 2018 (3)"
+            - option "October 2018 (3)"
+            - option "September 2018 (1)"
+            - option "August 2018 (5)"
+            - option "July 2018 (3)"
+        - list [ref=f20e923]:
+          - listitem [ref=f20e924]:
+            - 'link "1614- Wild Hearts: Karakuri Edition (v1.0.1.1 + All DLCs + MULTi12) (From 23.5 GB) [DODI Repack]" [ref=f20e925] [cursor=pointer]':
+              - /url: https://dodi-repacks.site/wild-hearts/
+            - generic [ref=f20e926]: by dodi_rep
+            - time [ref=f20e927]: October 28, 2026
+          - listitem [ref=f20e928]:
+            - 'link "2182- Cronos: The New Dawn – Deluxe Edition (v1.4.0.0 + All DLCs + Bonus Content + MULTi15) [DODI Repack]" [ref=f20e929] [cursor=pointer]':
+              - /url: https://dodi-repacks.site/cronos-the-new-dawn/
+            - generic [ref=f20e930]: by dodi_rep
+            - time [ref=f20e931]: October 28, 2026
+          - listitem [ref=f20e932]:
+            - 'link "1911- Ereban: Shadow Legacy (v1.1.14 + MULTi10) [DODI Repack]" [ref=f20e933] [cursor=pointer]':
+              - /url: https://dodi-repacks.site/ereban-shadow-legacy/
+            - generic [ref=f20e934]: by dodi_rep
+            - time [ref=f20e935]: October 28, 2026
+          - listitem [ref=f20e936]:
+            - 'link "935- X-Men Origins: Wolverine [DODI Repack]" [ref=f20e937] [cursor=pointer]':
+              - /url: https://dodi-repacks.site/x-men-origins-wolverine/
+            - generic [ref=f20e938]: by dodi_rep
+            - time [ref=f20e939]: October 28, 2026
+          - listitem [ref=f20e940]:
+            - 'link "2160- Call of Duty: Modern Warfare II – Vault Edition (2022) (Campaign) (v9.7) [DODI Repack]" [ref=f20e941] [cursor=pointer]':
+              - /url: https://dodi-repacks.site/call-of-duty-modern-warfare-ii/
+            - generic [ref=f20e942]: by dodi_rep
+            - time [ref=f20e943]: October 28, 2026
+          - listitem [ref=f20e944]:
+            - link "336- Batman Arkham Asylum – Game of the Year Edition [DODI Repack]" [ref=f20e945] [cursor=pointer]:
+              - /url: https://dodi-repacks.site/batman-arkham-asylum/
+            - generic [ref=f20e946]: by dodi_rep
+            - time [ref=f20e947]: October 27, 2026
+          - listitem [ref=f20e948]:
+            - 'link "479- Star Wars Jedi: Fallen Order – Deluxe Edition (No Denuvo) (v1.0.10.0 + DLCs + MULTi13) (From 38.6 GB) (anadius) [DODI Repack]" [ref=f20e949] [cursor=pointer]':
+              - /url: https://dodi-repacks.site/star-wars-jedi-fallen-order/
+            - generic [ref=f20e950]: by dodi_rep
+            - time [ref=f20e951]: October 27, 2026
+          - listitem [ref=f20e952]:
+            - 'link "688- Tomb Raider: Underworld (v1.1) [DODI Repack]" [ref=f20e953] [cursor=pointer]':
+              - /url: https://dodi-repacks.site/tomb-raider-underworld/
+            - generic [ref=f20e954]: by dodi_rep
+            - time [ref=f20e955]: October 27, 2026
+          - listitem [ref=f20e956]:
+            - link "1000- Grand Theft Auto San Andreas Retextured (GTA IV Graphics + GTA IV Retextured Mod) – [DODI Repack]" [ref=f20e957] [cursor=pointer]:
+              - /url: https://dodi-repacks.site/grand-theft-auto-san-andreas-retextured/
+            - generic [ref=f20e958]: by dodi_rep
+            - time [ref=f20e959]: October 27, 2026
+          - listitem [ref=f20e960]:
+            - 'link "2050- S.T.A.L.K.E.R. 2: Heart of Chornobyl – Ultimate Edition (v2.1.0 + All DLCs + Bonus Content + MULTi18) (Fast Install) [DODI Repack]" [ref=f20e961] [cursor=pointer]':
+              - /url: https://dodi-repacks.site/s-t-a-l-k-e-r-2-heart-of-chornobyl/
+            - generic [ref=f20e962]: by dodi_rep
+            - time [ref=f20e963]: October 27, 2026
+          - listitem [ref=f20e964]:
+            - 'link "2318- Beast of Reincarnation: Deluxe Edition (v1.1.2 + All DLCs + MULTi11) [DODI Repack]" [ref=f20e965] [cursor=pointer]':
+              - /url: https://dodi-repacks.site/beast-of-reincarnation/
+            - generic [ref=f20e966]: by dodi_rep
+            - time [ref=f20e967]: October 27, 2026
+          - listitem [ref=f20e968]:
+            - link "Some important Messages To My Fans" [ref=f20e969] [cursor=pointer]:
+              - /url: https://dodi-repacks.site/some-important-messages-to-my-fans/
+            - generic [ref=f20e970]: by dodi_rep
+            - time [ref=f20e971]: October 26, 2026
+          - listitem [ref=f20e972]:
+            - 'link "2096- Final Fantasy XVI: Complete Edition (v1.03 + All DLCs + Bonus Content + MULTi14) (From 100 GB) [DODI Repack]" [ref=f20e973] [cursor=pointer]':
+              - /url: https://dodi-repacks.site/final-fantasy-xvi/
+            - generic [ref=f20e974]: by dodi_rep
+            - time [ref=f20e975]: October 26, 2026
+          - listitem [ref=f20e976]:
+            - link "670- Persona 4 Golden (Rev.2023 + MULTi4) [DODI Repack]" [ref=f20e977] [cursor=pointer]:
+              - /url: https://dodi-repacks.site/persona-4-golden/
+            - generic [ref=f20e978]: by dodi_rep
+            - time [ref=f20e979]: October 26, 2026
+          - listitem [ref=f20e980]:
+            - link "1056- Mirror’s Edge (v1.0.1.0 + Goodies + MULTi13) – [DODI Repack]" [ref=f20e981] [cursor=pointer]:
+              - /url: https://dodi-repacks.site/mirrors-edge/
+            - generic [ref=f20e982]: by dodi_rep
+            - time [ref=f20e983]: October 26, 2026
+    - contentinfo [ref=f20e984]:
+      - link "Proudly powered by WordPress" [ref=f20e987] [cursor=pointer]:
+        - /url: https://wordpress.org/

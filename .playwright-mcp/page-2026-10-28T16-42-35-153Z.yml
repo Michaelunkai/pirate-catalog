@@ -1,0 +1,93 @@
+- generic [active] [ref=f4e1]:
+  - banner:
+    - link "Skip to main content" [ref=f4e2] [cursor=pointer]:
+      - /url: "#main"
+  - main [ref=f4e4]:
+    - link "Excellent 4.5 out of 5 Trustpilot" [ref=f4e12] [cursor=pointer]:
+      - /url: https://www.trustpilot.com/review/godaddy.com
+      - generic [ref=f4e13]:
+        - generic [ref=f4e14]:
+          - generic [ref=f4e15]: Excellent
+          - generic [ref=f4e16]: 4.5 out of 5
+        - img "Trustpilot" [ref=f4e18]
+    - generic [ref=f4e22]:
+      - generic [ref=f4e25]:
+        - generic [ref=f4e26]:
+          - heading "The domain name" [level=6] [ref=f4e27]
+          - heading "elamigos.com" [level=2] [ref=f4e28]
+          - heading "is for sale!" [level=6] [ref=f4e29]
+        - generic [ref=f4e30]:
+          - generic [ref=f4e32]:
+            - heading "Get this domain" [level=4] [ref=f4e33]
+            - paragraph [ref=f4e34]: Own it today for $15,000, or select Lease to Own or make an offer.
+            - separator [ref=f4e35]
+            - generic [ref=f4e36]:
+              - generic [ref=f4e37]:
+                - generic [ref=f4e38] [cursor=pointer]:
+                  - radio "Buy now" [checked] [ref=f4e39]
+                  - text: I
+                - paragraph [ref=f4e41] [cursor=pointer]: Buy now
+              - paragraph [ref=f4e42]: USD$15,000
+            - separator [ref=f4e43]
+            - generic [ref=f4e46]:
+              - generic [ref=f4e47]:
+                - generic [ref=f4e48]:
+                  - generic [ref=f4e49] [cursor=pointer]:
+                    - radio "Lease to own" [ref=f4e50]
+                    - text: I
+                  - paragraph [ref=f4e52] [cursor=pointer]: Lease to own
+                - button "Click here for more information" [ref=f4e53]
+              - generic [ref=f4e55]:
+                - paragraph [ref=f4e56]: USD$720
+                - generic [ref=f4e57]: / month
+            - separator [ref=f4e58]
+            - generic [ref=f4e59]:
+              - generic [ref=f4e60]:
+                - generic [ref=f4e61] [cursor=pointer]:
+                  - radio "Make an offer" [ref=f4e62]
+                  - text: I
+                - paragraph [ref=f4e64] [cursor=pointer]: Make an offer
+              - spinbutton "My offer in USD" [ref=f4e68]
+            - separator [ref=f4e69]
+            - button "Next" [ref=f4e70] [cursor=pointer]
+            - separator [ref=f4e71]
+            - paragraph [ref=f4e74]: Free transaction support
+            - paragraph [ref=f4e77]: Secure payments
+            - paragraph [ref=f4e80]:
+              - text: Local currency available in cart at checkout
+              - button "Click here for more information" [ref=f4e81]
+            - generic [ref=f4e83]:
+              - img "Visa" [ref=f4e84]
+              - img "MasterCard" [ref=f4e85]
+              - img "American Express" [ref=f4e86]
+              - img "PayPal" [ref=f4e87]
+              - img "AliPay" [ref=f4e88]
+          - generic [ref=f4e89]:
+            - generic [ref=f4e90]: Need help? Give us a call.
+            - link "480-651-9741" [ref=f4e92] [cursor=pointer]:
+              - /url: "true"
+      - generic [ref=f4e93]:
+        - generic [ref=f4e96]:
+          - generic [ref=f4e97]:
+            - img "Safe & secure transactions" [ref=f4e98]
+            - paragraph [ref=f4e99]: Safe & secure transactions
+          - generic [ref=f4e100]:
+            - img "Fast & easy transfers" [ref=f4e101]
+            - paragraph [ref=f4e102]: Fast & easy transfers
+          - generic [ref=f4e103]:
+            - img "Hassle free payments" [ref=f4e104]
+            - paragraph [ref=f4e105]: Hassle free payments
+        - generic [ref=f4e108]:
+          - separator [ref=f4e109]
+          - heading "The simple, and safe way to buy domain names" [level=6] [ref=f4e110]
+          - paragraph [ref=f4e111]: No matter what kind of domain you want to buy or lease, we make the transfer simple and safe.
+          - button "Here's how it works" [ref=f4e112] [cursor=pointer]
+    - separator [ref=f4e113]
+    - generic [ref=f4e121]:
+      - generic [ref=f4e122]: Copyright © 2026 GoDaddy Operating Company, LLC. All Rights Reserved.
+      - generic [ref=f4e123]:
+        - button "Do not share my personal information" [ref=f4e124] [cursor=pointer]
+        - text: •
+        - button "Privacy Settings" [ref=f4e125] [cursor=pointer]
+  - contentinfo
+  - alert [ref=f4e126]

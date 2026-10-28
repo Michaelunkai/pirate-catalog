@@ -1,0 +1,269 @@
+- generic [ref=f11e2]:
+  - generic [ref=f11e3]:
+    - link [ref=f11e5] [cursor=pointer]:
+      - /url: https://www.skidrowreloaded.com
+    - generic [ref=f11e6]:
+      - link [ref=f11e7] [cursor=pointer]:
+        - /url: http://feeds.feedburner.com/SkidrowReloadedGames
+        - img "RSS" [ref=f11e8]
+      - link [ref=f11e9] [cursor=pointer]:
+        - /url: https://twitter.com/skidrowwgamess
+        - img "Twitter" [ref=f11e10]
+      - link [ref=f11e11] [cursor=pointer]:
+        - /url: https://www.skidrowreloaded.com
+        - img "Facebook" [ref=f11e12]
+    - generic [ref=f11e13]:
+      - list:
+        - listitem [ref=f11e14]:
+          - link "HOME" [ref=f11e15] [cursor=pointer]:
+            - /url: https://www.skidrowreloaded.com/
+        - listitem [ref=f11e16]:
+          - link "GAMES LIST" [ref=f11e17] [cursor=pointer]:
+            - /url: https://www.skidrowreloaded.com/games-list/
+        - listitem [ref=f11e18]:
+          - link "PC GAMES" [ref=f11e19] [cursor=pointer]:
+            - /url: https://www.skidrowreloaded.com/category/pc-games/
+        - listitem [ref=f11e20]:
+          - link "PC REPACK" [ref=f11e21] [cursor=pointer]:
+            - /url: https://www.skidrowreloaded.com/category/pc-repack/
+        - listitem [ref=f11e22]:
+          - link "GAME UPDATES" [ref=f11e23] [cursor=pointer]:
+            - /url: https://www.skidrowreloaded.com/category/game-updates/
+        - listitem [ref=f11e24]:
+          - link "Donate ❤️" [ref=f11e25] [cursor=pointer]:
+            - /url: https://www.skidrowreloaded.com/donate/
+        - listitem [ref=f11e26]:
+          - link "DMCA" [ref=f11e27] [cursor=pointer]:
+            - /url: https://www.skidrowreloaded.com/dmca/
+        - listitem [ref=f11e28]:
+          - link "Request Game" [ref=f11e29] [cursor=pointer]:
+            - /url: https://www.skidrowreloaded.com/request-games/
+  - generic [ref=f11e30]:
+    - generic [ref=f11e31]:
+      - generic [ref=f11e32]:
+        - text: «
+        - link "Gray Matter-RELOADED" [ref=f11e33] [cursor=pointer]:
+          - /url: https://www.skidrowreloaded.com/reloaded-gray-matter/
+      - generic [ref=f11e34]:
+        - link "Hand of Fate v1.3.1 Incl DLC-Repack" [ref=f11e35] [cursor=pointer]:
+          - /url: https://www.skidrowreloaded.com/hand-of-fate-v1-3-1-incl-dlc-repack/
+        - text: »
+      - heading "Blue Estate-CODEX" [level=2] [ref=f11e36]
+      - generic [ref=f11e37]:
+        - text: Posted January 25, 2016 in
+        - link "REQUEST ACCEPTED" [ref=f11e38] [cursor=pointer]:
+          - /url: https://www.skidrowreloaded.com/category/request-accepted/
+      - paragraph [ref=f11e39]:
+        - link [ref=f11e40] [cursor=pointer]:
+          - /url: https://www.skidrowreloaded.com/codex-blue-estate/
+          - img "Blue Estate-CODEX" [ref=f11e41]
+      - paragraph [ref=f11e42]:
+        - strong [ref=f11e44]: CODEX – ONE FTP LINK – TORRENT
+      - paragraph [ref=f11e45]: In Blue Estate you will play Tony Luciano, the psychopathic…
+      - paragraph
+      - paragraph [ref=f11e46]
+      - paragraph
+      - paragraph
+      - paragraph
+      - paragraph
+      - paragraph
+      - generic [ref=f11e48]:
+        - tablist [ref=f11e49]:
+          - tab [expanded] [selected] [ref=f11e50]:
+            - link "DESCRIPTION / DOWNLOAD" [ref=f11e51]:
+              - /url: "#tabs-18020-0-0"
+          - tab [ref=f11e52]:
+            - link "SYSTEM REQUIREMENTS" [ref=f11e53] [cursor=pointer]:
+              - /url: "#tabs-18020-0-1"
+          - tab [ref=f11e54]:
+            - link "SCREENSHOTS" [ref=f11e55] [cursor=pointer]:
+              - /url: "#tabs-18020-0-2"
+          - tab [ref=f11e56]:
+            - link "GAMEPLAY" [ref=f11e57] [cursor=pointer]:
+              - /url: "#tabs-18020-0-3"
+          - tab [ref=f11e58]:
+            - link "INFO" [ref=f11e59] [cursor=pointer]:
+              - /url: "#tabs-18020-0-4"
+        - tabpanel "DESCRIPTION / DOWNLOAD" [ref=f11e60]:
+          - heading "ABOUT THE GAME" [level=5] [ref=f11e61]
+          - paragraph [ref=f11e62]:
+            - text: In
+            - strong [ref=f11e63]: Blue Estate
+            - text: you will play
+            - strong [ref=f11e64]: Tony Luciano
+            - text: ", the psychopathic son of the Italian mafia godfather of LA and"
+            - strong [ref=f11e65]: Clarence
+            - text: ", an ex-Navy SEAL, penniless and now a hit-man bent on cleaning up the mess started by Tony."
+          - paragraph [ref=f11e66]: "Titre: Blue Estate The Game Genre: Action Développeur: HE SAW Éditeur: HE SAW Date de parution: 8 avr 2015"
+          - paragraph [ref=f11e67]: "Blue Estate-CODEX Size: 2.64 GB ——————————-"
+          - paragraph [ref=f11e68]:
+            - strong [ref=f11e70]: ONE FTP LINK
+            - link:
+              - /url: https://www.skidrowreloaded.com
+          - link "Uploading........." [ref=f11e71] [cursor=pointer]:
+            - /url: https://www.skidrowreloaded.com
+          - paragraph:
+            - link:
+              - /url: https://www.skidrowreloaded.com
+          - paragraph [ref=f11e74]:
+            - strong [ref=f11e76]: DIRECT LINK
+            - link:
+              - /url: http://kumpulbagi.id/test123/pc-275904/codex-blue-estate,2004165.iso
+          - link "Blue.Estate-CODEX.iso" [ref=f11e77] [cursor=pointer]:
+            - /url: http://kumpulbagi.id/test123/pc-275904/codex-blue-estate,2004165.iso
+          - paragraph:
+            - link:
+              - /url: http://kumpulbagi.id/test123/pc-275904/codex-blue-estate,2004165.iso
+          - paragraph [ref=f11e80]:
+            - strong [ref=f11e82]: UP07
+            - link:
+              - /url: http://up07.net/9vcm0zzav3x2
+          - link "Blue.Estate-CODEX.iso" [ref=f11e83] [cursor=pointer]:
+            - /url: http://up07.net/9vcm0zzav3x2
+          - paragraph:
+            - link:
+              - /url: http://up07.net/9vcm0zzav3x2
+          - paragraph [ref=f11e86]:
+            - strong [ref=f11e88]: 1FICHIER
+            - link:
+              - /url: https://1fichier.com/?5sqgr6dt2n
+          - link "Blue.Estate-CODEX.iso" [ref=f11e89] [cursor=pointer]:
+            - /url: https://1fichier.com/?5sqgr6dt2n
+          - paragraph:
+            - link:
+              - /url: https://1fichier.com/?5sqgr6dt2n
+          - paragraph [ref=f11e92]:
+            - strong [ref=f11e94]: UPTOBOX
+            - link:
+              - /url: http://uptobox.com/e6oc1s2o960i
+          - link "Blue.Estate-CODEX.iso" [ref=f11e95] [cursor=pointer]:
+            - /url: http://uptobox.com/e6oc1s2o960i
+          - paragraph:
+            - link:
+              - /url: http://uptobox.com/e6oc1s2o960i
+          - paragraph [ref=f11e98]:
+            - strong [ref=f11e100]: HUGEFILES
+            - link:
+              - /url: http://hugefiles.net/9bfijzgguf95
+          - link "Blue.Estate-CODEX.iso" [ref=f11e101] [cursor=pointer]:
+            - /url: http://hugefiles.net/9bfijzgguf95
+          - paragraph:
+            - link:
+              - /url: http://hugefiles.net/9bfijzgguf95
+          - paragraph [ref=f11e104]:
+            - strong [ref=f11e106]: MEDIAFREE
+            - link:
+              - /url: http://mediafree.co/3xbl77gzvt0j/codex-blue.estate.iso.html
+          - link "Blue.Estate-CODEX.iso" [ref=f11e107] [cursor=pointer]:
+            - /url: http://mediafree.co/3xbl77gzvt0j/codex-blue.estate.iso.html
+          - paragraph:
+            - link:
+              - /url: http://mediafree.co/3xbl77gzvt0j/codex-blue.estate.iso.html
+          - paragraph [ref=f11e110]:
+            - strong [ref=f11e112]: — USERSCLOUD
+            - link:
+              - /url: https://userscloud.com/h6fxmoqf6lbx
+          - link "Blue.Estate-CODEX.iso" [ref=f11e113] [cursor=pointer]:
+            - /url: https://userscloud.com/h6fxmoqf6lbx
+          - paragraph:
+            - link:
+              - /url: https://userscloud.com/h6fxmoqf6lbx
+          - paragraph [ref=f11e116]:
+            - strong [ref=f11e118]: JHEBERG
+            - link:
+              - /url: http://jheberg.net/captcha/codex-blueestate-2/
+          - link "Blue.Estate-CODEX.iso" [ref=f11e119] [cursor=pointer]:
+            - /url: http://jheberg.net/captcha/codex-blueestate-2/
+          - paragraph:
+            - link:
+              - /url: http://jheberg.net/captcha/codex-blueestate-2/
+          - paragraph [ref=f11e122]:
+            - strong [ref=f11e124]: GO4UP
+            - link:
+              - /url: http://go4up.com/dl/149c027e595e/codex-blue.estate.iso
+          - link "Blue.Estate-CODEX.iso" [ref=f11e125] [cursor=pointer]:
+            - /url: http://go4up.com/dl/149c027e595e/codex-blue.estate.iso
+          - paragraph:
+            - link:
+              - /url: http://go4up.com/dl/149c027e595e/codex-blue.estate.iso
+          - paragraph [ref=f11e128]:
+            - strong [ref=f11e130]: MULTI LINKS
+            - link:
+              - /url: http://www.multiup.org/download/fdbac1d24fd0d20685e50f3d8e734761/codex-blue.estate.iso
+          - link "Blue.Estate-CODEX.iso" [ref=f11e131] [cursor=pointer]:
+            - /url: http://www.multiup.org/download/fdbac1d24fd0d20685e50f3d8e734761/codex-blue.estate.iso
+          - paragraph:
+            - link:
+              - /url: http://www.multiup.org/download/fdbac1d24fd0d20685e50f3d8e734761/codex-blue.estate.iso
+          - paragraph [ref=f11e134]:
+            - strong [ref=f11e136]: TORRENT
+            - link:
+              - /url: https://rarbg.to/download.php?id=wvpml91&f=Blue.Estate-CODEX-[rarbg.com].torrent
+          - link "Blue.Estate-CODEX.Torrent" [ref=f11e137] [cursor=pointer]:
+            - /url: https://rarbg.to/download.php?id=wvpml91&f=Blue.Estate-CODEX-[rarbg.com].torrent
+          - paragraph:
+            - link:
+              - /url: https://rarbg.to/download.php?id=wvpml91&f=Blue.Estate-CODEX-[rarbg.com].torrent
+          - blockquote [ref=f11e141]:
+            - paragraph [ref=f11e142]: Enjoy
+    - generic [ref=f11e143]:
+      - heading "5 Comments" [level=3] [ref=f11e144]
+      - list [ref=f11e145]:
+        - listitem [ref=f11e146]:
+          - generic [ref=f11e147]:
+            - generic [ref=f11e148]:
+              - text: RReings (25 Jan 2016, 5:18)
+              - link "Reply to RReings" [ref=f11e149] [cursor=pointer]:
+                - /url: https://www.skidrowreloaded.com/codex-blue-estate/?replytocom=160989#respond
+                - text: Reply
+            - paragraph [ref=f11e151]: First?
+        - listitem [ref=f11e152]:
+          - generic [ref=f11e153]:
+            - generic [ref=f11e154]:
+              - text: yummy (25 Jan 2016, 14:47)
+              - link "Reply to yummy" [ref=f11e155] [cursor=pointer]:
+                - /url: https://www.skidrowreloaded.com/codex-blue-estate/?replytocom=161095#respond
+                - text: Reply
+            - paragraph [ref=f11e157]: this game is excellent and crazy ! one of these good fps like borderland, but with more crazy thing and no direct control (auto controlled) thanks ^^
+        - listitem [ref=f11e158]:
+          - generic [ref=f11e159]:
+            - generic [ref=f11e160]:
+              - text: Nate (29 Jan 2016, 5:29)
+              - link "Reply to Nate" [ref=f11e161] [cursor=pointer]:
+                - /url: https://www.skidrowreloaded.com/codex-blue-estate/?replytocom=162584#respond
+                - text: Reply
+            - paragraph [ref=f11e163]: Wanna learn how to headshot everyone in csgo play this game
+        - listitem [ref=f11e164]:
+          - generic [ref=f11e165]:
+            - generic [ref=f11e166]:
+              - text: rail shooter (07 Feb 2016, 8:50)
+              - link "Reply to rail shooter" [ref=f11e167] [cursor=pointer]:
+                - /url: https://www.skidrowreloaded.com/codex-blue-estate/?replytocom=166688#respond
+                - text: Reply
+            - paragraph [ref=f11e169]: wow thanks for this, i just hope theres no anti piracy in it, if its enjoyable as i think it is i’ll buy this on steam 😀
+        - listitem [ref=f11e170]:
+          - generic [ref=f11e171]:
+            - generic [ref=f11e172]:
+              - text: rail shooter (07 Feb 2016, 23:28)
+              - link "Reply to rail shooter" [ref=f11e173] [cursor=pointer]:
+                - /url: https://www.skidrowreloaded.com/codex-blue-estate/?replytocom=166938#respond
+                - text: Reply
+            - paragraph [ref=f11e175]: "this is just like the same iso before and there’s still an anti-piracy on it: every time you shoot the game freezes for a second and its barely playable to be enjoyed, why did u guys re-upload the same installer without fixing it??? and there’s a newer version of this game."
+      - generic [ref=f11e176]:
+        - heading "Leave a Reply" [level=3] [ref=f11e177]
+        - generic [ref=f11e178]:
+          - paragraph [ref=f11e179]: Your email address will not be published. Required fields are marked *
+          - paragraph [ref=f11e180]:
+            - text: Comment *
+            - textbox "Comment *" [ref=f11e181]
+            - textbox [aria-hidden] [ref=f11e182]
+          - paragraph [ref=f11e183]:
+            - textbox "Name *" [ref=f11e184]
+          - paragraph [ref=f11e185]:
+            - textbox "Email *" [ref=f11e186]
+          - paragraph:
+            - button "Submit" [ref=f11e187] [cursor=pointer]
+  - generic [ref=f11e189]:
+    - text: Copyright © 2026 skidrowreloaded
+    - link "DMCA" [ref=f11e190] [cursor=pointer]:
+      - /url: https://www.skidrowreloaded.com/dmca/

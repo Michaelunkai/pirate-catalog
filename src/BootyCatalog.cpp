@@ -1423,7 +1423,7 @@ LRESULT CALLBACK MainWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) 
                         pt.x, pt.y, 0, hwnd, NULL);
                     DestroyMenu(hMenu);
                     if (sel == 4001) {
-                        DialogBoxA(GetModuleHandleA(NULL), MAKEINTRESOURCEA(101), hwnd, RatingDlgProc);
+                        DialogBoxA(GetModuleHandleA(NULL), MAKEINTRESOURCEA(6000), hwnd, RatingDlgProc);
                     } else if (sel == 4002 && game->feedUrl[0]) {
                         ShellExecuteA(NULL, "open", game->feedUrl, NULL, NULL, SW_SHOWNORMAL);
                     }

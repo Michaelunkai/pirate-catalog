@@ -1,0 +1,490 @@
+- generic [active] [ref=f23e1]:
+  - generic [ref=f23e4]:
+    - banner [ref=f23e5]:
+      - navigation "Primary Navigation" [ref=f23e7]:
+        - generic [ref=f23e9]:
+          - link [ref=f23e12] [cursor=pointer]:
+            - /url: /
+            - img "SteamRIP" [ref=f23e14]
+            - heading "SteamRIP" [level=1] [ref=f23e15]
+          - generic [ref=f23e16]:
+            - list [ref=f23e19]:
+              - listitem [ref=f23e20]:
+                - link "Home" [ref=f23e21] [cursor=pointer]:
+                  - /url: /
+              - listitem [ref=f23e22]:
+                - link " Categories" [ref=f23e23] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=f23e24]:
+                - link "Top Games" [ref=f23e25] [cursor=pointer]:
+                  - /url: /top-games/
+              - listitem [ref=f23e26]:
+                - link "Recent Updates" [ref=f23e27] [cursor=pointer]:
+                  - /url: /updated-games/
+              - listitem [ref=f23e28]:
+                - link " Games List" [ref=f23e29] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=f23e30]:
+                - link " FAQ" [ref=f23e31] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=f23e32]:
+                - link "Discord" [ref=f23e33] [cursor=pointer]:
+                  - /url: //discord.gg/NBVFJsmy9y
+            - list [ref=f23e34]:
+              - listitem [ref=f23e35]:
+                - link "Random Article" [ref=f23e36] [cursor=pointer]:
+                  - /url: "?random-post=1"
+              - listitem [ref=f23e38]:
+                - link "Switch skin" [ref=f23e39] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=f23e41]:
+                - link "Search for" [ref=f23e42] [cursor=pointer]:
+                  - /url: "#"
+    - generic [ref=f23e53]:
+      - list
+    - generic [ref=f23e60]:
+      - generic [ref=f23e62]:
+        - heading "Recently Added" [level=3] [ref=f23e64]
+        - generic [ref=f23e65]:
+          - list:
+            - listitem [ref=f23e66]:
+              - link "Probably Stolen – Cyberpunk Shopkeeper Sim Free Download (v1.0.0.1)" [ref=f23e67] [cursor=pointer]:
+                - /url: /probably-stolen-cyberpunk-shopkeeper-sim-free-download/
+                - img "Probably Stolen – Cyberpunk Shopkeeper Sim Free Download (v1.0.0.1)" [ref=f23e68]
+                - generic [ref=f23e69]: Build 26274380
+                - heading "2026 | 389 MB Probably Stolen – Cyberpunk Shopkeeper Sim Free Download (v1.0.0.1)" [level=2] [ref=f23e70]:
+                  - generic [ref=f23e71]: 2026 | 389 MB
+                  - text: Probably Stolen – Cyberpunk Shopkeeper Sim Free Download (v1.0.0.1)
+            - listitem [ref=f23e72]:
+              - 'link "You Are Empty: Absolute Edition Free Download" [ref=f23e73] [cursor=pointer]':
+                - /url: /you-are-empty-absolute-edition-free-download/
+                - 'img "You Are Empty: Absolute Edition Free Download" [ref=f23e74]'
+                - generic [ref=f23e75]: Build 26250221
+                - 'heading "2026 | 2.3 GB You Are Empty: Absolute Edition Free Download" [level=2] [ref=f23e76]':
+                  - generic [ref=f23e77]: 2026 | 2.3 GB
+                  - text: "You Are Empty: Absolute Edition Free Download"
+            - listitem [ref=f23e78]:
+              - 'link "BrokenLore: DON’T LIE Free Download" [ref=f23e79] [cursor=pointer]':
+                - /url: /brokenlore-dont-lie-free-download/
+                - 'img "BrokenLore: DON’T LIE Free Download" [ref=f23e80]'
+                - generic [ref=f23e81]: Build 25353220
+                - 'heading "2026 | 7 GB BrokenLore: DON’T LIE Free Download" [level=2] [ref=f23e82]':
+                  - generic [ref=f23e83]: 2026 | 7 GB
+                  - text: "BrokenLore: DON’T LIE Free Download"
+            - listitem [ref=f23e84]:
+              - link "Golden Swirl Free Download" [ref=f23e85] [cursor=pointer]:
+                - /url: /golden-swirl-free-download/
+                - img "Golden Swirl Free Download" [ref=f23e86]
+                - generic [ref=f23e87]: Build 25951944
+                - heading "2026 | 1.5 GB Golden Swirl Free Download" [level=2] [ref=f23e88]:
+                  - generic [ref=f23e89]: 2026 | 1.5 GB
+                  - text: Golden Swirl Free Download
+            - listitem [ref=f23e90]:
+              - link "Parasite Free Download" [ref=f23e91] [cursor=pointer]:
+                - /url: /parasite-free-download/
+                - img "Parasite Free Download" [ref=f23e92]
+                - generic [ref=f23e93]: Build 26184037
+                - heading "2026 | 876.1 MB Parasite Free Download" [level=2] [ref=f23e94]:
+                  - generic [ref=f23e95]: 2026 | 876.1 MB
+                  - text: Parasite Free Download
+            - listitem [ref=f23e96]:
+              - link "Olga – Episode 1 Free Download" [ref=f23e97] [cursor=pointer]:
+                - /url: /olga-episode-1-free-download/
+                - img "Olga – Episode 1 Free Download" [ref=f23e98]
+                - generic [ref=f23e99]: Build 25625409
+                - heading "2026 | 2.9 GB Olga – Episode 1 Free Download" [level=2] [ref=f23e100]:
+                  - generic [ref=f23e101]: 2026 | 2.9 GB
+                  - text: Olga – Episode 1 Free Download
+            - listitem [ref=f23e102]:
+              - link "Mutant Football League 2 Free Download" [ref=f23e103] [cursor=pointer]:
+                - /url: /mutant-football-league-2-free-download/
+                - img "Mutant Football League 2 Free Download" [ref=f23e104]
+                - generic [ref=f23e105]: Build 24689956
+                - heading "2025 | 7 GB Mutant Football League 2 Free Download" [level=2] [ref=f23e106]:
+                  - generic [ref=f23e107]: 2025 | 7 GB
+                  - text: Mutant Football League 2 Free Download
+            - listitem [ref=f23e108]:
+              - link "Village in the Shade Free Download" [ref=f23e109] [cursor=pointer]:
+                - /url: /village-in-the-shade-free-download/
+                - img "Village in the Shade Free Download" [ref=f23e110]
+                - generic [ref=f23e111]: Build 25640656
+                - heading "2026 | 7.8 GB Village in the Shade Free Download" [level=2] [ref=f23e112]:
+                  - generic [ref=f23e113]: 2026 | 7.8 GB
+                  - text: Village in the Shade Free Download
+            - listitem [ref=f23e114]:
+              - link "Do No Harm Free Download" [ref=f23e115] [cursor=pointer]:
+                - /url: /do-no-harm-free-download/
+                - img "Do No Harm Free Download" [ref=f23e116]
+                - generic [ref=f23e117]: Build 23009876
+                - heading "2025 | 745.7 MB Do No Harm Free Download" [level=2] [ref=f23e118]:
+                  - generic [ref=f23e119]: 2025 | 745.7 MB
+                  - text: Do No Harm Free Download
+            - listitem [ref=f23e120]:
+              - link "Rogue AI Simulator Free Download" [ref=f23e121] [cursor=pointer]:
+                - /url: /rogue-ai-simulator-free-download/
+                - img "Rogue AI Simulator Free Download" [ref=f23e122]
+                - generic [ref=f23e123]: Build 20446717
+                - heading "2023 | 376.1 MB Rogue AI Simulator Free Download" [level=2] [ref=f23e124]:
+                  - generic [ref=f23e125]: 2023 | 376.1 MB
+                  - text: Rogue AI Simulator Free Download
+            - listitem [ref=f23e126]:
+              - link "Deep Dish Dungeon Free Download" [ref=f23e127] [cursor=pointer]:
+                - /url: /deep-dish-dungeon-free-download/
+                - img "Deep Dish Dungeon Free Download" [ref=f23e128]
+                - generic [ref=f23e129]: Build 26155091
+                - heading "2026 | 421.4 MB Deep Dish Dungeon Free Download" [level=2] [ref=f23e130]:
+                  - generic [ref=f23e131]: 2026 | 421.4 MB
+                  - text: Deep Dish Dungeon Free Download
+            - listitem [ref=f23e132]:
+              - link "Dub Together Free Download" [ref=f23e133] [cursor=pointer]:
+                - /url: /dub-together-free-download/
+                - img "Dub Together Free Download" [ref=f23e134]
+                - generic [ref=f23e135]: Build 26243484
+                - heading "2026 | 576 MB Dub Together Free Download" [level=2] [ref=f23e136]:
+                  - generic [ref=f23e137]: 2026 | 576 MB
+                  - text: Dub Together Free Download
+        - link "Load More" [ref=f23e139] [cursor=pointer]:
+          - /url: "#"
+      - generic [ref=f23e140]:
+        - heading "Browse by Category" [level=3] [ref=f23e142]
+        - generic [ref=f23e146]:
+          - list
+      - generic [ref=f23e150]:
+        - heading "Anime" [level=3] [ref=f23e152]
+        - generic [ref=f23e153]:
+          - list:
+            - listitem [ref=f23e154]:
+              - link "Village in the Shade Free Download" [ref=f23e155] [cursor=pointer]:
+                - /url: /village-in-the-shade-free-download/
+                - img "Village in the Shade Free Download" [ref=f23e156]
+                - generic [ref=f23e157]: Build 25640656
+                - heading "2026 | 7.8 GB Village in the Shade Free Download" [level=2] [ref=f23e158]:
+                  - generic [ref=f23e159]: 2026 | 7.8 GB
+                  - text: Village in the Shade Free Download
+            - listitem [ref=f23e160]:
+              - 'link "ONE PIECE: Grand Gourmet Free Download" [ref=f23e161] [cursor=pointer]':
+                - /url: /one-piece-grand-gourmet-free-download/
+                - 'img "ONE PIECE: Grand Gourmet Free Download" [ref=f23e162]'
+                - generic [ref=f23e163]: Build 26153392
+                - 'heading "2026 | 176.3 MB ONE PIECE: Grand Gourmet Free Download" [level=2] [ref=f23e164]':
+                  - generic [ref=f23e165]: 2026 | 176.3 MB
+                  - text: "ONE PIECE: Grand Gourmet Free Download"
+            - listitem [ref=f23e166]:
+              - link "DEMONS’ NIGHT FEVER Free Download" [ref=f23e167] [cursor=pointer]:
+                - /url: /demons-night-fever-free-download/
+                - img "DEMONS’ NIGHT FEVER Free Download" [ref=f23e168]
+                - generic [ref=f23e169]: Build 24912815
+                - heading "2026 | 2 GB DEMONS’ NIGHT FEVER Free Download" [level=2] [ref=f23e170]:
+                  - generic [ref=f23e171]: 2026 | 2 GB
+                  - text: DEMONS’ NIGHT FEVER Free Download
+            - listitem [ref=f23e172]:
+              - link "Demon Slayer -Kimetsu no Yaiba- The Hinokami Chronicles Free Download" [ref=f23e173] [cursor=pointer]:
+                - /url: /demon-slayer-kimetsu-no-yaiba-the-hinokami-chronicles-free-download/
+                - img "Demon Slayer -Kimetsu no Yaiba- The Hinokami Chronicles Free Download" [ref=f23e174]
+                - generic [ref=f23e175]: Build 10714413
+                - heading "2021 | 24.6 GB Demon Slayer -Kimetsu no Yaiba- The Hinokami Chronicles Free Download" [level=2] [ref=f23e176]:
+                  - generic [ref=f23e177]: 2021 | 24.6 GB
+                  - text: Demon Slayer -Kimetsu no Yaiba- The Hinokami Chronicles Free Download
+            - listitem [ref=f23e178]:
+              - link "Demon Slayer -Kimetsu no Yaiba- The Hinokami Chronicles 2 Free Download" [ref=f23e179] [cursor=pointer]:
+                - /url: /demon-slayer-kimetsu-no-yaiba-the-hinokami-chronicles-2-free-download/
+                - img "Demon Slayer -Kimetsu no Yaiba- The Hinokami Chronicles 2 Free Download" [ref=f23e180]
+                - generic [ref=f23e181]: Build 24561262
+                - heading "2025 | 25.1 GB Demon Slayer -Kimetsu no Yaiba- The Hinokami Chronicles 2 Free Download" [level=2] [ref=f23e182]:
+                  - generic [ref=f23e183]: 2025 | 25.1 GB
+                  - text: Demon Slayer -Kimetsu no Yaiba- The Hinokami Chronicles 2 Free Download
+            - listitem [ref=f23e184]:
+              - 'link "Harvest Moon: Echoes of Teradea Free Download" [ref=f23e185] [cursor=pointer]':
+                - /url: /harvest-moon-echoes-of-teradea-free-download/
+                - 'img "Harvest Moon: Echoes of Teradea Free Download" [ref=f23e186]'
+                - generic [ref=f23e187]: Build 25042025
+                - 'heading "2026 | 3 GB Harvest Moon: Echoes of Teradea Free Download" [level=2] [ref=f23e188]':
+                  - generic [ref=f23e189]: 2026 | 3 GB
+                  - text: "Harvest Moon: Echoes of Teradea Free Download"
+            - listitem [ref=f23e190]:
+              - link "Chinese Parents Free Download" [ref=f23e191] [cursor=pointer]:
+                - /url: /chinese-parents-free-download/
+                - img "Chinese Parents Free Download" [ref=f23e192]
+                - heading "2018 | 801.1 MB Chinese Parents Free Download" [level=2] [ref=f23e193]:
+                  - generic [ref=f23e194]: 2018 | 801.1 MB
+                  - text: Chinese Parents Free Download
+            - listitem [ref=f23e195]:
+              - link "Tales of Eternia Remastered Free Download" [ref=f23e196] [cursor=pointer]:
+                - /url: /tales-of-eternia-remastered-free-download/
+                - img "Tales of Eternia Remastered Free Download" [ref=f23e197]
+                - generic [ref=f23e198]: Build 25190541
+                - heading "2026 | 8.1 GB Tales of Eternia Remastered Free Download" [level=2] [ref=f23e199]:
+                  - generic [ref=f23e200]: 2026 | 8.1 GB
+                  - text: Tales of Eternia Remastered Free Download
+            - listitem [ref=f23e201]:
+              - link "The Witch’s Bakery Free Download" [ref=f23e202] [cursor=pointer]:
+                - /url: /the-witchs-bakery-free-download/
+                - img "The Witch’s Bakery Free Download" [ref=f23e203]
+                - generic [ref=f23e204]: Build 25756850
+                - heading "2026 | 2.6 GB The Witch’s Bakery Free Download" [level=2] [ref=f23e205]:
+                  - generic [ref=f23e206]: 2026 | 2.6 GB
+                  - text: The Witch’s Bakery Free Download
+            - listitem [ref=f23e207]:
+              - link "Maid Cafe Simulator Free Download" [ref=f23e208] [cursor=pointer]:
+                - /url: /maid-cafe-simulator-free-download/
+                - img "Maid Cafe Simulator Free Download" [ref=f23e209]
+                - generic [ref=f23e210]: Build 25795451
+                - heading "2026 | 3.3 GB Maid Cafe Simulator Free Download" [level=2] [ref=f23e211]:
+                  - generic [ref=f23e212]: 2026 | 3.3 GB
+                  - text: Maid Cafe Simulator Free Download
+            - listitem [ref=f23e213]:
+              - link "Okko The Exiled Free Download" [ref=f23e214] [cursor=pointer]:
+                - /url: /okko-the-exiled-free-download/
+                - img "Okko The Exiled Free Download" [ref=f23e215]
+                - generic [ref=f23e216]: Build 25871758
+                - heading "2026 | 310.8 MB Okko The Exiled Free Download" [level=2] [ref=f23e217]:
+                  - generic [ref=f23e218]: 2026 | 310.8 MB
+                  - text: Okko The Exiled Free Download
+            - listitem [ref=f23e219]:
+              - link "Umineko When They Cry – Answer Arcs Free Download" [ref=f23e220] [cursor=pointer]:
+                - /url: /umineko-when-they-cry-answer-arcs-free-download/
+                - img "Umineko When They Cry – Answer Arcs Free Download" [ref=f23e221]
+                - generic [ref=f23e222]: Build 2540603
+                - heading "2017 | 3.7 GB Umineko When They Cry – Answer Arcs Free Download" [level=2] [ref=f23e223]:
+                  - generic [ref=f23e224]: 2017 | 3.7 GB
+                  - text: Umineko When They Cry – Answer Arcs Free Download
+        - link "Load More" [ref=f23e226] [cursor=pointer]:
+          - /url: "#"
+      - generic [ref=f23e228]:
+        - heading "Horror" [level=3] [ref=f23e230]
+        - generic [ref=f23e231]:
+          - list:
+            - listitem [ref=f23e232]:
+              - 'link "BrokenLore: DON’T LIE Free Download" [ref=f23e233] [cursor=pointer]':
+                - /url: /brokenlore-dont-lie-free-download/
+                - 'img "BrokenLore: DON’T LIE Free Download" [ref=f23e234]'
+                - generic [ref=f23e235]: Build 25353220
+                - 'heading "2026 | 7 GB BrokenLore: DON’T LIE Free Download" [level=2] [ref=f23e236]':
+                  - generic [ref=f23e237]: 2026 | 7 GB
+                  - text: "BrokenLore: DON’T LIE Free Download"
+            - listitem [ref=f23e238]:
+              - link "Parasite Free Download" [ref=f23e239] [cursor=pointer]:
+                - /url: /parasite-free-download/
+                - img "Parasite Free Download" [ref=f23e240]
+                - generic [ref=f23e241]: Build 26184037
+                - heading "2026 | 876.1 MB Parasite Free Download" [level=2] [ref=f23e242]:
+                  - generic [ref=f23e243]: 2026 | 876.1 MB
+                  - text: Parasite Free Download
+            - listitem [ref=f23e244]:
+              - link "Village in the Shade Free Download" [ref=f23e245] [cursor=pointer]:
+                - /url: /village-in-the-shade-free-download/
+                - img "Village in the Shade Free Download" [ref=f23e246]
+                - generic [ref=f23e247]: Build 25640656
+                - heading "2026 | 7.8 GB Village in the Shade Free Download" [level=2] [ref=f23e248]:
+                  - generic [ref=f23e249]: 2026 | 7.8 GB
+                  - text: Village in the Shade Free Download
+            - listitem [ref=f23e250]:
+              - link "Deep Dish Dungeon Free Download" [ref=f23e251] [cursor=pointer]:
+                - /url: /deep-dish-dungeon-free-download/
+                - img "Deep Dish Dungeon Free Download" [ref=f23e252]
+                - generic [ref=f23e253]: Build 26155091
+                - heading "2026 | 421.4 MB Deep Dish Dungeon Free Download" [level=2] [ref=f23e254]:
+                  - generic [ref=f23e255]: 2026 | 421.4 MB
+                  - text: Deep Dish Dungeon Free Download
+            - listitem [ref=f23e256]:
+              - 'link "Stygian: Outer Gods Free Download" [ref=f23e257] [cursor=pointer]':
+                - /url: /stygian-outer-gods-free-download/
+                - 'img "Stygian: Outer Gods Free Download" [ref=f23e258]'
+                - generic [ref=f23e259]: Build 26225806
+                - 'heading "2026 | 12.4 GB Stygian: Outer Gods Free Download" [level=2] [ref=f23e260]':
+                  - generic [ref=f23e261]: 2026 | 12.4 GB
+                  - text: "Stygian: Outer Gods Free Download"
+            - listitem [ref=f23e262]:
+              - link "ASPIS Free Download" [ref=f23e263] [cursor=pointer]:
+                - /url: /aspis-free-download/
+                - img "ASPIS Free Download" [ref=f23e264]
+                - generic [ref=f23e265]: Build 26178821
+                - heading "2026 | 17.9 GB ASPIS Free Download" [level=2] [ref=f23e266]:
+                  - generic [ref=f23e267]: 2026 | 17.9 GB
+                  - text: ASPIS Free Download
+            - listitem [ref=f23e268]:
+              - link "Dementium II Free Download" [ref=f23e269] [cursor=pointer]:
+                - /url: /dementium-ii-free-download/
+                - img "Dementium II Free Download" [ref=f23e270]
+                - generic [ref=f23e271]: Build 26152271
+                - heading "2026 | 587.8 MB Dementium II Free Download" [level=2] [ref=f23e272]:
+                  - generic [ref=f23e273]: 2026 | 587.8 MB
+                  - text: Dementium II Free Download
+            - listitem [ref=f23e274]:
+              - link "Tenebris Somnia Free Download" [ref=f23e275] [cursor=pointer]:
+                - /url: /tenebris-somnia-free-download/
+                - img "Tenebris Somnia Free Download" [ref=f23e276]
+                - generic [ref=f23e277]: Build 25968457
+                - heading "2026 | 12.7 GB Tenebris Somnia Free Download" [level=2] [ref=f23e278]:
+                  - generic [ref=f23e279]: 2026 | 12.7 GB
+                  - text: Tenebris Somnia Free Download
+            - listitem [ref=f23e280]:
+              - link "Chinese Parents Free Download" [ref=f23e281] [cursor=pointer]:
+                - /url: /chinese-parents-free-download/
+                - img "Chinese Parents Free Download" [ref=f23e282]
+                - heading "2018 | 801.1 MB Chinese Parents Free Download" [level=2] [ref=f23e283]:
+                  - generic [ref=f23e284]: 2018 | 801.1 MB
+                  - text: Chinese Parents Free Download
+            - listitem [ref=f23e285]:
+              - link "Penguin Colony Free Download" [ref=f23e286] [cursor=pointer]:
+                - /url: /penguin-colony-free-download/
+                - img "Penguin Colony Free Download" [ref=f23e287]
+                - generic [ref=f23e288]: Build 25951906
+                - heading "2026 | 2 GB Penguin Colony Free Download" [level=2] [ref=f23e289]:
+                  - generic [ref=f23e290]: 2026 | 2 GB
+                  - text: Penguin Colony Free Download
+            - listitem [ref=f23e291]:
+              - link "FIRE AND ASHES Free Download" [ref=f23e292] [cursor=pointer]:
+                - /url: /fire-and-ashes-free-download/
+                - img "FIRE AND ASHES Free Download" [ref=f23e293]
+                - generic [ref=f23e294]: Build 25969406
+                - heading "2026 | 26.1 GB FIRE AND ASHES Free Download" [level=2] [ref=f23e295]:
+                  - generic [ref=f23e296]: 2026 | 26.1 GB
+                  - text: FIRE AND ASHES Free Download
+            - listitem [ref=f23e297]:
+              - 'link "Warhammer 40,000: Boltgun 2 Free Download" [ref=f23e298] [cursor=pointer]':
+                - /url: /warhammer-40000-boltgun-2-free-download/
+                - 'img "Warhammer 40,000: Boltgun 2 Free Download" [ref=f23e299]'
+                - generic [ref=f23e300]: Build 25805762
+                - 'heading "2026 | 9.5 GB Warhammer 40,000: Boltgun 2 Free Download" [level=2] [ref=f23e301]':
+                  - generic [ref=f23e302]: 2026 | 9.5 GB
+                  - text: "Warhammer 40,000: Boltgun 2 Free Download"
+        - link "Load More" [ref=f23e304] [cursor=pointer]:
+          - /url: "#"
+      - generic [ref=f23e306]:
+        - heading "Virtual Reality" [level=3] [ref=f23e308]
+        - generic [ref=f23e309]:
+          - list:
+            - listitem [ref=f23e310]:
+              - link "CONVRGENCE Free Download" [ref=f23e311] [cursor=pointer]:
+                - /url: /convrgence-free-download/
+                - img "CONVRGENCE Free Download" [ref=f23e312]
+                - generic [ref=f23e313]: Build 25630966
+                - heading "2026 | 7.4 GB CONVRGENCE Free Download" [level=2] [ref=f23e314]:
+                  - generic [ref=f23e315]: 2026 | 7.4 GB
+                  - text: CONVRGENCE Free Download
+            - listitem [ref=f23e316]:
+              - 'link "Kayak VR: Mirage Free Download" [ref=f23e317] [cursor=pointer]':
+                - /url: /kayak-vr-mirage-free-download/
+                - 'img "Kayak VR: Mirage Free Download" [ref=f23e318]'
+                - generic [ref=f23e319]: Build 19061694
+                - 'heading "2022 | 26.8 GB Kayak VR: Mirage Free Download" [level=2] [ref=f23e320]':
+                  - generic [ref=f23e321]: 2022 | 26.8 GB
+                  - text: "Kayak VR: Mirage Free Download"
+            - listitem [ref=f23e322]:
+              - link "Budget Cuts Ultimate Free Download" [ref=f23e323] [cursor=pointer]:
+                - /url: /budget-cuts-ultimate-free-download/
+                - img "Budget Cuts Ultimate Free Download" [ref=f23e324]
+                - generic [ref=f23e325]: Build 24857326
+                - heading "2023 | 7.6 GB Budget Cuts Ultimate Free Download" [level=2] [ref=f23e326]:
+                  - generic [ref=f23e327]: 2023 | 7.6 GB
+                  - text: Budget Cuts Ultimate Free Download
+            - listitem [ref=f23e328]:
+              - link "Virtual Virtual Reality Free Download" [ref=f23e329] [cursor=pointer]:
+                - /url: /virtual-virtual-reality-free-download/
+                - img "Virtual Virtual Reality Free Download" [ref=f23e330]
+                - generic [ref=f23e331]: Build 20295873
+                - heading "2018 | 398.6 MB Virtual Virtual Reality Free Download" [level=2] [ref=f23e332]:
+                  - generic [ref=f23e333]: 2018 | 398.6 MB
+                  - text: Virtual Virtual Reality Free Download
+            - listitem [ref=f23e334]:
+              - 'link "I Expect You To Die 2: The Spy and the Liar Free Download" [ref=f23e335] [cursor=pointer]':
+                - /url: /i-expect-you-to-die-2-the-spy-and-the-liar-free-download/
+                - 'img "I Expect You To Die 2: The Spy and the Liar Free Download" [ref=f23e336]'
+                - generic [ref=f23e337]: Build 20276561
+                - 'heading "2021 | 956.6 MB I Expect You To Die 2: The Spy and the Liar Free Download" [level=2] [ref=f23e338]':
+                  - generic [ref=f23e339]: 2021 | 956.6 MB
+                  - text: "I Expect You To Die 2: The Spy and the Liar Free Download"
+            - listitem [ref=f23e340]:
+              - link "Floor Plan 2 VR Free Download" [ref=f23e341] [cursor=pointer]:
+                - /url: /floor-plan-2-vr-free-download/
+                - img "Floor Plan 2 VR Free Download" [ref=f23e342]
+                - generic [ref=f23e343]: Build 20265102
+                - heading "2021 | 1.2 GB Floor Plan 2 VR Free Download" [level=2] [ref=f23e344]:
+                  - generic [ref=f23e345]: 2021 | 1.2 GB
+                  - text: Floor Plan 2 VR Free Download
+            - listitem [ref=f23e346]:
+              - link "Floor Plan VR Free Download" [ref=f23e347] [cursor=pointer]:
+                - /url: /floor-plan-vr-free-download/
+                - img "Floor Plan VR Free Download" [ref=f23e348]
+                - generic [ref=f23e349]: Build 20246930
+                - heading "2017 | 287.3 MB Floor Plan VR Free Download" [level=2] [ref=f23e350]:
+                  - generic [ref=f23e351]: 2017 | 287.3 MB
+                  - text: Floor Plan VR Free Download
+            - listitem [ref=f23e352]:
+              - link "Hot Dogs, Horseshoes & Hand Grenades Free Download (v1.0)" [ref=f23e353] [cursor=pointer]:
+                - /url: /hot-dogs-horseshoes-hand-grenades-free-download-r1/
+                - img "Hot Dogs, Horseshoes & Hand Grenades Free Download (v1.0)" [ref=f23e354]
+                - generic [ref=f23e355]: Build 24049887
+                - heading "2016 | 17.1 GB Hot Dogs, Horseshoes & Hand Grenades Free Download (v1.0)" [level=2] [ref=f23e356]:
+                  - generic [ref=f23e357]: 2016 | 17.1 GB
+                  - text: Hot Dogs, Horseshoes & Hand Grenades Free Download (v1.0)
+            - listitem [ref=f23e358]:
+              - link "Voxel Project VR Free Download" [ref=f23e359] [cursor=pointer]:
+                - /url: /voxel-project-vr-free-download/
+                - img "Voxel Project VR Free Download" [ref=f23e360]
+                - generic [ref=f23e361]: Build 22921605
+                - heading "2025 | 2.3 GB Voxel Project VR Free Download" [level=2] [ref=f23e362]:
+                  - generic [ref=f23e363]: 2025 | 2.3 GB
+                  - text: Voxel Project VR Free Download
+            - listitem [ref=f23e364]:
+              - link "Tattoo Removal Simulator Free Download" [ref=f23e365] [cursor=pointer]:
+                - /url: /tattoo-removal-simulator-free-download/
+                - img "Tattoo Removal Simulator Free Download" [ref=f23e366]
+                - generic [ref=f23e367]: Build 23748449
+                - heading "2019 | 3.1 GB Tattoo Removal Simulator Free Download" [level=2] [ref=f23e368]:
+                  - generic [ref=f23e369]: 2019 | 3.1 GB
+                  - text: Tattoo Removal Simulator Free Download
+            - listitem [ref=f23e370]:
+              - link "EXD – Extra Dimensional Free Download (v1.0.6)" [ref=f23e371] [cursor=pointer]:
+                - /url: /exd-extra-dimensional-free-download/
+                - img "EXD – Extra Dimensional Free Download (v1.0.6)" [ref=f23e372]
+                - generic [ref=f23e373]: v1.0.6
+                - heading "2016 | 20.3 GB EXD – Extra Dimensional Free Download (v1.0.6)" [level=2] [ref=f23e374]:
+                  - generic [ref=f23e375]: 2016 | 20.3 GB
+                  - text: EXD – Extra Dimensional Free Download (v1.0.6)
+            - listitem [ref=f23e376]:
+              - 'link "Little Nightmares VR: Altered Echoes Free Download" [ref=f23e377] [cursor=pointer]':
+                - /url: /little-nightmares-vr-altered-echoes-free-download/
+                - 'img "Little Nightmares VR: Altered Echoes Free Download" [ref=f23e378]'
+                - generic [ref=f23e379]: Build 22695609
+                - 'heading "2026 | 9.8 GB Little Nightmares VR: Altered Echoes Free Download" [level=2] [ref=f23e380]':
+                  - generic [ref=f23e381]: 2026 | 9.8 GB
+                  - text: "Little Nightmares VR: Altered Echoes Free Download"
+        - link "Load More" [ref=f23e383] [cursor=pointer]:
+          - /url: "#"
+    - contentinfo [ref=f23e384]:
+      - generic [ref=f23e388]:
+        - generic [ref=f23e390]:
+          - generic [ref=f23e391]: "Our Goal:"
+          - paragraph [ref=f23e394]: No Doubt everyone loves free games of any platform. SteamRIP is the arena for free games, it allows you to download all your favorite games completely free. All Games are Pre-Installed, which means you don’t need to install the games. Our games are compressed and no content has been removed, which decreases the game size. We reorganized the download method and we will strive for being the legit platform for free Pre-Installed games without any cost. Our site name does not represent the RIP released games.
+        - generic [ref=f23e396]:
+          - generic [ref=f23e397]: Official Site
+          - paragraph [ref=f23e400]: "Only trust the official site: steamrip.com and avoid the fake copycats. Always check URL for verification."
+      - generic [ref=f23e405]:
+        - generic [ref=f23e406]: © Copyright 2026 All Rights Reserved
+        - generic [ref=f23e407]:
+          - link "About" [ref=f23e408] [cursor=pointer]:
+            - /url: /about/
+          - text: "|"
+          - link "Request Games" [ref=f23e409] [cursor=pointer]:
+            - /url: /request-games/
+          - text: "|"
+          - link "Privacy Policy" [ref=f23e410] [cursor=pointer]:
+            - /url: /privacy-policy/
+          - text: "|"
+          - link "Terms & Conditions" [ref=f23e411] [cursor=pointer]:
+            - /url: /terms-and-conditions/
+          - text: "|"
+          - link "Contact Us" [ref=f23e412] [cursor=pointer]:
+            - /url: /contact-us/
+        - list [ref=f23e413]:
+          - listitem [ref=f23e414]:
+            - link "Reddit" [ref=f23e415] [cursor=pointer]:
+              - /url: //www.reddit.com/r/SteamRip/
+          - listitem [ref=f23e417]:
+            - link "Discord" [ref=f23e418] [cursor=pointer]:
+              - /url: //discord.gg/WkyjpA3Ua9
+    - link "Back to top button" [ref=f23e420] [cursor=pointer]:
+      - /url: "#go-to-tie-body"
+  - text:  

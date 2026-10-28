@@ -39,7 +39,7 @@
 #define BTN_CANCEL        2003
 #define PROGRESS_ID       2004
 #define GRID_LIST_VIEW    2005
-#define MAX_GAMES         600
+#define MAX_GAMES         800
 #define MAX_TITLE         128
 #define MAX_DESC          256
 #define MAX_SRC           8

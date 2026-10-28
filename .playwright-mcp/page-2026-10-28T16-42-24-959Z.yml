@@ -1,0 +1,10 @@
+- generic [active] [ref=f2e1]:
+  - generic [ref=f2e3]:
+    - generic [ref=f2e4]: 
+    - text: Account Suspended
+  - generic [ref=f2e7]:
+    - generic [ref=f2e8]: This Account has been suspended.
+    - generic [ref=f2e9]:
+      - link "Contact your hosting provider" [ref=f2e10] [cursor=pointer]:
+        - /url: mailto:webmaster@skidrowrepacks.com
+      - text: for more information.

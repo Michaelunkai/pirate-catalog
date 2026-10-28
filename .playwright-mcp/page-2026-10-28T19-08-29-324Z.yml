@@ -1,0 +1,17 @@
+- generic [active] [ref=f6e1]:
+  - paragraph [ref=f6e2]: It is time. The end has finally arrived. Please don't forget the good times we had. 8 whole years.
+  - paragraph [ref=f6e3]:
+    - text: "If you are looking for a replacement site, you can check out:"
+    - link "Torrminatorr" [ref=f6e4] [cursor=pointer]:
+      - /url: https://forum.torrminatorr.com
+    - text: or
+    - link "Appnetica" [ref=f6e5] [cursor=pointer]:
+      - /url: https://appnetica.com/
+  - paragraph [ref=f6e6]: These two sites are trusted and most GOG.com content is posted there first.
+  - paragraph [ref=f6e7]: DO NOT DONATE TO ANY OTHER SITES. THEY ARE VERY NEW AND MAINLY USING SCRAPPED FILE HOSTER LINKS FROM GOG-GAMES.TO
+  - paragraph [ref=f6e8]:
+    - emphasis [ref=f6e9]: Thank you and be well! -GG
+  - paragraph [ref=f6e10]:
+    - text: "Edit - September 16, 2026:"
+    - link "Database dump" [ref=f6e11] [cursor=pointer]:
+      - /url: /gog-games.to-database.zip
