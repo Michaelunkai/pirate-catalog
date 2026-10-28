@@ -7,8 +7,8 @@ F:\study\projects\pirate-catalog\BootyCatalog.exe
 ```
 
 - **Type**: PE32+ GUI, x86-64, 17 sections
-- **Size**: 1,171,364 bytes (1.2M)
-- **Compiled**: 2026-10-27
+- **Size**: 638,122 bytes (622K)
+- **Compiled**: 2026-10-28
 - **Features**: Embedded HTTP server (localhost:8080), Win32 UI, system tray, one-click download, 52 games, 15 repacker sources, embedded resources (games.json, HTML/CSS/JS, icons), version info
 - **GitHub**: committed locally (b98a5c8) — repo pending
 

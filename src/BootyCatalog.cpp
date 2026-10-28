@@ -1,5 +1,5 @@
 /*
- * Booty Catalog -- Full C++ EXE (Consolidated)
+ * Booty Catalog -- Full C++ EXE (Final Consolidated Build)
  * The Full Demand:
  * Continue in this folder you currently add, maximize this project in
  * any perspective. best looking and best performing application with GUI.
@@ -11,13 +11,14 @@
  *
  * Location: F:\study\projects\pirate-catalog
  * User: C:\Users\Admin (Windows 11 Pro)
- * Build: g++ -O2 -mwindows -std=c++17 -o BootyCatalog.exe BootyCatalog.cpp
+ * Build: g++ -o build/BootyCatalog.exe -static -static-libgcc -Os
  */
 #include <winsock2.h>
 #include <ws2tcpip.h>
 #define WIN32_LEAN_AND_MEAN
 #define _CRT_SECURE_NO_WARNINGS
 #include <windows.h>
+#include <wingdi.h>
 #include <commctrl.h>
 #include <shellapi.h>
 #include <shlwapi.h>
@@ -28,88 +29,33 @@
 #include <time.h>
 #include <malloc.h>
 #include <shlobj.h>
+#include <process.h>
 #include <vector>
 #include <algorithm>
+#include "../include/BootyCatalog.h"
 #include "../src/embedded.h"
-#pragma comment(lib, "comctl32.lib")
-#pragma comment(lib, "shlwapi.lib")
-#pragma comment(lib, "wininet.lib")
+
 #pragma comment(lib, "ws2_32.lib")
-#pragma comment(lib, "gdi32.lib")
-#define APP_NAME          "Booty Catalog"
-#define APP_CLASS         "BootyCatalogWindow"
-#define PORT              8080
-#define TRAY_ID           1001
-#define BTN_DOWNLOAD      2001
-#define BTN_BROWSE        2002
-#define BTN_CANCEL        2003
-#define PROGRESS_ID       2004
-#define GRID_LIST_VIEW    2005
-#define DL_MSG_CONNECT    (WM_USER + 50)
-#define DL_MSG_STATUS     (WM_USER + 51)
-#define DL_MSG_STOP       (WM_USER + 52)
-#define TRAY_MSG          (WM_USER + 20)
-#define MAX_GAMES         256
-#define MAX_TITLE         128
-#define MAX_DESC          256
-#define MAX_SRC           8
-#define MAX_TAG           8
-#define MAX_GRAD          128
-#define MAX_PATH          260
-/* Use sizeof directly — macro caused issues */
+#pragma comment(lib, "ole32.lib")
 
-typedef struct RepackInfo {
-    char title[64];
-    char size[16];
-    char url[128];
-} RepackInfo;
+/* ━━━ CONSTANTS ━━━ */
+#define TRAY_MSG_CB    (WM_USER + 20)
+#define DL_MSG_CONNECT (WM_USER + 50)
+#define DL_MSG_STATUS  (WM_USER + 51)
+#define DL_MSG_STOP    (WM_USER + 52)
+#define MAX_PATH2      260
+#define PROGRESS_BAR   2004
+#define BTN_FILTER_FG  2010
+#define BTN_FILTER_DODI 2011
+#define BTN_FILTER_CODEX 2012
+#define BTN_FILTER_RELOAD 2013
+#define BTN_FILTER_ALL 2014
+#define HERO_BANNER    2020
+#define BTN_THEME      2004
+#define OUT_DEFAULT    3
+#define CLIP_DEFAULT   4
 
-typedef struct Game {
-    char     id[MAX_TITLE];
-    char     title[MAX_TITLE];
-    char     genre[32];
-    char     genreLabel[64];
-    char     description[MAX_DESC];
-    char     crackedBy[32];
-    char     crackedDate[16];
-    char     uploadedDate[16];
-    char     size[16];
-    long long sizeBytes;
-    char     version[32];
-    int      isUpcoming;
-    int      isJustDropped;
-    int      isLatest;
-    float    rating;
-    char     tags[MAX_TAG][32];
-    int      tagCount;
-    char     imageGradient[MAX_GRAD];
-    RepackInfo repack;
-    char     sources[MAX_SRC][32];
-    int      sourceCount;
-} Game;
-
-typedef struct GameItem {
-    Game game;
-    RECT rect;
-    int  selected;
-} GameItem;
-
-typedef struct DownloadTask {
-    Game*  game;
-    HWND   hwnd;
-    char   installDir[MAX_PATH];
-    int    progress;
-    int    running;
-} DownloadTask;
-
-typedef struct HttpServer {
-    SOCKET sock;
-    sockaddr_in addr;
-    char host[64];
-    int port;
-    int running;
-} HttpServer;
-
+/* ━━━ GLOBALS (from header, defined here) ━━━ */
 Game        g_games[MAX_GAMES];
 int         g_gameCount = 0;
 GameItem    g_grid[MAX_GAMES];
@@ -122,17 +68,46 @@ HWND g_hMain = NULL;
 HWND g_hStatus = NULL;
 HWND g_hGrid = NULL;
 HWND g_hSearch = NULL;
+HWND g_hFilterBar = NULL;
+HWND g_hHero = NULL;
+HWND g_hThemeBtn = NULL;
+HWND g_hDownloadDl = NULL;
+HWND g_hDlProgress = NULL;
 const char* EXE_DIR = NULL;
 const char* GAMES_JSON_PATH = NULL;
 GameItem*   g_selected = NULL;
-int         g_dark = 1;
+int         g_darkMode = 1;
+int         g_repackFilter = 0;
+static char g_search[128];
+static int  g_sortMode = 0;
+HINSTANCE   g_hInst;
+static Game g_filtered[MAX_GAMES];
+static int  g_filteredCount = 0;
+static int  g_filterMode = 0;
 
-/* JSON parser -- hex encoded to avoid corruption */
+/* ━━━ COLORS ━━━ */
+static COLORREF dark_bg    = RGB(18, 22, 28);
+static COLORREF dark_surf  = RGB(26, 32, 40);
+static COLORREF dark_text  = RGB(232, 232, 232);
+static COLORREF dark_accent = RGB(102, 180, 255);
+static COLORREF light_bg   = RGB(245, 245, 248);
+static COLORREF light_surf = RGB(255, 255, 255);
+static COLORREF light_text = RGB(30, 30, 35);
+static COLORREF light_accent = RGB(60, 120, 210);
+
+static COLORREF get_bg_color(void) { return g_darkMode ? dark_bg : light_bg; }
+static COLORREF get_surf_color(void) { return g_darkMode ? dark_surf : light_surf; }
+static COLORREF get_text_color(void) { return g_darkMode ? dark_text : light_text; }
+static COLORREF get_accent_color(void) { return g_darkMode ? dark_accent : light_accent; }
+
+static HBRUSH get_bg_brush(void) { return CreateSolidBrush(get_bg_color()); }
+static HBRUSH get_surf_brush(void) { return CreateSolidBrush(get_surf_color()); }
+
+/* ━━━ JSON PARSER ━━━ */
 int parse_games_json(void* buf, int len) {
     char* p = (char*)buf;
     while (*p && *p != '[') p++;
-    if (*p) { p++; g_gameCount = 0; }
-    else return 0;
+    if (*p) { p++; g_gameCount = 0; } else return 0;
     while (*p && g_gameCount < MAX_GAMES) {
         while (*p && (*p == ' ' || *p == '\n' || *p == '\t')) p++;
         if (*p == ']') break;
@@ -146,11 +121,8 @@ int parse_games_json(void* buf, int len) {
             char key[64]; int ki = 0;
             if (*p == '"') p++;
             while (*p && *p != '"') { if (ki < 63) key[ki++] = *p; p++; }
-            key[ki] = '\0';
-            if (*p == '"') p++;
-            while (*p == ' ') p++;
-            if (*p == ':') p++;
-            while (*p == ' ') p++;
+            key[ki] = '\0'; if (*p == '"') p++;
+            while (*p == ' ') p++; if (*p == ':') p++; while (*p == ' ') p++;
             if (*p == '"') {
                 p++; char val[256]; int vi = 0;
                 while (*p && *p != '"') {
@@ -158,8 +130,7 @@ int parse_games_json(void* buf, int len) {
                     else { val[vi++] = *p; }
                     if (vi < 255) p++;
                 }
-                val[vi] = '\0';
-                if (*p == '"') p++;
+                val[vi] = '\0'; if (*p == '"') p++;
                 if (strcmp(key, "id") == 0) strncpy(g->id, val, 127);
                 else if (strcmp(key, "title") == 0) strncpy(g->title, val, 127);
                 else if (strcmp(key, "genre") == 0) strncpy(g->genre, val, 31);
@@ -171,24 +142,20 @@ int parse_games_json(void* buf, int len) {
                 else if (strcmp(key, "size") == 0) strncpy(g->size, val, 15);
                 else if (strcmp(key, "version") == 0) strncpy(g->version, val, 31);
                 else if (strcmp(key, "imageGradient") == 0) strncpy(g->imageGradient, val, 127);
-            }
-            else if (*p == 't') {
+            } else if (*p == 't') {
                 if (strcmp(key, "isUpcoming") == 0) g->isUpcoming = 1;
                 else if (strcmp(key, "isJustDropped") == 0) g->isJustDropped = 1;
                 else if (strcmp(key, "isLatest") == 0) g->isLatest = 1;
                 while (*p && *p != ',') p++;
-            }
-            else if (*p == 'f') {
+            } else if (*p == 'f') {
                 if (strcmp(key, "isUpcoming") == 0) g->isUpcoming = 0;
                 else if (strcmp(key, "isJustDropped") == 0) g->isJustDropped = 0;
                 else if (strcmp(key, "isLatest") == 0) g->isLatest = 0;
                 while (*p && *p != ',') p++;
-            }
-            else if (*p == 'n') {
+            } else if (*p == 'n') {
                 if (strcmp(key, "repack") == 0) memset(&g->repack, 0, sizeof(g->repack));
                 while (*p && *p != ',') p++;
-            }
-            else if (*p == '-' || (*p >= '0' && *p <= '9')) {
+            } else if (*p == '-' || (*p >= '0' && *p <= '9')) {
                 char numval[32]; int ni = 0;
                 if (*p == '-') { numval[ni++] = *p++; }
                 while (*p && *p != ',' && *p != '}' && *p != ']') { if (ni < 31) numval[ni++] = *p; }
@@ -196,8 +163,7 @@ int parse_games_json(void* buf, int len) {
                 if (strcmp(key, "sizeBytes") == 0) g->sizeBytes = atoll(numval);
                 else if (strcmp(key, "rating") == 0) g->rating = (float)atof(numval);
                 while (*p && *p != ',' && *p != '}') p++;
-            }
-            else if (*p == '[' && (strcmp(key, "tags") == 0 || strcmp(key, "sources") == 0)) {
+            } else if (*p == '[' && (strcmp(key, "tags") == 0 || strcmp(key, "sources") == 0)) {
                 p++;
                 while (*p && *p != ']') {
                     while (*p == ' ') p++;
@@ -211,8 +177,7 @@ int parse_games_json(void* buf, int len) {
                     } if (*p == ',') p++;
                 }
                 if (*p == ']') p++;
-            }
-            else if (*p == '{' && strcmp(key, "repack") == 0) {
+            } else if (*p == '{' && strcmp(key, "repack") == 0) {
                 p++; memset(&g->repack, 0, sizeof(g->repack));
                 while (*p && *p != '}') {
                     while (*p == ' ') p++;
@@ -234,8 +199,7 @@ int parse_games_json(void* buf, int len) {
                     } if (*p == ',') p++;
                 }
                 if (*p == '}') p++;
-            }
-            else { while (*p && *p != ',' && *p != '}') p++; }
+            } else { while (*p && *p != ',' && *p != '}') p++; }
             while (*p == ' ') p++;
             if (*p == ',') p++;
         }
@@ -245,7 +209,68 @@ int parse_games_json(void* buf, int len) {
     return g_gameCount;
 }
 
-/* Resources */
+/* ━━━ HEX DECODER ━━━ */
+static int hex_decode(const unsigned char* hex, unsigned char* out, int maxlen) {
+    int i = 0;
+    while (hex[i] && hex[i + 1] && i < maxlen * 2) {
+        char hi = hex[i] > '9' ? hex[i] - 'a' + 10 : hex[i] - '0';
+        char lo = hex[i + 1] > '9' ? hex[i + 1] - 'a' + 10 : hex[i + 1] - '0';
+        if (i / 2 < maxlen) out[i / 2] = (hi << 4) | lo;
+        i += 2;
+    }
+    return i / 2;
+}
+
+/* ━━━ RESOURCE BUNDLES ━━━ */
+static unsigned char g_games_resource_blob[MAX_PATH * 1024];
+static unsigned char g_html_resource_blob[1024 * 1024];
+static unsigned char g_css_resource_blob[512 * 1024];
+static unsigned char g_js_resource_blob[512 * 1024];
+static unsigned char g_jsdl_resource_blob[256 * 1024];
+
+/* ━━━ GRADIENT DECODER ━━━ */
+typedef struct { int r, g, b; } GradientColor;
+static void decode_gradient(const char* gradHex, GradientColor* colors, int* count) {
+    const unsigned char* hex = (const unsigned char*)gradHex;
+    *count = 0;
+    while (*hex && *(hex+1) && *count < 8) {
+        if (*hex == '0' && *(hex+1) == 'x') { hex += 2; }
+        char hi = hex[0] > '9' ? hex[0] - 'a' + 10 : hex[0] - '0';
+        char lo = hex[1] > '9' ? hex[1] - 'a' + 10 : hex[1] - '0';
+        colors[*count].r = (hi << 4) | lo; hex += 2;
+        hi = hex[0] > '9' ? hex[0] - 'a' + 10 : hex[0] - '0';
+        lo = hex[1] > '9' ? hex[1] - 'a' + 10 : hex[1] - '0';
+        colors[*count].g = (hi << 4) | lo; hex += 2;
+        hi = hex[0] > '9' ? hex[0] - 'a' + 10 : hex[0] - '0';
+        lo = hex[1] > '9' ? hex[1] - 'a' + 10 : hex[1] - '0';
+        colors[*count].b = (hi << 4) | lo; hex += 2;
+        (*count)++;
+    }
+}
+
+/* ━━━ GRADIENT PAINT HELPER ━━━ */
+static void paint_gradient(HDC hdc, RECT* rc, const char* gradHex, int hgt) {
+    GradientColor colors[8];
+    int count = 0;
+    decode_gradient(gradHex, colors, &count);
+    if (count < 2) {
+        FillRect(hdc, rc, CreateSolidBrush(RGB(20, 20, 30)));
+        return;
+    }
+    RECT tmp;
+    int y0 = 0, y1 = hgt;
+    for (int c = 0; c < count - 1; c++) {
+        int t0 = y0, t1 = (c == count - 2) ? y1 : (y0 + y1) / 2;
+        COLORREF col = RGB(colors[c].r, colors[c].g, colors[c].b);
+        tmp = *rc; tmp.top = rc->top + t0; tmp.bottom = rc->top + t1;
+        HBRUSH br = CreateSolidBrush(col);
+        FillRect(hdc, &tmp, br);
+        DeleteObject(br);
+        y0 = t0;
+    }
+}
+
+/* ━━━ RESOURCE DECODER ━━━ */
 void* find_resource(HINSTANCE hInst, int id, const char* type, int* len) {
     HRSRC hr = FindResourceA(hInst, MAKEINTRESOURCEA(id), type);
     if (!hr) return NULL;
@@ -258,23 +283,22 @@ void* find_resource(HINSTANCE hInst, int id, const char* type, int* len) {
 void seed_games(void) {
     Game* g = &g_games[g_gameCount];
     strncpy(g->title, "GTA VI", 127);
-    g->isUpcoming = 1;
-    g->isJustDropped = 0;
-    g->isLatest = 0;
-    g->rating = 4.9f;
-    g_gameCount++;
+    g->isUpcoming = 1; g->isJustDropped = 0; g->isLatest = 0;
+    g->rating = 4.9f; g_gameCount++;
 }
 
-/* HTTP Server */
+/* ━━━ HTTP SERVER ━━━ */
 int http_server_init(int port) {
     WSADATA wsa;
     WSAStartup(MAKEWORD(2,2), &wsa);
     g_httpServer.sock = socket(AF_INET, SOCK_STREAM, 6);
     g_httpServer.port = port;
-    g_httpServer.addr.sin_family = AF_INET;
-    g_httpServer.addr.sin_addr.s_addr = INADDR_ANY;
-    g_httpServer.addr.sin_port = htons(port);
+    g_httpServer.I.sin_family = AF_INET;
+    g_httpServer.I.sin_addr.s_addr = INADDR_ANY;
+    g_httpServer.I.sin_port = htons(port);
     g_httpServer.running = 1;
+    bind(g_httpServer.sock, (sockaddr*)&g_httpServer.I, sizeof(g_httpServer.I));
+    listen(g_httpServer.sock, 8);
     return 0;
 }
 
@@ -284,30 +308,9 @@ void http_server_stop(void) {
     WSACleanup();
 }
 
-/* Forward-declare resource buffers for HTTP server */
-extern unsigned char g_games_resource_blob[];
-extern int g_games_res_len;
-extern unsigned char g_html_resource_blob[];
-extern int g_html_res_len;
-extern unsigned char g_css_resource_blob[];
-extern int g_css_res_len;
-extern unsigned char g_js_resource_blob[];
-extern int g_js_res_len;
-extern unsigned char g_jsdl_resource_blob[];
-extern int g_jsdl_res_len;
-extern const unsigned char games_bin[];
-extern int games_bin_len;
-extern const unsigned char html_bin[];
-extern int html_bin_len;
-extern const unsigned char css_bin[];
-extern int css_bin_len;
-/* Listener thread -- serves HTML/CSS/JS/JSON */
+/* HTTP listener thread */
 static void http_accept_loop(void) {
-    static char header10[] = "HTTP/1.0 200 OK\r\n";
-    static char header200[] = "Content-Type: text/html\r\n";
-    static char header201[] = "Content-Type: application/json\r\n";
-    static char header202[] = "Connection: close\r\n\r\n";
-    static char hdrHtml[512];
+    static char hdrHtml[] = "HTTP/1.0 200 OK\r\nContent-Type: text/html\r\nConnection: close\r\n\r\n";
     while (g_httpServer.running) {
         sockaddr_in clientAddr;
         int clientLen = sizeof(clientAddr);
@@ -315,39 +318,19 @@ static void http_accept_loop(void) {
         if (clientSock == INVALID_SOCKET) break;
         char buf[4096];
         recv(clientSock, buf, sizeof(buf) - 1, 0);
-        char* req = buf;
         char* crlf = strstr(buf, "\r\n");
         if (crlf) *crlf = '\0';
-        char* ext = strrchr(req, '.');
-        if (ext) {
-            if (strcmp(ext, ".js") == 0) {
-                sprintf(hdrHtml, "HTTP/1.0 200 OK\r\nContent-Type: application/x-javascript\r\nConnection: close\r\n\r\n");
-                send(clientSock, hdrHtml, strlen(hdrHtml), 0);
-                send(clientSock, (char*)js_bin, jsdl_bin_len, 0);
-            }
-            else if (strcmp(ext, ".css") == 0) {
-                sprintf(hdrHtml, "HTTP/1.0 200 OK\r\nContent-Type: text/css\r\nConnection: close\r\n\r\n");
-                send(clientSock, hdrHtml, strlen(hdrHtml), 0);
-                send(clientSock, (char*)css_bin, css_bin_len, 0);
-            }
-            else if (strcmp(ext, ".json") == 0) {
-                sprintf(hdrHtml, "HTTP/1.0 200 OK\r\nContent-Type: application/json\r\nConnection: close\r\n\r\n");
-                send(clientSock, hdrHtml, strlen(hdrHtml), 0);
-                send(clientSock, (char*)g_games_resource_blob, games_bin_len, 0);
-            }
-            else {
-                sprintf(hdrHtml, "HTTP/1.0 200 OK\r\nContent-Type: text/html\r\nConnection: close\r\n\r\n");
-                send(clientSock, hdrHtml, strlen(hdrHtml), 0);
-                send(clientSock, (char*)html_bin, html_bin_len, 0);
-            }
-        }
-        else if (strcmp(req, "GET /") == 0) {
-            sprintf(hdrHtml, "HTTP/1.0 200 OK\r\nContent-Type: text/html\r\nConnection: close\r\n\r\n");
+        char* ext = strrchr(buf, '.');
+        if (ext && strcmp(ext, ".css") == 0) {
             send(clientSock, hdrHtml, strlen(hdrHtml), 0);
-            send(clientSock, (char*)html_bin, html_bin_len, 0);
-        }
-        else {
-            sprintf(hdrHtml, "HTTP/1.0 200 OK\r\nContent-Type: text/html\r\nConnection: close\r\n\r\n");
+            send(clientSock, (char*)css_bin, css_bin_len, 0);
+        } else if (ext && strcmp(ext, ".js") == 0) {
+            send(clientSock, hdrHtml, strlen(hdrHtml), 0);
+            send(clientSock, (char*)js_bin, jsdl_bin_len, 0);
+        } else if (ext && strcmp(ext, ".json") == 0) {
+            send(clientSock, hdrHtml, strlen(hdrHtml), 0);
+            send(clientSock, (char*)g_games_resource_blob, games_bin_len, 0);
+        } else {
             send(clientSock, hdrHtml, strlen(hdrHtml), 0);
             send(clientSock, (char*)html_bin, html_bin_len, 0);
         }
@@ -355,102 +338,486 @@ static void http_accept_loop(void) {
     }
 }
 
-/* Thread entry point for HTTP accept loop */
-static DWORD WINAPI http_thread(LPVOID param) {
+static DWORD WINAPI http_server_thread(LPVOID param) {
     (void)param;
     http_accept_loop();
     return 0;
 }
 
-extern void http_server_add_listener(void) {
+void http_server_add_listener(void) {
     g_httpServer.running = 1;
-    CreateThread(NULL, 0, http_thread, NULL, 0, NULL);
+    CreateThread(NULL, 0, http_server_thread, NULL, 0, NULL);
 }
 
-/* Forward declarations */
-static int init_grid_browser(HWND h) {
-    g_hGrid = h;
-    return 0;
+/* ━━━ FILTER / SORT ━━━ */
+static const char* stristr(const char* haystack, const char* needle) {
+    const char* h; const char* n;
+    for (h = haystack; *h; h++) {
+        for (n = needle; tolower((unsigned char)*h) == tolower((unsigned char)*n) && *n; h++, n++)
+        if (!*n) return h;
+    }
+    return NULL;
 }
-/* Inline filter_grid */
-static char g_search[128];
+
+void build_grid_from_filtered(void) {
+    if (!g_hGrid) return;
+    ListView_DeleteAllItems(g_hGrid);
+    g_filteredCount = 0;
+    for (int i = 0; i < g_gameCount; i++) {
+        Game* g = &g_games[i];
+        if (g_filterMode == 1 && !g->isJustDropped) continue;
+        if (g_filterMode == 2 && !g->isUpcoming) continue;
+        if (g_search[0]) {
+            bool found = false;
+            if (stristr(g->title, g_search)) found = true;
+            if (!found && stristr(g->genreLabel, g_search)) found = true;
+            if (!found && stristr(g->crackedBy, g_search)) found = true;
+            for (int t = 0; t < g->tagCount && !found; t++)
+                if (stristr(g->tags[t], g_search)) found = true;
+            if (!found && stristr(g->description, g_search)) found = true;
+            if (!found) continue;
+        }
+        g_filtered[g_filteredCount++] = *g;
+    }
+    switch (g_sortMode) {
+        case 0: std::sort(g_filtered, g_filtered + g_filteredCount,
+            [](const Game& a, const Game& b) { return strcmp(a.crackedDate, b.crackedDate) > 0; }); break;
+        case 1: std::sort(g_filtered, g_filtered + g_filteredCount,
+            [](const Game& a, const Game& b) { return strcmp(a.crackedDate, b.crackedDate) < 0; }); break;
+        case 2: std::sort(g_filtered, g_filtered + g_filteredCount,
+            [](const Game& a, const Game& b) { return strcmp(a.title, b.title) < 0; }); break;
+        case 3: std::sort(g_filtered, g_filtered + g_filteredCount,
+            [](const Game& a, const Game& b) { return a.sizeBytes > b.sizeBytes; }); break;
+        case 4: std::sort(g_filtered, g_filtered + g_filteredCount,
+            [](const Game& a, const Game& b) { return a.rating > b.rating; }); break;
+    }
+    for (int i = 0; i < g_filteredCount && i < MAX_GAMES; i++) {
+        LVITEMA lvi = {0};
+        lvi.mask = LVIF_TEXT;
+        lvi.pszText = (LPSTR)g_filtered[i].title;
+        int idx = ListView_InsertItem(g_hGrid, &lvi);
+        ListView_SetItemText(g_hGrid, idx, 1, g_filtered[i].genreLabel);
+        ListView_SetItemText(g_hGrid, idx, 2, g_filtered[i].size);
+        ListView_SetItemText(g_hGrid, idx, 3, g_filtered[i].crackedBy);
+        ListView_SetItemText(g_hGrid, idx, 4, g_filtered[i].crackedDate);
+        LVITEMA lvi2; memset(&lvi, 0, sizeof(LVITEMA));
+        lvi.mask = LVIF_PARAM; lvi.iItem = idx;
+        lvi.lParam = (LPARAM)&g_filtered[i];
+        SendMessageA(g_hGrid, LVM_SETITEM, 0, (LPARAM)&lvi);
+    }
+    char buf[256];
+    sprintf(buf, "Showing %d of %d games", g_filteredCount, g_gameCount);
+    if (g_hStatus) SendMessageA(g_hStatus, SB_SETTEXT, 0, (LPARAM)buf);
+}
+
 static void filter_grid(const char* s) {
     strncpy(g_search, s, 127);
     g_search[127] = '\0';
-    extern void build_grid_from_filtered(void);
     build_grid_from_filtered();
 }
-extern int  build_download_dialog(HWND, Game*);
-extern void tray_destroy(void);
-extern void tray_init(HINSTANCE hInst, HWND hwnd);
-extern void tray_bubble(LPCSTR title, LPCSTR msg, DWORD timeout);
-HINSTANCE g_hInst;
 
-/* Hex-encoded embedded resources — safe from corruption targets */
-
-unsigned char g_games_resource_blob[MAX_PATH * 1024];
-int g_games_res_len;
-
-unsigned char g_html_resource_blob[1024 * 1024];
-int g_html_res_len;
-
-unsigned char g_css_resource_blob[512 * 1024];
-int g_css_res_len;
-
-unsigned char g_js_resource_blob[512 * 1024];
-int g_js_res_len;
-
-unsigned char g_jsdl_resource_blob[256 * 1024];
-int g_jsdl_res_len;
-
-unsigned char g_icon_resource_blob[256 * 1024];
-int g_icon_res_len;
-
-unsigned char g_tray_resource_blob[64 * 1024];
-int g_tray_res_len;
-
-/* Decode hex string to binary in-place */
-static int hex_decode(const unsigned char* hex, unsigned char* out, int maxlen) {
-    int i = 0;
-    while (hex[i] && hex[i + 1] && i < maxlen * 2) {
-        char hi = hex[i] > '9' ? hex[i] - 'a' + 10 : hex[i] - '0';
-        char lo = hex[i + 1] > '9' ? hex[i + 1] - 'a' + 10 : hex[i + 1] - '0';
-        if (i / 2 < maxlen) out[i / 2] = (hi << 4) | lo;
-        i += 2;
-    }
-    return i / 2;
+/* ━━━ EMOJI ━━━ */
+const char* get_game_emoji(const char* genre) {
+    static const char* genres[] = {"rpg", "action", "strategy", "simulation", "survival", "mecha", "adventure", "racing"};
+    static const char* emojis[] = {"\xf0\x9f\xab\x99", "\xf0\x9f\x8f\xa2", "\xf0\x9f\x9a\x9f", "\xf0\x9f\x9f\x93",
+                                   "\xf0\x9f\xa6\x9f", "\xf0\x9f\xa4\x96", "\xf0\x9f\x8f\xba", "\xf0\x9f\x8f\x8e"};
+    for (int i = 0; i < 8; i++)
+        if (strcmp(genre, genres[i]) == 0) return emojis[i];
+    return "\xf0\x9f\x8e\xae";
 }
 
-/* MainWndProc — Win32 window procedure */
-extern LRESULT CALLBACK MainWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) {
+/* ━━━ TIME AGO ━━━ */
+void time_ago(const char* dateStr, char* buf, int bufSize) {
+    struct tm tm;
+    memset(&tm, 0, sizeof(tm));
+    sscanf(dateStr, "%d-%d-%d", &tm.tm_year, &tm.tm_mon, &tm.tm_mday);
+    tm.tm_year -= 1900; tm.tm_mon -= 1;
+    time_t t = mktime(&tm);
+    time_t now = time(NULL);
+    double diff = difftime(now, t);
+    int days = (int)(diff / 86400.0);
+    if (days == 0) strcpy(buf, "Today");
+    else if (days == 1) strcpy(buf, "Yesterday");
+    else if (days < 7) sprintf(buf, "%d days ago", days);
+    else if (days < 30) sprintf(buf, "%d weeks ago", days / 7);
+    else if (days < 365) sprintf(buf, "%d months ago", days / 30);
+    else sprintf(buf, "%d years ago", days / 365);
+}
+
+/* ━━━ FORMAT SIZE ━━━ */
+const char* format_size(long long bytes, char* buf, int bufSize) {
+    if (bytes < 1024)
+        sprintf(buf, "%lld B", bytes);
+    else if (bytes < 1024 * 1024)
+        sprintf(buf, "%.1f KB", bytes / 1024.0);
+    else if (bytes < 1024LL * 1024 * 1024 * 1024)
+        sprintf(buf, "%.1f MB", bytes / (1024.0 * 1024.0));
+    else
+        sprintf(buf, "%.1f GB", bytes / (1024.0 * 1024.0 * 1024.0));
+    return buf;
+}
+
+/* ━━━ REPACKER ━━━ */
+static const char* find_repacker(Game* g) {
+    if (g->repack.title[0]) return g->repack.title;
+    if (g->sourceCount > 0) return g->sources[0];
+    return "";
+}
+
+/* ━━━ DOWNLOAD THREAD ━━━ */
+static const char* PHASE_NAMES[] = {
+    "Connecting to pirate server...",
+    "Downloading files...",
+    "Extracting compressed files...",
+    "Bypassing DRM...",
+    "Installing...",
+    "Verifying installation...",
+    "Activated! Ready to play!"
+};
+static int PHASE_PROGRESS[] = { 25, 60, 80, 87, 95, 98, 100 };
+static int PHASE_DELAY[] = { 1200, 2400, 1800, 400, 800, 500, 300 };
+
+static unsigned __stdcall dl_thread_proc(void* arg) {
+    DownloadTask* dl = (DownloadTask*)arg;
+    const char* repacker = find_repacker(dl->game);
+    const char* url = "http://localhost:8080/download/";
+    (void)url;
+    for (int i = 0; i < 7; i++) {
+        if (!dl->running) break;
+        dl->progress = PHASE_PROGRESS[i];
+        SendMessageA(dl->hwnd, DL_MSG_CONNECT, PHASE_PROGRESS[i], 0);
+        SendMessageA(dl->hwnd, DL_MSG_STATUS, 0, (LPARAM)PHASE_NAMES[i]);
+        Sleep(PHASE_DELAY[i]);
+    }
+    dl->running = 0;
+    char buf[512];
+    sprintf(buf, "%s installed to %s", dl->game->title, dl->installDir);
+    tray_bubble(APP_NAME, buf, 5000);
+    return 0;
+}
+
+void dl_start(Game* game, HWND hwndParent) {
+    g_download.game = game;
+    g_download.hwnd = hwndParent;
+    g_download.progress = 0;
+    g_download.running = 1;
+    if (!g_download.installDir[0]) strcpy(g_download.installDir, "C:\\Games");
+    unsigned tid;
+    _beginthreadex(NULL, 0, dl_thread_proc, &g_download, 0, &tid);
+}
+
+void stop_download(void) {
+    g_download.running = 0;
+    SendMessageA(g_hMain, DL_MSG_STOP, 0, 0);
+}
+
+/* ━━━ DOWNLOAD DIALOG ━━━ */
+static char dl_buf[512];
+static int  dl_progress = 0;
+static char dl_status[256];
+
+INT_PTR CALLBACK dl_progress_proc(HWND hDlg, UINT msg, WPARAM wp, LPARAM lp) {
+    switch (msg) {
+        case WM_INITDIALOG:
+            SetWindowPos(hDlg, HWND_TOPMOST, 0, 0, 380, 200, SWP_NOMOVE | SWP_SHOWWINDOW);
+            break;
+        case WM_COMMAND:
+            if (LOWORD(wp) == BTN_CANCEL) {
+                g_download.running = 0;
+                EndDialog(hDlg, 0);
+            }
+            break;
+        case DL_MSG_CONNECT:
+            dl_progress = (int)wp;
+            SetWindowTextA(GetDlgItem(hDlg, PROGRESS_ID), dl_buf);
+            break;
+        case DL_MSG_STATUS:
+            SendMessageA(GetDlgItem(hDlg, PROGRESS_BAR), PBM_SETPOS, (WPARAM)dl_progress, 0);
+            SetWindowTextA(GetDlgItem(hDlg, PROGRESS_BAR), (LPCSTR)lp);
+            break;
+        case DL_MSG_STOP:
+            g_download.running = 0;
+            SetWindowTextA(GetDlgItem(hDlg, PROGRESS_BAR), "Download stopped");
+            break;
+        case WM_CLOSE:
+            g_download.running = 0;
+            EndDialog(hDlg, 0);
+            break;
+        default:
+            return DefDlgProcA(hDlg, msg, wp, lp);
+    }
+    return 0;
+}
+
+int build_download_dialog(HWND parent, Game* game) {
+    DialogBoxA(g_hInst, MAKEINTRESOURCEA(1001), parent, dl_progress_proc);
+    dl_start(game, g_hMain);
+    return 0;
+}
+
+/* ━━━ TRAY MANAGER ━━━ */
+void tray_init(HINSTANCE hInst, HWND hwnd) {
+    g_hInst = hInst;
+    g_nid.cbSize = sizeof(NOTIFYICONDATAA);
+    g_nid.hWnd = hwnd;
+    g_nid.uID = TRAY_ID;
+    g_nid.uFlags = NIF_ICON | NIF_TIP | NIF_MESSAGE;
+    g_nid.uCallbackMessage = TRAY_MSG_CB;
+    g_nid.hIcon = LoadIconA(hInst, MAKEINTRESOURCEA(3001));
+    strncpy(g_nid.szTip, APP_NAME, sizeof(g_nid.szTip) - 1);
+    g_nid.szTip[sizeof(g_nid.szTip) - 1] = '\0';
+    Shell_NotifyIconA(NIM_ADD, &g_nid);
+}
+
+void tray_bubble(LPCSTR title, LPCSTR msg, DWORD timeout) {
+    g_nid.uFlags = NIF_ICON | NIF_TIP | NIF_MESSAGE | NIF_INFO;
+    g_nid.hIcon = LoadIconA(GetModuleHandleA(NULL), MAKEINTRESOURCEA(3001));
+    strncpy(g_nid.szInfo, msg, sizeof(g_nid.szInfo) - 1);
+    g_nid.szInfo[sizeof(g_nid.szInfo) - 1] = '\0';
+    strncpy(g_nid.szInfoTitle, title, sizeof(g_nid.szInfoTitle) - 1);
+    g_nid.szInfoTitle[sizeof(g_nid.szInfoTitle) - 1] = '\0';
+    g_nid.uTimeout = timeout;
+    Shell_NotifyIconA(NIM_MODIFY, &g_nid);
+}
+
+void tray_destroy(void) {
+    Shell_NotifyIconA(NIM_DELETE, &g_nid);
+}
+
+void show_tray_menu(POINT pt) {
+    HMENU hMenu = CreatePopupMenu();
+    AppendMenuA(hMenu, MF_STRING, 3001, "Open Booty Catalog");
+    AppendMenuA(hMenu, MF_STRING, 3002, "Latest Cracks");
+    AppendMenuA(hMenu, MF_STRING, 3003, "Add Game");
+    AppendMenuA(hMenu, MF_STRING, 3004, "Exit");
+    TrackPopupMenu(hMenu, TPM_BOTTOMALIGN | TPM_LEFTBUTTON,
+        pt.x, pt.y, 0, g_nid.hWnd, NULL);
+    DestroyMenu(hMenu);
+}
+
+void tray_update_icon(int state) {
+    int resId = 3001 + state;
+    HICON hIcon = LoadIconA(g_hInst, MAKEINTRESOURCEA(resId));
+    if (hIcon) {
+        g_nid.hIcon = hIcon;
+        Shell_NotifyIconA(NIM_MODIFY, &g_nid);
+    }
+}
+
+/* ━━━ THEME ━━━ */
+typedef struct { COLORREF bg, surface, border, text, textSec, accent, gold, green, red; } ThemeTheme;
+static ThemeTheme g_th_dark = {
+    RGB(0x0a, 0x0e, 0x17), RGB(0x11, 0x18, 0x27), RGB(0x2a, 0x3a, 0x52),
+    RGB(0xe8, 0x8d, 0xf5), RGB(0xa8, 0xb8, 0xcc), RGB(0x63, 0xb3, 0xed),
+    RGB(0xf6, 0xc8, 0x47), RGB(0x7e, 0xc8, 0x7e), RGB(0xfc, 0x62, 0x5d),
+};
+static ThemeTheme g_th_light = {
+    RGB(0xf0, 0xf4, 0xf8), RGB(0xff, 0xff, 0xff), RGB(0xcb, 0xd5, 0xe0),
+    RGB(0x1a, 0x20, 0x2c), RGB(0x4a, 0x55, 0x68), RGB(0x3b, 0x82, 0xf6),
+    RGB(0xd6, 0x9e, 0x2e), RGB(0x38, 0x7a, 0x4a), RGB(0xdc, 0x26, 0x26),
+};
+static ThemeTheme* g_current = &g_th_dark;
+static int g_themeState = 0;
+
+void set_theme(int state) {
+    g_current = (state == 0) ? &g_th_dark : &g_th_light;
+    g_themeState = state;
+    if (g_hGrid) {
+        ListView_SetTextColor(g_hGrid, g_current->text);
+        ListView_SetBkColor(g_hGrid, g_current->bg);
+        ListView_SetTextBkColor(g_hGrid, g_current->surface);
+    }
+    InvalidateRect(g_hMain, NULL, TRUE);
+    UpdateWindow(g_hMain);
+}
+
+void toggle_theme(void) {
+    int newState = (g_themeState + 1) % 2;
+    set_theme(newState);
+    tray_bubble(APP_NAME, "Theme switched to dark/light", 2000);
+}
+
+/* ━━━ MAIN WINDOW PROCEDURE ━━━ */
+static RECT g_client;
+static RECT g_hero_rect;
+static RECT g_grid_rect;
+static RECT g_filter_rect;
+
+LRESULT CALLBACK MainWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) {
     static char installDir[MAX_PATH] = "C:\\Games";
     static Game* selectedGame = NULL;
+    static int  scrollY = 0;
+
     switch (msg) {
         case WM_CREATE: {
+            /* Parse embedded JSON */
             parse_games_json(g_games_resource_blob, games_bin_len);
             g_hMain = hwnd;
+            g_hSearch = CreateWindowA("EDIT", "Search games...",
+                WS_CHILD | WS_BORDER | WS_VISIBLE | ES_AUTOHSCROLL,
+                10, 10, 200, 25, hwnd, (HMENU)2030, g_hInst, NULL);
+            g_hFilterBar = CreateWindowA("BUTTON",
+                "\xf0\x9f\x92\xa2  FitGirl",
+                WS_CHILD | WS_VISIBLE | BS_PUSHBUTTON,
+                220, 10, 80, 25, hwnd, (HMENU)BTN_FILTER_FG, g_hInst, NULL);
+            g_hThemeBtn = CreateWindowA("BUTTON",
+                "\xf0\x9f\x98\x83  Dark",
+                WS_CHILD | WS_VISIBLE | BS_PUSHBUTTON,
+                1100, 10, 80, 25, hwnd, (HMENU)BTN_THEME, g_hInst, NULL);
+
+            /* Create hero banner for latest crack */
+            Game* latest = NULL;
+            if (g_gameCount > 0) {
+                latest = &g_games[0];
+                for (int i = 1; i < g_gameCount; i++)
+                    if (g_games[i].isJustDropped) { latest = &g_games[i]; break; }
+                if (!latest->isJustDropped)
+                    for (int i = 0; i < g_gameCount; i++)
+                        if (g_games[i].isLatest) { latest = &g_games[i]; break; }
+            }
+            g_hHero = CreateWindowA("STATIC", "Latest Crack",
+                WS_CHILD | WS_VISIBLE | SS_CENTERIMAGE,
+                10, 40, 1180, 80, hwnd, (HMENU)HERO_BANNER, g_hInst, NULL);
+
+            /* Create game grid */
             g_hGrid = CreateWindowA(WC_LISTVIEWA, NULL,
-                WS_CHILD | WS_VISIBLE | LVS_REPORT | LVS_NOSORTHEADER,
-                10, 40, 780, 540, hwnd, (HMENU)GRID_LIST_VIEW,
-                GetModuleHandleA(NULL), NULL);
+                WS_CHILD | WS_VISIBLE | LVS_REPORT | LVS_NOSORTHEADER | LVS_SINGLESEL,
+                10, 130, 1180, 560, hwnd, (HMENU)GRID_LIST_VIEW, g_hInst, NULL);
+            ListView_SetExtendedListViewStyle(g_hGrid, LVS_EX_FULLROWSELECT | LVS_EX_DOUBLEBUFFER | LVS_EX_GRIDLINES);
+
             LVCOLUMN lvc;
             memset(&lvc, 0, sizeof(LVCOLUMN));
-            lvc.mask = LVCF_TEXT;
-            lvc.pszText = (LPSTR)"Game";
-            lvc.cx = 200;
+            lvc.mask = LVCF_TEXT | LVCF_FMT | LVCF_WIDTH;
+            lvc.fmt = LVCFMT_LEFT;
+            lvc.pszText = (LPSTR)"Title";
+            lvc.cx = 280;
             ListView_InsertColumn(g_hGrid, 0, &lvc);
-            init_grid_browser(g_hGrid);
+
+            lvc.pszText = (LPSTR)"Genre";
+            lvc.cx = 140;
+            ListView_InsertColumn(g_hGrid, 1, &lvc);
+
+            lvc.pszText = (LPSTR)"Size";
+            lvc.cx = 80;
+            ListView_InsertColumn(g_hGrid, 2, &lvc);
+
+            lvc.pszText = (LPSTR)"Repacker";
+            lvc.cx = 100;
+            ListView_InsertColumn(g_hGrid, 3, &lvc);
+
+            lvc.pszText = (LPSTR)"Date";
+            lvc.cx = 90;
+            ListView_InsertColumn(g_hGrid, 4, &lvc);
+
+            lvc.pszText = (LPSTR)"Rating";
+            lvc.cx = 70;
+            ListView_InsertColumn(g_hGrid, 5, &lvc);
+
+            /* Create status bar */
+            g_hStatus = CreateWindowA(STATUSCLASSNAMEA, NULL,
+                WS_CHILD | WS_VISIBLE | SBARS_SIZEGRIP,
+                0, 0, 0, 0, hwnd, (HMENU)2000, g_hInst, NULL);
+
+            /* Set dark theme */
+            g_darkMode = 1;
+            set_theme(0);
+            /* Build grid from search */
             filter_grid("");
             break;
         }
+
+        case WM_PAINT: {
+            PAINTSTRUCT ps;
+            HDC hdc = BeginPaint(hwnd, &ps);
+            GetClientRect(hwnd, &g_client);
+
+            // Clear the entire client area with proper background
+            RECT fullRc = g_client;
+            HBRUSH bgBrush = CreateSolidBrush(get_bg_color());
+            FillRect(hdc, &fullRc, bgBrush);
+            DeleteObject(bgBrush);
+
+            // Render the top gradient strip (hero banner)
+            RECT heroRc = g_client;
+            heroRc.top += 38;
+            heroRc.bottom = heroRc.top + 65;
+
+            // Draw the hero section background with gradient
+            GradientColor hero[8]; int heroCount = 0;
+            decode_gradient("0x0f 0x13 0x1c 0x0a 0x12 0x26 0x08 0x2a 0x5f", hero, &heroCount);
+            paint_gradient(hdc, &heroRc, "0x0f131c 0x0a1226 0x082a5f", 65);
+
+            // Draw hero text
+            SetBkMode(hdc, TRANSPARENT);
+            HFONT hf = CreateFontA(28, 0, 0, 0, FW_BOLD, 0, 0, 0, DEFAULT_CHARSET,
+                OUT_DEFAULT, CLIP_DEFAULT, CLEARTYPE_QUALITY, DEFAULT_PITCH, "Segoe UI");
+            HFONT oldFont = (HFONT)SelectObject(hdc, hf);
+            SetTextColor(hdc, RGB(102, 180, 255));  // Blue accent color
+
+            // Position the text in the hero area
+            RECT textRc = heroRc;
+            textRc.top -= 55;
+            textRc.left += 20;
+            textRc.right -= 20;
+
+            // Draw "Latest Crack"
+            TextOutA(hdc, textRc.left, textRc.top + 12, "Latest Crack", 14);
+
+            // Draw "Booty Catalog"
+            SetTextColor(hdc, get_text_color());
+            TextOutA(hdc, textRc.left, textRc.top + 40, "Booty Catalog", 13);
+
+            SelectObject(hdc, oldFont);
+            DeleteObject(hf);
+
+            // Draw grid background area
+            RECT gridRc = g_client;
+            gridRc.top = 130;
+            gridRc.bottom = gridRc.top + 560;
+            HBRUSH gridBrush = CreateSolidBrush(get_surf_color());
+            FillRect(hdc, &gridRc, gridBrush);
+            DeleteObject(gridBrush);
+
+            // Draw status bar background
+            RECT statusRc = g_client;
+            statusRc.top = statusRc.bottom - 28;
+            HBRUSH statusBrush = CreateSolidBrush(get_surf_color());
+            FillRect(hdc, &statusRc, statusBrush);
+            DeleteObject(statusBrush);
+
+            // Status bar text
+            if (g_hStatus) {
+                SetBkMode(hdc, TRANSPARENT);
+                SetTextColor(hdc, get_text_color());
+                char statusMsg[256];
+                sprintf_s(statusMsg, sizeof(statusMsg), "Showing %d of %d games", g_filteredCount, g_gameCount);
+                TextOutA(hdc, g_client.left + 12, g_client.bottom - 26, statusMsg, (int)strlen(statusMsg));
+
+                SetTextColor(hdc, get_accent_color());
+                sprintf_s(statusMsg, sizeof(statusMsg), "Dark Mode %s", g_darkMode ? "On" : "Off");
+                TextOutA(hdc, g_client.right - 200, g_client.bottom - 26, statusMsg, (int)strlen(statusMsg));
+            }
+
+            EndPaint(hwnd, &ps);
+            break;
+        }
+
         case WM_SIZE: {
             int w = LOWORD(lParam);
             int h = HIWORD(lParam);
-            if (g_hGrid) MoveWindow(g_hGrid, 10, 40, w-20, h-80, TRUE);
+            if (g_hGrid) MoveWindow(g_hGrid, 10, 130, w-20, h-190, TRUE);
             if (g_hSearch) MoveWindow(g_hSearch, 10, 10, w-220, 25, TRUE);
+            if (g_hFilterBar) MoveWindow(g_hFilterBar, 220, 10, w-300, 25, TRUE);
+            if (g_hHero) {
+                RECT rc2;
+                GetClientRect(g_hHero, &rc2);
+                MoveWindow(g_hHero, 10, 40, w-20, 80, TRUE);
+            }
+            if (g_hThemeBtn) MoveWindow(g_hThemeBtn, w-100, 10, 80, 25, TRUE);
             if (g_hStatus) MoveWindow(g_hStatus, 10, h-30, w-20, 20, TRUE);
             break;
         }
+
         case WM_COMMAND: {
             switch (LOWORD(wParam)) {
                 case BTN_DOWNLOAD:
@@ -470,45 +837,55 @@ extern LRESULT CALLBACK MainWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM l
                 }
                 case BTN_CANCEL:
                     g_download.running = 0;
-                    SendMessage(g_hGrid, WM_USER+30, 0, 0);
+                    break;
+                case BTN_THEME:
+                    toggle_theme();
+                    break;
+                case BTN_FILTER_ALL:
+                    g_filterMode = 0; filter_grid("");
+                    break;
+                case BTN_FILTER_FG:
+                    g_filterMode = 1; filter_grid("");
                     break;
                 case GRID_LIST_VIEW:
                     if (HIWORD(wParam) == LVN_ITEMCHANGED) {
                         LPNMLISTVIEW n = (LPNMLISTVIEW)lParam;
-                        if (n->iItem >= 0 && n->iItem < g_gridCount)
-                            selectedGame = &g_grid[n->iItem].game;
+                        if (n->iItem >= 0 && n->iItem < g_filteredCount)
+                            selectedGame = &g_filtered[n->iItem];
                     }
                     break;
             }
             break;
         }
+
         case WM_NOTIFY:
             break;
+
         case WM_TIMER:
-            if (wParam == (WM_USER+20)) {
+            if (wParam == TRAY_MSG_CB) {
                 if (LOWORD(lParam) == WM_LBUTTONDBLCLK) {
                     ShowWindow(hwnd, SW_SHOW);
                     BringWindowToTop(hwnd);
                 }
             }
             break;
-        case WM_PAINT: {
-            PAINTSTRUCT ps;
-            HDC hdc = BeginPaint(hwnd, &ps);
-            EndPaint(hwnd, &ps);
-            break;
-        }
+
         case WM_SETCURSOR:
             if ((HWND)(INT_PTR)LOWORD(lParam) == g_hGrid)
                 SetCursor(LoadCursorA(NULL, IDC_HAND));
             break;
+
+        case WM_DESTROY:
+            PostQuitMessage(0);
+            break;
+
         default:
             return DefWindowProcA(hwnd, msg, wParam, lParam);
     }
     return 0;
 }
 
-/* WinMain — startup entry point */
+/* ━━━ WINMAIN ━━━ */
 int WINAPI WinMain(HINSTANCE hInst, HINSTANCE hPrev, LPSTR szCmdLine, int nCmd) {
     UNREFERENCED_PARAMETER(szCmdLine);
     UNREFERENCED_PARAMETER(hPrev);
@@ -521,21 +898,31 @@ int WINAPI WinMain(HINSTANCE hInst, HINSTANCE hPrev, LPSTR szCmdLine, int nCmd) 
     static char jsonPath[MAX_PATH];
     sprintf(jsonPath, "%s\\data\\games.json", exePath);
     GAMES_JSON_PATH = jsonPath;
+
+    /* Init common controls */
     INITCOMMONCONTROLSEX icc;
     icc.dwSize = sizeof(icc);
-    icc.dwICC = ICC_LISTVIEW_CLASSES | ICC_PROGRESS_CLASS |
-        ICC_BAR_CLASSES | ICC_TAB_CLASSES | ICC_STANDARD_CLASSES;
+    icc.dwICC = ICC_LISTVIEW_CLASSES | ICC_PROGRESS_CLASS | ICC_BAR_CLASSES | ICC_TAB_CLASSES;
     InitCommonControlsEx(&icc);
-    memcpy(g_games_resource_blob, games_bin, games_bin_len);
+
+    /* Decode embedded resources from hex */
+    hex_decode(games_bin, g_games_resource_blob, MAX_PATH * 1024);
+    hex_decode(html_bin, g_html_resource_blob, 1024 * 1024);
+    hex_decode(css_bin, g_css_resource_blob, 512 * 1024);
+    hex_decode(js_bin, g_js_resource_blob, 512 * 1024);
+    hex_decode(jsdl_bin, g_jsdl_resource_blob, 256 * 1024);
+
+    /* Parse games */
     parse_games_json(g_games_resource_blob, games_bin_len);
-    memcpy(g_html_resource_blob, html_bin, html_bin_len);
-    memcpy(g_css_resource_blob, css_bin, css_bin_len);
-    memcpy(g_js_resource_blob, js_bin, js_bin_len);
-    memcpy(g_jsdl_resource_blob, jsdl_bin, jsdl_bin_len);
-    if (g_gameCount == 0) {
-        seed_games();
-    }
+
+    /* Seed GTA VI if nothing loaded */
+    if (g_gameCount == 0) seed_games();
+
+    /* Start HTTP server */
     http_server_add_listener();
+    http_server_init(PORT);
+
+    /* Register window class */
     WNDCLASSEXA wcx = {0};
     wcx.cbSize = sizeof(wcx);
     wcx.style = CS_HREDRAW | CS_VREDRAW | CS_DBLCLKS;
@@ -547,20 +934,27 @@ int WINAPI WinMain(HINSTANCE hInst, HINSTANCE hPrev, LPSTR szCmdLine, int nCmd) 
     wcx.hIcon = LoadIconA(hInst, MAKEINTRESOURCEA(3001));
     wcx.hIconSm = LoadIconA(hInst, MAKEINTRESOURCEA(3001));
     RegisterClassExA(&wcx);
+
+    /* Create main window */
     g_hMain = CreateWindowExA(
         WS_EX_OVERLAPPEDWINDOW | WS_EX_APPWINDOW,
         APP_CLASS, APP_NAME,
-        WS_OVERLAPPEDWINDOW, CW_USEDEFAULT, CW_USEDEFAULT, 1200, 800,
-        NULL, NULL, hInst, NULL);
+        WS_OVERLAPPEDWINDOW, CW_USEDEFAULT, CW_USEDEFAULT, 1200,
+        800, NULL, NULL, hInst, NULL);
     if (!g_hMain) return 1;
     ShowWindow(g_hMain, SW_SHOWNORMAL);
     UpdateWindow(g_hMain);
+
+    /* System tray */
     tray_init(hInst, g_hMain);
     tray_bubble(APP_NAME, "Booty Catalog loaded. Your pirate catalog is ready.", 3000);
-    http_server_init(PORT);
+
+    /* Open browser to localhost server */
     char cmd[512];
     sprintf(cmd, "start \"Booty Catalog\" \"http://localhost:%d\"", PORT);
     WinExec(cmd, SW_SHOWNOACTIVATE);
+
+    /* Message loop */
     MSG msg;
     while (GetMessageA(&msg, NULL, 0, 0)) {
         TranslateMessage(&msg);

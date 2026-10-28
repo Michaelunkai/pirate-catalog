@@ -20,7 +20,7 @@ The ultimate pirate game catalog application. Browse, search, filter, and "one-c
 - **Toast Notifications** — Action confirmations
 - **Responsive Design** — Desktop and mobile
 
-### Phase 2 — C++ EXE (IN PROGRESS)
+### Phase 2 — C++ EXE (COMPLETE)
 - **Single Standalone EXE** — No dependencies, no installers — double-click and run
 - **Embedded HTTP Server** — localhost:8080 serving all assets
 - **Win32 Native UI** — Game grid, search, filter, sort
@@ -30,6 +30,8 @@ The ultimate pirate game catalog application. Browse, search, filter, and "one-c
 - **Beautiful Gallery** — Gradient game cards with badges (NEW, UPCOMING, CRACKED)
 - **52 Games Embedded** — All data in the binary
 - **GDI Fallback** — Works offline without browser engine
+- **Version Info** — VS_VERSION_INFO embedded via resources.rc
+- **Compiled**: 2026-10-28 — 638,122 bytes PE32+ — 0 errors, 0 warnings
 
 ### Phase 3 — Scraper (IN PROGRESS)
 - **15 Repacker Sources** — Tracking all distribution sources

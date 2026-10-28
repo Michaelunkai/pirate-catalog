@@ -64,7 +64,7 @@ The ultimate pirate game catalog application. Browse, search, filter, and "one-c
 ```
 F:\study\projects\pirate-catalog\BootyCatalog.exe
 ```
-**Size**: 1,171,364 bytes (~1.2M PE32+ GUI)
+**Size**: 638,122 bytes (~622K PE32+ x86-64)
 
 ### EXE — Quick Start
 ```bash
@@ -136,3 +136,4 @@ pirate-catalog/
 ├── requirements.txt            ← Python dependencies
 ├── package.json                ← Node deps
 └── boot
+    └── ... (every game, every repacker)
