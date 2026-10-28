@@ -156,6 +156,7 @@ int parse_games_json(void* buf, int len) {
                 else if (strcmp(key, "size") == 0) strncpy(g->size, val, 15);
                 else if (strcmp(key, "version") == 0) strncpy(g->version, val, 31);
                 else if (strcmp(key, "imageGradient") == 0) strncpy(g->imageGradient, val, 127);
+                else if (strcmp(key, "feedUrl") == 0) strncpy(g->feedUrl, val, 511);
             } else if (*p == 't') {
                 if (strcmp(key, "isUpcoming") == 0) g->isUpcoming = 1;
                 else if (strcmp(key, "isJustDropped") == 0) g->isJustDropped = 1;
@@ -553,6 +554,28 @@ static const char* PHASE_NAMES[] = {
 static int PHASE_PROGRESS[] = { 25, 60, 80, 87, 95, 98, 100 };
 static int PHASE_DELAY[] = { 1200, 2400, 1800, 400, 800, 500, 300 };
 
+/* Real HTTP GET over WinInet with a browser User-Agent so bot-checked
+   repacker pages still answer. Returns bytes written to outPath. */
+static long http_get_to_file(const char* url, const char* outPath) {
+    HINTERNET hInt = InternetOpenA("BootyCatalog/1.0", INTERNET_OPEN_TYPE_DIRECT, NULL, NULL, 0);
+    if (!hInt) return -1;
+    HINTERNET hReq = HttpOpenRequestA(hInt, "GET", url, NULL, NULL, NULL, 0, 0);
+    if (hReq) HttpSendRequestA(hReq, "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64)", -1, NULL, 0);
+    FILE* f = fopen(outPath, "wb");
+    if (!hReq || !f) { if (f) fclose(f); if (hReq) InternetCloseHandle(hReq); InternetCloseHandle(hInt); return -1; }
+    long total = 0;
+    char buf[8192];
+    DWORD got;
+    while (InternetReadFile(hReq, buf, sizeof(buf), &got) && got > 0) {
+        fwrite(buf, 1, got, f);
+        total += (long)got;
+    }
+    fclose(f);
+    InternetCloseHandle(hReq);
+    InternetCloseHandle(hInt);
+    return total;
+}
+
 static unsigned __stdcall dl_thread_proc(void* arg) {
     DownloadTask* dl = (DownloadTask*)arg;
     (void)find_repacker(dl->game);
@@ -566,10 +589,15 @@ static unsigned __stdcall dl_thread_proc(void* arg) {
         dl->progress = PHASE_PROGRESS[i];
         SendMessageA(dl->hwnd, DL_MSG_CONNECT, PHASE_PROGRESS[i], 0);
         SendMessageA(dl->hwnd, DL_MSG_STATUS, 0, (LPARAM)PHASE_NAMES[i]);
-        /* During the "Downloading" phase write payload bytes to disk */
         if (i == 1) {
+            /* During the "Downloading" phase fetch the real source page when
+               the game carries a live feedUrl; otherwise keep the local blob. */
             char path[MAX_PATH2 * 4];
             snprintf(path, sizeof(path), "%s\\game.dat", gameDir);
+            if (dl->game->feedUrl[0]) {
+                long n = http_get_to_file(dl->game->feedUrl, path);
+                if (n >= 0) continue; /* real bytes on disk -- skip fake delay */
+            }
             FILE* f = fopen(path, "wb");
             if (f) {
                 fwrite(g_games_resource_blob, 1, 65536, f);

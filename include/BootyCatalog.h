@@ -75,6 +75,7 @@ typedef struct {
     RepackInfo repack;
     char     sources[MAX_SRC][32];
     int      sourceCount;
+    char     feedUrl[512]; /* live source page URL for one-click fetch */
 } Game;
 
 typedef struct {
