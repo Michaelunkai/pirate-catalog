@@ -27,7 +27,7 @@
 
 Local: `F:\study\projects\pirate-catalog`
 User: `C:\Users\Admin` (Windows 11 Pro)
-GitHub: Not yet pushed (pending -- see Next Steps)
+GitHub: **PUSHED** — https://github.com/Michaelunkai/pirate-catalog (master branch)
 
 ### THE BUILD COMMAND (CRITICAL -- single file only)
 ```bash
