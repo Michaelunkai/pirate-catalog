@@ -341,7 +341,27 @@ static void draw_game_cover(NMLVCUSTOMDRAW* cd) {
     }
     SetBkMode(hdc, TRANSPARENT);
     SetTextColor(hdc, RGB(255, 255, 255));
-    DrawTextA(hdc, g->title, -1, &rc, DT_CENTER | DT_VCENTER | DT_SINGLELINE | DT_NOPREFIX);
+
+    /* Render star rating next to the title (column 0 area). */
+    char rating_str[16];
+    sprintf(rating_str, "%.1f", g->rating);
+    int stars = 5;
+    int filled = 0;
+    float r = atof(rating_str);
+    filled = (int)(r + 0.5);
+    if (filled > stars) filled = stars;
+    if (filled < 0) filled = 0;
+    SetTextColor(hdc, RGB(255, 255, 0)); // yellow stars
+    int star_w = 14;
+    int start_x = rc.left + 4;
+    for (int s = 0; s < stars; s++) {
+        RECT star_rc = {start_x + s * star_w, rc.top, start_x + (s + 1) * star_w, rc.bottom};
+        DrawTextA(hdc, s < filled ? "★" : "☆", -1, &star_rc, DT_CENTER | DT_VCENTER | DT_SINGLELINE | DT_NOPREFIX);
+    }
+    SetTextColor(hdc, RGB(255, 255, 255));
+    int title_x = start_x + stars * star_w + 4;
+    RECT title_rc = {title_x, rc.top, rc.right, rc.bottom};
+    DrawTextA(hdc, g->title, -1, &title_rc, DT_LEFT | DT_VCENTER | DT_SINGLELINE | DT_NOPREFIX);
 }
 
 /* ━━━ RESOURCE DECODER ━━━ */
@@ -359,6 +379,245 @@ void seed_games(void) {
     strncpy(g->title, "GTA VI", 127);
     g->isUpcoming = 1; g->isJustDropped = 0; g->isLatest = 0;
     g->rating = 4.9f; g_gameCount++;
+}
+
+/* ━━━ EXPORT CATALOG ━━━ */
+int export_catalog_json(const char* path) {
+    FILE* f = fopen(path, "w");
+    if (!f) return -1;
+    fprintf(f, "[\n");
+    for (int i = 0; i < g_gameCount; i++) {
+        Game* g = &g_games[i];
+        fprintf(f, "  {\n");
+        fprintf(f, "    \"id\": \"%s\",\n", g->id);
+        fprintf(f, "    \"title\": \"%s\",\n", g->title);
+        fprintf(f, "    \"genre\": \"%s\",\n", g->genre);
+        fprintf(f, "    \"genreLabel\": \"%s\",\n", g->genreLabel);
+        fprintf(f, "    \"description\": \"%s\",\n", g->description);
+        fprintf(f, "    \"crackedBy\": \"%s\",\n", g->crackedBy);
+        fprintf(f, "    \"crackedDate\": \"%s\",\n", g->crackedDate);
+        fprintf(f, "    \"uploadedDate\": \"%s\",\n", g->uploadedDate);
+        fprintf(f, "    \"size\": \"%s\",\n", g->size);
+        fprintf(f, "    \"sizeBytes\": %lld,\n", g->sizeBytes);
+        fprintf(f, "    \"version\": \"%s\",\n", g->version);
+        fprintf(f, "    \"isUpcoming\": %d,\n", g->isUpcoming);
+        fprintf(f, "    \"isJustDropped\": %d,\n", g->isJustDropped);
+        fprintf(f, "    \"isLatest\": %d,\n", g->isLatest);
+        fprintf(f, "    \"rating\": %.1f,\n", g->rating);
+        fprintf(f, "    \"tags\": [");
+        for (int t = 0; t < g->tagCount; t++) {
+            fprintf(f, "\"%s\"%s", g->tags[t], (t < g->tagCount - 1) ? ", " : "");
+        }
+        fprintf(f, "],\n");
+        fprintf(f, "    \"imageGradient\": \"%s\",\n", g->imageGradient);
+        fprintf(f, "    \"imageUrl\": \"%s\",\n", "");
+        fprintf(f, "    \"repack\": null,\n");
+        fprintf(f, "    \"sources\": [");
+        for (int s = 0; s < g->sourceCount; s++) {
+            fprintf(f, "\"%s\"%s", g->sources[s], (s < g->sourceCount - 1) ? ", " : "");
+        }
+        fprintf(f, "],\n");
+        fprintf(f, "    \"feedUrl\": \"%s\"\n", g->feedUrl ? g->feedUrl : "");
+        fprintf(f, "  }%s\n", (i < g_gameCount - 1) ? "," : "");
+    }
+    fprintf(f, "]\n");
+    fclose(f);
+    return 0;
+}
+
+int export_catalog_csv(const char* path) {
+    FILE* f = fopen(path, "w");
+    if (!f) return -1;
+    fprintf(f, "id,title,genre,genreLabel,description,crackedBy,crackedDate,uploadedDate,size,sizeBytes,version,isUpcoming,isJustDropped,isLatest,rating,tags,imageGradient,imageUrl,sources,feedUrl\n");
+    for (int i = 0; i < g_gameCount; i++) {
+        Game* g = &g_games[i];
+        fprintf(f, "\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",%lld,\"%s\",%d,%d,%d,%.1f,\"",
+            g->id, g->title, g->genre, g->genreLabel, g->description,
+            g->crackedBy, g->crackedDate, g->uploadedDate, g->size,
+            g->sizeBytes, g->version, g->isUpcoming, g->isJustDropped,
+            g->isLatest, g->rating);
+        for (int t = 0; t < g->tagCount; t++) {
+            fprintf(f, "%s%s", g->tags[t], (t < g->tagCount - 1) ? "; " : "");
+        }
+        fprintf(f, "\",\"%s\",\"%s\",\"",
+            g->imageGradient, "");
+        for (int s = 0; s < g->sourceCount; s++) {
+            fprintf(f, "%s%s", g->sources[s], (s < g->sourceCount - 1) ? "; " : "");
+        }
+        fprintf(f, "\",\"%s\"\n", g->feedUrl ? g->feedUrl : "");
+    }
+    fclose(f);
+    return 0;
+}
+
+/* ━━━ Rating dialog helpers ━━━ */
+static Game* g_rating_game = NULL;
+static int g_rating_selected = 0;
+
+static void save_rating_to_json_impl(const char* game_id, float rating) {
+    if (!GAMES_JSON_PATH || !GAMES_JSON_PATH[0]) return;
+    FILE* f = fopen(GAMES_JSON_PATH, "r");
+    if (!f) return;
+    fseek(f, 0, SEEK_END);
+    long len = ftell(f);
+    fseek(f, 0, SEEK_SET);
+    char* json = (char*)malloc(len + 1);
+    if (!json) { fclose(f); return; }
+    fread(json, 1, len, f);
+    json[len] = '\0';
+    fclose(f);
+
+    /* Find the game's rating field and update it */
+    char* p = json;
+    while ((p = strstr(p, "\"id\"")) != NULL) {
+        char* id_start = strchr(p, '"');
+        if (!id_start) break;
+        id_start++;
+        char* id_end = strchr(id_start, '"');
+        if (!id_end) break;
+        if (strcmp(g_games[0].id, g_rating_game->id) == 0) {
+            char* r = strstr(id_end, "\"rating\"");
+            if (r) {
+                r = strchr(r, ':');
+                if (r) {
+                    r++;
+                    while (*r == ' ' || *r == '\t') r++;
+                    char* r_end = r;
+                    while (*r_end && *r_end != ',' && *r_end != '}') r_end++;
+                    char new_val[16];
+                    sprintf(new_val, "%.1f", rating);
+                    int diff = (int)strlen(new_val) - (int)(r_end - r);
+                    memmove(r_end + diff, r_end, strlen(r_end) + 1);
+                    memcpy(r, new_val, strlen(new_val));
+                    break;
+                }
+            }
+        }
+        p = id_end;
+    }
+
+    f = fopen(GAMES_JSON_PATH, "w");
+    if (f) {
+        fwrite(json, 1, strlen(json), f);
+        fclose(f);
+    }
+    free(json);
+}
+
+/* ━━━ Rating dialog helpers (forward-declared before use) ━━━ */
+static void save_rating_to_json(const char* game_id, float rating);
+LRESULT CALLBACK RatingDlgProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam);
+
+/* ━━━ Rating dialog implementation ━━━ */
+void show_rating_dialog(HWND parent, Game* game) {
+    g_rating_game = game;
+    g_rating_selected = (int)(game->rating + 0.5);
+    DialogBoxA(GetModuleHandleA(NULL), MAKEINTRESOURCEA(6000), parent, RatingDlgProc);
+}
+
+/* ━━━ Callbacks & render helpers ━━━ */
+LRESULT CALLBACK RatingDlgProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) {
+    static HWND hStar[5];
+    switch (msg) {
+        case WM_INITDIALOG: {
+            if (!g_rating_game) return FALSE;
+            for (int i = 0; i < 5; i++) {
+                hStar[i] = CreateWindowA("BUTTON", (i < g_rating_game->rating + 0.5) ? "★" : "☆",
+                    WS_CHILD | WS_VISIBLE | BS_PUSHBUTTON,
+                    20 + i * 36, 30, 36, 36, hwnd, (HMENU)(5000 + i), GetModuleHandleA(NULL), NULL);
+                SendMessageA(hStar[i], WM_SETFONT, (WPARAM)CreateFontA(20, 0, 0, 0, FW_NORMAL, 0, 0, 0,
+                    DEFAULT_CHARSET, OUT_DEFAULT, CLIP_DEFAULT, CLEARTYPE_QUALITY, DEFAULT_PITCH, "Segoe UI"), TRUE);
+            }
+            char title[256];
+            sprintf(title, "Rate: %s", g_rating_game->title);
+            SetWindowTextA(hwnd, title);
+            return TRUE;
+        }
+        case WM_COMMAND:
+            if (LOWORD(wParam) >= 5000 && LOWORD(wParam) < 5005) {
+                int star = LOWORD(wParam) - 5000;
+                g_rating_selected = star + 1;
+                for (int i = 0; i < 5; i++) {
+                    SetWindowTextA(hStar[i], (i <= star) ? "★" : "☆");
+                }
+            } else if (LOWORD(wParam) == IDOK || LOWORD(wParam) == IDCANCEL) {
+                if (LOWORD(wParam) == IDOK && g_rating_game) {
+                    g_rating_game->rating = (float)g_rating_selected;
+                    /* Also find and update the master copy in g_games array */
+                    for (int i = 0; i < g_gameCount; i++) {
+                        if (strcmp(g_games[i].id, g_rating_game->id) == 0) {
+                            g_games[i].rating = (float)g_rating_selected;
+                            break;
+                        }
+                    }
+                    save_rating_to_json(g_rating_game->id, (float)g_rating_selected);
+                    build_grid_from_filtered();
+                    tray_bubble(APP_NAME, "Rating saved", 2000);
+                }
+                EndDialog(hwnd, LOWORD(wParam));
+            }
+            break;
+        case WM_CLOSE:
+            EndDialog(hwnd, IDCANCEL);
+            break;
+    }
+    return FALSE;
+}
+
+/* Save a single game's rating to the JSON file on disk */
+void save_rating_to_json(const char* game_id, float rating) {
+    if (!GAMES_JSON_PATH || !GAMES_JSON_PATH[0]) return;
+    FILE* f = fopen(GAMES_JSON_PATH, "r");
+    if (!f) return;
+    fseek(f, 0, SEEK_END);
+    long len = ftell(f);
+    fseek(f, 0, SEEK_SET);
+    char* json = (char*)malloc(len + 1);
+    if (!json) { fclose(f); return; }
+    fread(json, 1, len, f);
+    json[len] = '\0';
+    fclose(f);
+
+    /* Find the game's rating field and update it */
+    char* p = json;
+    while ((p = strstr(p, "\"id\"")) != NULL) {
+        /* Skip past "id": "..." */
+        char* id_start = strchr(p, '"');
+        if (!id_start) break;
+        id_start = strchr(id_start + 1, '"');
+        if (!id_start) break;
+        id_start++;
+        char* id_end = strchr(id_start, '"');
+        if (!id_end) break;
+        if (strncmp(id_start, game_id, id_end - id_start) == 0) {
+            /* Found the game, now find its rating field */
+            char* r = strstr(id_end, "\"rating\"");
+            if (r) {
+                r = strchr(r, ':');
+                if (r) {
+                    r++;
+                    while (*r == ' ' || *r == '\t') r++;
+                    char* r_end = r;
+                    while (*r_end && *r_end != ',' && *r_end != '}') r_end++;
+                    /* Replace the rating value */
+                    char new_val[16];
+                    sprintf(new_val, "%.1f", rating);
+                    int diff = (int)strlen(new_val) - (int)(r_end - r);
+                    memmove(r_end + diff, r_end, strlen(r_end) + 1);
+                    memcpy(r, new_val, strlen(new_val));
+                    break;
+                }
+            }
+        }
+        p = id_end;
+    }
+
+    f = fopen(GAMES_JSON_PATH, "w");
+    if (f) {
+        fwrite(json, 1, strlen(json), f);
+        fclose(f);
+    }
+    free(json);
 }
 
 /* ━━━ HTTP SERVER ━━━ */
@@ -575,15 +834,65 @@ static const char* PHASE_NAMES[] = {
 static int PHASE_PROGRESS[] = { 25, 60, 80, 87, 95, 98, 100 };
 static int PHASE_DELAY[] = { 1200, 2400, 1800, 400, 800, 500, 300 };
 
+/* Parse URL into host and path for WinInet. */
+static void parse_url(const char* url, char* host, int hostSize, char* path, int pathSize) {
+    const char* p = url;
+    /* Skip protocol */
+    if (strncmp(p, "http://", 7) == 0) p += 7;
+    else if (strncmp(p, "https://", 8) == 0) p += 8;
+    /* Find host */
+    const char* pathStart = strchr(p, '/');
+    if (pathStart) {
+        int hostLen = (int)(pathStart - p);
+        if (hostLen >= hostSize) hostLen = hostSize - 1;
+        strncpy(host, p, hostLen);
+        host[hostLen] = '\0';
+        strncpy(path, pathStart, pathSize - 1);
+        path[pathSize - 1] = '\0';
+    } else {
+        strncpy(host, p, hostSize - 1);
+        host[hostSize - 1] = '\0';
+        strcpy(path, "/");
+    }
+}
+
 /* Real HTTP GET over WinInet with a browser User-Agent so bot-checked
-   repacker pages still answer. Returns bytes written to outPath. */
+   repacker pages still answer. Returns bytes written to outPath.
+   Also handles magnet: links by writing them to the output file. */
 static long http_get_to_file(const char* url, const char* outPath) {
+    /* Handle magnet: links specially - just write the magnet URI to file */
+    if (strncmp(url, "magnet:", 7) == 0) {
+        FILE* f = fopen(outPath, "wb");
+        if (!f) return -1;
+        fwrite(url, 1, strlen(url), f);
+        fclose(f);
+        return (long)strlen(url);
+    }
+
+    char host[256];
+    char path[512];
+    parse_url(url, host, sizeof(host), path, sizeof(path));
+
     HINTERNET hInt = InternetOpenA("BootyCatalog/1.0", INTERNET_OPEN_TYPE_DIRECT, NULL, NULL, 0);
     if (!hInt) return -1;
-    HINTERNET hReq = HttpOpenRequestA(hInt, "GET", url, NULL, NULL, NULL, 0, 0);
-    if (hReq) HttpSendRequestA(hReq, "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64)", -1, NULL, 0);
+
+    DWORD flags = INTERNET_FLAG_RELOAD | INTERNET_FLAG_NO_CACHE_WRITE;
+    if (strncmp(url, "https://", 8) == 0) flags |= INTERNET_FLAG_SECURE;
+
+    HINTERNET hConnect = InternetConnectA(hInt, host, INTERNET_DEFAULT_HTTPS_PORT, NULL, NULL, INTERNET_SERVICE_HTTP, 0, 0);
+    if (!hConnect) { InternetCloseHandle(hInt); return -1; }
+
+    HINTERNET hReq = HttpOpenRequestA(hConnect, "GET", path, NULL, NULL, NULL, flags, 0);
+    if (!hReq) { InternetCloseHandle(hConnect); InternetCloseHandle(hInt); return -1; }
+
+    const char* ua = "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36";
+    if (!HttpSendRequestA(hReq, ua, (DWORD)strlen(ua), NULL, 0)) {
+        InternetCloseHandle(hReq); InternetCloseHandle(hConnect); InternetCloseHandle(hInt); return -1;
+    }
+
     FILE* f = fopen(outPath, "wb");
-    if (!hReq || !f) { if (f) fclose(f); if (hReq) InternetCloseHandle(hReq); InternetCloseHandle(hInt); return -1; }
+    if (!f) { InternetCloseHandle(hReq); InternetCloseHandle(hConnect); InternetCloseHandle(hInt); return -1; }
+
     long total = 0;
     char buf[8192];
     DWORD got;
@@ -593,6 +902,7 @@ static long http_get_to_file(const char* url, const char* outPath) {
     }
     fclose(f);
     InternetCloseHandle(hReq);
+    InternetCloseHandle(hConnect);
     InternetCloseHandle(hInt);
     return total;
 }
@@ -746,6 +1056,10 @@ int show_tray_menu(POINT pt) {
     AppendMenuA(hMenu, MF_STRING, 3001, "Open Booty Catalog");
     AppendMenuA(hMenu, MF_STRING, 3002, "Latest Cracks");
     AppendMenuA(hMenu, MF_STRING, 3003, "Add Game");
+    AppendMenuA(hMenu, MF_SEPARATOR, 0, NULL);
+    AppendMenuA(hMenu, MF_STRING, 3005, "Export Catalog (JSON)");
+    AppendMenuA(hMenu, MF_STRING, 3006, "Export Catalog (CSV)");
+    AppendMenuA(hMenu, MF_SEPARATOR, 0, NULL);
     AppendMenuA(hMenu, MF_STRING, 3004, "Exit");
     int sel = TrackPopupMenu(hMenu, TPM_BOTTOMALIGN | TPM_LEFTBUTTON,
         pt.x, pt.y, 0, g_nid.hWnd, NULL);
@@ -1019,6 +1333,43 @@ LRESULT CALLBACK MainWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) 
                             selectedGame = &g_filtered[n->iItem];
                     }
                     break;
+                /* Export catalog menu handlers */
+                case 3005: { /* Export JSON */
+                    char path[MAX_PATH] = "BootyCatalog_Export.json";
+                    OPENFILENAMEA ofn = {0};
+                    ofn.lStructSize = sizeof(OPENFILENAMEA);
+                    ofn.hwndOwner = hwnd;
+                    ofn.lpstrFilter = "JSON Files\0*.json\0All Files\0*.*\0";
+                    ofn.lpstrFile = path;
+                    ofn.nMaxFile = MAX_PATH;
+                    ofn.Flags = OFN_OVERWRITEPROMPT | OFN_PATHMUSTEXIST;
+                    ofn.lpstrDefExt = "json";
+                    if (GetSaveFileNameA(&ofn)) {
+                        if (export_catalog_json(path) == 0)
+                            tray_bubble(APP_NAME, "Catalog exported to JSON", 2500);
+                        else
+                            tray_bubble(APP_NAME, "Export failed", 2500);
+                    }
+                    break;
+                }
+                case 3006: { /* Export CSV */
+                    char path[MAX_PATH] = "BootyCatalog_Export.csv";
+                    OPENFILENAMEA ofn = {0};
+                    ofn.lStructSize = sizeof(OPENFILENAMEA);
+                    ofn.hwndOwner = hwnd;
+                    ofn.lpstrFilter = "CSV Files\0*.csv\0All Files\0*.*\0";
+                    ofn.lpstrFile = path;
+                    ofn.nMaxFile = MAX_PATH;
+                    ofn.Flags = OFN_OVERWRITEPROMPT | OFN_PATHMUSTEXIST;
+                    ofn.lpstrDefExt = "csv";
+                    if (GetSaveFileNameA(&ofn)) {
+                        if (export_catalog_csv(path) == 0)
+                            tray_bubble(APP_NAME, "Catalog exported to CSV", 2500);
+                        else
+                            tray_bubble(APP_NAME, "Export failed", 2500);
+                    }
+                    break;
+                }
             }
             break;
         }
@@ -1052,6 +1403,30 @@ LRESULT CALLBACK MainWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) 
                         }
                         return CDRF_DODEFAULT;
                     default: return CDRF_DODEFAULT;
+                }
+            }
+            if (nmia->hdr.code == NM_RCLICK && nmia->hdr.hwndFrom == g_hGrid) {
+                /* Right-click on grid: show context menu with Rate Game option */
+                LVHITTESTINFO hti = {0};
+                GetCursorPos(&hti.pt);
+                ScreenToClient(g_hGrid, &hti.pt);
+                ListView_HitTest(g_hGrid, &hti);
+                if (hti.iItem >= 0 && hti.iItem < g_filteredCount) {
+                    Game* game = &g_filtered[hti.iItem];
+                    HMENU hMenu = CreatePopupMenu();
+                    AppendMenuA(hMenu, MF_STRING, 4001, "Rate Game");
+                    AppendMenuA(hMenu, MF_SEPARATOR, 0, NULL);
+                    AppendMenuA(hMenu, MF_STRING, 4002, "Open Source Page");
+                    POINT pt;
+                    GetCursorPos(&pt);
+                    int sel = TrackPopupMenu(hMenu, TPM_BOTTOMALIGN | TPM_LEFTBUTTON | TPM_RETURNCMD,
+                        pt.x, pt.y, 0, hwnd, NULL);
+                    DestroyMenu(hMenu);
+                    if (sel == 4001) {
+                        DialogBoxA(GetModuleHandleA(NULL), MAKEINTRESOURCEA(101), hwnd, RatingDlgProc);
+                    } else if (sel == 4002 && game->feedUrl[0]) {
+                        ShellExecuteA(NULL, "open", game->feedUrl, NULL, NULL, SW_SHOWNORMAL);
+                    }
                 }
             }
             break;

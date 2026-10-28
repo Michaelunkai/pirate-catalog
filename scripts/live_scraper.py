@@ -30,18 +30,15 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CATALOG = os.path.join(ROOT, "data", "games.json")
 
 # name -> list of candidate URLs tried in order; first success wins.
+# Only working sources as of 2026-10-28 (others have dead DNS or heavy Cloudflare)
 SOURCES = {
     "DODI": ["https://dodi-repacks.site/feed/", "https://www.dodi-repacks.site/feed/"],
     "FitGirl": [
         "https://www.fitgirl-repacks.site/feed/",
         "https://fitgirl-repacks.site/feed/",
     ],
-    "CODEX": ["https://codex-team.org/feed/", "https://www.codex-team.org/feed/"],
-    "RELOADED": ["https://reloaded-games.net/feed/", "https://www.reloaded-games.net/feed/"],
     "SKIDROW": ["http://feeds.feedburner.com/SkidrowReloadedGames", "https://www.skidrowrepacks.com/"],
-    "ElAmigos": ["https://elamigos.co/feed/", "https://www.elamigos.co/feed/"],
-    "TOKYO": ["https://tokyobrothers.com/feed/", "https://www.tokyobrothers.com/feed/"],
-    "NINTENDO CAVE": ["https://nintendocave.io/feed/", "https://www.nintendocave.io/feed/"],
+    "ElAmigos": ["https://www.elenemigos.com/sitemap-recent.xml", "https://www.elenemigos.com/sitemap-games-1.xml"],
     "Ocean of Games": ["https://oceanofgames.com/feed/"],
     # Additional sources via APIs
     "The Pirate Bay": ["https://apibay.org/q.php?q=game&cat=100"],
@@ -212,6 +209,241 @@ asyncio.run(scrape())
         print(f"  DODI: browser scrape -> {type(e).__name__}: {e}", file=sys.stderr)
     return "DODI", items
 
+
+def scrape_codex():
+    """Scrape CODEX using browser MCP (blocked by Cloudflare on plain HTTP)."""
+    items = []
+    try:
+        script = '''
+import asyncio
+from playwright.async_api import async_playwright
+
+async def scrape():
+    async with async_playwright() as p:
+        browser = await p.chromium.launch(headless=True)
+        page = await browser.new_page()
+        await page.goto("https://codex-team.org/", wait_until="domcontentloaded", timeout=60000)
+
+        articles = await page.query_selector_all("article, .post, .entry, .game-item")
+        results = []
+        for a in articles:
+            title_el = await a.query_selector("h1, h2, h3, .title, .entry-title, .post-title, .game-title")
+            link_el = await a.query_selector("a")
+            img_el = await a.query_selector("img")
+            if title_el:
+                title = await title_el.inner_text()
+                link = await link_el.get_attribute("href") if link_el else ""
+                image = await img_el.get_attribute("src") if img_el else ""
+                results.append({"title": title.strip(), "link": link, "image": image})
+        await browser.close()
+        import json
+        print(json.dumps(results))
+
+asyncio.run(scrape())
+'''
+        result = subprocess.run(["python", "-c", script], capture_output=True, text=True, timeout=90)
+        if result.returncode == 0 and result.stdout:
+            import json
+            data = json.loads(result.stdout.strip())
+            for entry in data:
+                title = entry.get("title", "")
+                link = entry.get("link", "")
+                image = entry.get("image", "")
+                if title and len(title) > 5:
+                    items.append((title, link, "", f"CODEX: {title}", image))
+            print(f"  CODEX: {len(items)} items via browser")
+    except Exception as e:
+        print(f"  CODEX: browser scrape -> {type(e).__name__}: {e}", file=sys.stderr)
+    return "CODEX", items
+
+
+def scrape_reloaded():
+    """Scrape RELOADED using browser MCP (blocked by Cloudflare on plain HTTP)."""
+    items = []
+    try:
+        script = '''
+import asyncio
+from playwright.async_api import async_playwright
+
+async def scrape():
+    async with async_playwright() as p:
+        browser = await p.chromium.launch(headless=True)
+        page = await browser.new_page()
+        await page.goto("https://reloaded-games.net/", wait_until="domcontentloaded", timeout=60000)
+
+        articles = await page.query_selector_all("article, .post, .entry, .game-item")
+        results = []
+        for a in articles:
+            title_el = await a.query_selector("h1, h2, h3, .title, .entry-title, .post-title, .game-title")
+            link_el = await a.query_selector("a")
+            img_el = await a.query_selector("img")
+            if title_el:
+                title = await title_el.inner_text()
+                link = await link_el.get_attribute("href") if link_el else ""
+                image = await img_el.get_attribute("src") if img_el else ""
+                results.append({"title": title.strip(), "link": link, "image": image})
+        await browser.close()
+        import json
+        print(json.dumps(results))
+
+asyncio.run(scrape())
+'''
+        result = subprocess.run(["python", "-c", script], capture_output=True, text=True, timeout=90)
+        if result.returncode == 0 and result.stdout:
+            import json
+            data = json.loads(result.stdout.strip())
+            for entry in data:
+                title = entry.get("title", "")
+                link = entry.get("link", "")
+                image = entry.get("image", "")
+                if title and len(title) > 5:
+                    items.append((title, link, "", f"RELOADED: {title}", image))
+            print(f"  RELOADED: {len(items)} items via browser")
+    except Exception as e:
+        print(f"  RELOADED: browser scrape -> {type(e).__name__}: {e}", file=sys.stderr)
+    return "RELOADED", items
+
+
+def scrape_elamigos():
+    """Scrape ElAmigos using browser MCP (blocked by Cloudflare on plain HTTP)."""
+    items = []
+    try:
+        script = '''
+import asyncio
+from playwright.async_api import async_playwright
+
+async def scrape():
+    async with async_playwright() as p:
+        browser = await p.chromium.launch(headless=True)
+        page = await browser.new_page()
+        await page.goto("https://elamigos.co/", wait_until="domcontentloaded", timeout=60000)
+
+        articles = await page.query_selector_all("article, .post, .entry, .game-item")
+        results = []
+        for a in articles:
+            title_el = await a.query_selector("h1, h2, h3, .title, .entry-title, .post-title, .game-title")
+            link_el = await a.query_selector("a")
+            img_el = await a.query_selector("img")
+            if title_el:
+                title = await title_el.inner_text()
+                link = await link_el.get_attribute("href") if link_el else ""
+                image = await img_el.get_attribute("src") if img_el else ""
+                results.append({"title": title.strip(), "link": link, "image": image})
+        await browser.close()
+        import json
+        print(json.dumps(results))
+
+asyncio.run(scrape())
+'''
+        result = subprocess.run(["python", "-c", script], capture_output=True, text=True, timeout=90)
+        if result.returncode == 0 and result.stdout:
+            import json
+            data = json.loads(result.stdout.strip())
+            for entry in data:
+                title = entry.get("title", "")
+                link = entry.get("link", "")
+                image = entry.get("image", "")
+                if title and len(title) > 5:
+                    items.append((title, link, "", f"ElAmigos: {title}", image))
+            print(f"  ElAmigos: {len(items)} items via browser")
+    except Exception as e:
+        print(f"  ElAmigos: browser scrape -> {type(e).__name__}: {e}", file=sys.stderr)
+    return "ElAmigos", items
+
+
+def scrape_tokyo():
+    """Scrape TOKYO using browser MCP (blocked by DNS/Cloudflare on plain HTTP)."""
+    items = []
+    try:
+        script = '''
+import asyncio
+from playwright.async_api import async_playwright
+
+async def scrape():
+    async with async_playwright() as p:
+        browser = await p.chromium.launch(headless=True)
+        page = await browser.new_page()
+        await page.goto("https://tokyobrothers.com/", wait_until="domcontentloaded", timeout=60000)
+
+        articles = await page.query_selector_all("article, .post, .entry, .game-item")
+        results = []
+        for a in articles:
+            title_el = await a.query_selector("h1, h2, h3, .title, .entry-title, .post-title, .game-title")
+            link_el = await a.query_selector("a")
+            img_el = await a.query_selector("img")
+            if title_el:
+                title = await title_el.inner_text()
+                link = await link_el.get_attribute("href") if link_el else ""
+                image = await img_el.get_attribute("src") if img_el else ""
+                results.append({"title": title.strip(), "link": link, "image": image})
+        await browser.close()
+        import json
+        print(json.dumps(results))
+
+asyncio.run(scrape())
+'''
+        result = subprocess.run(["python", "-c", script], capture_output=True, text=True, timeout=90)
+        if result.returncode == 0 and result.stdout:
+            import json
+            data = json.loads(result.stdout.strip())
+            for entry in data:
+                title = entry.get("title", "")
+                link = entry.get("link", "")
+                image = entry.get("image", "")
+                if title and len(title) > 5:
+                    items.append((title, link, "", f"TOKYO: {title}", image))
+            print(f"  TOKYO: {len(items)} items via browser")
+    except Exception as e:
+        print(f"  TOKYO: browser scrape -> {type(e).__name__}: {e}", file=sys.stderr)
+    return "TOKYO", items
+
+
+def scrape_nintendocave():
+    """Scrape NINTENDO CAVE using browser MCP (blocked by DNS/Cloudflare on plain HTTP)."""
+    items = []
+    try:
+        script = '''
+import asyncio
+from playwright.async_api import async_playwright
+
+async def scrape():
+    async with async_playwright() as p:
+        browser = await p.chromium.launch(headless=True)
+        page = await browser.new_page()
+        await page.goto("https://nintendocave.io/", wait_until="domcontentloaded", timeout=60000)
+
+        articles = await page.query_selector_all("article, .post, .entry, .game-item")
+        results = []
+        for a in articles:
+            title_el = await a.query_selector("h1, h2, h3, .title, .entry-title, .post-title, .game-title")
+            link_el = await a.query_selector("a")
+            img_el = await a.query_selector("img")
+            if title_el:
+                title = await title_el.inner_text()
+                link = await link_el.get_attribute("href") if link_el else ""
+                image = await img_el.get_attribute("src") if img_el else ""
+                results.append({"title": title.strip(), "link": link, "image": image})
+        await browser.close()
+        import json
+        print(json.dumps(results))
+
+asyncio.run(scrape())
+'''
+        result = subprocess.run(["python", "-c", script], capture_output=True, text=True, timeout=90)
+        if result.returncode == 0 and result.stdout:
+            import json
+            data = json.loads(result.stdout.strip())
+            for entry in data:
+                title = entry.get("title", "")
+                link = entry.get("link", "")
+                image = entry.get("image", "")
+                if title and len(title) > 5:
+                    items.append((title, link, "", f"NINTENDO CAVE: {title}", image))
+            print(f"  NINTENDO CAVE: {len(items)} items via browser")
+    except Exception as e:
+        print(f"  NINTENDO CAVE: browser scrape -> {type(e).__name__}: {e}", file=sys.stderr)
+    return "NINTENDO CAVE", items
+
 GENRE_KEYWORDS = [
     (("rpg",), "rpg", "RPG / Open World"),
     (("action", "adventure"), "action-adventure", "Action Adventure"),
@@ -254,6 +486,30 @@ def parse_items(xml_bytes):
             r"^(Updates Digest|Upcoming Repacks|Some important Messages)", title
         ):
             yield title, link, date_s, desc[:300]
+
+
+def parse_sitemap(xml_bytes):
+    """Yield (title, link, date_str, description) from XML sitemap.
+
+    Extracts game titles from URLs like:
+    https://www.elenemigos.com/app/game-name-descargar-gratis/12345
+    """
+    soup = BeautifulSoup(xml_bytes, "xml")
+    for url_el in soup.find_all("url"):
+        loc = url_el.find("loc")
+        lastmod = url_el.find("lastmod")
+        link = loc.get_text(strip=True) if loc is not None else ""
+        date_s = lastmod.get_text(strip=True) if lastmod is not None else ""
+        if not link:
+            continue
+        # Extract title from URL path
+        # Pattern: /app/game-name-descargar-gratis/12345
+        m = re.search(r"/app/([^/]+)/\d+", link)
+        if m:
+            title = m.group(1).replace("-descargar-gratis", "").replace("-", " ").strip()
+            # Clean up title casing
+            title = re.sub(r"\b(\w+)\b", lambda x: x.group(1).capitalize(), title)
+            yield title, link, date_s, ""
 
 
 def guess_genre(title):
@@ -363,10 +619,18 @@ def fetch_source(name, urls):
     for url in urls:
         try:
             r = requests.get(url, headers=UA, timeout=TIMEOUT)
-            if r.status_code == 200 and (b"<item>" in r.content or b"<entry>" in r.content):
-                items = [it for it in parse_items(r.content)]
-                print(f"  {name}: {len(items)} items via {url}")
-                return name, items
+            if r.status_code == 200:
+                content = r.content
+                # Try RSS/Atom first
+                if b"<item>" in content or b"<entry>" in content:
+                    items = [it for it in parse_items(content)]
+                    print(f"  {name}: {len(items)} items via {url}")
+                    return name, items
+                # Try sitemap (for ElAmigos)
+                elif b"<urlset" in content or b"<sitemapindex" in content:
+                    items = [it for it in parse_sitemap(content)]
+                    print(f"  {name}: {len(items)} items via {url} (sitemap)")
+                    return name, items
         except requests.RequestException as e:
             print(f"  {name}: {url} -> {type(e).__name__}", file=sys.stderr)
     print(f"  {name}: no reachable feed (skipped)")
@@ -425,7 +689,7 @@ def main():
         print(f"  + [{source}] {entry['title']}")
 
     # Browser-based sources first (they carry real cover images).
-    for scraper in (scrape_steamrip, scrape_fitgirl, scrape_dodi):
+    for scraper in (scrape_steamrip, scrape_fitgirl, scrape_dodi, scrape_codex, scrape_reloaded, scrape_elamigos, scrape_tokyo, scrape_nintendocave):
         source, items = scraper()
         if items:
             live_sources.append(source)
