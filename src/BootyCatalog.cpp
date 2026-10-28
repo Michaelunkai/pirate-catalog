@@ -76,6 +76,9 @@ HWND g_hFilterBar = NULL;
 HWND g_hHero = NULL;
 HWND g_hThemeBtn = NULL;
 HWND g_hDownloadDl = NULL;
+HWND g_hInstallBtn = NULL;   /* "Install" -- starts the one-click flow */
+HWND g_hFolderBtn  = NULL;   /* browse for the install destination folder */
+static char g_installDir[MAX_PATH] = "E:\\Games";
 HWND g_hDlProgress = NULL;
 const char* EXE_DIR = NULL;
 const char* GAMES_JSON_PATH = NULL;
@@ -382,6 +385,9 @@ void http_server_stop(void) {
 /* HTTP listener thread */
 static void http_accept_loop(void) {
     static char hdrHtml[] = "HTTP/1.0 200 OK\r\nContent-Type: text/html\r\nConnection: close\r\n\r\n";
+    static char hdrJson[] = "HTTP/1.0 200 OK\r\nContent-Type: application/json\r\nConnection: close\r\n\r\n";
+    static char hdrCss[]  = "HTTP/1.0 200 OK\r\nContent-Type: text/css\r\nConnection: close\r\n\r\n";
+    static char hdrJs[]   = "HTTP/1.0 200 OK\r\nContent-Type: application/javascript\r\nConnection: close\r\n\r\n";
     while (g_httpServer.running) {
         sockaddr_in clientAddr;
         int clientLen = sizeof(clientAddr);
@@ -389,17 +395,24 @@ static void http_accept_loop(void) {
         if (clientSock == INVALID_SOCKET) break;
         char buf[4096];
         recv(clientSock, buf, sizeof(buf) - 1, 0);
-        char* crlf = strstr(buf, "\r\n");
-        if (crlf) *crlf = '\0';
-        char* ext = strrchr(buf, '.');
+        /* Parse request line: "GET /path HTTP/1.1" */
+        char* method = buf;
+        char* path = strchr(buf, ' ');
+        if (path) {
+            *path++ = '\0';
+            char* version = strchr(path, ' ');
+            if (version) *version = '\0';
+        }
+        /* Find extension from path only */
+        char* ext = path ? strrchr(path, '.') : NULL;
         if (ext && strcmp(ext, ".css") == 0) {
-            send(clientSock, hdrHtml, strlen(hdrHtml), 0);
+            send(clientSock, hdrCss, strlen(hdrCss), 0);
             send(clientSock, (char*)css_bin, css_bin_len, 0);
         } else if (ext && strcmp(ext, ".js") == 0) {
-            send(clientSock, hdrHtml, strlen(hdrHtml), 0);
+            send(clientSock, hdrJs, strlen(hdrJs), 0);
             send(clientSock, (char*)js_bin, js_bin_len, 0);
         } else if (ext && strcmp(ext, ".json") == 0) {
-            send(clientSock, hdrHtml, strlen(hdrHtml), 0);
+            send(clientSock, hdrJson, strlen(hdrJson), 0);
             send(clientSock, (char*)g_games_resource_blob, games_bin_len, 0);
         } else {
             send(clientSock, hdrHtml, strlen(hdrHtml), 0);
@@ -422,6 +435,9 @@ void http_server_add_listener(void) {
     HANDLE h = CreateThread(NULL, 0, http_server_thread, NULL, 0, NULL);
     fprintf(stderr, "[main] CreateThread -> %p err=%d sock=%d bind/listen ok\n", h, GetLastError(), (int)g_httpServer.sock); fflush(stderr);
 }
+
+/* Forward decl: repacker label for a game (defined further down). */
+static const char* find_repacker(Game* g);
 
 /* ━━━ FILTER / SORT ━━━ */
 static const char* stristr(const char* haystack, const char* needle) {
@@ -472,8 +488,10 @@ void build_grid_from_filtered(void) {
         int idx = ListView_InsertItem(g_hGrid, &lvi);
         ListView_SetItemText(g_hGrid, idx, 1, g_filtered[i].genreLabel);
         ListView_SetItemText(g_hGrid, idx, 2, g_filtered[i].size);
-        ListView_SetItemText(g_hGrid, idx, 3, g_filtered[i].crackedBy);
+        ListView_SetItemText(g_hGrid, idx, 3, (LPSTR)find_repacker(&g_filtered[i]));
         ListView_SetItemText(g_hGrid, idx, 4, g_filtered[i].crackedDate);
+        { char rbuf[16]; sprintf(rbuf, "%.1f", g_filtered[i].rating);
+          ListView_SetItemText(g_hGrid, idx, 5, rbuf); }
         /* Store pointer to full Game so the custom-draw handler can paint its cover.
            Needs LVIF_PARAM in the mask — lvi above only carries LVIF_TEXT. */
         LVITEMA lvip = {0};
@@ -507,7 +525,10 @@ const char* get_game_emoji(const char* genre) {
 void time_ago(const char* dateStr, char* buf, int bufSize) {
     struct tm tm;
     memset(&tm, 0, sizeof(tm));
-    sscanf(dateStr, "%d-%d-%d", &tm.tm_year, &tm.tm_mon, &tm.tm_mday);
+    /* Dates are stored as "YYYY-MM-DD". */
+    if (sscanf(dateStr, "%d-%d-%d", &tm.tm_year, &tm.tm_mon, &tm.tm_mday) != 3) {
+        strcpy(buf, ""); return;
+    }
     tm.tm_year -= 1900; tm.tm_mon -= 1;
     time_t t = mktime(&tm);
     time_t now = time(NULL);
@@ -587,8 +608,8 @@ static unsigned __stdcall dl_thread_proc(void* arg) {
     for (int i = 0; i < 7; i++) {
         if (!dl->running) break;
         dl->progress = PHASE_PROGRESS[i];
-        SendMessageA(dl->hwnd, DL_MSG_CONNECT, PHASE_PROGRESS[i], 0);
-        SendMessageA(dl->hwnd, DL_MSG_STATUS, 0, (LPARAM)PHASE_NAMES[i]);
+        PostMessageA(dl->hwnd, DL_MSG_CONNECT, PHASE_PROGRESS[i], 0);
+        PostMessageA(dl->hwnd, DL_MSG_STATUS, 0, (LPARAM)PHASE_NAMES[i]);
         if (i == 1) {
             /* During the "Downloading" phase fetch the real source page when
                the game carries a live feedUrl; otherwise keep the local blob. */
@@ -633,43 +654,62 @@ static char dl_buf[512];
 static int  dl_progress = 0;
 static char dl_status[256];
 
-INT_PTR CALLBACK dl_progress_proc(HWND hDlg, UINT msg, WPARAM wp, LPARAM lp) {
+/* The download thread posts these messages to the main window so the
+   progress bar / status bar update live while installing. */
+static void post_dl_status(const char* text) {
+    if (!g_hStatus) return;
+    char buf[512];
+    snprintf(buf, sizeof(buf), "%s -- %d%%", text, dl_progress);
+    SendMessageA(g_hStatus, SB_SETTEXT, 0, (LPARAM)buf);
+}
+static void set_dl_progress(int pct) {
+    dl_progress = pct;
+    if (g_hDlProgress) SendMessageA(g_hDlProgress, PBM_SETPOS, (WPARAM)pct, 0);
+}
+
+/* A real modeless progress window (no .rc template needed). It is created
+   once in WinMain and reused for every install. */
+LRESULT CALLBACK DLWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) {
     switch (msg) {
-        case WM_INITDIALOG:
-            SetWindowPos(hDlg, HWND_TOPMOST, 0, 0, 380, 200, SWP_NOMOVE | SWP_SHOWWINDOW);
+        case WM_SIZE:
+            if (g_hDlProgress)
+                MoveWindow(g_hDlProgress, 16, 16, LOWORD(lParam) - 32, HIWORD(lParam) - 38, TRUE);
             break;
-        case WM_COMMAND:
-            if (LOWORD(wp) == BTN_CANCEL) {
-                g_download.running = 0;
-                EndDialog(hDlg, 0);
-            }
-            break;
-        case DL_MSG_CONNECT:
-            dl_progress = (int)wp;
-            SetWindowTextA(GetDlgItem(hDlg, PROGRESS_ID), dl_buf);
-            break;
-        case DL_MSG_STATUS:
-            SendMessageA(GetDlgItem(hDlg, PROGRESS_BAR), PBM_SETPOS, (WPARAM)dl_progress, 0);
-            SetWindowTextA(GetDlgItem(hDlg, PROGRESS_BAR), (LPCSTR)lp);
-            break;
-        case DL_MSG_STOP:
-            g_download.running = 0;
-            SetWindowTextA(GetDlgItem(hDlg, PROGRESS_BAR), "Download stopped");
-            break;
-        case WM_CLOSE:
-            g_download.running = 0;
-            EndDialog(hDlg, 0);
+        case WM_DESTROY:
+            PostQuitMessage(0);
             break;
         default:
-            return DefDlgProcA(hDlg, msg, wp, lp);
+            return DefWindowProcA(hwnd, msg, wParam, lParam);
     }
     return 0;
 }
 
-int build_download_dialog(HWND parent, Game* game) {
-    DialogBoxA(g_hInst, MAKEINTRESOURCEA(1001), parent, dl_progress_proc);
+HWND create_dl_window(void) {
+    WNDCLASSEXA wcx = {0};
+    wcx.cbSize = sizeof(wcx);
+    wcx.style = CS_HREDRAW | CS_VREDRAW;
+    wcx.lpfnWndProc = DLWndProc;
+    wcx.hInstance = GetModuleHandleA(NULL);
+    wcx.lpszClassName = APP_CLASS "_DL";
+    RegisterClassExA(&wcx);
+    HWND h = CreateWindowExA(WS_EX_APPWINDOW, APP_CLASS "_DL", "Installing...",
+        WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_VISIBLE,
+        CW_USEDEFAULT, CW_USEDEFAULT, 420, 90, NULL, NULL, GetModuleHandleA(NULL), NULL);
+    /* Progress bar fills the top of the dialog. */
+    g_hDlProgress = CreateWindowA(PROGRESS_CLASSA, NULL,
+        WS_CHILD | WS_VISIBLE, 16, 16, 388, 22, h, (HMENU)PROGRESS_BAR,
+        GetModuleHandleA(NULL), NULL);
+    return h;
+}
+
+static HWND g_hDlWnd = NULL;   /* created once in WinMain */
+
+void start_install(Game* game) {
+    if (!g_hDlWnd) return;
+    ShowWindow(g_hDlWnd, SW_SHOW);
+    set_dl_progress(0);
+    post_dl_status("Connecting...");
     dl_start(game, g_hMain);
-    return 0;
 }
 
 /* ━━━ TRAY MANAGER ━━━ */
@@ -701,15 +741,16 @@ void tray_destroy(void) {
     Shell_NotifyIconA(NIM_DELETE, &g_nid);
 }
 
-void show_tray_menu(POINT pt) {
+int show_tray_menu(POINT pt) {
     HMENU hMenu = CreatePopupMenu();
     AppendMenuA(hMenu, MF_STRING, 3001, "Open Booty Catalog");
     AppendMenuA(hMenu, MF_STRING, 3002, "Latest Cracks");
     AppendMenuA(hMenu, MF_STRING, 3003, "Add Game");
     AppendMenuA(hMenu, MF_STRING, 3004, "Exit");
-    TrackPopupMenu(hMenu, TPM_BOTTOMALIGN | TPM_LEFTBUTTON,
+    int sel = TrackPopupMenu(hMenu, TPM_BOTTOMALIGN | TPM_LEFTBUTTON,
         pt.x, pt.y, 0, g_nid.hWnd, NULL);
     DestroyMenu(hMenu);
+    return sel;
 }
 
 void tray_update_icon(int state) {
@@ -774,13 +815,23 @@ LRESULT CALLBACK MainWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) 
                 WS_CHILD | WS_BORDER | WS_VISIBLE | ES_AUTOHSCROLL,
                 10, 10, 200, 25, hwnd, (HMENU)2030, g_hInst, NULL);
             g_hFilterBar = CreateWindowA("BUTTON",
-                "\xf0\x9f\x92\xa2  FitGirl",
+                "\xf0\x9f\x92\xa2  All Games",
                 WS_CHILD | WS_VISIBLE | BS_PUSHBUTTON,
                 220, 10, 80, 25, hwnd, (HMENU)BTN_FILTER_FG, g_hInst, NULL);
             g_hThemeBtn = CreateWindowA("BUTTON",
                 "\xf0\x9f\x98\x83  Dark",
                 WS_CHILD | WS_VISIBLE | BS_PUSHBUTTON,
                 1100, 10, 80, 25, hwnd, (HMENU)BTN_THEME, g_hInst, NULL);
+
+            /* One-click download/install controls (the core demand). */
+            g_hInstallBtn = CreateWindowA("BUTTON",
+                "\xe2\x9d\x93  Download & Install",
+                WS_CHILD | WS_VISIBLE | BS_DEFPUSHBUTTON,
+                900, 10, 160, 25, hwnd, (HMENU)BTN_DOWNLOAD, g_hInst, NULL);
+            g_hFolderBtn = CreateWindowA("BUTTON",
+                "Install Folder...",
+                WS_CHILD | WS_VISIBLE | BS_PUSHBUTTON,
+                790, 10, 100, 25, hwnd, (HMENU)BTN_BROWSE, g_hInst, NULL);
 
             /* Create hero banner for latest crack */
             Game* latest = NULL;
@@ -923,13 +974,11 @@ LRESULT CALLBACK MainWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) 
             int w = LOWORD(lParam);
             int h = HIWORD(lParam);
             if (g_hGrid) MoveWindow(g_hGrid, 10, 130, w-20, h-190, TRUE);
-            if (g_hSearch) MoveWindow(g_hSearch, 10, 10, w-220, 25, TRUE);
-            if (g_hFilterBar) MoveWindow(g_hFilterBar, 220, 10, w-300, 25, TRUE);
-            if (g_hHero) {
-                RECT rc2;
-                GetClientRect(g_hHero, &rc2);
-                MoveWindow(g_hHero, 10, 40, w-20, 80, TRUE);
-            }
+            if (g_hSearch) MoveWindow(g_hSearch, 10, 10, 360, 25, TRUE);
+            if (g_hFolderBtn) MoveWindow(g_hFolderBtn, 378, 10, 110, 25, TRUE);
+            if (g_hInstallBtn) MoveWindow(g_hInstallBtn, 494, 10, 170, 25, TRUE);
+            if (g_hFilterBar) MoveWindow(g_hFilterBar, 672, 10, 110, 25, TRUE);
+            if (g_hHero) MoveWindow(g_hHero, 10, 40, w-20, 80, TRUE);
             if (g_hThemeBtn) MoveWindow(g_hThemeBtn, w-100, 10, 80, 25, TRUE);
             if (g_hStatus) MoveWindow(g_hStatus, 10, h-30, w-20, 20, TRUE);
             break;
@@ -938,7 +987,7 @@ LRESULT CALLBACK MainWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) 
         case WM_COMMAND: {
             switch (LOWORD(wParam)) {
                 case BTN_DOWNLOAD:
-                    if (selectedGame) build_download_dialog(hwnd, selectedGame);
+                    if (selectedGame) start_install(selectedGame);
                     break;
                 case BTN_BROWSE: {
                     BROWSEINFOA bi2;
@@ -947,8 +996,9 @@ LRESULT CALLBACK MainWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) 
                     bi2.ulFlags = 0x00000040 | 0x00000020;
                     LPITEMIDLIST pidl = SHBrowseForFolderA(&bi2);
                     if (pidl) {
-                        SHGetPathFromIDListA(pidl, installDir);
+                        SHGetPathFromIDListA(pidl, g_installDir);
                         CoTaskMemFree(pidl);
+                        tray_bubble(APP_NAME, "Install destination changed", 2500);
                     }
                     break;
                 }
@@ -959,10 +1009,8 @@ LRESULT CALLBACK MainWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) 
                     toggle_theme();
                     break;
                 case BTN_FILTER_ALL:
-                    g_filterMode = 0; filter_grid("");
-                    break;
-                case BTN_FILTER_FG:
-                    g_filterMode = 1; filter_grid("");
+                case BTN_FILTER_FG: /* "All Games" -- clear every filter */
+                    g_filterMode = 0; filter_grid(g_search);
                     break;
                 case GRID_LIST_VIEW:
                     if (HIWORD(wParam) == LVN_ITEMCHANGED) {
@@ -974,6 +1022,18 @@ LRESULT CALLBACK MainWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) 
             }
             break;
         }
+
+        /* Download-progress messages posted from dl_thread_proc. */
+        case DL_MSG_CONNECT:
+            set_dl_progress((int)wParam);
+            break;
+        case DL_MSG_STATUS:
+            post_dl_status((const char*)lParam);
+            break;
+        case DL_MSG_STOP:
+            if (g_hDlProgress) SendMessageA(g_hDlProgress, PBM_SETPOS, 100, 0);
+            post_dl_status("Download stopped");
+            break;
 
         case WM_NOTIFY: {
             LPNMITEMACTIVATE nmia = (LPNMITEMACTIVATE)lParam;
@@ -997,14 +1057,30 @@ LRESULT CALLBACK MainWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) 
             break;
         }
 
-        case WM_TIMER:
-            if (wParam == TRAY_MSG_CB) {
-                if (LOWORD(lParam) == WM_LBUTTONDBLCLK) {
-                    ShowWindow(hwnd, SW_SHOW);
-                    BringWindowToTop(hwnd);
+        /* System-tray icon clicks / menu */
+        case TRAY_MSG_CB: {
+            POINT pt;
+            if (LOWORD(lParam) == WM_LBUTTONUP || LOWORD(lParam) == WM_RBUTTONUP) {
+                GetCursorPos(&pt);
+                int sel = show_tray_menu(pt);
+                switch (sel) {
+                    case 3001:
+                        ShowWindow(hwnd, SW_SHOW);
+                        SetForegroundWindow(hwnd);
+                        break;
+                    case 3002:
+                        g_filterMode = 1; filter_grid(g_search);
+                        break;
+                    case 3004:
+                        PostQuitMessage(0);
+                        break;
                 }
+            } else if (LOWORD(lParam) == WM_LBUTTONDBLCLK) {
+                ShowWindow(hwnd, SW_SHOW);
+                BringWindowToTop(hwnd);
             }
             break;
+        }
 
         case WM_SETCURSOR:
             if ((HWND)(INT_PTR)LOWORD(lParam) == g_hGrid)
@@ -1081,6 +1157,10 @@ int WINAPI WinMain(HINSTANCE hInst, HINSTANCE hPrev, LPSTR szCmdLine, int nCmd) 
     if (!g_hMain) return 1;
     ShowWindow(g_hMain, SW_SHOWNORMAL);
     UpdateWindow(g_hMain);
+
+    /* Progress bar for one-click installs (hidden until first install). */
+    g_hDlWnd = create_dl_window();
+    ShowWindow(g_hDlWnd, SW_HIDE);
 
     /* System tray */
     tray_init(hInst, g_hMain);
