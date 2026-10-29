@@ -1,0 +1,30 @@
+{
+  "friends": [
+    {"name": "ShadowKitty", "status": "Playing Cyber Realm", "playing": "Cyber Realm"},
+    {"name": "RogueTurtle", "status": "Playing Elden Path", "playing": "Elden Path"},
+    {"name": "PixelGhost", "status": "In Menu", "playing": ""},
+    {"name": "DarkPhoenix", "status": "Online", "playing": ""},
+    {"name": "Nova", "status": "Playing Starfall Odyssey", "playing": "Starfall Odyssey"},
+    {"name": "Raptor", "status": "Playing The Last Horizon", "playing": "The Last Horizon"}
+  ],
+  "activity": [
+    {"icon": "⚡", "text": "Cracked: Cyber Realm v2.1 by FitGirl", "time": "1h ago"},
+    {"icon": "🏆", "text": "Unlocked achievement: First Blood", "time": "2h ago"},
+    {"icon": "📦", "text": "Downloaded Elden Path (DODI repack)", "time": "3h ago"},
+    {"icon": "🔓", "text": "Cracked: Rogue Legacy 2 by CODEX", "time": "5h ago"},
+    {"icon": "⭐", "text": "Rated Starfall Odyssey 5 stars", "time": "8h ago"},
+    {"icon": "📥", "text": "Installed The Last Horizon to E:/games", "time": "1d ago"},
+    {"icon": "⚓", "text": "New crack spotted: Hollow Knight (RELOADED)", "time": "1d ago"},
+    {"icon": "🎮", "text": "Completed play session on Shadow Tactics", "time": "2d ago"}
+  ],
+  "achievements": [
+    {"icon": "🩸", "title": "First Blood", "desc": "Install your first cracked game"},
+    {"icon": "🗺️", "title": "Explorer", "desc": "Discover 10 different genres"},
+    {"icon": "💰", "title": "Collector", "desc": "Build a library of 100 games"},
+    {"icon": "👻", "title": "Stealth Master", "desc": "Bypass DRM without a hitch"}
+  ],
+  "news": {
+    "title": "New Update 1.4.0",
+    "body": "Performance improvements, new content and more."
+  }
+}

@@ -24,6 +24,27 @@ const APP = {
     this.renderGameGrid();
     this.updateCounts();
     this.checkTheme();
+    this.setupHeroInteraction();
+  },
+
+  // ── Setup Hero Interaction ──
+  setupHeroInteraction() {
+    // Hero navigation dots
+    const dots = document.querySelectorAll('.hero-dots .dot');
+    dots.forEach((dot, i) => {
+      dot.addEventListener('click', () => {
+        const sections = document.querySelectorAll('main > section[id]');
+        if (sections[i]) {
+          sections[i].scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Update count in initial check
+    const countEl = document.getElementById('count-all');
+    if (countEl && this.games.length) {
+      countEl.textContent = this.games.length;
+    }
   },
 
   // ── Load games.json ──
@@ -515,6 +536,40 @@ const APP = {
 
 // ── Boot! ──
 document.addEventListener('DOMContentLoaded', () => APP.init());
+
+// ── Hero navigation function ──
+function scrollToSection(dotElement) {
+  const heroSection = document.getElementById('hero-section');
+  const latestBanner = document.getElementById('latest-banner');
+  const gameGrid = document.getElementById('game-grid');
+
+  if (dotElement.classList.contains('dot-1')) {
+    heroSection.scrollIntoView({ behavior: 'smooth' });
+  } else if (dotElement.classList.contains('dot-2')) {
+    latestBanner.scrollIntoView({ behavior: 'smooth' });
+  } else if (dotElement.classList.contains('dot-3')) {
+    gameGrid.scrollIntoView({ behavior: 'smooth' });
+  }
+}
+
+// ── Toast notifications ──
+function showToast(message, type = 'info') {
+  let container = document.getElementById('toast-container');
+  if (!container) {
+    container = document.createElement('div');
+    container.id = 'toast-container';
+    document.body.appendChild(container);
+  }
+  const toast = document.createElement('div');
+  toast.className = `toast toast-${type}`;
+  toast.textContent = message;
+  container.appendChild(toast);
+  requestAnimationFrame(() => toast.classList.add('visible'));
+  setTimeout(() => {
+    toast.classList.remove('visible');
+    setTimeout(() => toast.remove(), 300);
+  }, 3000);
+}
 
 // ── Export for download.js ──
 window.APP = APP;

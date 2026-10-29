@@ -1,0 +1,446 @@
+- generic [active] [ref=f42e1]:
+  - status [ref=f42e2]:
+    - paragraph [ref=f42e3]: This site uses cookies needed for it to work.
+    - button "OK" [ref=f42e4]
+  - generic [ref=f42e5]:
+    - banner [ref=f42e6]:
+      - generic [ref=f42e7]:
+        - link "Codexgames.net" [ref=f42e8] [cursor=pointer]:
+          - /url: /
+        - navigation [ref=f42e10]:
+          - link [ref=f42e13] [cursor=pointer]:
+            - /url: /#games
+          - link "News" [ref=f42e17] [cursor=pointer]:
+            - /url: /#news
+          - link "Guides" [ref=f42e18] [cursor=pointer]:
+            - /url: /#guides
+          - link "Patch Notes" [ref=f42e19] [cursor=pointer]:
+            - /url: /#patch-notes
+        - generic [ref=f42e20]:
+          - button "Search" [ref=f42e22]
+          - link "Discord" [ref=f42e27] [cursor=pointer]:
+            - /url: https://discord.gg/2UPCQn3
+    - main [ref=f42e30]:
+      - generic [ref=f42e32]:
+        - generic [ref=f42e34]:
+          - generic [ref=f42e35]:
+            - generic [ref=f42e36]:
+              - paragraph [ref=f42e37]: Companion
+              - heading "Databases, planners and patch notes" [level=1] [ref=f42e38]
+              - paragraph [ref=f42e39]: Free English tools for League of Legends, Valorant, Palworld, Hytale and Aion 2. Fan-made, not affiliated with the publishers.
+            - generic [ref=f42e40]:
+              - generic [ref=f42e41]: ⌕
+              - textbox "⌕" [ref=f42e42]:
+                - /placeholder: Search a game, a tool, a patch…
+          - generic [ref=f42e43]:
+            - button "All" [ref=f42e44]
+            - button "Adventure sandbox" [ref=f42e45]
+            - button "MMORPG" [ref=f42e46]
+            - button "MOBA" [ref=f42e47]
+            - button "Survival RPG" [ref=f42e48]
+            - button "Survival craft" [ref=f42e49]
+            - button "Tactical FPS" [ref=f42e50]
+            - generic [ref=f42e51]: 7 modules
+          - generic [ref=f42e52]:
+            - article [ref=f42e53]:
+              - link "NEW MMORPG Aion 2" [ref=f42e54] [cursor=pointer]:
+                - /url: /aion-2
+                - generic [ref=f42e56]: NEW
+                - generic [ref=f42e57]:
+                  - paragraph [ref=f42e58]: MMORPG
+                  - heading "Aion 2" [level=3] [ref=f42e59]
+              - generic:
+                - link "Builds":
+                  - /url: /aion-2/character-builder
+                - link "Rankings":
+                  - /url: /aion-2/armory
+                - link "Database":
+                  - /url: /aion-2/db/search
+            - article [ref=f42e60]:
+              - link "HOT MOBA League of Legends" [ref=f42e61] [cursor=pointer]:
+                - /url: /league-of-legends
+                - generic [ref=f42e63]: HOT
+                - generic [ref=f42e64]:
+                  - paragraph [ref=f42e65]: MOBA
+                  - heading "League of Legends" [level=3] [ref=f42e66]
+              - generic:
+                - link "Database":
+                  - /url: /league-of-legends/champions
+                - link "Builder":
+                  - /url: /league-of-legends
+                - link "Items":
+                  - /url: /league-of-legends/items
+            - article [ref=f42e67]:
+              - link "NEW Tactical FPS Valorant" [ref=f42e68] [cursor=pointer]:
+                - /url: /valorant
+                - generic [ref=f42e70]: NEW
+                - generic [ref=f42e71]:
+                  - paragraph [ref=f42e72]: Tactical FPS
+                  - heading "Valorant" [level=3] [ref=f42e73]
+              - generic:
+                - link "Agents":
+                  - /url: /valorant/agents
+                - link "Maps":
+                  - /url: /valorant/maps
+                - link "Profiles":
+                  - /url: /valorant/profiles
+            - article [ref=f42e74]:
+              - link "NEW Survival craft Palworld" [ref=f42e75] [cursor=pointer]:
+                - /url: /palworld
+                - generic [ref=f42e77]: NEW
+                - generic [ref=f42e78]:
+                  - paragraph [ref=f42e79]: Survival craft
+                  - heading "Palworld" [level=3] [ref=f42e80]
+              - generic:
+                - link "Paldeck":
+                  - /url: /palworld/pals
+                - link "Breeding":
+                  - /url: /palworld/breeding
+                - link "Map":
+                  - /url: /palworld/map
+            - article [ref=f42e81]:
+              - link "NEW Adventure sandbox Hytale" [ref=f42e82] [cursor=pointer]:
+                - /url: https://hytale.game/en
+                - generic [ref=f42e84]: NEW
+                - generic [ref=f42e85]:
+                  - paragraph [ref=f42e86]: Adventure sandbox
+                  - heading "Hytale" [level=3] [ref=f42e87]
+            - article [ref=f42e88]:
+              - link "NEW MMORPG Dofus" [ref=f42e89] [cursor=pointer]:
+                - /url: https://dofgen.com/en
+                - generic [ref=f42e91]: NEW
+                - generic [ref=f42e92]:
+                  - paragraph [ref=f42e93]: MMORPG
+                  - heading "Dofus" [level=3] [ref=f42e94]
+            - article [ref=f42e95]:
+              - link "NEW Survival RPG Enshrouded" [ref=f42e96] [cursor=pointer]:
+                - /url: /enshrouded
+                - generic [ref=f42e98]: NEW
+                - generic [ref=f42e99]:
+                  - paragraph [ref=f42e100]: Survival RPG
+                  - heading "Enshrouded" [level=3] [ref=f42e101]
+              - generic:
+                - link "Wiki":
+                  - /url: /enshrouded/wiki
+                - link "Items":
+                  - /url: /enshrouded/items
+                - link "Map":
+                  - /url: /enshrouded/map
+        - generic [ref=f42e102]:
+          - generic [ref=f42e103]:
+            - generic [ref=f42e104]:
+              - heading "News" [level=2] [ref=f42e105]
+              - link "Official site →" [ref=f42e106] [cursor=pointer]:
+                - /url: https://www.leagueoflegends.com/en-us/news/
+            - generic [ref=f42e107]:
+              - link "League of Legends New Merch Celebrates Return Of Our Virtual Artists! October 26, 2026" [ref=f42e108] [cursor=pointer]:
+                - /url: https://www.leagueoflegends.com/en-us/news/merch/new-merch-celebrates-return-of-our-virtual-artists
+                - generic [ref=f42e109]:
+                  - generic [ref=f42e111]: League of Legends
+                  - generic [ref=f42e112]:
+                    - paragraph [ref=f42e113]: New Merch Celebrates Return Of Our Virtual Artists!
+                    - paragraph [ref=f42e114]: October 26, 2026
+              - generic [ref=f42e115]:
+                - link [ref=f42e116] [cursor=pointer]:
+                  - /url: https://playvalorant.com/en-gb/platform-selection/
+                  - generic [ref=f42e120]:
+                    - paragraph [ref=f42e121]: Valorant
+                    - paragraph [ref=f42e122]: Create One
+                - link "Palworld Palworld Global Popularity Poll 2026 is LIVE! September 1, 2026" [ref=f42e123] [cursor=pointer]:
+                  - /url: https://store.steampowered.com/news/app/1623730/view/1842212951313335
+                  - generic [ref=f42e126]:
+                    - paragraph [ref=f42e127]: Palworld
+                    - paragraph [ref=f42e128]: Palworld Global Popularity Poll 2026 is LIVE!
+                    - paragraph [ref=f42e129]: September 1, 2026
+                - link "Enshrouded Enshrouded is Steam Deck verified! October 23, 2026" [ref=f42e130] [cursor=pointer]:
+                  - /url: https://store.steampowered.com/news/app/1203620/view/1847286114036918
+                  - generic [ref=f42e133]:
+                    - paragraph [ref=f42e134]: Enshrouded
+                    - paragraph [ref=f42e135]: Enshrouded is Steam Deck verified!
+                    - paragraph [ref=f42e136]: October 23, 2026
+                - 'link "League of Legends /dev: Mel Midscope October 20, 2026" [ref=f42e137] [cursor=pointer]':
+                  - /url: https://www.leagueoflegends.com/en-us/news/dev/dev-mel-midscope
+                  - generic [ref=f42e140]:
+                    - paragraph [ref=f42e141]: League of Legends
+                    - paragraph [ref=f42e142]: "/dev: Mel Midscope"
+                    - paragraph [ref=f42e143]: October 20, 2026
+                - 'link "Valorant Agent Cosplay Guide: Hush October 27, 2026" [ref=f42e144] [cursor=pointer]':
+                  - /url: https://playvalorant.com/en-us/news/community/agent-cosplay-guide-hush
+                  - generic [ref=f42e147]:
+                    - paragraph [ref=f42e148]: Valorant
+                    - paragraph [ref=f42e149]: "Agent Cosplay Guide: Hush"
+                    - paragraph [ref=f42e150]: October 27, 2026
+                - link "Palworld Mod Support Improvement July 30, 2026" [ref=f42e151] [cursor=pointer]:
+                  - /url: https://store.steampowered.com/news/app/1623730/view/1839676055884093
+                  - generic [ref=f42e154]:
+                    - paragraph [ref=f42e155]: Palworld
+                    - paragraph [ref=f42e156]: Mod Support Improvement
+                    - paragraph [ref=f42e157]: July 30, 2026
+                - link "Enshrouded Enshrouded 1.0 is LIVE! Check out our Highlights video! October 15, 2026" [ref=f42e158] [cursor=pointer]:
+                  - /url: https://store.steampowered.com/news/app/1203620/view/1846651706678083
+                  - generic [ref=f42e161]:
+                    - paragraph [ref=f42e162]: Enshrouded
+                    - paragraph [ref=f42e163]: Enshrouded 1.0 is LIVE! Check out our Highlights video!
+                    - paragraph [ref=f42e164]: October 15, 2026
+          - generic [ref=f42e165]:
+            - generic [ref=f42e166]:
+              - heading "Patch Notes" [level=2] [ref=f42e167]
+              - link "Official site →" [ref=f42e168] [cursor=pointer]:
+                - /url: https://www.leagueoflegends.com/en-us/news/tags/patch-notes/
+            - generic [ref=f42e170]:
+              - link "League of Legends League of Legends Patch 26.21 Notes October 20, 2026" [ref=f42e171] [cursor=pointer]:
+                - /url: https://www.leagueoflegends.com/en-us/news/game-updates/league-of-legends-patch-26-21-notes
+                - generic [ref=f42e174]:
+                  - paragraph [ref=f42e175]: League of Legends
+                  - paragraph [ref=f42e176]: League of Legends Patch 26.21 Notes
+                  - paragraph [ref=f42e177]: October 20, 2026
+              - link "Valorant VALORANT Patch Notes 13.09 October 27, 2026" [ref=f42e178] [cursor=pointer]:
+                - /url: https://playvalorant.com/en-us/news/game-updates/valorant-patch-notes-1309
+                - generic [ref=f42e181]:
+                  - paragraph [ref=f42e182]: Valorant
+                  - paragraph [ref=f42e183]: VALORANT Patch Notes 13.09
+                  - paragraph [ref=f42e184]: October 27, 2026
+              - 'link "Palworld v1.0.5: Bug fixes September 15, 2026" [ref=f42e185] [cursor=pointer]':
+                - /url: https://store.steampowered.com/news/app/1623730/view/1843481262703464
+                - generic [ref=f42e188]:
+                  - paragraph [ref=f42e189]: Palworld
+                  - paragraph [ref=f42e190]: "v1.0.5: Bug fixes"
+                  - paragraph [ref=f42e191]: September 15, 2026
+              - link "Enshrouded Changelog for Hotfix 1.0.0.3 October 21, 2026" [ref=f42e192] [cursor=pointer]:
+                - /url: https://store.steampowered.com/news/app/1203620/view/1847286114028297
+                - generic [ref=f42e195]:
+                  - paragraph [ref=f42e196]: Enshrouded
+                  - paragraph [ref=f42e197]: Changelog for Hotfix 1.0.0.3
+                  - paragraph [ref=f42e198]: October 21, 2026
+              - link "League of Legends League of Legends Patch 26.20 Notes October 6, 2026" [ref=f42e199] [cursor=pointer]:
+                - /url: https://www.leagueoflegends.com/en-us/news/game-updates/league-of-legends-patch-26-20-notes
+                - generic [ref=f42e202]:
+                  - paragraph [ref=f42e203]: League of Legends
+                  - paragraph [ref=f42e204]: League of Legends Patch 26.20 Notes
+                  - paragraph [ref=f42e205]: October 6, 2026
+              - link "Valorant VALORANT Patch Notes 13.08 October 13, 2026" [ref=f42e206] [cursor=pointer]:
+                - /url: https://playvalorant.com/en-us/news/game-updates/valorant-patch-notes-13-08
+                - generic [ref=f42e209]:
+                  - paragraph [ref=f42e210]: Valorant
+                  - paragraph [ref=f42e211]: VALORANT Patch Notes 13.08
+                  - paragraph [ref=f42e212]: October 13, 2026
+              - 'link "Palworld v1.0.4: Balance Adjustments & Bug Fixes September 7, 2026" [ref=f42e213] [cursor=pointer]':
+                - /url: https://store.steampowered.com/news/app/1623730/view/1842846814452062
+                - generic [ref=f42e216]:
+                  - paragraph [ref=f42e217]: Palworld
+                  - paragraph [ref=f42e218]: "v1.0.4: Balance Adjustments & Bug Fixes"
+                  - paragraph [ref=f42e219]: September 7, 2026
+              - link "Enshrouded Changelog for Hotfix 1.0.0.2 October 16, 2026" [ref=f42e220] [cursor=pointer]:
+                - /url: https://store.steampowered.com/news/app/1203620/view/1846651706681725
+                - generic [ref=f42e223]:
+                  - paragraph [ref=f42e224]: Enshrouded
+                  - paragraph [ref=f42e225]: Changelog for Hotfix 1.0.0.2
+                  - paragraph [ref=f42e226]: October 16, 2026
+        - generic [ref=f42e227]:
+          - heading "Guides" [level=2] [ref=f42e228]
+          - generic [ref=f42e229]:
+            - link "Aion 2 The day's circuit Spend your Odyle Energy first, clear the duty quests, then take on the limited dungeons and Shugo Festa. Everything else can wait." [ref=f42e230] [cursor=pointer]:
+              - /url: /aion-2/guides/daily-circuit
+              - generic [ref=f42e233]:
+                - paragraph [ref=f42e234]: Aion 2
+                - paragraph [ref=f42e235]: The day's circuit
+                - paragraph [ref=f42e236]: Spend your Odyle Energy first, clear the duty quests, then take on the limited dungeons and Shugo Festa. Everything else can wait.
+            - 'link "Aion 2 The first week on EU Follow the story to level 45: wings come from the lake quest, the Daevanion and Shugo Festa open around level 13, and enhancement stones are best saved for level 45 gear." [ref=f42e237] [cursor=pointer]':
+              - /url: /aion-2/guides/first-week
+              - generic [ref=f42e240]:
+                - paragraph [ref=f42e241]: Aion 2
+                - paragraph [ref=f42e242]: The first week on EU
+                - paragraph [ref=f42e243]: "Follow the story to level 45: wings come from the lake quest, the Daevanion and Shugo Festa open around level 13, and enhancement stones are best saved for level 45 gear."
+            - 'link "Aion 2 Crafting: what to make first Open Alchemy first, level Odyle gathering alongside it, then craft your weapon and Guard. Cooking is worth its tiny cost; Armorsmithing can wait." [ref=f42e244] [cursor=pointer]':
+              - /url: /aion-2/guides/crafting
+              - generic [ref=f42e247]:
+                - paragraph [ref=f42e248]: Aion 2
+                - paragraph [ref=f42e249]: "Crafting: what to make first"
+                - paragraph [ref=f42e250]: Open Alchemy first, level Odyle gathering alongside it, then craft your weapon and Guard. Cooking is worth its tiny cost; Armorsmithing can wait.
+            - 'link "Aion 2 Skill points, Stigma Shards and specialization nodes Two separate currencies: 21 Skill Points take an active skill to level 10, and 75 Stigma Shards take a Stigma to 20. Specialization nodes unlock at levels 8, 12 and 16." [ref=f42e251] [cursor=pointer]':
+              - /url: /aion-2/guides/skill-points
+              - generic [ref=f42e254]:
+                - paragraph [ref=f42e255]: Aion 2
+                - paragraph [ref=f42e256]: Skill points, Stigma Shards and specialization nodes
+                - paragraph [ref=f42e257]: "Two separate currencies: 21 Skill Points take an active skill to level 10, and 75 Stigma Shards take a Stigma to 20. Specialization nodes unlock at levels 8, 12 and 16."
+            - 'link "Aion 2 PvE wings on EU: what to wear, what to enhance Wear Nightmare, Forest Spirit or Dark Veil on your back and put your stones into Spirit Wings. On the EU client, Dramata and similar sources do not grant a wing at all." [ref=f42e258] [cursor=pointer]':
+              - /url: /aion-2/guides/pve-wings
+              - generic [ref=f42e261]:
+                - paragraph [ref=f42e262]: Aion 2
+                - paragraph [ref=f42e263]: "PvE wings on EU: what to wear, what to enhance"
+                - paragraph [ref=f42e264]: Wear Nightmare, Forest Spirit or Dark Veil on your back and put your stones into Spirit Wings. On the EU client, Dramata and similar sources do not grant a wing at all.
+            - link "Aion 2 Empyrean Traces and the Monolith Collect traces as you cross the map and take your region's Monolith to rank 30. Between them, they are where your 112 Skill Points come from." [ref=f42e265] [cursor=pointer]:
+              - /url: /aion-2/guides/traces-monolith
+              - generic [ref=f42e268]:
+                - paragraph [ref=f42e269]: Aion 2
+                - paragraph [ref=f42e270]: Empyrean Traces and the Monolith
+                - paragraph [ref=f42e271]: Collect traces as you cross the map and take your region's Monolith to rank 30. Between them, they are where your 112 Skill Points come from.
+            - 'link "Aion 2 Two sets: dungeons and the Abyss Keep one set for monsters and another for players, because an Abyss piece can actively hurt you in PvE. Read the tooltip before you commit." [ref=f42e272] [cursor=pointer]':
+              - /url: /aion-2/guides/pve-pvp-gear
+              - generic [ref=f42e275]:
+                - paragraph [ref=f42e276]: Aion 2
+                - paragraph [ref=f42e277]: "Two sets: dungeons and the Abyss"
+                - paragraph [ref=f42e278]: Keep one set for monsters and another for players, because an Abyss piece can actively hurt you in PvE. Read the tooltip before you commit.
+            - link "Aion 2 Familiars Register every familiar that drops, raise the one you actually take out with you, and resist buying the entire catalogue." [ref=f42e279] [cursor=pointer]:
+              - /url: /aion-2/guides/pets
+              - generic [ref=f42e282]:
+                - paragraph [ref=f42e283]: Aion 2
+                - paragraph [ref=f42e284]: Familiars
+                - paragraph [ref=f42e285]: Register every familiar that drops, raise the one you actually take out with you, and resist buying the entire catalogue.
+            - link "Aion 2 Wings Take your first pair as soon as the story offers it, then craft Odyle Wings. Most of the remaining catalogue exists for the collection rather than for combat." [ref=f42e286] [cursor=pointer]:
+              - /url: /aion-2/guides/wings
+              - generic [ref=f42e289]:
+                - paragraph [ref=f42e290]: Aion 2
+                - paragraph [ref=f42e291]: Wings
+                - paragraph [ref=f42e292]: Take your first pair as soon as the story offers it, then craft Odyle Wings. Most of the remaining catalogue exists for the collection rather than for combat.
+            - link "Aion 2 Making kina without wasting it Sell your leather, craft potions and Manastones, and never enhance a piece you are about to replace. Shugo Festa opens around level 13, but its shop only pays off at 45." [ref=f42e293] [cursor=pointer]:
+              - /url: /aion-2/guides/kina
+              - generic [ref=f42e296]:
+                - paragraph [ref=f42e297]: Aion 2
+                - paragraph [ref=f42e298]: Making kina without wasting it
+                - paragraph [ref=f42e299]: Sell your leather, craft potions and Manastones, and never enhance a piece you are about to replace. Shugo Festa opens around level 13, but its shop only pays off at 45.
+            - link "Aion 2 Manastones, Soulstones and Theostones Manastones go on weapons and armour, Soulstones on jewellery and Theostones on the weapon. While a piece is temporary, socket nothing expensive into it." [ref=f42e300] [cursor=pointer]:
+              - /url: /aion-2/guides/manastones
+              - generic [ref=f42e303]:
+                - paragraph [ref=f42e304]: Aion 2
+                - paragraph [ref=f42e305]: Manastones, Soulstones and Theostones
+                - paragraph [ref=f42e306]: Manastones go on weapons and armour, Soulstones on jewellery and Theostones on the weapon. While a piece is temporary, socket nothing expensive into it.
+            - link "Aion 2 The Daevanion board Take the skill +1 nodes and combat stats first. Trying to complete a whole board before opening the next one delays the skills you actually play." [ref=f42e307] [cursor=pointer]:
+              - /url: /aion-2/guides/daevanion
+              - generic [ref=f42e310]:
+                - paragraph [ref=f42e311]: Aion 2
+                - paragraph [ref=f42e312]: The Daevanion board
+                - paragraph [ref=f42e313]: Take the skill +1 nodes and combat stats first. Trying to complete a whole board before opening the next one delays the skills you actually play.
+        - generic [ref=f42e315]:
+          - heading "What Codexgames is" [level=2] [ref=f42e316]
+          - generic [ref=f42e317]:
+            - paragraph [ref=f42e319]: Codexgames is a free English companion for League of Legends, Valorant, Palworld, Hytale and Aion 2. Look up champions, agents, Pals, items, maps and builds, then jump into official news and patch notes from the hub above. Open a live game, or start from the modules listed here.
+            - complementary [ref=f42e320]:
+              - generic [ref=f42e321]:
+                - link [ref=f42e322] [cursor=pointer]:
+                  - /url: /league-of-legends
+                  - heading "League of Legends" [level=3] [ref=f42e323]
+                  - paragraph [ref=f42e324]: Patch tier list, champion kits, items, runes, summoner lookup and official news.
+                - link [ref=f42e325] [cursor=pointer]:
+                  - /url: /valorant
+                  - heading "Valorant" [level=3] [ref=f42e326]
+                  - paragraph [ref=f42e327]: Agents, maps, weapons, Riot ID lookup and official news for the current patch.
+                - link [ref=f42e328] [cursor=pointer]:
+                  - /url: /palworld
+                  - heading "Palworld" [level=3] [ref=f42e329]
+                  - paragraph [ref=f42e330]: Paldeck, items, skills, breeding calculator, team builder, Palpagos map and tech tree.
+                - link [ref=f42e331] [cursor=pointer]:
+                  - /url: https://hytale.game/en
+                  - heading "Hytale" [level=3] [ref=f42e332]
+                  - paragraph [ref=f42e333]: Official Hytale site — news, wiki and Early Access. Codexgames no longer hosts a Hytale companion.
+                - link [ref=f42e334] [cursor=pointer]:
+                  - /url: https://dofgen.com/en
+                  - heading "Dofus" [level=3] [ref=f42e335]
+                  - paragraph [ref=f42e336]: Item builder and theorycraft on dofgen.com (EN / FR / ES).
+                - link [ref=f42e337] [cursor=pointer]:
+                  - /url: /aion-2
+                  - heading "Aion 2" [level=3] [ref=f42e338]
+                  - paragraph [ref=f42e339]: Guest builds, planners, labelled TW rankings, map, Daily Circuit, news and patch cards.
+                - link [ref=f42e340] [cursor=pointer]:
+                  - /url: /enshrouded
+                  - heading "Enshrouded" [level=3] [ref=f42e341]
+                  - paragraph [ref=f42e342]: Embervale wiki categories, item catalog, matchup calculator, MapGenie map and Steam news.
+            - generic [ref=f42e343]:
+              - generic [ref=f42e344]:
+                - heading "Is Codexgames official?" [level=3] [ref=f42e345]
+                - paragraph [ref=f42e346]: No. Codexgames is an independent fan companion. It is not affiliated with, endorsed by, or an official product of the publishers or studios behind the games listed here — including any games added later. Trademarks belong to their respective owners.
+              - generic [ref=f42e347]:
+                - heading "Which games are live today?" [level=3] [ref=f42e348]
+                - paragraph [ref=f42e349]: League of Legends, Valorant, Palworld, Hytale and Aion 2. Open a game from the hub to browse databases, tools and news. New games only appear here once their module is live.
+              - generic [ref=f42e350]:
+                - heading "Where do news and patch notes come from?" [level=3] [ref=f42e351]
+                - paragraph [ref=f42e352]: Homepage news and patch notes come from the official League, Valorant, Palworld and Hytale sites, plus English coverage on hytale.game. Aion 2 news and patch cards use the public content list. Empty feeds stay empty.
+    - contentinfo [ref=f42e353]:
+      - generic [ref=f42e355]:
+        - generic [ref=f42e356]:
+          - link "Codexgames.net" [ref=f42e357] [cursor=pointer]:
+            - /url: /
+            - generic [ref=f42e358]:
+              - text: Codexgames
+              - generic [ref=f42e359]: .net
+          - heading "Features" [level=4] [ref=f42e360]
+          - list [ref=f42e361]:
+            - listitem [ref=f42e362]:
+              - link "Aion 2 Builds" [ref=f42e363] [cursor=pointer]:
+                - /url: /aion-2/character-builder
+            - listitem [ref=f42e364]:
+              - link "Dofus" [ref=f42e365] [cursor=pointer]:
+                - /url: https://dofgen.com/en
+            - listitem [ref=f42e366]:
+              - link "Guides" [ref=f42e367] [cursor=pointer]:
+                - /url: /#guides
+            - listitem [ref=f42e368]:
+              - link "Hytale" [ref=f42e369] [cursor=pointer]:
+                - /url: https://hytale.game/en
+            - listitem [ref=f42e370]:
+              - link "LoL Tier List" [ref=f42e371] [cursor=pointer]:
+                - /url: /league-of-legends
+            - listitem [ref=f42e372]:
+              - link "News" [ref=f42e373] [cursor=pointer]:
+                - /url: /#news
+            - listitem [ref=f42e374]:
+              - link "Palworld Paldeck" [ref=f42e375] [cursor=pointer]:
+                - /url: /palworld/pals
+            - listitem [ref=f42e376]:
+              - link "Patch Notes" [ref=f42e377] [cursor=pointer]:
+                - /url: /#patch-notes
+            - listitem [ref=f42e378]:
+              - link "Valorant Agents" [ref=f42e379] [cursor=pointer]:
+                - /url: /valorant/agents
+        - generic [ref=f42e380]:
+          - heading "Games" [level=4] [ref=f42e381]
+          - list [ref=f42e382]:
+            - listitem [ref=f42e383]:
+              - link "League of Legends" [ref=f42e384] [cursor=pointer]:
+                - /url: /league-of-legends
+            - listitem [ref=f42e385]:
+              - link "Valorant" [ref=f42e386] [cursor=pointer]:
+                - /url: /valorant
+            - listitem [ref=f42e387]:
+              - link "Palworld" [ref=f42e388] [cursor=pointer]:
+                - /url: /palworld
+            - listitem [ref=f42e389]:
+              - link "Hytale" [ref=f42e390] [cursor=pointer]:
+                - /url: https://hytale.game/en
+            - listitem [ref=f42e391]:
+              - link "Dofus" [ref=f42e392] [cursor=pointer]:
+                - /url: https://dofgen.com/en
+            - listitem [ref=f42e393]:
+              - link "Aion 2" [ref=f42e394] [cursor=pointer]:
+                - /url: /aion-2
+            - listitem [ref=f42e395]:
+              - link "Enshrouded" [ref=f42e396] [cursor=pointer]:
+                - /url: /enshrouded
+        - generic [ref=f42e397]:
+          - heading "Community" [level=4] [ref=f42e398]
+          - list [ref=f42e399]:
+            - listitem [ref=f42e400]:
+              - link "Discord" [ref=f42e401] [cursor=pointer]:
+                - /url: https://discord.com
+            - listitem [ref=f42e402]:
+              - link "News" [ref=f42e403] [cursor=pointer]:
+                - /url: /#news
+            - listitem [ref=f42e404]:
+              - link "Contact" [ref=f42e405] [cursor=pointer]:
+                - /url: mailto:contact@codexgames.net
+        - generic [ref=f42e406]:
+          - heading "Legal" [level=4] [ref=f42e407]
+          - list [ref=f42e408]:
+            - listitem [ref=f42e409]:
+              - link "Legal notice" [ref=f42e410] [cursor=pointer]:
+                - /url: /mentions-legales
+            - listitem [ref=f42e411]:
+              - link "Privacy Policy" [ref=f42e412] [cursor=pointer]:
+                - /url: /privacy
+            - listitem [ref=f42e413]:
+              - link "Cookies" [ref=f42e414] [cursor=pointer]:
+                - /url: /cookies
+            - listitem [ref=f42e415]:
+              - link "Terms of Service" [ref=f42e416] [cursor=pointer]:
+                - /url: /terms
+  - alert [ref=f42e417]

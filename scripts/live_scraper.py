@@ -660,12 +660,27 @@ def fetch_tpb_games():
     """Fetch game torrents from The Pirate Bay via apibay.org API."""
     items = []
     try:
-        # Expanded query list for better game coverage
+        # Expanded query list for better game coverage across all major repackers
         queries = [
-            # Repacker-specific (current)
+            # Primary repackers
             ("fitgirl repack", 101),
             ("dodi repack", 101),
             ("elamigos repack", 101),
+            ("codex repack", 101),
+            ("skidrow repack", 101),
+            ("reloaded repack", 101),
+            ("cpy repack", 101),
+            ("rld repack", 101),
+            ("emu repack", 101),
+            ("cryoplay repack", 101),
+            ("doinix repack", 101),
+            ("empress repack", 101),
+            ("hoyoverse repack", 101),
+            ("plazaboom repack", 101),
+            ("rdr repack", 101),
+            ("pisces repack", 101),
+            ("vtan repack", 101),
+            ("xl-c0de repack", 101),
             # Broader game searches
             ("repack game", 101),
             ("cracked game", 101),
@@ -673,15 +688,26 @@ def fetch_tpb_games():
             ("dodi", 101),
             ("codex game", 101),
             ("skidrow game", 101),
+            ("reloaded game", 101),
+            ("cpy game", 101),
+            ("rld game", 101),
             ("v2024 repack", 101),
             ("v2025 repack", 101),
             ("update repack", 101),
+            ("new repack", 101),
+            ("recent repack", 101),
+            # Indie/cracks
+            ("indie crack", 101),
+            ("steamrip", 101),
+            ("steamrip game", 101),
         ]
         seen_hashes = set()
+        total_processed = 0
         for query, cat in queries:
             r = requests.get(f"https://apibay.org/q.php?q={quote_plus(query)}&cat={cat}", headers=UA, timeout=TIMEOUT)
             if r.status_code == 200:
                 data = r.json()
+                total_processed += len(data)
                 for entry in data[:30]:  # Increase from 20
                     name = entry.get("name", "")
                     info_hash = entry.get("info_hash", "")
@@ -691,7 +717,9 @@ def fetch_tpb_games():
                     # Must be game-related (filter out music/soundtracks)
                     game_indicators = [
                         "repack", "crack", "fitgirl", "dodi", "elamigos",
-                        "codex", "skidrow", "reloaded", "cpy", "rld", "emu"
+                        "codex", "skidrow", "reloaded", "cpy", "rld", "emu",
+                        "cryoplay", "doinix", "empress", "hoyoverse", "plazaboom",
+                        "rdr", "pisces", "vtan", "xl-c0de"
                     ]
                     if not any(x in low for x in game_indicators):
                         continue
@@ -708,7 +736,7 @@ def fetch_tpb_games():
                     magnet += "&tr=udp://open.tracker.cl:1337/announce"
                     magnet += "&tr=udp://tracker.torrent.eu.org:451/announce"
                     items.append((name, magnet, "", f"TPB: {name}"))
-        print(f"  The Pirate Bay: {len(items)} items via apibay.org")
+        print(f"  The Pirate Bay: {len(items)} items via apibay.org (processed {total_processed} total results)")
     except Exception as e:
         print(f"  The Pirate Bay: apibay.org -> {type(e).__name__}", file=sys.stderr)
     return "The Pirate Bay", items

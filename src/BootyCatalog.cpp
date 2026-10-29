@@ -47,6 +47,8 @@
 #define DL_MSG_CONNECT (WM_USER + 50)
 #define DL_MSG_STATUS  (WM_USER + 51)
 #define DL_MSG_STOP    (WM_USER + 52)
+#define DL_MSG_TOAST   (WM_USER + 53)   /* toast update from download threads */
+#define DL_MSG_TOAST_DONE (WM_USER + 54)
 #define MAX_PATH2      260
 #define PROGRESS_BAR   2004
 #define BTN_FILTER_FG  2010
@@ -59,6 +61,10 @@
 #define BTN_TORRENT    2025
 #define OUT_DEFAULT    3
 #define CLIP_DEFAULT   4
+#define MAX_CONCURRENT_DOWNLOADS 3
+#define MAX_TOASTS     8
+#define TOAST_WIDTH    320
+#define TOAST_HEIGHT   90
 
 /* ━━━ GLOBALS (from header, defined here) ━━━ */
 Game        g_games[MAX_GAMES];
@@ -1482,7 +1488,7 @@ LRESULT CALLBACK MainWndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam) 
                     case 3002:
                         g_filterMode = 1; filter_grid(g_search);
                         break;
-                    case 3004:
+                                        case 3004:
                         PostQuitMessage(0);
                         break;
                 }
@@ -1541,10 +1547,6 @@ int WINAPI WinMain(HINSTANCE hInst, HINSTANCE hPrev, LPSTR szCmdLine, int nCmd) 
 
     /* Seed GTA VI if nothing loaded */
     if (g_gameCount == 0) seed_games();
-
-    /* Start HTTP server */
-    http_server_init(PORT);
-    http_server_add_listener();
 
     /* Register window class */
     WNDCLASSEXA wcx = {0};

@@ -163,4 +163,24 @@ void set_theme(HWND hwnd, int state);
 void toggle_theme(HWND hwnd);
 void set_theme_colors(int state);
 
+/* ━━━ STATS / ANALYTICS ━━━ */
+typedef struct {
+    char gameId[128];
+    char title[128];
+    char genre[64];
+    float rating;
+    int playCount;
+    char lastPlayed[32];
+    long long sizeBytes;
+} StatsGameRow;
+
+extern int stats_init_db(void);
+extern void stats_record_play(const char* gameId);
+extern void stats_update_rating(const char* gameId, float rating);
+extern int stats_get_all_games(StatsGameRow* out, int maxCount);
+extern void stats_export_csv(const char* path);
+extern void stats_reset_all(void);
+extern int stats_get_genre_distribution(char genres[][64], int counts[], int maxGenres);
+extern void show_stats_dashboard(HWND parent);
+
 #endif // BOOTY_CATALOG_H

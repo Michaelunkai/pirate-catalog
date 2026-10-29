@@ -1,0 +1,87 @@
+- generic [ref=e2]:
+  - complementary [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]: ⚓
+      - generic [ref=e6]:
+        - generic [ref=e7]: Booty
+        - generic [ref=e8]: Catalog
+    - navigation [ref=e9]:
+      - generic [ref=e10]:
+        - text: LIBRARY
+        - link "🗄️ All Games 0" [ref=e11] [cursor=pointer]:
+          - /url: "#"
+        - link "🔓 Just Cracked 0" [ref=e12] [cursor=pointer]:
+          - /url: "#"
+        - link "👀 Upcoming 0" [ref=e13] [cursor=pointer]:
+          - /url: "#"
+      - generic [ref=e14]:
+        - text: CATEGORIES
+        - link "⚔️ Action 0" [ref=e15] [cursor=pointer]:
+          - /url: "#"
+        - link "🧙 RPG 0" [ref=e16] [cursor=pointer]:
+          - /url: "#"
+        - link "♟️ Strategy 0" [ref=e17] [cursor=pointer]:
+          - /url: "#"
+        - link "🎮 Simulation 0" [ref=e18] [cursor=pointer]:
+          - /url: "#"
+        - link "🎨 Indie 0" [ref=e19] [cursor=pointer]:
+          - /url: "#"
+        - link "🏎️ Racing 0" [ref=e20] [cursor=pointer]:
+          - /url: "#"
+      - generic [ref=e21]:
+        - text: SETTINGS
+        - link "📂 Install Folder" [ref=e22] [cursor=pointer]:
+          - /url: "#"
+        - link "🧹 Clear Cache" [ref=e23] [cursor=pointer]:
+          - /url: "#"
+    - generic [ref=e24]: Ready
+  - main [ref=e26]:
+    - generic [ref=e27]:
+      - generic [ref=e28]:
+        - button "☰" [ref=e29] [cursor=pointer]
+        - heading "All Games" [level=1] [ref=e30]
+      - generic [ref=e32]:
+        - text: 🔍
+        - textbox "Search games, genres, or cracked tools..." [ref=e33]
+        - button "✕" [ref=e34] [cursor=pointer]
+      - generic [ref=e35]:
+        - button "⇅ Newest" [ref=e36] [cursor=pointer]
+        - button "▦" [ref=e37] [cursor=pointer]
+    - generic [ref=e39]:
+      - generic [ref=e40]: ⚡ Just Dropped
+      - heading "Latest Crack Activity" [level=2] [ref=e41]
+      - paragraph [ref=e42]: Games cracked within the last 30 days
+    - generic [ref=e44]:
+      - generic [ref=e45]:
+        - generic [ref=e46]: 🌟 FEATURED EDITION
+        - heading "Loading Cyber Game..." [level=1] [ref=e47]
+        - paragraph [ref=e48]: Experience the future of cracked gaming
+        - generic [ref=e49]:
+          - generic [ref=e50]: ★ ★ ★ ★ ★
+          - text: "0.0"
+        - generic [ref=e51]:
+          - generic [ref=e52]: 📊 0 ACTIVE
+          - generic [ref=e53]: 💾 0 GB SIZE
+          - generic [ref=e54]: 🔥 0 CRACKED
+      - generic [ref=e55]:
+        - button "⚡ DOWNLOAD & INSTALL" [ref=e56] [cursor=pointer]
+        - generic [ref=e57]:
+          - button "🔍 DETAILS" [ref=e58] [cursor=pointer]
+          - button "📤 SHARE" [ref=e59] [cursor=pointer]
+      - generic [ref=e60]: SCROLL TO EXPLORE
+  - complementary [ref=e61]:
+    - generic [ref=e62]:
+      - heading "⬇️ Download & Install" [level=3] [ref=e63]
+      - button "✕" [ref=e64] [cursor=pointer]
+    - generic [ref=e65]:
+      - generic [ref=e66]:
+        - generic [ref=e67]: Size —
+        - generic [ref=e68]: Version —
+        - generic [ref=e69]: Crack —
+        - generic [ref=e70]: Uploaded —
+      - generic [ref=e71]:
+        - text: Install To
+        - generic [ref=e72]:
+          - textbox "Select a folder..." [ref=e73]
+          - button "Browse" [ref=e74] [cursor=pointer]
+      - button "⚡ One-Click Download & Install" [ref=e75] [cursor=pointer]
