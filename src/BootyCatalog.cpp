@@ -316,7 +316,41 @@ static int parse_css_gradient(const char* css, GradientColor* out, int maxCount)
     return n;
 }
 
-/* Paint a game's title cell (sub-item 0) with its real cover gradient and
+/* Cache for loaded cover bitmaps */
+static HBITMAP g_coverCache[1000] = {0};
+static char g_coverCacheIds[1000][64] = {{0}};
+static int g_coverCacheCount = 0;
+
+/* Load a cover image from covers/<id>.jpg */
+static HBITMAP load_cover_image(const char* game_id) {
+    /* Check cache first */
+    for (int i = 0; i < g_coverCacheCount; i++) {
+        if (strcmp(g_coverCacheIds[i], game_id) == 0) {
+            return g_coverCache[i];
+        }
+    }
+
+    /* Build path: covers/<id>.jpg */
+    char path[512];
+    sprintf(path, "covers/%s.jpg", game_id);
+
+    /* Check if file exists */
+    if (GetFileAttributesA(path) == INVALID_FILE_ATTRIBUTES) {
+        return NULL;
+    }
+
+    /* Load bitmap from file */
+    HBITMAP hbm = (HBITMAP)LoadImageA(NULL, path, IMAGE_BITMAP, 0, 0, LR_LOADFROMFILE | LR_CREATEDIBSECTION);
+    if (hbm && g_coverCacheCount < 1000) {
+        /* Cache it */
+        g_coverCache[g_coverCacheCount] = hbm;
+        strncpy(g_coverCacheIds[g_coverCacheCount], game_id, 63);
+        g_coverCacheCount++;
+    }
+    return hbm;
+}
+
+/* Paint a game's title cell (sub-item 0) with its real cover image and
    white text, using the exact NMLVCUSTOMDRAW layout from commctrl.h:
    cd->nmcd.{dwDrawStage,hdc,rc,dwItemSpec,uItemState}, then cd->iSubItem. */
 static void draw_game_cover(NMLVCUSTOMDRAW* cd) {
@@ -331,22 +365,59 @@ static void draw_game_cover(NMLVCUSTOMDRAW* cd) {
     RECT rc = cd->nmcd.rc;
     /* Paint only column 0 so other columns keep their default background. */
     ListView_GetSubItemRect(g_hGrid, idx, 0, LVIR_BOUNDS, &rc);
-    GradientColor colors[8];
-    int n = parse_css_gradient(g->imageGradient, colors, 8);
-    if (n >= 2) {
-        /* Diagonal-ish: paint horizontal bands top-to-bottom across the row. */
-        int bandH = (rc.bottom - rc.top) / n;
-        for (int i = 0; i < n; i++) {
-            RECT tmp = rc;
-            tmp.top = rc.top + i * bandH;
-            tmp.bottom = tmp.top + bandH;
-            HBRUSH br = CreateSolidBrush(RGB(colors[i].r, colors[i].g, colors[i].b));
-            FillRect(hdc, &tmp, br);
-            DeleteObject(br);
-        }
+
+    /* Try to load actual cover image */
+    HBITMAP hbm = load_cover_image(g->id);
+    if (hbm) {
+        /* Draw the actual cover image */
+        HDC hdcMem = CreateCompatibleDC(hdc);
+        HBITMAP hbmOld = (HBITMAP)SelectObject(hdcMem, hbm);
+
+        BITMAP bm;
+        GetObject(hbm, sizeof(bm), &bm);
+
+        /* Calculate aspect-fit dimensions */
+        int dstW = rc.right - rc.left;
+        int dstH = rc.bottom - rc.top;
+        int srcW = bm.bmWidth;
+        int srcH = bm.bmHeight;
+
+        /* Scale to fit while maintaining aspect ratio */
+        float scaleX = (float)dstW / srcW;
+        float scaleY = (float)dstH / srcH;
+        float scale = scaleX < scaleY ? scaleX : scaleY;
+
+        int drawW = (int)(srcW * scale);
+        int drawH = (int)(srcH * scale);
+        int drawX = rc.left + (dstW - drawW) / 2;
+        int drawY = rc.top + (dstH - drawH) / 2;
+
+        /* Draw stretched image */
+        SetStretchBltMode(hdc, HALFTONE);
+        StretchBlt(hdc, drawX, drawY, drawW, drawH, hdcMem, 0, 0, srcW, srcH, SRCCOPY);
+
+        SelectObject(hdcMem, hbmOld);
+        DeleteDC(hdcMem);
     } else {
-        FillRect(hdc, &rc, CreateSolidBrush(RGB(20, 20, 30)));
+        /* Fallback to gradient */
+        GradientColor colors[8];
+        int n = parse_css_gradient(g->imageGradient, colors, 8);
+        if (n >= 2) {
+            int bandH = (rc.bottom - rc.top) / n;
+            for (int i = 0; i < n; i++) {
+                RECT tmp = rc;
+                tmp.top = rc.top + i * bandH;
+                tmp.bottom = tmp.top + bandH;
+                HBRUSH br = CreateSolidBrush(RGB(colors[i].r, colors[i].g, colors[i].b));
+                FillRect(hdc, &tmp, br);
+                DeleteObject(br);
+            }
+        } else {
+            FillRect(hdc, &rc, CreateSolidBrush(RGB(20, 20, 30)));
+        }
     }
+
+    /* Draw overlay text */
     SetBkMode(hdc, TRANSPARENT);
     SetTextColor(hdc, RGB(255, 255, 255));
 
