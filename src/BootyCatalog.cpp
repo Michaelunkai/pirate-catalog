@@ -988,11 +988,34 @@ static long http_get_to_file(const char* url, const char* outPath) {
 
 /* Launch magnet link in default torrent client (qBittorrent, uTorrent, etc.) */
 static void launch_magnet_link(const char* magnet_url) {
-    // Use ShellExecute to open magnet: URI with default handler
     HINSTANCE result = ShellExecuteA(NULL, "open", magnet_url, NULL, NULL, SW_SHOWNORMAL);
     if ((INT_PTR)result <= 32) {
-        // Failed - maybe no handler registered
         tray_bubble(APP_NAME, "No torrent client associated with magnet links", 3000);
+    }
+}
+
+/* Resolve magnet link to download URL and download the game */
+static void resolve_and_download(const char* magnet_url, const char* install_dir) {
+    // 1. Resolve magnet to download URL (simplified example)
+    char download_url[1024];
+    snprintf(download_url, sizeof(download_url), "https://torrent-resolver.example.com/resolve?magnet=%s", magnet_url);
+
+    // 2. Download the torrent file
+    char torrent_path[MAX_PATH];
+    snprintf(torrent_path, sizeof(torrent_path), "%s\\temp.torrent", install_dir);
+    long bytes_downloaded = http_get_to_file(download_url, torrent_path);
+
+    if (bytes_downloaded > 0) {
+        // 3. Extract the game files
+        char extract_cmd[1024];
+        snprintf(extract_cmd, sizeof(extract_cmd), "7z x \"%s\" -o\"%s\" -y", torrent_path, install_dir);
+        system(extract_cmd);
+
+        // 4. Clean up
+        remove(torrent_path);
+        tray_bubble(APP_NAME, "Game downloaded and installed", 3000);
+    } else {
+        tray_bubble(APP_NAME, "Failed to download game", 3000);
     }
 }
 
