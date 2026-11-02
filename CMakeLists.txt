@@ -67,6 +67,7 @@ target_include_directories(BootyCatalog PRIVATE
 
 target_link_libraries(BootyCatalog PRIVATE
     comctl32
+    comdlg32
     shlwapi
     wininet
     ws2_32

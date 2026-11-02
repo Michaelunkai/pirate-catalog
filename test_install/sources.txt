@@ -1,0 +1,10 @@
+apibay_general     FAIL ConnectTimeout HTTPSConnectionPool(host='apibay.net', port=443): 
+apibay_search      FAIL ConnectTimeout HTTPSConnectionPool(host='apibay.net', port=443): 
+dodi_feed          HTTP 200  len=93,132  OK
+fitgirl_feed       HTTP 200  len=163,477  OK
+ocean_feed         HTTP 200  len=12,124  OK
+skidrow_feed       FAIL ConnectionError HTTPSConnectionPool(host='skidrowgames.com', port=
+rawg_games         FAIL ReadTimeout HTTPSConnectionPool(host='api.rawg.io', port=443):
+rawg_search        FAIL ReadTimeout HTTPSConnectionPool(host='api.rawg.io', port=443):
+steam_search       HTTP 200  len=3,727  OK
+igdb_free          HTTP 404  len=434  NO
